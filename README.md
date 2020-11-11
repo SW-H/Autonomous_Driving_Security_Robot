@@ -92,6 +92,8 @@
 
 ## 로봇 하드웨어
 
-![hardware_spec_of_robot](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/%EB%A1%9C%EB%B4%87%20%ED%95%98%EB%93%9C%EC%9B%A8%EC%96%B4.PNG "로봇하드웨어")
+![hardware_spec_of_robot](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/로봇 .PNG "로봇하드웨어")
 
+## 전체 시스템 디자인 
+![Sytem_Design](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/시스템디자인.PNG "시스템디자인")
 
