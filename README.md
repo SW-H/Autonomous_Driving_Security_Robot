@@ -92,7 +92,7 @@
 
 ## 로봇 하드웨어
 
-![hardware_spec_of_robot](/README_img/로봇하드웨어.PNG "로봇하드웨어")
+<img src="/README_img/로봇하드웨어.PNG" width="40%" height="40%" title="로봇하드웨어" alt="로봇하드웨어"></img>
 
 ## 전체 시스템 디자인 
 ![Sytem_Design](/README_img/시스템디자인.PNG "시스템디자인")
