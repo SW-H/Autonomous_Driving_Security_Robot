@@ -1,7 +1,7 @@
 # 다중이용시설 마스크 착용 감시 자율 주행 로봇
 
 
-
+## 개요
 > ### 자율주행 로봇의 필요성
 > 1. 한 자리에 머물지 않기 때문에 사각지대가 존재하는 CCTV의 단점을 보완할 수 있다.
 > 2. 실시간 위치정보와 촬영 데이터를 시각화하여 관리자가 쉽게 확인할 수 있다.
@@ -41,27 +41,28 @@
 
 ----------------------------------------------------------------------------------------------------
 
-### 개발환경
+## 개발환경
 
-[파이썬 스펙]
-Python==3.6.7
-Cython
-dlib==19.8.1
-face-recognition==1.3.0
-numpy==1.15.0
-torch==1.7.0+cu101
-torchvision==0.8.1+cu101
-tensorflow==1.13.1
-tensorflow-gpu==1.13.1
-tqdm
-Keras==2.3.1
-opencv-python
-scikit-learn==0.21.2
-scipy==1.4.1
-Pillow
-visdom
-Nibabel
--GTTS
+|파이썬 스펙|노트북 스펙 |
+|---|---:|
+|Python==3.6.7|
+|Cython|
+|dlib==19.8.1|
+|face-recognition==1.3.0|
+|numpy==1.15.0|
+|torch==1.7.0+cu101|
+|torchvision==0.8.1+cu101|
+|tensorflow==1.13.1|
+|tensorflow-gpu==1.13.1|
+|tqdm|
+|Keras==2.3.1|
+|opencv-python|
+|scikit-learn==0.21.2|
+|scipy==1.4.1|
+|Pillow|
+|visdom|
+|Nibabel|
+|GTTS|
 
 [노트북 스펙]
 GPU : GTX 1650 ti
