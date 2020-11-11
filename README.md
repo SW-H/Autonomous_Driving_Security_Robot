@@ -92,4 +92,4 @@
 
 ## 로봇 하드웨어
 
-![hardware_spec_of_robot](./README_img/로봇 하드웨어.PNG)
+![hardware_spec_of_robot](./README_img/로봇 하드웨어.PNG "로봇 하드웨어")
