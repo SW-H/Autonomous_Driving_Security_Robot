@@ -67,21 +67,26 @@
         GTTS
 
 
-[노트북 스펙]
-GPU : GTX 1650 ti
-CPU : i7-10750H
-RAM : 16GB
-CUDA 10.0
-Cudnn : 7.5
-Nvidia driver
-Visual Studio 14 (2015)
-[ROS 환경]
-Ubuntu 14.04.5
-ROS-indigo 
-[서버 환경 & 네트워크 & DB]
-Flask
-Python socket(UDP, TCP)
-SQLite
++ 노트북 스펙
 
+        GPU : GTX 1650 ti
+        CPU : i7-10750H
+        RAM : 16GB
+        CUDA 10.0
+        Cudnn : 7.5
+        Nvidia driver
+        Visual Studio 14 (2015)
+        
++ ROS 환경
 
+        Ubuntu 14.04.5
+        ROS-indigo 
+        
++ 서버 환경 & 네트워크 & DB
+
+        Flask
+        Python socket(UDP, TCP)
+        SQLite
+
+---------------------------------------------------------------------------------------------------------------------
 
