@@ -1,8 +1,7 @@
 # Panorama Camera 
 
 + 단위시간 당 시각적인 데이터를 최대한 많이 수집하기 위해 자율주행 로봇에 360도 파노라마 카메라를 장착하였다.   
-카메라의 자체 소프트웨어 버전을 확인하고 그에 맞는 툴을 제공받기 위해 제조사와 수차례 연락을 주고받았다.   카메라의 버전(2.3.1)에 맞추기 위해 제공받은 소프트웨어의 버전(3.5.5)을 조정하여 사용하였다.
-![PC에서 파노라마 카메라를 감지하여 연결하는 화면](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/screenshot_of_software.PNG)   
+카메라의 자체 소프트웨어 버전을 확인하고 그에 맞는 툴을 제공받기 위해 제조사와 수차례 연락을 주고받았다.   카메라의 버전(2.3.1)에 맞추기 위해 제공받은 소프트웨어의 버전(3.5.5)을 조정하여 사용하였다. ![PC에서 파노라마 카메라를 감지하여 연결하는 화면](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/screenshot_of_software.PNG)   
 ↳PC에서 파노라마 카메라를 감지하여 연결하는 화면   
 
 
