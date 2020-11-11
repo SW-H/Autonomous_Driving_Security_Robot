@@ -101,7 +101,7 @@
 ---------------------------------------------------------------------------------------------------------------------
 
 ## 파트 별 설명    
-[Panorama Camera] (../README_hyperlink/PanoramaCamera.md)
+[Panorama Camera] (README_hyperlink/PanoramaCamera.md)
 
 
 
