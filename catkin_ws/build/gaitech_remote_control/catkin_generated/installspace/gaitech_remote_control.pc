@@ -1,0 +1,8 @@
+prefix=/home/fetch/catkin_ws/install
+
+Name: gaitech_remote_control
+Description: Description of gaitech_remote_control
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/fetch/catkin_ws/install/lib 
+Requires: 

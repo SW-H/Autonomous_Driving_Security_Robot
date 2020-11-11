@@ -1,0 +1,859 @@
+[roslaunch][INFO] 2020-10-27 23:42:08,445: Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2020-10-27 23:42:08,448: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2020-10-27 23:42:08,448: roslaunch starting with args ['/opt/ros/indigo/bin/roslaunch', 'fetch_navigation', 'freight_nav.launch']
+[roslaunch][INFO] 2020-10-27 23:42:08,448: roslaunch env is {'ROS_DISTRO': 'indigo', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SSH_CLIENT': '172.22.77.105 57350 22', 'CPATH': '/home/fetch/catkin_ws/devel/include:/opt/ros/indigo/include', 'LOGNAME': 'fetch', 'USER': 'fetch', 'HOME': '/home/fetch', 'PATH': '/opt/ros/indigo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'CMAKE_PREFIX_PATH': '/home/fetch/catkin_ws/devel:/opt/ros/indigo', 'LD_LIBRARY_PATH': '/home/fetch/catkin_ws/devel/lib:/opt/ros/indigo/lib', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'ROS_LOG_FILENAME': '/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/roslaunch-freight1207-23254.log', 'SHLVL': '1', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'DISPLAY': 'localhost:11.0', 'ROS_ETC_DIR': '/opt/ros/indigo/etc/ros', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/fetch/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/indigo/share/ros', 'PKG_CONFIG_PATH': '/home/fetch/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/fetch/catkin_ws/src:/opt/ros/indigo/share:/opt/ros/indigo/stacks', 'XDG_SESSION_ID': '7', '_': '/opt/ros/indigo/bin/roslaunch', 'SSH_CONNECTION': '172.22.77.105 57350 172.22.77.172 22', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_TTY': '/dev/pts/0', 'OLDPWD': '/opt/ros/indigo/share', 'PWD': '/opt/ros/indigo/share/fetch_navigation/launch', 'ROS_MASTER_URI': 'http://localhost:11311', 'MAIL': '/var/mail/fetch', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'}
+[roslaunch][INFO] 2020-10-27 23:42:08,448: starting in server mode
+[roslaunch.parent][INFO] 2020-10-27 23:42:08,448: starting roslaunch parent run
+[roslaunch][INFO] 2020-10-27 23:42:08,449: loading roscore config file /opt/ros/indigo/etc/ros/roscore.xml
+[roslaunch][INFO] 2020-10-27 23:42:08,516: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.config][INFO] 2020-10-27 23:42:08,516: loading config file /opt/ros/indigo/share/fetch_navigation/launch/freight_nav.launch
+[roslaunch][INFO] 2020-10-27 23:42:08,546: Added node of type [map_server/map_server] in namespace [/]
+[roslaunch][INFO] 2020-10-27 23:42:08,547: Added node of type [rviz/rviz] in namespace [/]
+[roslaunch][INFO] 2020-10-27 23:42:08,552: Added node of type [amcl/amcl] in namespace [/]
+[roslaunch][INFO] 2020-10-27 23:42:08,569: Added node of type [move_base/move_base] in namespace [/]
+[roslaunch][INFO] 2020-10-27 23:42:08,569: ... selected machine [] for node of type [map_server/map_server]
+[roslaunch][INFO] 2020-10-27 23:42:08,569: ... selected machine [] for node of type [rviz/rviz]
+[roslaunch][INFO] 2020-10-27 23:42:08,569: ... selected machine [] for node of type [amcl/amcl]
+[roslaunch][INFO] 2020-10-27 23:42:08,569: ... selected machine [] for node of type [move_base/move_base]
+[roslaunch.pmon][INFO] 2020-10-27 23:42:08,570: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2020-10-27 23:42:08,570: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2020-10-27 23:42:08,570: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2020-10-27 23:42:08,570: starting parent XML-RPC server
+[roslaunch.server][INFO] 2020-10-27 23:42:08,570: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2020-10-27 23:42:08,570: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2020-10-27 23:42:08,570: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-27 23:42:08,571: Started XML-RPC server [http://freight1207:58321/]
+[xmlrpc][INFO] 2020-10-27 23:42:08,571: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2020-10-27 23:42:08,581: started roslaunch server http://freight1207:58321/
+[roslaunch.parent][INFO] 2020-10-27 23:42:08,581: ... parent XML-RPC server started
+[roslaunch][INFO] 2020-10-27 23:42:08,582: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2020-10-27 23:42:08,583: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2020-10-27 23:42:08,584: ROS_MASTER_URI=http://localhost:11311
+[roslaunch][INFO] 2020-10-27 23:42:08,585: setting /roslaunch/uris/host_freight1207__58321' to http://freight1207:58321/
+[roslaunch][INFO] 2020-10-27 23:42:08,587: load_parameters starting ...
+[roslaunch][INFO] 2020-10-27 23:42:08,605: ... load_parameters complete
+[roslaunch][INFO] 2020-10-27 23:42:08,605: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2020-10-27 23:42:08,605: ... preparing to launch node of type [map_server/map_server]
+[roslaunch][INFO] 2020-10-27 23:42:08,605: create_node_process: package[map_server] type[map_server] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2020-10-27 23:42:08,606: process[map_server-1]: env[{'ROS_DISTRO': 'indigo', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SSH_CLIENT': '172.22.77.105 57350 22', 'CPATH': '/home/fetch/catkin_ws/devel/include:/opt/ros/indigo/include', 'LOGNAME': 'fetch', 'USER': 'fetch', 'HOME': '/home/fetch', 'PATH': '/opt/ros/indigo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'CMAKE_PREFIX_PATH': '/home/fetch/catkin_ws/devel:/opt/ros/indigo', 'ROS_LOG_FILENAME': '/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/roslaunch-freight1207-23254.log', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'SHLVL': '1', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'DISPLAY': 'localhost:11.0', 'ROS_MASTER_URI': 'http://localhost:11311', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/fetch/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/indigo/share/ros', 'PKG_CONFIG_PATH': '/home/fetch/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/fetch/catkin_ws/src:/opt/ros/indigo/share:/opt/ros/indigo/stacks', 'XDG_SESSION_ID': '7', '_': '/opt/ros/indigo/bin/roslaunch', 'LD_LIBRARY_PATH': '/home/fetch/catkin_ws/devel/lib:/opt/ros/indigo/lib', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_TTY': '/dev/pts/0', 'OLDPWD': '/opt/ros/indigo/share', 'PWD': '/opt/ros/indigo/share/fetch_navigation/launch', 'ROS_ETC_DIR': '/opt/ros/indigo/etc/ros', 'MAIL': '/var/mail/fetch', 'SSH_CONNECTION': '172.22.77.105 57350 172.22.77.172 22'}]
+[roslaunch][INFO] 2020-10-27 23:42:08,635: process[map_server-1]: args[[u'/opt/ros/indigo/lib/map_server/map_server', '/home/fetch/temp.yaml', u'__name:=map_server']]
+[roslaunch][INFO] 2020-10-27 23:42:08,635: ... created process [map_server-1]
+[roslaunch.pmon][INFO] 2020-10-27 23:42:08,635: ProcessMonitor.register[map_server-1]
+[roslaunch.pmon][INFO] 2020-10-27 23:42:08,635: ProcessMonitor.register[map_server-1] complete
+[roslaunch][INFO] 2020-10-27 23:42:08,635: ... registered process [map_server-1]
+[roslaunch][INFO] 2020-10-27 23:42:08,635: process[map_server-1]: starting os process
+[roslaunch][INFO] 2020-10-27 23:42:08,635: process[map_server-1]: start w/ args [[u'/opt/ros/indigo/lib/map_server/map_server', '/home/fetch/temp.yaml', u'__name:=map_server', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/map_server-1.log']]
+[roslaunch][INFO] 2020-10-27 23:42:08,635: process[map_server-1]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:42:08,637: process[map_server-1]: started with pid [23272]
+[roslaunch][INFO] 2020-10-27 23:42:08,637: ... successfully launched [map_server-1]
+[roslaunch][INFO] 2020-10-27 23:42:08,637: ... preparing to launch node of type [rviz/rviz]
+[roslaunch][INFO] 2020-10-27 23:42:08,637: create_node_process: package[rviz] type[rviz] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2020-10-27 23:42:08,638: process[rviz-2]: env[{'ROS_DISTRO': 'indigo', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SSH_CLIENT': '172.22.77.105 57350 22', 'CPATH': '/home/fetch/catkin_ws/devel/include:/opt/ros/indigo/include', 'LOGNAME': 'fetch', 'USER': 'fetch', 'HOME': '/home/fetch', 'PATH': '/opt/ros/indigo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'CMAKE_PREFIX_PATH': '/home/fetch/catkin_ws/devel:/opt/ros/indigo', 'ROS_LOG_FILENAME': '/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/roslaunch-freight1207-23254.log', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'SHLVL': '1', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'DISPLAY': 'localhost:11.0', 'ROS_MASTER_URI': 'http://localhost:11311', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/fetch/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/indigo/share/ros', 'PKG_CONFIG_PATH': '/home/fetch/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/fetch/catkin_ws/src:/opt/ros/indigo/share:/opt/ros/indigo/stacks', 'XDG_SESSION_ID': '7', '_': '/opt/ros/indigo/bin/roslaunch', 'LD_LIBRARY_PATH': '/home/fetch/catkin_ws/devel/lib:/opt/ros/indigo/lib', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_TTY': '/dev/pts/0', 'OLDPWD': '/opt/ros/indigo/share', 'PWD': '/opt/ros/indigo/share/fetch_navigation/launch', 'ROS_ETC_DIR': '/opt/ros/indigo/etc/ros', 'MAIL': '/var/mail/fetch', 'SSH_CONNECTION': '172.22.77.105 57350 172.22.77.172 22'}]
+[roslaunch][INFO] 2020-10-27 23:42:08,640: process[rviz-2]: args[[u'/opt/ros/indigo/lib/rviz/rviz', '/opt/ros/indigo/share/fetch_navigation/config/navigation.rviz', u'__name:=rviz']]
+[roslaunch][INFO] 2020-10-27 23:42:08,640: ... created process [rviz-2]
+[roslaunch.pmon][INFO] 2020-10-27 23:42:08,640: ProcessMonitor.register[rviz-2]
+[roslaunch.pmon][INFO] 2020-10-27 23:42:08,640: ProcessMonitor.register[rviz-2] complete
+[roslaunch][INFO] 2020-10-27 23:42:08,640: ... registered process [rviz-2]
+[roslaunch][INFO] 2020-10-27 23:42:08,640: process[rviz-2]: starting os process
+[roslaunch][INFO] 2020-10-27 23:42:08,640: process[rviz-2]: start w/ args [[u'/opt/ros/indigo/lib/rviz/rviz', '/opt/ros/indigo/share/fetch_navigation/config/navigation.rviz', u'__name:=rviz', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/rviz-2.log']]
+[roslaunch][INFO] 2020-10-27 23:42:08,640: process[rviz-2]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:42:08,642: process[rviz-2]: started with pid [23273]
+[roslaunch][INFO] 2020-10-27 23:42:08,642: ... successfully launched [rviz-2]
+[roslaunch][INFO] 2020-10-27 23:42:08,642: ... preparing to launch node of type [amcl/amcl]
+[roslaunch][INFO] 2020-10-27 23:42:08,642: create_node_process: package[amcl] type[amcl] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2020-10-27 23:42:08,642: process[amcl-3]: env[{'ROS_DISTRO': 'indigo', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SSH_CLIENT': '172.22.77.105 57350 22', 'CPATH': '/home/fetch/catkin_ws/devel/include:/opt/ros/indigo/include', 'LOGNAME': 'fetch', 'USER': 'fetch', 'HOME': '/home/fetch', 'PATH': '/opt/ros/indigo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'CMAKE_PREFIX_PATH': '/home/fetch/catkin_ws/devel:/opt/ros/indigo', 'ROS_LOG_FILENAME': '/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/roslaunch-freight1207-23254.log', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'SHLVL': '1', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'DISPLAY': 'localhost:11.0', 'ROS_MASTER_URI': 'http://localhost:11311', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/fetch/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/indigo/share/ros', 'PKG_CONFIG_PATH': '/home/fetch/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/fetch/catkin_ws/src:/opt/ros/indigo/share:/opt/ros/indigo/stacks', 'XDG_SESSION_ID': '7', '_': '/opt/ros/indigo/bin/roslaunch', 'LD_LIBRARY_PATH': '/home/fetch/catkin_ws/devel/lib:/opt/ros/indigo/lib', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_TTY': '/dev/pts/0', 'OLDPWD': '/opt/ros/indigo/share', 'PWD': '/opt/ros/indigo/share/fetch_navigation/launch', 'ROS_ETC_DIR': '/opt/ros/indigo/etc/ros', 'MAIL': '/var/mail/fetch', 'SSH_CONNECTION': '172.22.77.105 57350 172.22.77.172 22'}]
+[roslaunch][INFO] 2020-10-27 23:42:08,643: process[amcl-3]: args[[u'/opt/ros/indigo/lib/amcl/amcl', u'scan:=base_scan', u'map:=map', u'__name:=amcl']]
+[roslaunch][INFO] 2020-10-27 23:42:08,643: ... created process [amcl-3]
+[roslaunch.pmon][INFO] 2020-10-27 23:42:08,643: ProcessMonitor.register[amcl-3]
+[roslaunch.pmon][INFO] 2020-10-27 23:42:08,643: ProcessMonitor.register[amcl-3] complete
+[roslaunch][INFO] 2020-10-27 23:42:08,643: ... registered process [amcl-3]
+[roslaunch][INFO] 2020-10-27 23:42:08,643: process[amcl-3]: starting os process
+[roslaunch][INFO] 2020-10-27 23:42:08,643: process[amcl-3]: start w/ args [[u'/opt/ros/indigo/lib/amcl/amcl', u'scan:=base_scan', u'map:=map', u'__name:=amcl', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/amcl-3.log']]
+[roslaunch][INFO] 2020-10-27 23:42:08,643: process[amcl-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:42:08,646: process[amcl-3]: started with pid [23274]
+[roslaunch][INFO] 2020-10-27 23:42:08,646: ... successfully launched [amcl-3]
+[roslaunch][INFO] 2020-10-27 23:42:08,646: ... preparing to launch node of type [move_base/move_base]
+[roslaunch][INFO] 2020-10-27 23:42:08,646: create_node_process: package[move_base] type[move_base] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2020-10-27 23:42:08,646: process[move_base-4]: env[{'ROS_DISTRO': 'indigo', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SSH_CLIENT': '172.22.77.105 57350 22', 'CPATH': '/home/fetch/catkin_ws/devel/include:/opt/ros/indigo/include', 'LOGNAME': 'fetch', 'USER': 'fetch', 'HOME': '/home/fetch', 'PATH': '/opt/ros/indigo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'CMAKE_PREFIX_PATH': '/home/fetch/catkin_ws/devel:/opt/ros/indigo', 'ROS_LOG_FILENAME': '/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/roslaunch-freight1207-23254.log', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'SHLVL': '1', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'DISPLAY': 'localhost:11.0', 'ROS_MASTER_URI': 'http://localhost:11311', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/home/fetch/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/indigo/share/ros', 'PKG_CONFIG_PATH': '/home/fetch/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/fetch/catkin_ws/src:/opt/ros/indigo/share:/opt/ros/indigo/stacks', 'XDG_SESSION_ID': '7', '_': '/opt/ros/indigo/bin/roslaunch', 'LD_LIBRARY_PATH': '/home/fetch/catkin_ws/devel/lib:/opt/ros/indigo/lib', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_TTY': '/dev/pts/0', 'OLDPWD': '/opt/ros/indigo/share', 'PWD': '/opt/ros/indigo/share/fetch_navigation/launch', 'ROS_ETC_DIR': '/opt/ros/indigo/etc/ros', 'MAIL': '/var/mail/fetch', 'SSH_CONNECTION': '172.22.77.105 57350 172.22.77.172 22'}]
+[roslaunch][INFO] 2020-10-27 23:42:08,647: process[move_base-4]: args[[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base']]
+[roslaunch][INFO] 2020-10-27 23:42:08,647: ... created process [move_base-4]
+[roslaunch.pmon][INFO] 2020-10-27 23:42:08,647: ProcessMonitor.register[move_base-4]
+[roslaunch.pmon][INFO] 2020-10-27 23:42:08,647: ProcessMonitor.register[move_base-4] complete
+[roslaunch][INFO] 2020-10-27 23:42:08,647: ... registered process [move_base-4]
+[roslaunch][INFO] 2020-10-27 23:42:08,647: process[move_base-4]: starting os process
+[roslaunch][INFO] 2020-10-27 23:42:08,647: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:42:08,647: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:42:08,649: process[move_base-4]: started with pid [23283]
+[roslaunch][INFO] 2020-10-27 23:42:08,649: ... successfully launched [move_base-4]
+[roslaunch][INFO] 2020-10-27 23:42:08,649: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2020-10-27 23:42:08,649: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon 139931353552640)>
+[roslaunch.parent][INFO] 2020-10-27 23:42:08,649: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2020-10-27 23:42:08,649: spin
+[roslaunch][INFO] 2020-10-27 23:51:51,629: [map_server-1] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/map_server-1*.log
+[roslaunch][INFO] 2020-10-27 23:51:51,630: [amcl-3] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/amcl-3*.log
+[roslaunch.pmon][INFO] 2020-10-27 23:51:51,630: ProcessMonitor.unregister[map_server-1] starting
+[roslaunch.pmon][INFO] 2020-10-27 23:51:51,630: ProcessMonitor.unregister[map_server-1] complete
+[roslaunch.pmon][INFO] 2020-10-27 23:51:51,630: ProcessMonitor.unregister[amcl-3] starting
+[roslaunch.pmon][INFO] 2020-10-27 23:51:51,630: ProcessMonitor.unregister[amcl-3] complete
+[roslaunch][INFO] 2020-10-27 23:51:51,830: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:51:51,831: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:51:51,831: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:51:51,831: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:51:51,831: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:51:51,833: process[move_base-4]: started with pid [26841]
+[roslaunch][INFO] 2020-10-27 23:51:52,935: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:51:52,935: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:51:52,935: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:51:52,935: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:51:52,935: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:51:52,937: process[move_base-4]: started with pid [27965]
+[roslaunch][INFO] 2020-10-27 23:51:53,337: [rviz-2] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/rviz-2*.log
+[roslaunch.pmon][INFO] 2020-10-27 23:51:53,338: ProcessMonitor.unregister[rviz-2] starting
+[roslaunch.pmon][INFO] 2020-10-27 23:51:53,338: ProcessMonitor.unregister[rviz-2] complete
+[roslaunch][INFO] 2020-10-27 23:51:54,039: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:51:54,039: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:51:54,039: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:51:54,039: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:51:54,039: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:51:54,041: process[move_base-4]: started with pid [29075]
+[roslaunch][INFO] 2020-10-27 23:51:55,043: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:51:55,043: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:51:55,043: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:51:55,043: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:51:55,043: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:51:55,045: process[move_base-4]: started with pid [30191]
+[roslaunch][INFO] 2020-10-27 23:51:56,046: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:51:56,047: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:51:56,047: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:51:56,047: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:51:56,047: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:51:56,048: process[move_base-4]: started with pid [31301]
+[roslaunch][INFO] 2020-10-27 23:51:57,150: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:51:57,150: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:51:57,150: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:51:57,151: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:51:57,151: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:51:57,152: process[move_base-4]: started with pid [32417]
+[roslaunch][INFO] 2020-10-27 23:51:58,154: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:51:58,154: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:51:58,154: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:51:58,154: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:51:58,154: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:51:58,156: process[move_base-4]: started with pid [1109]
+[roslaunch][INFO] 2020-10-27 23:51:59,158: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:51:59,158: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:51:59,158: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:51:59,158: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:51:59,158: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:51:59,160: process[move_base-4]: started with pid [2500]
+[roslaunch][INFO] 2020-10-27 23:52:00,162: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:00,162: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:00,162: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:00,162: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:00,162: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:00,164: process[move_base-4]: started with pid [3654]
+[roslaunch][INFO] 2020-10-27 23:52:01,266: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:01,266: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:01,266: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:01,266: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:01,266: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:01,268: process[move_base-4]: started with pid [4770]
+[roslaunch][INFO] 2020-10-27 23:52:02,370: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:02,370: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:02,371: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:02,371: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:02,371: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:02,372: process[move_base-4]: started with pid [5884]
+[roslaunch][INFO] 2020-10-27 23:52:03,374: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:03,374: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:03,374: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:03,374: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:03,374: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:03,376: process[move_base-4]: started with pid [7000]
+[roslaunch][INFO] 2020-10-27 23:52:04,478: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:04,478: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:04,478: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:04,478: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:04,478: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:04,480: process[move_base-4]: started with pid [8110]
+[roslaunch][INFO] 2020-10-27 23:52:05,482: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:05,482: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:05,482: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:05,482: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:05,482: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:05,484: process[move_base-4]: started with pid [9226]
+[roslaunch][INFO] 2020-10-27 23:52:06,485: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:06,486: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:06,486: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:06,486: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:06,486: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:06,488: process[move_base-4]: started with pid [10336]
+[roslaunch][INFO] 2020-10-27 23:52:07,590: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:07,590: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:07,590: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:07,590: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:07,590: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:07,592: process[move_base-4]: started with pid [11452]
+[roslaunch][INFO] 2020-10-27 23:52:08,694: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:08,694: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:08,694: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:08,694: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:08,694: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:08,696: process[move_base-4]: started with pid [12568]
+[roslaunch][INFO] 2020-10-27 23:52:09,798: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:09,798: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:09,798: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:09,798: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:09,798: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:09,800: process[move_base-4]: started with pid [13678]
+[roslaunch][INFO] 2020-10-27 23:52:10,902: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:10,902: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:10,902: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:10,902: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:10,902: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:10,904: process[move_base-4]: started with pid [14797]
+[roslaunch][INFO] 2020-10-27 23:52:12,006: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:12,006: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:12,006: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:12,006: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:12,006: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:12,008: process[move_base-4]: started with pid [15907]
+[roslaunch][INFO] 2020-10-27 23:52:13,110: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:13,110: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:13,110: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:13,110: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:13,110: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:13,112: process[move_base-4]: started with pid [17023]
+[roslaunch][INFO] 2020-10-27 23:52:14,214: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:14,214: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:14,214: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:14,214: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:14,214: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:14,216: process[move_base-4]: started with pid [18133]
+[roslaunch][INFO] 2020-10-27 23:52:15,218: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:15,218: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:15,218: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:15,218: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:15,218: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:15,220: process[move_base-4]: started with pid [19250]
+[roslaunch][INFO] 2020-10-27 23:52:16,322: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:16,322: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:16,322: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:16,322: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:16,322: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:16,324: process[move_base-4]: started with pid [20360]
+[roslaunch][INFO] 2020-10-27 23:52:17,426: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:17,426: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:17,426: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:17,426: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:17,426: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:17,429: process[move_base-4]: started with pid [21480]
+[roslaunch][INFO] 2020-10-27 23:52:18,430: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:18,430: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:18,430: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:18,431: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:18,431: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:18,432: process[move_base-4]: started with pid [22590]
+[roslaunch][INFO] 2020-10-27 23:52:19,434: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:19,434: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:19,434: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:19,434: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:19,434: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:19,436: process[move_base-4]: started with pid [23712]
+[roslaunch][INFO] 2020-10-27 23:52:20,538: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:20,538: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:20,538: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:20,538: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:20,538: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:20,540: process[move_base-4]: started with pid [24824]
+[roslaunch][INFO] 2020-10-27 23:52:21,542: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:21,542: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:21,542: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:21,542: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:21,542: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:21,544: process[move_base-4]: started with pid [25945]
+[roslaunch][INFO] 2020-10-27 23:52:22,545: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:22,546: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:22,546: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:22,546: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:22,546: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:22,547: process[move_base-4]: started with pid [27095]
+[roslaunch][INFO] 2020-10-27 23:52:23,549: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:23,549: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:23,549: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:23,549: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:23,550: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:23,551: process[move_base-4]: started with pid [28211]
+[roslaunch][INFO] 2020-10-27 23:52:24,553: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:24,553: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:24,553: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:24,553: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:24,553: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:24,556: process[move_base-4]: started with pid [29321]
+[roslaunch][INFO] 2020-10-27 23:52:25,557: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:25,558: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:25,558: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:25,558: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:25,558: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:25,559: process[move_base-4]: started with pid [30438]
+[roslaunch][INFO] 2020-10-27 23:52:26,561: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:26,561: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:26,561: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:26,562: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:26,562: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:26,563: process[move_base-4]: started with pid [31548]
+[roslaunch][INFO] 2020-10-27 23:52:27,565: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:27,565: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:27,565: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:27,565: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:27,565: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:27,567: process[move_base-4]: started with pid [32664]
+[roslaunch][INFO] 2020-10-27 23:52:28,569: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:28,569: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:28,569: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:28,569: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:28,569: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:28,571: process[move_base-4]: started with pid [1390]
+[roslaunch][INFO] 2020-10-27 23:52:29,572: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:29,573: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:29,573: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:29,573: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:29,573: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:29,574: process[move_base-4]: started with pid [2754]
+[roslaunch][INFO] 2020-10-27 23:52:30,676: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:30,677: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:30,677: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:30,677: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:30,677: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:30,679: process[move_base-4]: started with pid [3902]
+[roslaunch][INFO] 2020-10-27 23:52:31,680: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:31,681: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:31,681: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:31,681: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:31,681: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:31,683: process[move_base-4]: started with pid [5018]
+[roslaunch][INFO] 2020-10-27 23:52:32,685: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:32,685: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:32,685: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:32,685: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:32,685: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:32,687: process[move_base-4]: started with pid [6131]
+[roslaunch][INFO] 2020-10-27 23:52:33,789: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:33,789: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:33,789: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:33,789: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:33,789: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:33,791: process[move_base-4]: started with pid [7247]
+[roslaunch][INFO] 2020-10-27 23:52:34,793: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:34,793: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:34,793: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:34,793: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:34,793: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:34,795: process[move_base-4]: started with pid [8357]
+[roslaunch][INFO] 2020-10-27 23:52:35,897: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:35,897: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:35,897: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:35,897: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:35,897: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:35,901: process[move_base-4]: started with pid [9473]
+[roslaunch][INFO] 2020-10-27 23:52:36,903: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:36,903: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:36,903: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:36,903: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:36,903: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:36,905: process[move_base-4]: started with pid [10583]
+[roslaunch][INFO] 2020-10-27 23:52:37,907: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:37,907: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:37,907: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:37,907: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:37,907: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:37,909: process[move_base-4]: started with pid [11699]
+[roslaunch][INFO] 2020-10-27 23:52:39,010: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:39,010: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:39,011: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:39,011: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:39,011: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:39,012: process[move_base-4]: started with pid [12809]
+[roslaunch][INFO] 2020-10-27 23:52:40,014: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:40,014: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:40,014: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:40,015: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:40,015: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:40,017: process[move_base-4]: started with pid [13925]
+[roslaunch][INFO] 2020-10-27 23:52:41,018: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:41,019: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:41,019: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:41,019: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:41,019: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:41,020: process[move_base-4]: started with pid [15038]
+[roslaunch][INFO] 2020-10-27 23:52:42,022: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:42,022: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:42,022: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:42,023: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:42,023: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:42,024: process[move_base-4]: started with pid [16154]
+[roslaunch][INFO] 2020-10-27 23:52:43,126: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:43,126: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:43,126: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:43,127: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:43,127: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:43,128: process[move_base-4]: started with pid [17279]
+[roslaunch][INFO] 2020-10-27 23:52:44,130: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:52:44,130: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:52:44,130: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:52:44,130: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:52:44,130: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:52:44,132: process[move_base-4]: started with pid [18495]
+[roslaunch][INFO] 2020-10-27 23:53:28,708: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:53:28,708: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:53:28,708: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:53:28,708: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:53:28,708: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:53:28,709: process[move_base-4]: started with pid [19935]
+[roslaunch][INFO] 2020-10-27 23:53:29,811: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:53:29,812: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:53:29,812: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:53:29,812: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:53:29,812: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:53:29,814: process[move_base-4]: started with pid [21060]
+[roslaunch][INFO] 2020-10-27 23:53:30,916: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:53:30,916: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:53:30,916: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:53:30,916: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:53:30,916: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:53:30,918: process[move_base-4]: started with pid [22174]
+[roslaunch][INFO] 2020-10-27 23:53:32,020: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:53:32,020: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:53:32,020: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:53:32,020: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:53:32,020: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:53:32,022: process[move_base-4]: started with pid [23294]
+[roslaunch][INFO] 2020-10-27 23:53:33,124: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:53:33,124: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:53:33,124: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:53:33,124: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:53:33,124: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:53:33,126: process[move_base-4]: started with pid [24412]
+[roslaunch][INFO] 2020-10-27 23:53:34,227: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:53:34,227: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:53:34,227: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:53:34,228: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:53:34,228: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:53:34,229: process[move_base-4]: started with pid [25526]
+[roslaunch][INFO] 2020-10-27 23:53:35,331: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:53:35,331: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:53:35,331: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:53:35,331: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:53:35,332: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:53:35,333: process[move_base-4]: started with pid [26652]
+[roslaunch][INFO] 2020-10-27 23:53:36,435: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:53:36,435: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:53:36,435: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:53:36,436: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:53:36,436: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:53:36,437: process[move_base-4]: started with pid [27763]
+[roslaunch][INFO] 2020-10-27 23:53:37,539: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:53:37,539: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:53:37,539: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:53:37,539: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:53:37,539: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:53:37,541: process[move_base-4]: started with pid [28879]
+[roslaunch][INFO] 2020-10-27 23:53:38,643: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:53:38,643: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:53:38,643: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:53:38,643: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:53:38,643: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:53:38,645: process[move_base-4]: started with pid [29989]
+[roslaunch][INFO] 2020-10-27 23:53:39,747: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:53:39,747: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:53:39,747: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:53:39,747: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:53:39,747: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:53:39,749: process[move_base-4]: started with pid [31105]
+[roslaunch][INFO] 2020-10-27 23:53:40,851: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:53:40,851: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:53:40,851: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:53:40,851: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:53:40,851: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:53:40,853: process[move_base-4]: started with pid [32216]
+[roslaunch][INFO] 2020-10-27 23:53:41,955: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:53:41,955: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:53:41,955: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:53:41,955: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:53:41,955: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:53:41,957: process[move_base-4]: started with pid [898]
+[roslaunch][INFO] 2020-10-27 23:53:43,059: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:53:43,059: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:53:43,059: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:53:43,059: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:53:43,059: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:53:43,061: process[move_base-4]: started with pid [2304]
+[roslaunch][INFO] 2020-10-27 23:53:44,163: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:53:44,163: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:53:44,163: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:53:44,163: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:53:44,163: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:53:44,165: process[move_base-4]: started with pid [3472]
+[roslaunch][INFO] 2020-10-27 23:54:08,804: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:08,804: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:08,804: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:08,805: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:08,805: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:08,809: process[move_base-4]: started with pid [4975]
+[roslaunch][INFO] 2020-10-27 23:54:09,911: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:09,911: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:09,911: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:09,911: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:09,911: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:09,913: process[move_base-4]: started with pid [6122]
+[roslaunch][INFO] 2020-10-27 23:54:11,015: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:11,015: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:11,015: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:11,015: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:11,015: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:11,017: process[move_base-4]: started with pid [7232]
+[roslaunch][INFO] 2020-10-27 23:54:12,119: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:12,119: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:12,119: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:12,119: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:12,119: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:12,121: process[move_base-4]: started with pid [8348]
+[roslaunch][INFO] 2020-10-27 23:54:13,223: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:13,223: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:13,223: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:13,223: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:13,223: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:13,225: process[move_base-4]: started with pid [9464]
+[roslaunch][INFO] 2020-10-27 23:54:14,327: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:14,327: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:14,327: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:14,327: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:14,327: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:14,329: process[move_base-4]: started with pid [10574]
+[roslaunch][INFO] 2020-10-27 23:54:15,431: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:15,431: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:15,431: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:15,432: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:15,432: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:15,433: process[move_base-4]: started with pid [11690]
+[roslaunch][INFO] 2020-10-27 23:54:16,535: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:16,536: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:16,536: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:16,536: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:16,536: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:16,538: process[move_base-4]: started with pid [12801]
+[roslaunch][INFO] 2020-10-27 23:54:17,640: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:17,640: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:17,640: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:17,640: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:17,640: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:17,642: process[move_base-4]: started with pid [13917]
+[roslaunch][INFO] 2020-10-27 23:54:18,744: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:18,744: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:18,744: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:18,744: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:18,744: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:18,746: process[move_base-4]: started with pid [15030]
+[roslaunch][INFO] 2020-10-27 23:54:19,848: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:19,848: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:19,848: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:19,848: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:19,848: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:19,850: process[move_base-4]: started with pid [16146]
+[roslaunch][INFO] 2020-10-27 23:54:20,952: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:20,952: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:20,952: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:20,952: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:20,952: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:20,954: process[move_base-4]: started with pid [17258]
+[roslaunch][INFO] 2020-10-27 23:54:22,056: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:22,056: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:22,056: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:22,056: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:22,056: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:22,058: process[move_base-4]: started with pid [18375]
+[roslaunch][INFO] 2020-10-27 23:54:23,160: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:23,160: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:23,160: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:23,160: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:23,160: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:23,162: process[move_base-4]: started with pid [19486]
+[roslaunch][INFO] 2020-10-27 23:54:24,264: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:24,264: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:24,265: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:24,265: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:24,265: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:24,266: process[move_base-4]: started with pid [20602]
+[roslaunch][INFO] 2020-10-27 23:54:25,368: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:25,368: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:25,369: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:25,369: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:25,369: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:25,370: process[move_base-4]: started with pid [21722]
+[roslaunch][INFO] 2020-10-27 23:54:26,472: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:26,473: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:26,473: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:26,473: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:26,473: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:26,474: process[move_base-4]: started with pid [22832]
+[roslaunch][INFO] 2020-10-27 23:54:27,576: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:27,577: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:27,577: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:27,577: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:27,577: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:27,578: process[move_base-4]: started with pid [23954]
+[roslaunch][INFO] 2020-10-27 23:54:28,681: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:28,681: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:28,681: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:28,681: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:28,681: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:28,683: process[move_base-4]: started with pid [25066]
+[roslaunch][INFO] 2020-10-27 23:54:29,785: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:29,785: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:29,785: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:29,785: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:29,785: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:29,787: process[move_base-4]: started with pid [26193]
+[roslaunch][INFO] 2020-10-27 23:54:30,889: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:30,889: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:30,889: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:30,889: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:30,889: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:30,891: process[move_base-4]: started with pid [27304]
+[roslaunch][INFO] 2020-10-27 23:54:31,993: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:31,993: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:31,993: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:31,994: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:31,994: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:31,995: process[move_base-4]: started with pid [28420]
+[roslaunch][INFO] 2020-10-27 23:54:33,097: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:33,097: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:33,097: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:33,098: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:33,098: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:33,099: process[move_base-4]: started with pid [29533]
+[roslaunch][INFO] 2020-10-27 23:54:34,201: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:34,201: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:34,201: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:34,201: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:34,202: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:34,203: process[move_base-4]: started with pid [30649]
+[roslaunch][INFO] 2020-10-27 23:54:35,305: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:35,305: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:35,305: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:35,305: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:35,305: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:35,307: process[move_base-4]: started with pid [31760]
+[roslaunch][INFO] 2020-10-27 23:54:36,309: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:36,309: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:36,309: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:36,309: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:36,309: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:36,311: process[move_base-4]: started with pid [417]
+[roslaunch][INFO] 2020-10-27 23:54:37,413: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:37,413: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:37,413: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:37,413: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:37,413: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:37,415: process[move_base-4]: started with pid [1719]
+[roslaunch][INFO] 2020-10-27 23:54:38,517: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:38,517: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:38,517: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:38,517: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:38,517: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:38,519: process[move_base-4]: started with pid [3026]
+[roslaunch][INFO] 2020-10-27 23:54:39,621: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:39,621: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:39,621: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:39,621: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:39,621: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:39,623: process[move_base-4]: started with pid [4163]
+[roslaunch][INFO] 2020-10-27 23:54:40,725: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:40,725: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:40,725: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:40,725: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:40,725: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:40,727: process[move_base-4]: started with pid [5293]
+[roslaunch][INFO] 2020-10-27 23:54:41,828: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:41,829: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:41,829: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:41,829: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:41,829: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:41,830: process[move_base-4]: started with pid [6409]
+[roslaunch][INFO] 2020-10-27 23:54:42,932: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:42,933: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:42,933: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:42,933: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:42,933: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:42,934: process[move_base-4]: started with pid [7519]
+[roslaunch][INFO] 2020-10-27 23:54:44,036: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:44,036: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:44,036: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:44,037: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:44,037: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:44,038: process[move_base-4]: started with pid [8635]
+[roslaunch][INFO] 2020-10-27 23:54:45,040: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:45,040: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:45,040: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:45,040: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:45,040: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:45,042: process[move_base-4]: started with pid [9759]
+[roslaunch][INFO] 2020-10-27 23:54:46,044: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:46,044: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:46,044: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:46,044: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:46,044: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:46,046: process[move_base-4]: started with pid [10875]
+[roslaunch][INFO] 2020-10-27 23:54:47,148: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:47,148: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:47,148: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:47,148: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:47,148: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:47,150: process[move_base-4]: started with pid [11985]
+[roslaunch][INFO] 2020-10-27 23:54:48,151: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:48,152: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:48,152: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:48,152: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:48,152: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:48,153: process[move_base-4]: started with pid [13102]
+[roslaunch][INFO] 2020-10-27 23:54:49,355: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:49,356: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:49,356: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:49,356: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:49,356: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:49,357: process[move_base-4]: started with pid [14212]
+[roslaunch][INFO] 2020-10-27 23:54:50,660: [move_base-4] process has finished cleanly
+log file: /home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-10-27 23:54:50,660: [move_base-4] restarting process
+[roslaunch][INFO] 2020-10-27 23:54:50,660: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-10-27 23:54:50,660: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/b54da16c-18df-11eb-ae58-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-10-27 23:54:50,660: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-10-27 23:54:50,662: process[move_base-4]: started with pid [15852]
+[roslaunch.pmon][INFO] 2020-10-28 00:16:24,473: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, started daemon 139931353552640)>
+[roslaunch.pmon][INFO] 2020-10-28 00:16:24,572: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 139931353552640)>
+[roslaunch.pmon][INFO] 2020-10-28 00:16:24,572: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 139931353552640)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0x7f444d1cd090>]
+[roslaunch.pmon][INFO] 2020-10-28 00:16:24,572: ProcessMonitor exit: killing move_base-4
+[roslaunch][INFO] 2020-10-28 00:16:24,572: [move_base-4] killing on exit
+[roslaunch][INFO] 2020-10-28 00:16:24,573: process[move_base-4]: killing os process with pid[15852] pgid[15852]
+[roslaunch][INFO] 2020-10-28 00:16:24,573: [move_base-4] sending SIGINT to pgid [15852]
+[roslaunch][INFO] 2020-10-28 00:16:24,573: [move_base-4] sent SIGINT to pgid [15852]
+[roslaunch][INFO] 2020-10-28 00:16:25,074: process[move_base-4]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2020-10-28 00:16:25,074: ProcessMonitor exit: cleaning up data structures and signals
+[roslaunch.pmon][INFO] 2020-10-28 00:16:25,074: ProcessMonitor exit: pmon has shutdown
+[roslaunch][INFO] 2020-10-28 00:16:25,088: process monitor is done spinning, initiating full shutdown
+[roslaunch][INFO] 2020-10-28 00:16:25,088: runner.stop()
+[roslaunch][INFO] 2020-10-28 00:16:25,088: shutting down processing monitor...
+[roslaunch][INFO] 2020-10-28 00:16:25,088: shutting down processing monitor <ProcessMonitor(ProcessMonitor-1, stopped daemon 139931353552640)>
+[roslaunch.pmon][INFO] 2020-10-28 00:16:25,088: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 139931353552640)>
+[roslaunch][INFO] 2020-10-28 00:16:25,088: ... shutting down processing monitor complete
+[roslaunch][INFO] 2020-10-28 00:16:25,088: done
+[roslaunch.pmon][INFO] 2020-10-28 00:16:25,088: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 139931353552640)>
+[rospy.core][INFO] 2020-10-28 00:16:25,088: signal_shutdown [atexit]

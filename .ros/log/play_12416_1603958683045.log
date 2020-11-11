@@ -1,0 +1,27 @@
+[rospy.client][INFO] 2020-10-29 01:04:43,065: init_node, name[/play_12416_1603958683045], pid[12416]
+[xmlrpc][INFO] 2020-10-29 01:04:43,065: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-29 01:04:43,066: Started XML-RPC server [http://freight1207:49195/]
+[rospy.init][INFO] 2020-10-29 01:04:43,066: ROS Slave URI: [http://freight1207:49195/]
+[rospy.impl.masterslave][INFO] 2020-10-29 01:04:43,066: _ready: http://freight1207:49195/
+[xmlrpc][INFO] 2020-10-29 01:04:43,066: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-29 01:04:43,066: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-10-29 01:04:43,166: registered with master
+[rospy.rosout][INFO] 2020-10-29 01:04:43,166: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-29 01:04:43,168: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-29 01:04:43,169: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-29 01:04:43,181: topic[/sound_play/feedback] adding connection to [http://freight1207:43785/], count 0
+[rospy.internal][INFO] 2020-10-29 01:04:43,182: topic[/sound_play/result] adding connection to [http://freight1207:43785/], count 0
+[rospy.internal][INFO] 2020-10-29 01:04:43,182: topic[/sound_play/status] adding connection to [http://freight1207:43785/], count 0
+[rospy.internal][INFO] 2020-10-29 01:04:43,241: topic[/robotsound] adding connection to [/sound_play], count 0
+[rospy.internal][INFO] 2020-10-29 01:04:43,241: topic[/sound_play/cancel] adding connection to [/sound_play], count 0
+[rospy.internal][INFO] 2020-10-29 01:04:43,242: topic[/sound_play/goal] adding connection to [/sound_play], count 0
+[rospy.internal][INFO] 2020-10-29 01:04:43,430: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-29 01:04:45,199: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-29 01:04:45,202: topic[/sound_play/cancel] removing connection to /sound_play
+[rospy.internal][INFO] 2020-10-29 01:04:45,202: topic[/sound_play/goal] removing connection to /sound_play
+[rospy.internal][INFO] 2020-10-29 01:04:45,202: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-29 01:04:45,203: topic[/robotsound] removing connection to /sound_play
+[rospy.internal][INFO] 2020-10-29 01:04:45,203: topic[/sound_play/result] removing connection to http://freight1207:43785/
+[rospy.internal][INFO] 2020-10-29 01:04:45,203: topic[/sound_play/status] removing connection to http://freight1207:43785/
+[rospy.internal][INFO] 2020-10-29 01:04:45,203: topic[/sound_play/feedback] removing connection to http://freight1207:43785/
+[rospy.impl.masterslave][INFO] 2020-10-29 01:04:45,203: atexit

@@ -1,0 +1,3 @@
+[0m[ INFO] [1603170347.979552826]: Loading map from image "/opt/ros/indigo/share/fetch_maps/maps/3_1_16_localization.png"[0m
+[0m[ INFO] [1603170348.002870648]: Read a 958 X 982 map @ 0.050 m/cell[0m
+[0m[ INFO] [1603170348.054114007]: Sending map[0m

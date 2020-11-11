@@ -1,0 +1,1155 @@
+[rospy.client][INFO] 2020-11-02 19:32:16,668: init_node, name[/rostful_server], pid[4713]
+[xmlrpc][INFO] 2020-11-02 19:32:16,668: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-02 19:32:16,668: Started XML-RPC server [http://freight1207:57047/]
+[rospy.init][INFO] 2020-11-02 19:32:16,669: ROS Slave URI: [http://freight1207:57047/]
+[rospy.impl.masterslave][INFO] 2020-11-02 19:32:16,669: _ready: http://freight1207:57047/
+[xmlrpc][INFO] 2020-11-02 19:32:16,669: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-02 19:32:16,669: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-02 19:32:16,769: registered with master
+[rospy.rosout][INFO] 2020-11-02 19:32:16,769: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-02 19:32:16,771: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-02 19:32:16,772: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-11-02 19:32:16,776: rostful_server: Delaying the start 1 seconds
+[rospy.internal][INFO] 2020-11-02 19:32:17,025: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-11-02 19:32:17,828: rostful_server: Started server on port 8080
+[rospy.internal][INFO] 2020-11-02 19:32:17,835: topic[/enable_software_runstop] adding connection to [http://freight1207:57047/], count 0
+[rospy.internal][INFO] 2020-11-02 19:32:17,836: topic[/enable_software_runstop] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-02 19:32:17,873: topic[/enable_software_runstop] adding connection to [/software_runstop], count 1
+[rosout][INFO] 2020-11-02 19:32:58,676: rostful_server: Shutting down the server
+[rospy.core][INFO] 2020-11-02 19:32:58,676: signal_shutdown [Closing]
+[rospy.internal][INFO] 2020-11-02 19:32:58,678: topic[/enable_software_runstop] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-02 19:32:58,679: topic[/enable_software_runstop] removing connection to /software_runstop
+[rospy.internal][INFO] 2020-11-02 19:32:58,679: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-02 19:32:58,679: topic[/enable_software_runstop] removing connection to http://freight1207:57047/
+[rospy.impl.masterslave][INFO] 2020-11-02 19:32:58,679: Closing
+[rospy.internal][WARNING] 2020-11-02 19:32:58,681: Unknown error initiating TCP/IP socket to freight1207:46832 (http://freight1207:57047/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rosgraph/network.py", line 365, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.core][INFO] 2020-11-02 19:32:58,811: signal_shutdown [atexit]
+[rospy.client][INFO] 2020-11-02 19:33:14,835: init_node, name[/rostful_server], pid[6500]
+[xmlrpc][INFO] 2020-11-02 19:33:14,835: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-02 19:33:14,835: Started XML-RPC server [http://freight1207:49376/]
+[rospy.init][INFO] 2020-11-02 19:33:14,835: ROS Slave URI: [http://freight1207:49376/]
+[rospy.impl.masterslave][INFO] 2020-11-02 19:33:14,835: _ready: http://freight1207:49376/
+[xmlrpc][INFO] 2020-11-02 19:33:14,836: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-02 19:33:14,836: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-02 19:33:14,936: registered with master
+[rospy.rosout][INFO] 2020-11-02 19:33:14,936: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-02 19:33:14,937: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-02 19:33:14,938: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-11-02 19:33:14,942: rostful_server: Delaying the start 1 seconds
+[rospy.internal][INFO] 2020-11-02 19:33:15,219: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2020-11-02 19:33:16,004: topic[/current/pose] adding connection to [http://freight1207:49376/], count 0
+[rospy.internal][INFO] 2020-11-02 19:33:16,005: topic[/enable_software_runstop] adding connection to [http://freight1207:49376/], count 0
+[rospy.internal][INFO] 2020-11-02 19:33:16,006: topic[/local_control/initialpose] adding connection to [http://freight1207:49376/], count 0
+[rosout][INFO] 2020-11-02 19:33:16,006: rostful_server: Started server on port 8080
+[rospy.internal][INFO] 2020-11-02 19:33:16,008: topic[/local_control/goto] adding connection to [http://freight1207:49376/], count 0
+[rospy.internal][INFO] 2020-11-02 19:33:16,008: topic[/current/pose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-02 19:33:16,009: topic[/enable_software_runstop] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-02 19:33:16,009: topic[/local_control/cancel] adding connection to [http://freight1207:49376/], count 0
+[rospy.internal][INFO] 2020-11-02 19:33:16,010: topic[/local_control/initialpose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-02 19:33:16,010: topic[/local_control/goto] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-02 19:33:16,010: topic[/local_control/cancel] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-02 19:33:16,049: topic[/enable_software_runstop] adding connection to [/software_runstop], count 1
+[rospy.internal][INFO] 2020-11-02 19:33:20,969: topic[/current/pose] adding connection to [http://freight1207:57924/], count 1
+[rospy.internal][INFO] 2020-11-02 19:33:21,130: topic[/local_control/initialpose] adding connection to [/local_control_initialpose], count 1
+[rospy.internal][INFO] 2020-11-02 19:33:21,131: topic[/local_control/goto] adding connection to [/local_control_navigation], count 1
+[rospy.internal][INFO] 2020-11-02 19:33:21,131: topic[/local_control/cancel] adding connection to [/local_control_navigation], count 1
+[rosout][WARNING] 2020-11-02 19:33:24,152: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -4.3
+    locationY: -1.84
+    orientation: 0.18
+  - 
+    locationX: -3.7
+    locationY: -1.65
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:33:27,260: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.7
+    locationY: -1.65
+    orientation: 0.19
+  - 
+    locationX: -3.2
+    locationY: -1.45
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:33:30,325: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.2
+    locationY: -1.45
+    orientation: 0.19
+  - 
+    locationX: -2.65
+    locationY: -1.25
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:33:33,403: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -2.65
+    locationY: -1.25
+    orientation: 0.19
+  - 
+    locationX: -2.14
+    locationY: -1.08
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:33:36,587: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -2.14
+    locationY: -1.08
+    orientation: 0.19
+  - 
+    locationX: -0.14
+    locationY: -0.28
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:33:39,664: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -4.3
+    locationY: -1.84
+    orientation: 0.18
+  - 
+    locationX: -3.7
+    locationY: -1.65
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:33:42,735: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.7
+    locationY: -1.65
+    orientation: 0.19
+  - 
+    locationX: -3.2
+    locationY: -1.45
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:33:45,892: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.2
+    locationY: -1.45
+    orientation: 0.19
+  - 
+    locationX: -2.65
+    locationY: -1.25
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:33:50,003: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -2.65
+    locationY: -1.25
+    orientation: 0.19
+  - 
+    locationX: -2.14
+    locationY: -1.08
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:33:53,347: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -2.14
+    locationY: -1.08
+    orientation: 0.19
+  - 
+    locationX: -0.14
+    locationY: -0.28
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:33:56,668: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -4.3
+    locationY: -1.84
+    orientation: 0.18
+  - 
+    locationX: -3.7
+    locationY: -1.65
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:33:59,710: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.7
+    locationY: -1.65
+    orientation: 0.19
+  - 
+    locationX: -3.2
+    locationY: -1.45
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:34:02,810: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.2
+    locationY: -1.45
+    orientation: 0.19
+  - 
+    locationX: -2.65
+    locationY: -1.25
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:34:05,955: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -2.65
+    locationY: -1.25
+    orientation: 0.19
+  - 
+    locationX: -2.14
+    locationY: -1.08
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:34:09,797: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -2.14
+    locationY: -1.08
+    orientation: 0.19
+  - 
+    locationX: -0.14
+    locationY: -0.28
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:34:12,827: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -4.3
+    locationY: -1.84
+    orientation: 0.18
+  - 
+    locationX: -3.7
+    locationY: -1.65
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:34:17,137: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.7
+    locationY: -1.65
+    orientation: 0.19
+  - 
+    locationX: -3.2
+    locationY: -1.45
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:34:20,812: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.2
+    locationY: -1.45
+    orientation: 0.19
+  - 
+    locationX: -2.65
+    locationY: -1.25
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:34:24,843: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -2.65
+    locationY: -1.25
+    orientation: 0.19
+  - 
+    locationX: -2.14
+    locationY: -1.08
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:34:27,900: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -2.14
+    locationY: -1.08
+    orientation: 0.19
+  - 
+    locationX: -0.14
+    locationY: -0.28
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:34:31,045: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -4.3
+    locationY: -1.84
+    orientation: 0.18
+  - 
+    locationX: -3.7
+    locationY: -1.65
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:34:34,477: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.7
+    locationY: -1.65
+    orientation: 0.19
+  - 
+    locationX: -3.2
+    locationY: -1.45
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:34:38,768: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.2
+    locationY: -1.45
+    orientation: 0.19
+  - 
+    locationX: -2.65
+    locationY: -1.25
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:34:42,088: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -2.65
+    locationY: -1.25
+    orientation: 0.19
+  - 
+    locationX: -2.14
+    locationY: -1.08
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:34:45,126: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -2.14
+    locationY: -1.08
+    orientation: 0.19
+  - 
+    locationX: -0.14
+    locationY: -0.28
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:34:48,212: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -4.3
+    locationY: -1.84
+    orientation: 0.18
+  - 
+    locationX: -3.7
+    locationY: -1.65
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:34:51,266: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.7
+    locationY: -1.65
+    orientation: 0.19
+  - 
+    locationX: -3.2
+    locationY: -1.45
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:34:54,327: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.2
+    locationY: -1.45
+    orientation: 0.19
+  - 
+    locationX: -2.65
+    locationY: -1.25
+    orientation: 0.19 to topic /local_control/goto
+[rospy.internal][WARNING] 2020-11-02 19:35:02,654: Unknown error initiating TCP/IP socket to freight1207:59906 (http://freight1207:57924/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rosgraph/network.py", line 363, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2020-11-02 19:35:02,654: topic[/current/pose] removing connection to http://freight1207:57924/
+[rosout][INFO] 2020-11-02 19:35:04,262: rostful_server: Shutting down the server
+[rospy.core][INFO] 2020-11-02 19:35:04,262: signal_shutdown [Closing]
+[rospy.internal][INFO] 2020-11-02 19:35:04,268: topic[/enable_software_runstop] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-02 19:35:04,269: topic[/enable_software_runstop] removing connection to /software_runstop
+[rospy.internal][INFO] 2020-11-02 19:35:04,269: topic[/local_control/goto] removing connection to /rostful_server
+[rospy.internal][ERROR] 2020-11-02 19:35:04,269: Unable to initiate TCP/IP socket to freight1207:36511 (http://freight1207:49376/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-02 19:35:04,270: topic[/local_control/goto] removing connection to /local_control_navigation
+[rospy.internal][ERROR] 2020-11-02 19:35:04,270: Unable to initiate TCP/IP socket to freight1207:36511 (http://freight1207:49376/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-02 19:35:04,270: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-02 19:35:04,271: topic[/local_control/initialpose] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-02 19:35:04,271: topic[/local_control/initialpose] removing connection to /local_control_initialpose
+[rospy.internal][INFO] 2020-11-02 19:35:04,271: topic[/local_control/cancel] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-02 19:35:04,271: topic[/local_control/cancel] removing connection to /local_control_navigation
+[rospy.internal][ERROR] 2020-11-02 19:35:04,272: Unable to initiate TCP/IP socket to freight1207:36511 (http://freight1207:49376/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-02 19:35:04,272: topic[/current/pose] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-02 19:35:04,272: topic[/enable_software_runstop] removing connection to http://freight1207:49376/
+[rospy.internal][ERROR] 2020-11-02 19:35:04,272: Unable to initiate TCP/IP socket to freight1207:36511 (http://freight1207:49376/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-02 19:35:04,273: topic[/local_control/initialpose] removing connection to http://freight1207:49376/
+[rospy.internal][ERROR] 2020-11-02 19:35:04,273: Unable to initiate TCP/IP socket to freight1207:36511 (http://freight1207:49376/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-02 19:35:04,273: topic[/local_control/goto] removing connection to http://freight1207:49376/
+[rospy.internal][INFO] 2020-11-02 19:35:04,273: topic[/local_control/cancel] removing connection to http://freight1207:49376/
+[rospy.internal][INFO] 2020-11-02 19:35:04,273: topic[/current/pose] removing connection to http://freight1207:49376/
+[rospy.impl.masterslave][INFO] 2020-11-02 19:35:04,273: Closing
+[rospy.core][INFO] 2020-11-02 19:35:04,888: signal_shutdown [atexit]
+[rospy.client][INFO] 2020-11-02 19:40:13,979: init_node, name[/rostful_server], pid[9912]
+[xmlrpc][INFO] 2020-11-02 19:40:13,980: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-02 19:40:13,980: Started XML-RPC server [http://freight1207:41981/]
+[rospy.impl.masterslave][INFO] 2020-11-02 19:40:13,980: _ready: http://freight1207:41981/
+[rospy.init][INFO] 2020-11-02 19:40:13,980: ROS Slave URI: [http://freight1207:41981/]
+[xmlrpc][INFO] 2020-11-02 19:40:13,981: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-02 19:40:13,981: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-02 19:40:14,081: registered with master
+[rospy.rosout][INFO] 2020-11-02 19:40:14,081: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-02 19:40:14,083: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-02 19:40:14,083: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-11-02 19:40:14,087: rostful_server: Delaying the start 1 seconds
+[rospy.internal][INFO] 2020-11-02 19:40:14,312: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2020-11-02 19:40:15,147: topic[/current/pose] adding connection to [http://freight1207:41981/], count 0
+[rospy.internal][INFO] 2020-11-02 19:40:15,148: topic[/enable_software_runstop] adding connection to [http://freight1207:41981/], count 0
+[rospy.internal][INFO] 2020-11-02 19:40:15,149: topic[/local_control/initialpose] adding connection to [http://freight1207:41981/], count 0
+[rospy.internal][INFO] 2020-11-02 19:40:15,150: topic[/local_control/cancel] adding connection to [http://freight1207:41981/], count 0
+[rospy.internal][INFO] 2020-11-02 19:40:15,151: topic[/current/pose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-02 19:40:15,152: topic[/enable_software_runstop] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-02 19:40:15,152: topic[/local_control/goto] adding connection to [http://freight1207:41981/], count 0
+[rospy.internal][INFO] 2020-11-02 19:40:15,153: topic[/local_control/initialpose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-02 19:40:15,153: topic[/local_control/cancel] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-02 19:40:15,153: topic[/local_control/goto] adding connection to [/rostful_server], count 0
+[rosout][INFO] 2020-11-02 19:40:15,165: rostful_server: Started server on port 8080
+[rospy.internal][INFO] 2020-11-02 19:40:15,255: topic[/enable_software_runstop] adding connection to [/software_runstop], count 1
+[rospy.internal][INFO] 2020-11-02 19:40:27,364: topic[/current/pose] adding connection to [http://freight1207:40292/], count 1
+[rospy.internal][INFO] 2020-11-02 19:40:27,531: topic[/local_control/goto] adding connection to [/local_control_navigation], count 1
+[rospy.internal][INFO] 2020-11-02 19:40:27,535: topic[/local_control/cancel] adding connection to [/local_control_navigation], count 1
+[rospy.internal][INFO] 2020-11-02 19:40:27,535: topic[/local_control/initialpose] adding connection to [/local_control_initialpose], count 1
+[rosout][WARNING] 2020-11-02 19:40:36,566: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -6.73
+    locationY: -2.53
+    orientation: 0.4
+  - 
+    locationX: -5.83
+    locationY: -2.15
+    orientation: 0.18 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:40:41,710: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -5.83
+    locationY: -2.15
+    orientation: 0.18
+  - 
+    locationX: -4.58
+    locationY: -1.75
+    orientation: 0.18 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:40:46,744: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -4.58
+    locationY: -1.75
+    orientation: 0.18
+  - 
+    locationX: -3.54
+    locationY: -1.35
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:40:51,762: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.54
+    locationY: -1.35
+    orientation: 0.19
+  - 
+    locationX: -2.5
+    locationY: -0.91
+    orientation: 0.2 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:40:56,867: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -2.5
+    locationY: -0.91
+    orientation: 0.2
+  - 
+    locationX: -1.43
+    locationY: -0.44
+    orientation: 0.2 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:41:02,042: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -6.73
+    locationY: -2.53
+    orientation: 0.4
+  - 
+    locationX: -5.83
+    locationY: -2.15
+    orientation: 0.18 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:41:07,204: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -5.83
+    locationY: -2.15
+    orientation: 0.18
+  - 
+    locationX: -4.58
+    locationY: -1.75
+    orientation: 0.18 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:41:12,286: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -4.58
+    locationY: -1.75
+    orientation: 0.18
+  - 
+    locationX: -3.54
+    locationY: -1.35
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:41:22,422: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.54
+    locationY: -1.35
+    orientation: 0.19
+  - 
+    locationX: -2.5
+    locationY: -0.91
+    orientation: 0.2 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:41:27,595: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -2.5
+    locationY: -0.91
+    orientation: 0.2
+  - 
+    locationX: -1.43
+    locationY: -0.44
+    orientation: 0.2 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:41:32,692: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -6.73
+    locationY: -2.53
+    orientation: 0.4
+  - 
+    locationX: -5.83
+    locationY: -2.15
+    orientation: 0.18 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:41:37,877: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -5.83
+    locationY: -2.15
+    orientation: 0.18
+  - 
+    locationX: -4.58
+    locationY: -1.75
+    orientation: 0.18 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:41:43,199: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -4.58
+    locationY: -1.75
+    orientation: 0.18
+  - 
+    locationX: -3.54
+    locationY: -1.35
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:41:48,322: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.54
+    locationY: -1.35
+    orientation: 0.19
+  - 
+    locationX: -2.5
+    locationY: -0.91
+    orientation: 0.2 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:41:53,534: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -2.5
+    locationY: -0.91
+    orientation: 0.2
+  - 
+    locationX: -1.43
+    locationY: -0.44
+    orientation: 0.2 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:41:58,696: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -6.73
+    locationY: -2.53
+    orientation: 0.4
+  - 
+    locationX: -5.83
+    locationY: -2.15
+    orientation: 0.18 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:42:03,802: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -5.83
+    locationY: -2.15
+    orientation: 0.18
+  - 
+    locationX: -4.58
+    locationY: -1.75
+    orientation: 0.18 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:42:08,908: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -4.58
+    locationY: -1.75
+    orientation: 0.18
+  - 
+    locationX: -3.54
+    locationY: -1.35
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:42:14,062: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.54
+    locationY: -1.35
+    orientation: 0.19
+  - 
+    locationX: -2.5
+    locationY: -0.91
+    orientation: 0.2 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:42:19,268: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -2.5
+    locationY: -0.91
+    orientation: 0.2
+  - 
+    locationX: -1.43
+    locationY: -0.44
+    orientation: 0.2 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:42:24,370: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -6.73
+    locationY: -2.53
+    orientation: 0.4
+  - 
+    locationX: -5.83
+    locationY: -2.15
+    orientation: 0.18 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:42:29,472: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -5.83
+    locationY: -2.15
+    orientation: 0.18
+  - 
+    locationX: -4.58
+    locationY: -1.75
+    orientation: 0.18 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:42:34,605: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -4.58
+    locationY: -1.75
+    orientation: 0.18
+  - 
+    locationX: -3.54
+    locationY: -1.35
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:42:39,754: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.54
+    locationY: -1.35
+    orientation: 0.19
+  - 
+    locationX: -2.5
+    locationY: -0.91
+    orientation: 0.2 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:42:44,859: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -2.5
+    locationY: -0.91
+    orientation: 0.2
+  - 
+    locationX: -1.43
+    locationY: -0.44
+    orientation: 0.2 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:42:49,998: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -6.73
+    locationY: -2.53
+    orientation: 0.4
+  - 
+    locationX: -5.83
+    locationY: -2.15
+    orientation: 0.18 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:42:55,105: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -5.83
+    locationY: -2.15
+    orientation: 0.18
+  - 
+    locationX: -4.58
+    locationY: -1.75
+    orientation: 0.18 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:43:00,232: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -4.58
+    locationY: -1.75
+    orientation: 0.18
+  - 
+    locationX: -3.54
+    locationY: -1.35
+    orientation: 0.19 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:43:05,343: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -3.54
+    locationY: -1.35
+    orientation: 0.19
+  - 
+    locationX: -2.5
+    locationY: -0.91
+    orientation: 0.2 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:43:10,463: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -2.5
+    locationY: -0.91
+    orientation: 0.2
+  - 
+    locationX: -1.43
+    locationY: -0.44
+    orientation: 0.2 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:43:15,540: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -6.73
+    locationY: -2.53
+    orientation: 0.4
+  - 
+    locationX: -5.83
+    locationY: -2.15
+    orientation: 0.18 to topic /local_control/goto
+[rosout][WARNING] 2020-11-02 19:43:21,267: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -5.83
+    locationY: -2.15
+    orientation: 0.18
+  - 
+    locationX: -4.58
+    locationY: -1.75
+    orientation: 0.18 to topic /local_control/goto
+[rospy.internal][WARNING] 2020-11-02 19:43:25,242: Unknown error initiating TCP/IP socket to freight1207:59602 (http://freight1207:40292/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rosgraph/network.py", line 363, in read_ros_handshake_header
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.internal][INFO] 2020-11-02 19:43:25,243: topic[/current/pose] removing connection to http://freight1207:40292/
+[rosout][WARNING] 2020-11-02 19:43:26,401: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: -4.58
+    locationY: -1.75
+    orientation: 0.18
+  - 
+    locationX: -3.54
+    locationY: -1.35
+    orientation: 0.19 to topic /local_control/goto
+[rosout][INFO] 2020-11-02 19:43:52,390: rostful_server: Shutting down the server
+[rospy.core][INFO] 2020-11-02 19:43:52,390: signal_shutdown [Closing]
+[rospy.internal][INFO] 2020-11-02 19:43:52,394: topic[/enable_software_runstop] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-02 19:43:52,394: topic[/enable_software_runstop] removing connection to /software_runstop
+[rospy.internal][INFO] 2020-11-02 19:43:52,394: topic[/local_control/goto] removing connection to /rostful_server
+[rospy.internal][ERROR] 2020-11-02 19:43:52,394: Unable to initiate TCP/IP socket to freight1207:57875 (http://freight1207:41981/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-02 19:43:52,394: topic[/local_control/goto] removing connection to /local_control_navigation
+[rospy.internal][ERROR] 2020-11-02 19:43:52,395: Unable to initiate TCP/IP socket to freight1207:57875 (http://freight1207:41981/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-02 19:43:52,395: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-02 19:43:52,395: topic[/local_control/initialpose] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-02 19:43:52,395: topic[/local_control/initialpose] removing connection to /local_control_initialpose
+[rospy.internal][INFO] 2020-11-02 19:43:52,395: topic[/local_control/cancel] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-02 19:43:52,396: topic[/local_control/cancel] removing connection to /local_control_navigation
+[rospy.internal][ERROR] 2020-11-02 19:43:52,396: Unable to initiate TCP/IP socket to freight1207:57875 (http://freight1207:41981/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-02 19:43:52,396: topic[/current/pose] removing connection to /rostful_server
+[rospy.internal][ERROR] 2020-11-02 19:43:52,396: Unable to initiate TCP/IP socket to freight1207:57875 (http://freight1207:41981/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-02 19:43:52,396: topic[/enable_software_runstop] removing connection to http://freight1207:41981/
+[rospy.internal][INFO] 2020-11-02 19:43:52,396: topic[/local_control/initialpose] removing connection to http://freight1207:41981/
+[rospy.internal][INFO] 2020-11-02 19:43:52,397: topic[/local_control/goto] removing connection to http://freight1207:41981/
+[rospy.internal][ERROR] 2020-11-02 19:43:52,397: Unable to initiate TCP/IP socket to freight1207:57875 (http://freight1207:41981/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-02 19:43:52,397: topic[/local_control/cancel] removing connection to http://freight1207:41981/
+[rospy.internal][INFO] 2020-11-02 19:43:52,397: topic[/current/pose] removing connection to http://freight1207:41981/
+[rospy.impl.masterslave][INFO] 2020-11-02 19:43:52,397: Closing
+[rospy.core][INFO] 2020-11-02 19:43:52,561: signal_shutdown [atexit]

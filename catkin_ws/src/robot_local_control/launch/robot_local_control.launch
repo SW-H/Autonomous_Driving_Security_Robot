@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+    <node name="local_control_navigation" pkg="robot_local_control" type="local_control_navigation" output="screen"/>
+    <node name="local_control_initialpose" pkg="robot_local_control" type="local_control_initialpose" output="screen"/>
+    <node name="robot_pose_publisher" pkg="robot_local_control" type="robot_pose_publisher"/>
+
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/fetch/catkin_ws/devel
+
+Name: robot_gui_bridge
+Description: Description of robot_gui_bridge
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/fetch/catkin_ws/devel/lib 
+Requires: 

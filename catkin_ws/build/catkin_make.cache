@@ -1,0 +1,2 @@
+check_odometry:gaitech_remote_control:patrolling:robot_local_control:rosbridge_suite/rosapi:rosbridge_suite/rosbridge_library:rosbridge_suite/rosbridge_server:rosbridge_suite/rosbridge_suite:rostful/rostful
+-DCATKIN_DEVEL_PREFIX=/home/fetch/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/fetch/catkin_ws/install -G Unix Makefiles

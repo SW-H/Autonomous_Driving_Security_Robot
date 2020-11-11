@@ -1,0 +1,30 @@
+[rospy.client][INFO] 2018-12-06 22:25:57,733: init_node, name[/dock_on_button], pid[7077]
+[xmlrpc][INFO] 2018-12-06 22:25:57,733: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-12-06 22:25:57,733: Started XML-RPC server [http://freight1207:55350/]
+[rospy.init][INFO] 2018-12-06 22:25:57,734: ROS Slave URI: [http://freight1207:55350/]
+[rospy.impl.masterslave][INFO] 2018-12-06 22:25:57,734: _ready: http://freight1207:55350/
+[xmlrpc][INFO] 2018-12-06 22:25:57,734: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-12-06 22:25:57,734: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2018-12-06 22:25:57,834: registered with master
+[rospy.rosout][INFO] 2018-12-06 22:25:57,834: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-12-06 22:25:57,836: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-12-06 22:25:57,837: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-12-06 22:25:57,839: Connecting to /dock...
+[rospy.internal][INFO] 2018-12-06 22:25:57,849: topic[/dock/result] adding connection to [http://freight1207:34125/], count 0
+[rospy.internal][INFO] 2018-12-06 22:25:57,849: topic[/dock/feedback] adding connection to [http://freight1207:34125/], count 0
+[rospy.internal][INFO] 2018-12-06 22:25:57,850: topic[/dock/status] adding connection to [http://freight1207:34125/], count 0
+[rospy.internal][INFO] 2018-12-06 22:25:58,097: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-12-06 22:25:58,098: topic[/dock/goal] adding connection to [/auto_dock], count 0
+[rospy.internal][INFO] 2018-12-06 22:25:58,098: topic[/dock/cancel] adding connection to [/auto_dock], count 0
+[rosout][INFO] 2018-12-06 22:25:58,099: Done.
+[rospy.internal][INFO] 2018-12-06 22:25:58,113: topic[/joy] adding connection to [http://freight1207:41546/], count 0
+[rospy.core][INFO] 2018-12-06 22:30:57,592: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2018-12-06 22:30:57,597: topic[/dock/goal] removing connection to /auto_dock
+[rospy.internal][INFO] 2018-12-06 22:30:57,597: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-12-06 22:30:57,597: topic[/dock/cancel] removing connection to /auto_dock
+[rospy.internal][INFO] 2018-12-06 22:30:57,597: topic[/dock/feedback] removing connection to http://freight1207:34125/
+[rospy.internal][INFO] 2018-12-06 22:30:57,597: topic[/joy] removing connection to http://freight1207:41546/
+[rospy.internal][INFO] 2018-12-06 22:30:57,597: topic[/dock/result] removing connection to http://freight1207:34125/
+[rospy.internal][INFO] 2018-12-06 22:30:57,597: topic[/dock/status] removing connection to http://freight1207:34125/
+[rospy.impl.masterslave][INFO] 2018-12-06 22:30:57,597: signal-2
+[rospy.core][INFO] 2018-12-06 22:30:57,761: signal_shutdown [atexit]

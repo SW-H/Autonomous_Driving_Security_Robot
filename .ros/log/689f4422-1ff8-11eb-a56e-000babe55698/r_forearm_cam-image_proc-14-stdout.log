@@ -1,0 +1,3 @@
+[33m[ WARN] [1604645417.768510349]: The input topic '/r_forearm_cam/image_raw' is not yet advertised[0m
+[33m[ WARN] [1604645417.768558191]: The input topic '/r_forearm_cam/camera_info' is not yet advertised[0m
+[33m[ WARN] [1604645422.663246264]: This node/nodelet subscribes topics only when subscribed.[0m

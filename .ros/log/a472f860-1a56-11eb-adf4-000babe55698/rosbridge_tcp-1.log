@@ -1,0 +1,69 @@
+[rospy.client][INFO] 2020-10-29 19:24:44,004: init_node, name[/rosbridge_tcp], pid[3452]
+[xmlrpc][INFO] 2020-10-29 19:24:44,004: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-29 19:24:44,004: Started XML-RPC server [http://freight1207:44211/]
+[rospy.init][INFO] 2020-10-29 19:24:44,004: ROS Slave URI: [http://freight1207:44211/]
+[rospy.impl.masterslave][INFO] 2020-10-29 19:24:44,004: _ready: http://freight1207:44211/
+[xmlrpc][INFO] 2020-10-29 19:24:44,005: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-29 19:24:44,005: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-10-29 19:24:44,105: registered with master
+[rospy.rosout][INFO] 2020-10-29 19:24:44,105: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-29 19:24:44,107: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-29 19:24:44,108: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2020-10-29 19:24:44,117: Rosbridge TCP server started on port 9090
+[rospy.internal][INFO] 2020-10-29 19:24:44,384: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-10-29 19:25:56,975: [Client 0] connected. 1 client total.
+[rosout][INFO] 2020-10-29 19:25:56,977: [Client 1] connected. 2 client total.
+[rosout][INFO] 2020-10-29 19:26:01,977: [Client 0] disconnected. 1 client total.
+[rosout][INFO] 2020-10-29 19:26:35,761: [Client 1] disconnected. 0 client total.
+[rosout][INFO] 2020-10-29 19:26:35,772: [Client 2] connected. 1 client total.
+[rosout][INFO] 2020-10-29 19:26:35,777: [Client 3] connected. 2 client total.
+[rosout][INFO] 2020-10-29 19:26:38,324: [Client 2] disconnected. 1 client total.
+[rosout][INFO] 2020-10-29 19:26:38,329: [Client 4] connected. 2 client total.
+[rosout][INFO] 2020-10-29 19:26:43,841: [Client 3] disconnected. 1 client total.
+[rosout][INFO] 2020-10-29 19:26:53,731: [Client 5] connected. 2 client total.
+[rosout][INFO] 2020-10-29 19:27:20,352: [Client 4] disconnected. 1 client total.
+[rosout][INFO] 2020-10-29 19:27:28,867: [Client 6] connected. 2 client total.
+[rosout][INFO] 2020-10-29 19:28:01,867: [Client 5] disconnected. 1 client total.
+[rospy.client][INFO] 2020-10-29 19:42:25,013: init_node, name[/rosbridge_tcp], pid[3934]
+[xmlrpc][INFO] 2020-10-29 19:42:25,014: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-29 19:42:25,014: Started XML-RPC server [http://freight1207:33963/]
+[rospy.init][INFO] 2020-10-29 19:42:25,014: ROS Slave URI: [http://freight1207:33963/]
+[rospy.impl.masterslave][INFO] 2020-10-29 19:42:25,014: _ready: http://freight1207:33963/
+[xmlrpc][INFO] 2020-10-29 19:42:25,015: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-29 19:42:25,015: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-10-29 19:42:25,114: registered with master
+[rospy.rosout][INFO] 2020-10-29 19:42:25,115: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-29 19:42:25,116: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-29 19:42:25,117: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2020-10-29 19:42:25,126: Rosbridge TCP server started on port 9090
+[rospy.internal][INFO] 2020-10-29 19:42:25,356: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-10-29 19:42:27,940: [Client 0] connected. 1 client total.
+[rosout][INFO] 2020-10-29 19:42:27,961: [Client 1] connected. 2 client total.
+[rosout][INFO] 2020-10-29 19:43:05,056: [Client 0] disconnected. 1 client total.
+[rosout][INFO] 2020-10-29 19:43:11,421: [Client 2] connected. 2 client total.
+[rosout][INFO] 2020-10-29 19:44:43,754: [Client 2] disconnected. 1 client total.
+[rosout][INFO] 2020-10-29 19:44:50,621: [Client 1] disconnected. 0 client total.
+[rosout][INFO] 2020-10-29 19:44:50,630: [Client 3] connected. 1 client total.
+[rosout][INFO] 2020-10-29 19:44:50,630: [Client 4] connected. 2 client total.
+[rospy.client][INFO] 2020-10-29 19:46:23,660: init_node, name[/rosbridge_tcp], pid[4116]
+[xmlrpc][INFO] 2020-10-29 19:46:23,661: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-29 19:46:23,661: Started XML-RPC server [http://freight1207:38776/]
+[rospy.init][INFO] 2020-10-29 19:46:23,661: ROS Slave URI: [http://freight1207:38776/]
+[rospy.impl.masterslave][INFO] 2020-10-29 19:46:23,661: _ready: http://freight1207:38776/
+[xmlrpc][INFO] 2020-10-29 19:46:23,661: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-29 19:46:23,662: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-10-29 19:46:23,761: registered with master
+[rospy.rosout][INFO] 2020-10-29 19:46:23,761: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-29 19:46:23,763: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-29 19:46:23,764: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2020-10-29 19:46:23,774: Rosbridge TCP server started on port 9090
+[rospy.internal][INFO] 2020-10-29 19:46:23,968: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-10-29 19:46:43,787: [Client 0] connected. 1 client total.
+[rosout][INFO] 2020-10-29 19:46:43,788: [Client 1] connected. 2 client total.
+[rosout][INFO] 2020-10-29 19:46:52,823: [Client 0] disconnected. 1 client total.
+[rosout][INFO] 2020-10-29 19:47:01,166: [Client 2] connected. 2 client total.
+[rosout][INFO] 2020-10-29 19:47:10,173: [Client 1] disconnected. 1 client total.
+[rosout][INFO] 2020-10-29 19:56:34,408: [Client 2] disconnected. 0 client total.
+[rosout][INFO] 2020-10-29 19:56:44,073: [Client 3] connected. 1 client total.
+[rosout][INFO] 2020-10-29 19:56:44,074: [Client 4] connected. 2 client total.
+[rosout][INFO] 2020-10-29 19:56:51,077: [Client 3] disconnected. 1 client total.

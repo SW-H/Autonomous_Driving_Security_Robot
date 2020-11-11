@@ -1,0 +1,17 @@
+[rospy.client][INFO] 2020-11-04 21:33:34,219: init_node, name[/rostful_server], pid[14579]
+[xmlrpc][INFO] 2020-11-04 21:33:34,219: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-04 21:33:34,219: Started XML-RPC server [http://freight1207:52308/]
+[rospy.impl.masterslave][INFO] 2020-11-04 21:33:34,219: _ready: http://freight1207:52308/
+[rospy.init][INFO] 2020-11-04 21:33:34,219: ROS Slave URI: [http://freight1207:52308/]
+[xmlrpc][INFO] 2020-11-04 21:33:34,220: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-04 21:33:34,220: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-04 21:33:34,320: registered with master
+[rospy.rosout][INFO] 2020-11-04 21:33:34,320: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-04 21:33:34,322: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-04 21:33:34,322: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-11-04 21:33:34,327: rostful_server: Delaying the start 1 seconds
+[rospy.internal][INFO] 2020-11-04 21:33:34,543: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-11-04 21:33:35,372: rostful_server: Started server on port 8080
+[rospy.internal][INFO] 2020-11-04 21:33:35,386: topic[/enable_software_runstop] adding connection to [http://freight1207:52308/], count 0
+[rospy.internal][INFO] 2020-11-04 21:33:35,387: topic[/enable_software_runstop] adding connection to [/software_runstop], count 0
+[rospy.internal][INFO] 2020-11-04 21:33:35,388: topic[/enable_software_runstop] adding connection to [/rostful_server], count 1

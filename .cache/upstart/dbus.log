@@ -1,0 +1,53 @@
+
+(indicator-keyboard-service:1573): Gdk-WARNING **: indicator-keyboard-service: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(bamfdaemon:1454): Gdk-WARNING **: bamfdaemon: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(notify-osd:1759): Gdk-WARNING **: notify-osd: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(zeitgeist-daemon:3038): GLib-GIO-WARNING **: Error releasing name org.gnome.zeitgeist.Engine: The connection is closed
+[31m[03:13:03.283151 WARNING][0m zeitgeist-daemon.vala:449: The connection is closed
+Activating service name='org.ayatana.bamf'
+Activating service name='org.gtk.vfs.Daemon'
+Successfully activated service 'org.gtk.vfs.Daemon'
+Successfully activated service 'org.ayatana.bamf'
+Activating service name='com.canonical.indicator.keyboard'
+Activating service name='org.gnome.ScreenSaver'
+Activating service name='org.gnome.evolution.dataserver.Sources2'
+
+** (gnome-screensaver:1608): WARNING **: Couldn't get presence status: The name org.gnome.SessionManager was not provided by any .service files
+Successfully activated service 'org.gnome.ScreenSaver'
+Successfully activated service 'com.canonical.indicator.keyboard'
+module-cache-reaper-Message: Scanning data directories
+module-cache-reaper-Message: Scanning cache directories
+Successfully activated service 'org.gnome.evolution.dataserver.Sources2'
+Activating service name='org.gnome.evolution.dataserver.Calendar4'
+Activating service name='org.freedesktop.Notifications'
+Successfully activated service 'org.freedesktop.Notifications'
+Activating service name='ca.desrt.dconf'
+Successfully activated service 'ca.desrt.dconf'
+Activating service name='org.gtk.Private.UDisks2VolumeMonitor'
+Successfully activated service 'org.gnome.evolution.dataserver.Calendar4'
+Successfully activated service 'org.gtk.Private.UDisks2VolumeMonitor'
+Activating service name='org.gtk.Private.GPhoto2VolumeMonitor'
+Successfully activated service 'org.gtk.Private.GPhoto2VolumeMonitor'
+Activating service name='org.gtk.Private.AfcVolumeMonitor'
+Successfully activated service 'org.gtk.Private.AfcVolumeMonitor'
+Activating service name='org.gnome.GConf'
+Activating service name='org.gtk.Private.MTPVolumeMonitor'
+Successfully activated service 'org.gnome.GConf'
+Successfully activated service 'org.gtk.Private.MTPVolumeMonitor'
+** Message: Lost the name, shutting down.
+Activating service name='org.freedesktop.Telepathy.AccountManager'
+Successfully activated service 'org.freedesktop.Telepathy.AccountManager'
+Activating service name='com.canonical.indicators.webcredentials'
+Activated service 'com.canonical.indicators.webcredentials' failed: Process /usr/bin/signon-ui received signal 11
+Activating service name='org.gnome.zeitgeist.Engine'
+Activating service name='org.gnome.zeitgeist.SimpleIndexer'
+Successfully activated service 'org.gnome.zeitgeist.Engine'
+
+** (zeitgeist-datahub:3125): WARNING **: zeitgeist-datahub.vala:229: Unable to get name "org.gnome.zeitgeist.datahub" on the bus!
+Successfully activated service 'org.gnome.zeitgeist.SimpleIndexer'

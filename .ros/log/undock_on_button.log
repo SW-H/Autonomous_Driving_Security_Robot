@@ -1,0 +1,53 @@
+[rospy.client][INFO] 2018-12-06 22:49:13,384: init_node, name[/undock_on_button], pid[13377]
+[xmlrpc][INFO] 2018-12-06 22:49:13,384: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-12-06 22:49:13,384: Started XML-RPC server [http://freight1207:56833/]
+[rospy.init][INFO] 2018-12-06 22:49:13,384: ROS Slave URI: [http://freight1207:56833/]
+[rospy.impl.masterslave][INFO] 2018-12-06 22:49:13,384: _ready: http://freight1207:56833/
+[xmlrpc][INFO] 2018-12-06 22:49:13,385: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-12-06 22:49:13,385: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2018-12-06 22:49:13,484: registered with master
+[rospy.rosout][INFO] 2018-12-06 22:49:13,485: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-12-06 22:49:13,486: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-12-06 22:49:13,487: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-12-06 22:49:13,489: Connecting to /undock...
+[rospy.internal][INFO] 2018-12-06 22:49:13,499: topic[/undock/result] adding connection to [http://freight1207:46820/], count 0
+[rospy.internal][INFO] 2018-12-06 22:49:13,500: topic[/undock/feedback] adding connection to [http://freight1207:46820/], count 0
+[rospy.internal][INFO] 2018-12-06 22:49:13,500: topic[/undock/status] adding connection to [http://freight1207:46820/], count 0
+[rospy.internal][INFO] 2018-12-06 22:49:13,740: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-12-06 22:49:13,741: topic[/undock/goal] adding connection to [/auto_dock], count 0
+[rospy.internal][INFO] 2018-12-06 22:49:13,741: topic[/undock/cancel] adding connection to [/auto_dock], count 0
+[rosout][INFO] 2018-12-06 22:49:13,741: Done.
+[rospy.internal][INFO] 2018-12-06 22:49:13,764: topic[/joy] adding connection to [http://freight1207:41546/], count 0
+[rospy.internal][INFO] 2018-12-06 22:49:13,764: topic[/cmd_undock] adding connection to [http://freight1207:46085/], count 0
+[rospy.internal][ERROR] 2018-12-06 22:50:48,274: Unable to initiate TCP/IP socket to freight1207:43160 (http://freight1207:46085/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][WARNING] 2018-12-06 22:50:49,275: Unknown error initiating TCP/IP socket to freight1207:43160 (http://freight1207:46085/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2018-12-06 22:50:49,275: topic[/cmd_undock] removing connection to http://freight1207:46085/
+[rospy.core][INFO] 2018-12-06 22:50:51,110: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2018-12-06 22:50:51,115: topic[/undock/cancel] removing connection to /auto_dock
+[rospy.internal][INFO] 2018-12-06 22:50:51,115: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-12-06 22:50:51,115: topic[/undock/goal] removing connection to /auto_dock
+[rospy.internal][INFO] 2018-12-06 22:50:51,115: topic[/joy] removing connection to http://freight1207:41546/
+[rospy.internal][INFO] 2018-12-06 22:50:51,115: topic[/undock/result] removing connection to http://freight1207:46820/
+[rospy.internal][INFO] 2018-12-06 22:50:51,116: topic[/undock/status] removing connection to http://freight1207:46820/
+[rospy.internal][INFO] 2018-12-06 22:50:51,116: topic[/undock/feedback] removing connection to http://freight1207:46820/
+[rospy.impl.masterslave][INFO] 2018-12-06 22:50:51,116: signal-2
+[rospy.internal][WARNING] 2018-12-06 22:50:51,116: Unknown error initiating TCP/IP socket to freight1207:57949 (http://freight1207:41546/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+
+[rospy.core][INFO] 2018-12-06 22:50:51,279: signal_shutdown [atexit]

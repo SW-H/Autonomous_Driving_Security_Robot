@@ -1,0 +1,8 @@
+prefix=/home/fetch/catkin_ws/devel
+
+Name: fetch_nav_rviz
+Description: Description of fetch_nav_rviz
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/fetch/catkin_ws/devel/lib 
+Requires: 

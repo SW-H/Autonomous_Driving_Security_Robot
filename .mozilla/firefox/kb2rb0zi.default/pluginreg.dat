@@ -1,0 +1,19 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version:0.19t:$
+Arch:x86_64-gcc3:$
+
+[PLUGINS]
+
+[INVALID]
+/usr/lib/mozilla/plugins/libtotem-gmp-plugin.so:$
+1396359855000:$
+/usr/lib/mozilla/plugins/libtotem-narrowspace-plugin.so:$
+1396359855000:$
+/usr/lib/mozilla/plugins/libtotem-mully-plugin.so:$
+1396359855000:$
+/usr/lib/mozilla/plugins/libtotem-cone-plugin.so:$
+1396359855000:$
+/usr/lib/mozilla/plugins/librhythmbox-itms-detection-plugin.so:$
+1398725965000:$

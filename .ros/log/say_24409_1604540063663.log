@@ -1,0 +1,51 @@
+[rospy.client][INFO] 2020-11-04 17:34:23,684: init_node, name[/say_24409_1604540063663], pid[24409]
+[xmlrpc][INFO] 2020-11-04 17:34:23,684: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-04 17:34:23,684: Started XML-RPC server [http://freight1207:38841/]
+[rospy.init][INFO] 2020-11-04 17:34:23,685: ROS Slave URI: [http://freight1207:38841/]
+[rospy.impl.masterslave][INFO] 2020-11-04 17:34:23,685: _ready: http://freight1207:38841/
+[xmlrpc][INFO] 2020-11-04 17:34:23,685: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-04 17:34:23,685: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-04 17:34:23,785: registered with master
+[rospy.rosout][INFO] 2020-11-04 17:34:23,785: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-04 17:34:23,787: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-04 17:34:23,788: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-11-04 17:34:23,800: topic[/sound_play/feedback] adding connection to [http://freight1207:37705/], count 0
+[rospy.internal][INFO] 2020-11-04 17:34:23,801: topic[/sound_play/result] adding connection to [http://freight1207:37705/], count 0
+[rospy.internal][INFO] 2020-11-04 17:34:23,801: topic[/sound_play/status] adding connection to [http://freight1207:37705/], count 0
+[rospy.internal][INFO] 2020-11-04 17:34:23,893: topic[/robotsound] adding connection to [/sound_play], count 0
+[rospy.internal][INFO] 2020-11-04 17:34:23,894: topic[/sound_play/cancel] adding connection to [/sound_play], count 0
+[rospy.internal][INFO] 2020-11-04 17:34:23,895: topic[/sound_play/goal] adding connection to [/sound_play], count 0
+[rospy.internal][INFO] 2020-11-04 17:34:24,077: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2020-11-04 17:34:25,802: topic[/odom] adding connection to [http://freight1207:54641/], count 0
+[rospy.core][INFO] 2020-11-04 17:34:35,206: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-11-04 17:34:35,209: topic[/sound_play/cancel] removing connection to /sound_play
+[rospy.internal][INFO] 2020-11-04 17:34:35,209: topic[/sound_play/goal] removing connection to /sound_play
+[rospy.internal][INFO] 2020-11-04 17:34:35,209: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-04 17:34:35,210: topic[/robotsound] removing connection to /sound_play
+[rospy.internal][INFO] 2020-11-04 17:34:35,210: topic[/sound_play/result] removing connection to http://freight1207:37705/
+[rospy.internal][INFO] 2020-11-04 17:34:35,210: topic[/odom] removing connection to http://freight1207:54641/
+[rospy.internal][INFO] 2020-11-04 17:34:35,210: topic[/sound_play/status] removing connection to http://freight1207:37705/
+[rospy.internal][ERROR] 2020-11-04 17:34:35,211: Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 698, in receive_once
+    self.stat_bytes += recv_buff(sock, b, p.buff_size)
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 103, in recv_buff
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.topics][ERROR] 2020-11-04 17:34:35,211: Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/topics.py", line 307, in close
+    c.close()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 807, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.internal][WARNING] 2020-11-04 17:34:35,211: Unknown error initiating TCP/IP socket to freight1207:43705 (http://freight1207:37705/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.internal][INFO] 2020-11-04 17:34:35,211: topic[/sound_play/feedback] removing connection to http://freight1207:37705/
+[rospy.impl.masterslave][INFO] 2020-11-04 17:34:35,211: signal-2
+[rospy.core][INFO] 2020-11-04 17:34:35,319: signal_shutdown [atexit]

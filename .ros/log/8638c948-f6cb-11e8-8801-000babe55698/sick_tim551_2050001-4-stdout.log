@@ -1,0 +1,493 @@
+[0m[ INFO] [1543821618.886285497]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821618.886729352]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821619.036039763]: Shutdown request received.[0m
+[33m[ WARN] [1543821619.036066981]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821619.341622358]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821619.341977340]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821619.644974910]: Shutdown request received.[0m
+[33m[ WARN] [1543821619.644997470]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821619.829647735]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821619.830031839]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821620.149219729]: Shutdown request received.[0m
+[33m[ WARN] [1543821620.149240031]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821620.334891506]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821620.335244553]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821620.654644050]: Shutdown request received.[0m
+[33m[ WARN] [1543821620.654666347]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821620.841590505]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821620.841962227]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821621.159947135]: Shutdown request received.[0m
+[33m[ WARN] [1543821621.159969936]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821621.448424747]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821621.448789133]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821621.766548880]: Shutdown request received.[0m
+[33m[ WARN] [1543821621.766566988]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821621.957919726]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821621.958286854]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821622.273275361]: Shutdown request received.[0m
+[33m[ WARN] [1543821622.273294205]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821622.463216677]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821622.463674782]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821622.777306241]: Shutdown request received.[0m
+[33m[ WARN] [1543821622.777324542]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821622.967886796]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821622.968276872]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821623.383361389]: Shutdown request received.[0m
+[33m[ WARN] [1543821623.383379828]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821623.574747324]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821623.575124071]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821623.987032944]: Shutdown request received.[0m
+[33m[ WARN] [1543821623.987053892]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821624.181552790]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821624.181940628]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821624.492095890]: Shutdown request received.[0m
+[33m[ WARN] [1543821624.492116010]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821624.786886967]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821624.787322637]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821625.202815935]: Shutdown request received.[0m
+[33m[ WARN] [1543821625.202835128]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821625.393806847]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821625.394156748]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821625.708432687]: Shutdown request received.[0m
+[33m[ WARN] [1543821625.708460108]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821625.905136572]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821625.905548690]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821626.213705165]: Shutdown request received.[0m
+[33m[ WARN] [1543821626.213725314]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821626.411222943]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821626.411589222]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821626.719077143]: Shutdown request received.[0m
+[33m[ WARN] [1543821626.719097692]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821626.909053772]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821626.909465341]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821627.225997422]: Shutdown request received.[0m
+[33m[ WARN] [1543821627.226018494]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821627.523836624]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821627.524252811]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821627.833209930]: Shutdown request received.[0m
+[33m[ WARN] [1543821627.833226792]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821628.023482747]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821628.023858783]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821628.340429675]: Shutdown request received.[0m
+[33m[ WARN] [1543821628.340492619]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821628.637975909]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821628.638351246]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821628.945151351]: Shutdown request received.[0m
+[33m[ WARN] [1543821628.945171225]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821629.136028804]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821629.136373362]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821629.450869693]: Shutdown request received.[0m
+[33m[ WARN] [1543821629.450888427]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821629.642357835]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821629.642753869]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821629.957393006]: Shutdown request received.[0m
+[33m[ WARN] [1543821629.957412604]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821630.258037710]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821630.258473015]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821630.563423708]: Shutdown request received.[0m
+[33m[ WARN] [1543821630.563445230]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821630.759757363]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821630.760129744]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821631.070133366]: Shutdown request received.[0m
+[33m[ WARN] [1543821631.070154387]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821631.271205795]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821631.271555101]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821631.575045324]: Shutdown request received.[0m
+[33m[ WARN] [1543821631.575067110]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821631.769531828]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821631.769902175]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821632.080800805]: Shutdown request received.[0m
+[33m[ WARN] [1543821632.080821026]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821632.274864098]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821632.275271091]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821632.586554660]: Shutdown request received.[0m
+[33m[ WARN] [1543821632.586574733]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821632.781815154]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821632.782222238]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821633.092523811]: Shutdown request received.[0m
+[33m[ WARN] [1543821633.092543828]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821633.389332344]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821633.389726053]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821633.698273190]: Shutdown request received.[0m
+[33m[ WARN] [1543821633.698305394]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821633.905047839]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821633.905462736]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821634.204049947]: Shutdown request received.[0m
+[33m[ WARN] [1543821634.204073938]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821634.401762414]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821634.402116883]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821634.711054275]: Shutdown request received.[0m
+[33m[ WARN] [1543821634.711071850]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821634.909538900]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821634.909948725]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821635.216252314]: Shutdown request received.[0m
+[33m[ WARN] [1543821635.216273659]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821635.518342441]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821635.518758782]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821635.823305130]: Shutdown request received.[0m
+[33m[ WARN] [1543821635.823328025]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821636.122620543]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821636.123035780]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821636.429781568]: Shutdown request received.[0m
+[33m[ WARN] [1543821636.429803425]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821636.632223679]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821636.639990792]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821636.937396692]: Shutdown request received.[0m
+[33m[ WARN] [1543821636.937414364]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821637.138088713]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821637.138432796]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821637.444047508]: Shutdown request received.[0m
+[33m[ WARN] [1543821637.444071200]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821637.643522292]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821637.643917334]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821637.949406660]: Shutdown request received.[0m
+[33m[ WARN] [1543821637.949426928]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821638.262645091]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821638.263020168]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821638.556112447]: Shutdown request received.[0m
+[33m[ WARN] [1543821638.556132277]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821638.767996455]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821638.768365497]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821639.061699704]: Shutdown request received.[0m
+[33m[ WARN] [1543821639.061726128]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821639.267334849]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821639.267696163]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821639.569335339]: Shutdown request received.[0m
+[33m[ WARN] [1543821639.569361661]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821639.770773022]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821639.771135807]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821640.075055417]: Shutdown request received.[0m
+[33m[ WARN] [1543821640.075081064]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821640.276395015]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821640.276710750]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821640.580117025]: Shutdown request received.[0m
+[33m[ WARN] [1543821640.580135599]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821640.786692096]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821640.787116303]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821641.085644670]: Shutdown request received.[0m
+[33m[ WARN] [1543821641.085668237]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821641.389604585]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821641.390005276]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821641.691991522]: Shutdown request received.[0m
+[33m[ WARN] [1543821641.692011316]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821641.905962958]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821641.906390445]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821642.298220525]: Shutdown request received.[0m
+[33m[ WARN] [1543821642.298240747]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821642.503285845]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821642.503646175]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821642.804002461]: Shutdown request received.[0m
+[33m[ WARN] [1543821642.804021189]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821643.112181392]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821643.112575628]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821643.510153283]: Shutdown request received.[0m
+[33m[ WARN] [1543821643.510174904]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821643.720083237]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821643.720581242]: Succesfully connected to 10.42.42.10:2112[0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821724.329080526]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821724.329503211]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821724.532222542]: Shutdown request received.[0m
+[33m[ WARN] [1543821724.532245244]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821724.744954643]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821724.745346956]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821724.943331961]: Shutdown request received.[0m
+[33m[ WARN] [1543821724.943349508]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821725.145805207]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821725.146175221]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821725.348164795]: Shutdown request received.[0m
+[33m[ WARN] [1543821725.348185555]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821725.650896163]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821725.651321987]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821725.854280063]: Shutdown request received.[0m
+[33m[ WARN] [1543821725.854297456]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821726.058154792]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821726.058537825]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821726.260256869]: Shutdown request received.[0m
+[33m[ WARN] [1543821726.260273497]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821726.470106165]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821726.470459355]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821726.665884603]: Shutdown request received.[0m
+[33m[ WARN] [1543821726.665900691]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821726.871707629]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821726.872068550]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821727.070928607]: Shutdown request received.[0m
+[33m[ WARN] [1543821727.070955517]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821727.278047427]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821727.278463262]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821727.475446835]: Shutdown request received.[0m
+[33m[ WARN] [1543821727.475465348]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821727.686637864]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821727.687074169]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821727.881215211]: Shutdown request received.[0m
+[33m[ WARN] [1543821727.881235476]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821728.094256524]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821728.094641744]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821728.386723796]: Shutdown request received.[0m
+[33m[ WARN] [1543821728.386740553]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821728.709091313]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821728.709477664]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821728.998030939]: Shutdown request received.[0m
+[33m[ WARN] [1543821728.998048062]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821729.207172875]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821729.207560810]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821729.403941214]: Shutdown request received.[0m
+[33m[ WARN] [1543821729.403958778]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821729.616930162]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821729.617281732]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821729.808205164]: Shutdown request received.[0m
+[33m[ WARN] [1543821729.808222527]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821730.026017279]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821730.026373467]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821730.213217253]: Shutdown request received.[0m
+[33m[ WARN] [1543821730.213238962]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821730.421083777]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821730.421465472]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821730.617944545]: Shutdown request received.[0m
+[33m[ WARN] [1543821730.617970236]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821730.832367160]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821730.832749744]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821731.123259772]: Shutdown request received.[0m
+[33m[ WARN] [1543821731.123279310]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821731.338738310]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821731.339086665]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821731.527549514]: Shutdown request received.[0m
+[33m[ WARN] [1543821731.527611307]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821731.741031809]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821731.741429139]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821731.933005746]: Shutdown request received.[0m
+[33m[ WARN] [1543821731.933022945]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821732.150468340]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821732.150875243]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821732.338068402]: Shutdown request received.[0m
+[33m[ WARN] [1543821732.338086691]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821732.551518238]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821732.551874572]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821732.744128004]: Shutdown request received.[0m
+[33m[ WARN] [1543821732.744148315]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821732.966092209]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821732.966441605]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821733.150958101]: Shutdown request received.[0m
+[33m[ WARN] [1543821733.150975992]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821733.364831558]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821733.365217680]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821733.657017418]: Shutdown request received.[0m
+[33m[ WARN] [1543821733.657035429]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821733.876097042]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821733.876469093]: Succesfully connected to 10.42.42.10:2112[0m
+[33m[ WARN] [1543821734.061328260]: Shutdown request received.[0m
+[33m[ WARN] [1543821734.061352714]: Reason given for shutdown: [new node registered with same name][0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.
+[0m[ INFO] [1543821734.277858718]: Waiting 5 seconds for device to connect.[0m
+[0m[ INFO] [1543821734.278211111]: Succesfully connected to 10.42.42.10:2112[0m
+
+SOPAS - Stopped streaming scan data.
+sick_tim driver exiting.

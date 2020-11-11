@@ -1,0 +1,6 @@
+[0m[ INFO] [1543988511.906640667]: Requesting the map...[0m
+[0m[ INFO] [1543988511.907781381]: Received a 408 X 240 map @ 0.050 m/pix
+[0m
+[0m[ INFO] [1543988511.914148911]: Initializing likelihood field model; this can take some time on large maps...[0m
+[0m[ INFO] [1543988511.929670037]: Done initializing likelihood field model.[0m
+[0m[ INFO] [1543988696.915585714]: Setting pose (1543988696.915562): 0.112 -0.016 -0.300[0m

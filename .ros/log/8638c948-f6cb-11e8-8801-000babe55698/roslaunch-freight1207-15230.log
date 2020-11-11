@@ -1,0 +1,219 @@
+[roslaunch][INFO] 2018-12-02 23:21:46,198: Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2018-12-02 23:21:46,200: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2018-12-02 23:21:46,200: roslaunch starting with args ['/opt/ros/indigo/bin/roslaunch', 'teleop.launch.xml']
+[roslaunch][INFO] 2018-12-02 23:21:46,201: roslaunch env is {'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'ROS_DISTRO': 'indigo', 'ROS_LOG_FILENAME': '/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/roslaunch-freight1207-15230.log', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/fetch', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'UPSTART_EVENTS': 'started starting', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'PKG_CONFIG_PATH': '/opt/ros/indigo/lib/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig', 'CPATH': '/opt/ros/indigo/include', 'LOGNAME': 'fetch', 'USER': 'fetch', 'PATH': '/opt/ros/indigo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'XDG_VTNR': '7', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring-BUEEYj', 'CMAKE_PREFIX_PATH': '/opt/ros/indigo', 'LD_LIBRARY_PATH': '/opt/ros/indigo/lib:/opt/ros/indigo/lib/x86_64-linux-gnu', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XAUTHORITY': '/home/fetch/.Xauthority', 'LANGUAGE': 'en_US', 'COMPIZ_CONFIG_PROFILE': 'ubuntu', 'SHLVL': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'JOB': 'gnome-session', 'TEXTDOMAIN': 'im-config', 'UPSTART_INSTANCE': '', 'CLUTTER_IM_MODULE': 'xim', 'WINDOWID': '23068684', 'SESSIONTYPE': 'gnome-session', 'XMODIFIERS': '@im=ibus', 'ROS_ETC_DIR': '/opt/ros/indigo/etc/ros', 'GPG_AGENT_INFO': '/run/user/1000/keyring-BUEEYj/gpg:0:1', 'HOME': '/home/fetch', 'QT4_IM_MODULE': 'xim', 'SELINUX_INIT': 'YES', 'XDG_RUNTIME_DIR': '/run/user/1000', 'INSTANCE': 'Unity', 'PYTHONPATH': '/opt/ros/indigo/lib/python2.7/dist-packages', 'SSH_AUTH_SOCK': '/run/user/1000/keyring-BUEEYj/ssh', 'VTE_VERSION': '3409', 'ROS_ROOT': '/opt/ros/indigo/share/ros', 'GDMSESSION': 'ubuntu', 'IM_CONFIG_PHASE': '1', 'UPSTART_JOB': 'unity-settings-daemon', 'TEXTDOMAINDIR': '/usr/share/locale/', 'GNOME_KEYRING_PID': '1437', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'ROS_PACKAGE_PATH': '/opt/ros/indigo/share:/opt/ros/indigo/stacks', 'XDG_CURRENT_DESKTOP': 'Unity', 'XDG_SESSION_ID': 'c2', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-0tbTfJaSPa', '_': '/opt/ros/indigo/bin/roslaunch', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'GTK_IM_MODULE': 'ibus', 'DESKTOP_SESSION': 'ubuntu', 'UPSTART_SESSION': 'unix:abstract=/com/ubuntu/upstart-session/1000/1306', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg', 'GTK_MODULES': 'overlay-scrollbar:unity-gtk-module', 'OLDPWD': '/opt/ros/indigo/share/freight_bringup/launch', 'GDM_LANG': 'en_US', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/', 'PWD': '/opt/ros/indigo/share/freight_bringup/launch/include', 'QT_IM_MODULE': 'ibus', 'ROS_MASTER_URI': 'http://localhost:11311', 'COLORTERM': 'gnome-terminal', 'DISPLAY': ':0', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_SEAT': 'seat0'}
+[roslaunch][INFO] 2018-12-02 23:21:46,201: starting in server mode
+[roslaunch.parent][INFO] 2018-12-02 23:21:46,201: starting roslaunch parent run
+[roslaunch][INFO] 2018-12-02 23:21:46,201: loading roscore config file /opt/ros/indigo/etc/ros/roscore.xml
+[roslaunch][INFO] 2018-12-02 23:21:46,255: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.config][INFO] 2018-12-02 23:21:46,255: loading config file teleop.launch.xml
+[roslaunch][INFO] 2018-12-02 23:21:46,256: Added node of type [joy/joy_node] in namespace [/]
+[roslaunch][INFO] 2018-12-02 23:21:46,256: Added node of type [fetch_teleop/joystick_teleop] in namespace [/]
+[roslaunch][INFO] 2018-12-02 23:21:46,256: Added node of type [topic_tools/mux] in namespace [/]
+[roslaunch][INFO] 2018-12-02 23:21:46,256: ... selected machine [] for node of type [joy/joy_node]
+[roslaunch][INFO] 2018-12-02 23:21:46,256: ... selected machine [] for node of type [fetch_teleop/joystick_teleop]
+[roslaunch][INFO] 2018-12-02 23:21:46,256: ... selected machine [] for node of type [topic_tools/mux]
+[roslaunch.pmon][INFO] 2018-12-02 23:21:46,257: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2018-12-02 23:21:46,257: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2018-12-02 23:21:46,257: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2018-12-02 23:21:46,257: starting parent XML-RPC server
+[roslaunch.server][INFO] 2018-12-02 23:21:46,257: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2018-12-02 23:21:46,257: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2018-12-02 23:21:46,257: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-12-02 23:21:46,258: Started XML-RPC server [http://freight1207:60916/]
+[xmlrpc][INFO] 2018-12-02 23:21:46,258: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2018-12-02 23:21:46,270: started roslaunch server http://freight1207:60916/
+[roslaunch.parent][INFO] 2018-12-02 23:21:46,270: ... parent XML-RPC server started
+[roslaunch][INFO] 2018-12-02 23:21:46,270: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2018-12-02 23:21:46,271: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2018-12-02 23:21:46,272: ROS_MASTER_URI=http://localhost:11311
+[roslaunch][INFO] 2018-12-02 23:21:46,273: setting /roslaunch/uris/host_freight1207__60916' to http://freight1207:60916/
+[roslaunch][INFO] 2018-12-02 23:21:46,275: load_parameters starting ...
+[roslaunch][INFO] 2018-12-02 23:21:46,277: ... load_parameters complete
+[roslaunch][INFO] 2018-12-02 23:21:46,277: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2018-12-02 23:21:46,277: ... preparing to launch node of type [joy/joy_node]
+[roslaunch][INFO] 2018-12-02 23:21:46,277: create_node_process: package[joy] type[joy_node] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2018-12-02 23:21:46,277: process[joy-1]: env[{'WINDOWID': '23068684', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'ROS_DISTRO': 'indigo', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/fetch', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'UPSTART_EVENTS': 'started starting', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'CPATH': '/opt/ros/indigo/include', 'LOGNAME': 'fetch', 'USER': 'fetch', 'PATH': '/opt/ros/indigo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'XDG_VTNR': '7', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring-BUEEYj', 'CMAKE_PREFIX_PATH': '/opt/ros/indigo', 'LD_LIBRARY_PATH': '/opt/ros/indigo/lib:/opt/ros/indigo/lib/x86_64-linux-gnu', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XAUTHORITY': '/home/fetch/.Xauthority', 'LANGUAGE': 'en_US', 'SHLVL': '1', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'JOB': 'gnome-session', 'ROS_LOG_FILENAME': '/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/roslaunch-freight1207-15230.log', 'UPSTART_INSTANCE': '', 'COMPIZ_CONFIG_PROFILE': 'ubuntu', 'TEXTDOMAIN': 'im-config', 'CLUTTER_IM_MODULE': 'xim', 'XMODIFIERS': '@im=ibus', 'ROS_MASTER_URI': 'http://localhost:11311', 'GPG_AGENT_INFO': '/run/user/1000/keyring-BUEEYj/gpg:0:1', 'HOME': '/home/fetch', 'QT4_IM_MODULE': 'xim', 'SELINUX_INIT': 'YES', 'SSH_AUTH_SOCK': '/run/user/1000/keyring-BUEEYj/ssh', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/opt/ros/indigo/lib/python2.7/dist-packages', 'SESSIONTYPE': 'gnome-session', 'VTE_VERSION': '3409', 'ROS_ROOT': '/opt/ros/indigo/share/ros', 'GDMSESSION': 'ubuntu', 'IM_CONFIG_PHASE': '1', 'UPSTART_JOB': 'unity-settings-daemon', 'TEXTDOMAINDIR': '/usr/share/locale/', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/', 'PKG_CONFIG_PATH': '/opt/ros/indigo/lib/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig', 'ROS_PACKAGE_PATH': '/opt/ros/indigo/share:/opt/ros/indigo/stacks', 'XDG_CURRENT_DESKTOP': 'Unity', 'XDG_SESSION_ID': 'c2', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-0tbTfJaSPa', '_': '/opt/ros/indigo/bin/roslaunch', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'GTK_IM_MODULE': 'ibus', 'DESKTOP_SESSION': 'ubuntu', 'UPSTART_SESSION': 'unix:abstract=/com/ubuntu/upstart-session/1000/1306', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GNOME_KEYRING_PID': '1437', 'OLDPWD': '/opt/ros/indigo/share/freight_bringup/launch', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'GDM_LANG': 'en_US', 'GTK_MODULES': 'overlay-scrollbar:unity-gtk-module', 'INSTANCE': 'Unity', 'PWD': '/opt/ros/indigo/share/freight_bringup/launch/include', 'QT_IM_MODULE': 'ibus', 'ROS_ETC_DIR': '/opt/ros/indigo/etc/ros', 'COLORTERM': 'gnome-terminal', 'DISPLAY': ':0', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg', 'XDG_SEAT': 'seat0'}]
+[roslaunch][INFO] 2018-12-02 23:21:46,290: process[joy-1]: args[[u'/opt/ros/indigo/lib/joy/joy_node', u'__name:=joy']]
+[roslaunch][INFO] 2018-12-02 23:21:46,291: ... created process [joy-1]
+[roslaunch.pmon][INFO] 2018-12-02 23:21:46,291: ProcessMonitor.register[joy-1]
+[roslaunch.pmon][INFO] 2018-12-02 23:21:46,291: ProcessMonitor.register[joy-1] complete
+[roslaunch][INFO] 2018-12-02 23:21:46,291: ... registered process [joy-1]
+[roslaunch][INFO] 2018-12-02 23:21:46,291: process[joy-1]: starting os process
+[roslaunch][INFO] 2018-12-02 23:21:46,291: process[joy-1]: start w/ args [[u'/opt/ros/indigo/lib/joy/joy_node', u'__name:=joy', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/joy-1.log']]
+[roslaunch][INFO] 2018-12-02 23:21:46,291: process[joy-1]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:46,292: process[joy-1]: started with pid [15248]
+[roslaunch][INFO] 2018-12-02 23:21:46,293: ... successfully launched [joy-1]
+[roslaunch][INFO] 2018-12-02 23:21:46,293: ... preparing to launch node of type [fetch_teleop/joystick_teleop]
+[roslaunch][INFO] 2018-12-02 23:21:46,293: create_node_process: package[fetch_teleop] type[joystick_teleop] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2018-12-02 23:21:46,293: process[teleop-2]: env[{'WINDOWID': '23068684', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'ROS_DISTRO': 'indigo', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/fetch', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'UPSTART_EVENTS': 'started starting', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'CPATH': '/opt/ros/indigo/include', 'LOGNAME': 'fetch', 'USER': 'fetch', 'PATH': '/opt/ros/indigo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'XDG_VTNR': '7', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring-BUEEYj', 'CMAKE_PREFIX_PATH': '/opt/ros/indigo', 'LD_LIBRARY_PATH': '/opt/ros/indigo/lib:/opt/ros/indigo/lib/x86_64-linux-gnu', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XAUTHORITY': '/home/fetch/.Xauthority', 'LANGUAGE': 'en_US', 'SHLVL': '1', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'JOB': 'gnome-session', 'ROS_LOG_FILENAME': '/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/roslaunch-freight1207-15230.log', 'UPSTART_INSTANCE': '', 'COMPIZ_CONFIG_PROFILE': 'ubuntu', 'TEXTDOMAIN': 'im-config', 'CLUTTER_IM_MODULE': 'xim', 'XMODIFIERS': '@im=ibus', 'ROS_MASTER_URI': 'http://localhost:11311', 'GPG_AGENT_INFO': '/run/user/1000/keyring-BUEEYj/gpg:0:1', 'HOME': '/home/fetch', 'QT4_IM_MODULE': 'xim', 'SELINUX_INIT': 'YES', 'SSH_AUTH_SOCK': '/run/user/1000/keyring-BUEEYj/ssh', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/opt/ros/indigo/lib/python2.7/dist-packages', 'SESSIONTYPE': 'gnome-session', 'VTE_VERSION': '3409', 'ROS_ROOT': '/opt/ros/indigo/share/ros', 'GDMSESSION': 'ubuntu', 'IM_CONFIG_PHASE': '1', 'UPSTART_JOB': 'unity-settings-daemon', 'TEXTDOMAINDIR': '/usr/share/locale/', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/', 'PKG_CONFIG_PATH': '/opt/ros/indigo/lib/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig', 'ROS_PACKAGE_PATH': '/opt/ros/indigo/share:/opt/ros/indigo/stacks', 'XDG_CURRENT_DESKTOP': 'Unity', 'XDG_SESSION_ID': 'c2', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-0tbTfJaSPa', '_': '/opt/ros/indigo/bin/roslaunch', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'GTK_IM_MODULE': 'ibus', 'DESKTOP_SESSION': 'ubuntu', 'UPSTART_SESSION': 'unix:abstract=/com/ubuntu/upstart-session/1000/1306', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GNOME_KEYRING_PID': '1437', 'OLDPWD': '/opt/ros/indigo/share/freight_bringup/launch', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'GDM_LANG': 'en_US', 'GTK_MODULES': 'overlay-scrollbar:unity-gtk-module', 'INSTANCE': 'Unity', 'PWD': '/opt/ros/indigo/share/freight_bringup/launch/include', 'QT_IM_MODULE': 'ibus', 'ROS_ETC_DIR': '/opt/ros/indigo/etc/ros', 'COLORTERM': 'gnome-terminal', 'DISPLAY': ':0', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg', 'XDG_SEAT': 'seat0'}]
+[roslaunch][INFO] 2018-12-02 23:21:46,293: process[teleop-2]: args[[u'/opt/ros/indigo/lib/fetch_teleop/joystick_teleop', u'__name:=teleop']]
+[roslaunch][INFO] 2018-12-02 23:21:46,293: ... created process [teleop-2]
+[roslaunch.pmon][INFO] 2018-12-02 23:21:46,294: ProcessMonitor.register[teleop-2]
+[roslaunch.pmon][INFO] 2018-12-02 23:21:46,294: ProcessMonitor.register[teleop-2] complete
+[roslaunch][INFO] 2018-12-02 23:21:46,294: ... registered process [teleop-2]
+[roslaunch][INFO] 2018-12-02 23:21:46,294: process[teleop-2]: starting os process
+[roslaunch][INFO] 2018-12-02 23:21:46,294: process[teleop-2]: start w/ args [[u'/opt/ros/indigo/lib/fetch_teleop/joystick_teleop', u'__name:=teleop', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/teleop-2.log']]
+[roslaunch][INFO] 2018-12-02 23:21:46,294: process[teleop-2]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:46,296: process[teleop-2]: started with pid [15249]
+[roslaunch][INFO] 2018-12-02 23:21:46,296: ... successfully launched [teleop-2]
+[roslaunch][INFO] 2018-12-02 23:21:46,296: ... preparing to launch node of type [topic_tools/mux]
+[roslaunch][INFO] 2018-12-02 23:21:46,296: create_node_process: package[topic_tools] type[mux] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2018-12-02 23:21:46,296: process[cmd_vel_mux-3]: env[{'WINDOWID': '23068684', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'ROS_DISTRO': 'indigo', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/fetch', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'UPSTART_EVENTS': 'started starting', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'CPATH': '/opt/ros/indigo/include', 'LOGNAME': 'fetch', 'USER': 'fetch', 'PATH': '/opt/ros/indigo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'XDG_VTNR': '7', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring-BUEEYj', 'CMAKE_PREFIX_PATH': '/opt/ros/indigo', 'LD_LIBRARY_PATH': '/opt/ros/indigo/lib:/opt/ros/indigo/lib/x86_64-linux-gnu', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XAUTHORITY': '/home/fetch/.Xauthority', 'LANGUAGE': 'en_US', 'SHLVL': '1', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'JOB': 'gnome-session', 'ROS_LOG_FILENAME': '/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/roslaunch-freight1207-15230.log', 'UPSTART_INSTANCE': '', 'COMPIZ_CONFIG_PROFILE': 'ubuntu', 'TEXTDOMAIN': 'im-config', 'CLUTTER_IM_MODULE': 'xim', 'XMODIFIERS': '@im=ibus', 'ROS_MASTER_URI': 'http://localhost:11311', 'GPG_AGENT_INFO': '/run/user/1000/keyring-BUEEYj/gpg:0:1', 'HOME': '/home/fetch', 'QT4_IM_MODULE': 'xim', 'SELINUX_INIT': 'YES', 'SSH_AUTH_SOCK': '/run/user/1000/keyring-BUEEYj/ssh', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PYTHONPATH': '/opt/ros/indigo/lib/python2.7/dist-packages', 'SESSIONTYPE': 'gnome-session', 'VTE_VERSION': '3409', 'ROS_ROOT': '/opt/ros/indigo/share/ros', 'GDMSESSION': 'ubuntu', 'IM_CONFIG_PHASE': '1', 'UPSTART_JOB': 'unity-settings-daemon', 'TEXTDOMAINDIR': '/usr/share/locale/', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/', 'PKG_CONFIG_PATH': '/opt/ros/indigo/lib/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig', 'ROS_PACKAGE_PATH': '/opt/ros/indigo/share:/opt/ros/indigo/stacks', 'XDG_CURRENT_DESKTOP': 'Unity', 'XDG_SESSION_ID': 'c2', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-0tbTfJaSPa', '_': '/opt/ros/indigo/bin/roslaunch', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'GTK_IM_MODULE': 'ibus', 'DESKTOP_SESSION': 'ubuntu', 'UPSTART_SESSION': 'unix:abstract=/com/ubuntu/upstart-session/1000/1306', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GNOME_KEYRING_PID': '1437', 'OLDPWD': '/opt/ros/indigo/share/freight_bringup/launch', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'GDM_LANG': 'en_US', 'GTK_MODULES': 'overlay-scrollbar:unity-gtk-module', 'INSTANCE': 'Unity', 'PWD': '/opt/ros/indigo/share/freight_bringup/launch/include', 'QT_IM_MODULE': 'ibus', 'ROS_ETC_DIR': '/opt/ros/indigo/etc/ros', 'COLORTERM': 'gnome-terminal', 'DISPLAY': ':0', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg', 'XDG_SEAT': 'seat0'}]
+[roslaunch][INFO] 2018-12-02 23:21:46,297: process[cmd_vel_mux-3]: args[[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux']]
+[roslaunch][INFO] 2018-12-02 23:21:46,297: ... created process [cmd_vel_mux-3]
+[roslaunch.pmon][INFO] 2018-12-02 23:21:46,297: ProcessMonitor.register[cmd_vel_mux-3]
+[roslaunch.pmon][INFO] 2018-12-02 23:21:46,297: ProcessMonitor.register[cmd_vel_mux-3] complete
+[roslaunch][INFO] 2018-12-02 23:21:46,297: ... registered process [cmd_vel_mux-3]
+[roslaunch][INFO] 2018-12-02 23:21:46,297: process[cmd_vel_mux-3]: starting os process
+[roslaunch][INFO] 2018-12-02 23:21:46,298: process[cmd_vel_mux-3]: start w/ args [[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3.log']]
+[roslaunch][INFO] 2018-12-02 23:21:46,298: process[cmd_vel_mux-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:46,300: process[cmd_vel_mux-3]: started with pid [15251]
+[roslaunch][INFO] 2018-12-02 23:21:46,300: ... successfully launched [cmd_vel_mux-3]
+[roslaunch][INFO] 2018-12-02 23:21:46,300: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2018-12-02 23:21:46,300: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon 139668663158528)>
+[roslaunch.parent][INFO] 2018-12-02 23:21:46,300: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2018-12-02 23:21:46,301: spin
+[roslaunch][INFO] 2018-12-02 23:21:46,758: [cmd_vel_mux-3] process has finished cleanly
+log file: /home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3*.log
+[roslaunch][INFO] 2018-12-02 23:21:46,758: [cmd_vel_mux-3] restarting process
+[roslaunch][INFO] 2018-12-02 23:21:46,758: process[cmd_vel_mux-3]: restarting os process
+[roslaunch][INFO] 2018-12-02 23:21:46,758: process[cmd_vel_mux-3]: start w/ args [[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3.log']]
+[roslaunch][INFO] 2018-12-02 23:21:46,758: process[cmd_vel_mux-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:46,760: process[cmd_vel_mux-3]: started with pid [15390]
+[roslaunch][INFO] 2018-12-02 23:21:47,161: [cmd_vel_mux-3] process has finished cleanly
+log file: /home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3*.log
+[roslaunch][INFO] 2018-12-02 23:21:47,161: [cmd_vel_mux-3] restarting process
+[roslaunch][INFO] 2018-12-02 23:21:47,161: process[cmd_vel_mux-3]: restarting os process
+[roslaunch][INFO] 2018-12-02 23:21:47,161: process[cmd_vel_mux-3]: start w/ args [[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3.log']]
+[roslaunch][INFO] 2018-12-02 23:21:47,161: process[cmd_vel_mux-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:47,163: process[cmd_vel_mux-3]: started with pid [15470]
+[roslaunch][INFO] 2018-12-02 23:21:47,564: [cmd_vel_mux-3] process has finished cleanly
+log file: /home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3*.log
+[roslaunch][INFO] 2018-12-02 23:21:47,564: [cmd_vel_mux-3] restarting process
+[roslaunch][INFO] 2018-12-02 23:21:47,564: process[cmd_vel_mux-3]: restarting os process
+[roslaunch][INFO] 2018-12-02 23:21:47,564: process[cmd_vel_mux-3]: start w/ args [[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3.log']]
+[roslaunch][INFO] 2018-12-02 23:21:47,564: process[cmd_vel_mux-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:47,566: process[cmd_vel_mux-3]: started with pid [15550]
+[roslaunch][INFO] 2018-12-02 23:21:47,967: [cmd_vel_mux-3] process has finished cleanly
+log file: /home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3*.log
+[roslaunch][INFO] 2018-12-02 23:21:47,967: [cmd_vel_mux-3] restarting process
+[roslaunch][INFO] 2018-12-02 23:21:47,967: process[cmd_vel_mux-3]: restarting os process
+[roslaunch][INFO] 2018-12-02 23:21:47,968: process[cmd_vel_mux-3]: start w/ args [[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3.log']]
+[roslaunch][INFO] 2018-12-02 23:21:47,968: process[cmd_vel_mux-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:47,969: process[cmd_vel_mux-3]: started with pid [15630]
+[roslaunch][ERROR] 2018-12-02 23:21:48,370: [teleop-2] process has died [pid 15249, exit code -11, cmd /opt/ros/indigo/lib/fetch_teleop/joystick_teleop __name:=teleop __log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/teleop-2.log].
+log file: /home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/teleop-2*.log
+[roslaunch][INFO] 2018-12-02 23:21:48,370: [cmd_vel_mux-3] process has finished cleanly
+log file: /home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3*.log
+[roslaunch.pmon][INFO] 2018-12-02 23:21:48,370: ProcessMonitor.unregister[teleop-2] starting
+[roslaunch.pmon][INFO] 2018-12-02 23:21:48,370: ProcessMonitor.unregister[teleop-2] complete
+[roslaunch][INFO] 2018-12-02 23:21:48,370: [cmd_vel_mux-3] restarting process
+[roslaunch][INFO] 2018-12-02 23:21:48,371: process[cmd_vel_mux-3]: restarting os process
+[roslaunch][INFO] 2018-12-02 23:21:48,371: process[cmd_vel_mux-3]: start w/ args [[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3.log']]
+[roslaunch][INFO] 2018-12-02 23:21:48,371: process[cmd_vel_mux-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:48,372: process[cmd_vel_mux-3]: started with pid [15710]
+[roslaunch][INFO] 2018-12-02 23:21:48,773: [cmd_vel_mux-3] process has finished cleanly
+log file: /home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3*.log
+[roslaunch][INFO] 2018-12-02 23:21:48,773: [cmd_vel_mux-3] restarting process
+[roslaunch][INFO] 2018-12-02 23:21:48,773: process[cmd_vel_mux-3]: restarting os process
+[roslaunch][INFO] 2018-12-02 23:21:48,774: process[cmd_vel_mux-3]: start w/ args [[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3.log']]
+[roslaunch][INFO] 2018-12-02 23:21:48,774: process[cmd_vel_mux-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:48,775: process[cmd_vel_mux-3]: started with pid [15791]
+[roslaunch][INFO] 2018-12-02 23:21:49,176: [cmd_vel_mux-3] process has finished cleanly
+log file: /home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3*.log
+[roslaunch][INFO] 2018-12-02 23:21:49,176: [cmd_vel_mux-3] restarting process
+[roslaunch][INFO] 2018-12-02 23:21:49,176: process[cmd_vel_mux-3]: restarting os process
+[roslaunch][INFO] 2018-12-02 23:21:49,176: process[cmd_vel_mux-3]: start w/ args [[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3.log']]
+[roslaunch][INFO] 2018-12-02 23:21:49,177: process[cmd_vel_mux-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:49,178: process[cmd_vel_mux-3]: started with pid [15871]
+[roslaunch][INFO] 2018-12-02 23:21:49,579: [cmd_vel_mux-3] process has finished cleanly
+log file: /home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3*.log
+[roslaunch][INFO] 2018-12-02 23:21:49,579: [cmd_vel_mux-3] restarting process
+[roslaunch][INFO] 2018-12-02 23:21:49,579: process[cmd_vel_mux-3]: restarting os process
+[roslaunch][INFO] 2018-12-02 23:21:49,579: process[cmd_vel_mux-3]: start w/ args [[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3.log']]
+[roslaunch][INFO] 2018-12-02 23:21:49,579: process[cmd_vel_mux-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:49,581: process[cmd_vel_mux-3]: started with pid [15951]
+[roslaunch][INFO] 2018-12-02 23:21:49,982: [cmd_vel_mux-3] process has finished cleanly
+log file: /home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3*.log
+[roslaunch][INFO] 2018-12-02 23:21:49,982: [cmd_vel_mux-3] restarting process
+[roslaunch][INFO] 2018-12-02 23:21:49,982: process[cmd_vel_mux-3]: restarting os process
+[roslaunch][INFO] 2018-12-02 23:21:49,982: process[cmd_vel_mux-3]: start w/ args [[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3.log']]
+[roslaunch][INFO] 2018-12-02 23:21:49,982: process[cmd_vel_mux-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:49,984: process[cmd_vel_mux-3]: started with pid [16031]
+[roslaunch][INFO] 2018-12-02 23:21:50,385: [cmd_vel_mux-3] process has finished cleanly
+log file: /home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3*.log
+[roslaunch][INFO] 2018-12-02 23:21:50,385: [cmd_vel_mux-3] restarting process
+[roslaunch][INFO] 2018-12-02 23:21:50,385: process[cmd_vel_mux-3]: restarting os process
+[roslaunch][INFO] 2018-12-02 23:21:50,385: process[cmd_vel_mux-3]: start w/ args [[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3.log']]
+[roslaunch][INFO] 2018-12-02 23:21:50,385: process[cmd_vel_mux-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:50,387: process[cmd_vel_mux-3]: started with pid [16111]
+[roslaunch][INFO] 2018-12-02 23:21:50,888: [cmd_vel_mux-3] process has finished cleanly
+log file: /home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3*.log
+[roslaunch][INFO] 2018-12-02 23:21:50,888: [cmd_vel_mux-3] restarting process
+[roslaunch][INFO] 2018-12-02 23:21:50,888: process[cmd_vel_mux-3]: restarting os process
+[roslaunch][INFO] 2018-12-02 23:21:50,888: process[cmd_vel_mux-3]: start w/ args [[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3.log']]
+[roslaunch][INFO] 2018-12-02 23:21:50,888: process[cmd_vel_mux-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:50,890: process[cmd_vel_mux-3]: started with pid [16191]
+[roslaunch][INFO] 2018-12-02 23:21:51,391: [cmd_vel_mux-3] process has finished cleanly
+log file: /home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3*.log
+[roslaunch][INFO] 2018-12-02 23:21:51,391: [cmd_vel_mux-3] restarting process
+[roslaunch][INFO] 2018-12-02 23:21:51,391: process[cmd_vel_mux-3]: restarting os process
+[roslaunch][INFO] 2018-12-02 23:21:51,391: process[cmd_vel_mux-3]: start w/ args [[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3.log']]
+[roslaunch][INFO] 2018-12-02 23:21:51,391: process[cmd_vel_mux-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:51,393: process[cmd_vel_mux-3]: started with pid [16271]
+[roslaunch][INFO] 2018-12-02 23:21:51,894: [cmd_vel_mux-3] process has finished cleanly
+log file: /home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3*.log
+[roslaunch][INFO] 2018-12-02 23:21:51,895: [cmd_vel_mux-3] restarting process
+[roslaunch][INFO] 2018-12-02 23:21:51,895: process[cmd_vel_mux-3]: restarting os process
+[roslaunch][INFO] 2018-12-02 23:21:51,895: process[cmd_vel_mux-3]: start w/ args [[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3.log']]
+[roslaunch][INFO] 2018-12-02 23:21:51,895: process[cmd_vel_mux-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:51,896: process[cmd_vel_mux-3]: started with pid [16351]
+[roslaunch][INFO] 2018-12-02 23:21:52,398: [cmd_vel_mux-3] process has finished cleanly
+log file: /home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3*.log
+[roslaunch][INFO] 2018-12-02 23:21:52,398: [cmd_vel_mux-3] restarting process
+[roslaunch][INFO] 2018-12-02 23:21:52,398: process[cmd_vel_mux-3]: restarting os process
+[roslaunch][INFO] 2018-12-02 23:21:52,398: process[cmd_vel_mux-3]: start w/ args [[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3.log']]
+[roslaunch][INFO] 2018-12-02 23:21:52,398: process[cmd_vel_mux-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:52,400: process[cmd_vel_mux-3]: started with pid [16431]
+[roslaunch][INFO] 2018-12-02 23:21:52,901: [cmd_vel_mux-3] process has finished cleanly
+log file: /home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3*.log
+[roslaunch][INFO] 2018-12-02 23:21:52,901: [cmd_vel_mux-3] restarting process
+[roslaunch][INFO] 2018-12-02 23:21:52,902: process[cmd_vel_mux-3]: restarting os process
+[roslaunch][INFO] 2018-12-02 23:21:52,902: process[cmd_vel_mux-3]: start w/ args [[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3.log']]
+[roslaunch][INFO] 2018-12-02 23:21:52,902: process[cmd_vel_mux-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:52,904: process[cmd_vel_mux-3]: started with pid [16511]
+[roslaunch][INFO] 2018-12-02 23:21:53,405: [cmd_vel_mux-3] process has finished cleanly
+log file: /home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3*.log
+[roslaunch][INFO] 2018-12-02 23:21:53,405: [cmd_vel_mux-3] restarting process
+[roslaunch][INFO] 2018-12-02 23:21:53,405: process[cmd_vel_mux-3]: restarting os process
+[roslaunch][INFO] 2018-12-02 23:21:53,405: process[cmd_vel_mux-3]: start w/ args [[u'/opt/ros/indigo/lib/topic_tools/mux', 'base_controller/command', '/cmd_vel', '/teleop/cmd_vel', u'mux:=cmd_vel_mux', u'__name:=cmd_vel_mux', u'__log:=/home/fetch/.ros/log/8638c948-f6cb-11e8-8801-000babe55698/cmd_vel_mux-3.log']]
+[roslaunch][INFO] 2018-12-02 23:21:53,405: process[cmd_vel_mux-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2018-12-02 23:21:53,407: process[cmd_vel_mux-3]: started with pid [16591]
+[roslaunch.pmon][INFO] 2018-12-02 23:21:53,438: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, started daemon 139668663158528)>
+[roslaunch.pmon][INFO] 2018-12-02 23:21:53,507: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 139668663158528)>
+[roslaunch.pmon][INFO] 2018-12-02 23:21:53,507: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 139668663158528)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0x7f07240a2110>, <roslaunch.nodeprocess.LocalProcess object at 0x7f07240a22d0>]
+[roslaunch.pmon][INFO] 2018-12-02 23:21:53,507: ProcessMonitor exit: killing cmd_vel_mux-3
+[roslaunch][INFO] 2018-12-02 23:21:53,507: [cmd_vel_mux-3] killing on exit
+[roslaunch.pmon][INFO] 2018-12-02 23:21:53,508: ProcessMonitor exit: killing joy-1
+[roslaunch][INFO] 2018-12-02 23:21:53,508: [joy-1] killing on exit
+[roslaunch][INFO] 2018-12-02 23:21:53,508: process[cmd_vel_mux-3]: killing os process with pid[16591] pgid[16591]
+[roslaunch][INFO] 2018-12-02 23:21:53,508: [cmd_vel_mux-3] sending SIGINT to pgid [16591]
+[roslaunch][INFO] 2018-12-02 23:21:53,508: process[joy-1]: killing os process with pid[15248] pgid[15248]
+[roslaunch][INFO] 2018-12-02 23:21:53,508: [cmd_vel_mux-3] sent SIGINT to pgid [16591]
+[roslaunch][INFO] 2018-12-02 23:21:53,508: [joy-1] sending SIGINT to pgid [15248]
+[roslaunch][INFO] 2018-12-02 23:21:53,509: [joy-1] sent SIGINT to pgid [15248]
+[roslaunch][INFO] 2018-12-02 23:21:53,809: process[cmd_vel_mux-3]: SIGINT killed with return value 0
+[roslaunch][INFO] 2018-12-02 23:21:54,611: process[joy-1]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2018-12-02 23:21:54,611: ProcessMonitor exit: cleaning up data structures and signals
+[roslaunch.pmon][INFO] 2018-12-02 23:21:54,612: ProcessMonitor exit: pmon has shutdown
+[roslaunch][INFO] 2018-12-02 23:21:54,627: process monitor is done spinning, initiating full shutdown
+[roslaunch][INFO] 2018-12-02 23:21:54,627: runner.stop()
+[roslaunch][INFO] 2018-12-02 23:21:54,627: shutting down processing monitor...
+[roslaunch][INFO] 2018-12-02 23:21:54,627: shutting down processing monitor <ProcessMonitor(ProcessMonitor-1, stopped daemon 139668663158528)>
+[roslaunch.pmon][INFO] 2018-12-02 23:21:54,627: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 139668663158528)>
+[roslaunch][INFO] 2018-12-02 23:21:54,628: ... shutting down processing monitor complete
+[roslaunch][INFO] 2018-12-02 23:21:54,628: done
+[roslaunch.pmon][INFO] 2018-12-02 23:21:54,628: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 139668663158528)>
+[rospy.core][INFO] 2018-12-02 23:21:54,628: signal_shutdown [atexit]

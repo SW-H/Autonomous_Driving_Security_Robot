@@ -1,0 +1,35 @@
+[rospy.client][INFO] 2020-11-03 17:47:00,841: init_node, name[/rosbridge_websocket], pid[3414]
+[xmlrpc][INFO] 2020-11-03 17:47:00,842: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-03 17:47:00,842: Started XML-RPC server [http://freight1207:58707/]
+[rospy.init][INFO] 2020-11-03 17:47:00,842: ROS Slave URI: [http://freight1207:58707/]
+[rospy.impl.masterslave][INFO] 2020-11-03 17:47:00,842: _ready: http://freight1207:58707/
+[rospy.registration][INFO] 2020-11-03 17:47:00,843: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2020-11-03 17:47:00,843: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2020-11-03 17:47:00,942: registered with master
+[rospy.rosout][INFO] 2020-11-03 17:47:00,942: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-03 17:47:00,944: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-03 17:47:00,945: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2020-11-03 17:47:00,953: Rosbridge WebSocket server started on port 9090
+[rospy.internal][INFO] 2020-11-03 17:47:01,239: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-03 17:47:07,806: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-11-03 17:47:07,810: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2020-11-03 17:47:07,810: signal-2
+[rospy.core][INFO] 2020-11-03 17:47:08,424: signal_shutdown [atexit]
+[rospy.client][INFO] 2020-11-03 18:07:37,109: init_node, name[/rosbridge_websocket], pid[4688]
+[xmlrpc][INFO] 2020-11-03 18:07:37,110: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-03 18:07:37,110: Started XML-RPC server [http://freight1207:60189/]
+[rospy.init][INFO] 2020-11-03 18:07:37,110: ROS Slave URI: [http://freight1207:60189/]
+[rospy.impl.masterslave][INFO] 2020-11-03 18:07:37,110: _ready: http://freight1207:60189/
+[xmlrpc][INFO] 2020-11-03 18:07:37,110: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-03 18:07:37,111: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-03 18:07:37,210: registered with master
+[rospy.rosout][INFO] 2020-11-03 18:07:37,210: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-03 18:07:37,212: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-03 18:07:37,213: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2020-11-03 18:07:37,225: Rosbridge WebSocket server started on port 9090
+[rospy.internal][INFO] 2020-11-03 18:07:37,448: topic[/rosout] adding connection to [/rosout], count 0
+[tornado.access][WARNING] 2020-11-03 18:07:55,031: 405 POST / (172.22.77.105) 0.36ms
+[rospy.core][INFO] 2020-11-03 18:21:09,962: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-11-03 18:21:09,966: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2020-11-03 18:21:09,966: signal-2
+[rospy.core][INFO] 2020-11-03 18:21:10,130: signal_shutdown [atexit]

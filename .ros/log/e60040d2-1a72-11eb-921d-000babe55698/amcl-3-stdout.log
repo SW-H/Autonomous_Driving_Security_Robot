@@ -1,0 +1,7 @@
+[0m[ INFO] [1604037828.074078540]: Requesting the map...[0m
+[0m[ INFO] [1604037828.075461004]: Received a 446 X 607 map @ 0.050 m/pix
+[0m
+[0m[ INFO] [1604037828.083307568]: Initializing likelihood field model; this can take some time on large maps...[0m
+[0m[ INFO] [1604037828.119548714]: Done initializing likelihood field model.[0m
+[33m[ WARN] [1604038985.157070274]: Shutdown request received.[0m
+[33m[ WARN] [1604038985.157089386]: Reason given for shutdown: [new node registered with same name][0m

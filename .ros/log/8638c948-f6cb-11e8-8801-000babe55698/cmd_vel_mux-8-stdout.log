@@ -1,0 +1,176 @@
+[0m[ INFO] [1543821618.957191275]: advertising[0m
+[33m[ WARN] [1543821619.034879414]: Shutdown request received.[0m
+[33m[ WARN] [1543821619.034906244]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821619.557223982]: advertising[0m
+[33m[ WARN] [1543821619.746539356]: Shutdown request received.[0m
+[33m[ WARN] [1543821619.746558729]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821620.157170485]: advertising[0m
+[33m[ WARN] [1543821620.251750166]: Shutdown request received.[0m
+[33m[ WARN] [1543821620.251768849]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821620.657153384]: advertising[0m
+[33m[ WARN] [1543821620.757829714]: Shutdown request received.[0m
+[33m[ WARN] [1543821620.757855676]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821621.190558888]: advertising[0m
+[33m[ WARN] [1543821621.261700865]: Shutdown request received.[0m
+[33m[ WARN] [1543821621.261720209]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821621.665463543]: Shutdown request received.[0m
+[33m[ WARN] [1543821621.665504020]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821622.090492827]: advertising[0m
+[33m[ WARN] [1543821622.171694371]: Shutdown request received.[0m
+[33m[ WARN] [1543821622.171714050]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821622.790517510]: advertising[0m
+[33m[ WARN] [1543821622.979081736]: Shutdown request received.[0m
+[33m[ WARN] [1543821622.979101613]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821623.490794972]: advertising[0m
+[33m[ WARN] [1543821623.786820290]: Shutdown request received.[0m
+[33m[ WARN] [1543821623.786838043]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821624.190497751]: advertising[0m
+[33m[ WARN] [1543821624.291027397]: Shutdown request received.[0m
+[33m[ WARN] [1543821624.291045513]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821624.723873369]: advertising[0m
+[33m[ WARN] [1543821624.794326836]: Shutdown request received.[0m
+[33m[ WARN] [1543821624.794345420]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821625.423817872]: advertising[0m
+[33m[ WARN] [1543821625.506709097]: Shutdown request received.[0m
+[33m[ WARN] [1543821625.506730296]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821626.123915085]: advertising[0m
+[33m[ WARN] [1543821626.214328347]: Shutdown request received.[0m
+[33m[ WARN] [1543821626.214346541]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821626.623912805]: advertising[0m
+[33m[ WARN] [1543821626.720127987]: Shutdown request received.[0m
+[33m[ WARN] [1543821626.720146135]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821627.257210875]: advertising[0m
+[33m[ WARN] [1543821627.328003741]: Shutdown request received.[0m
+[33m[ WARN] [1543821627.328031464]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821627.631610321]: Shutdown request received.[0m
+[33m[ WARN] [1543821627.631653477]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821628.157160835]: advertising[0m
+[33m[ WARN] [1543821628.239518696]: Shutdown request received.[0m
+[33m[ WARN] [1543821628.239537830]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821628.857205492]: advertising[0m
+[33m[ WARN] [1543821628.946052009]: Shutdown request received.[0m
+[33m[ WARN] [1543821628.946070624]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821629.457209843]: advertising[0m
+[33m[ WARN] [1543821629.552426277]: Shutdown request received.[0m
+[33m[ WARN] [1543821629.552447006]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821629.990538677]: advertising[0m
+[33m[ WARN] [1543821630.058983307]: Shutdown request received.[0m
+[33m[ WARN] [1543821630.059006283]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821630.362546420]: Shutdown request received.[0m
+[33m[ WARN] [1543821630.362587553]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821630.790507660]: advertising[0m
+[33m[ WARN] [1543821630.868016615]: Shutdown request received.[0m
+[33m[ WARN] [1543821630.868035238]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821631.490475588]: advertising[0m
+[33m[ WARN] [1543821631.575811771]: Shutdown request received.[0m
+[33m[ WARN] [1543821631.575831789]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821632.190506491]: advertising[0m
+[33m[ WARN] [1543821632.282978619]: Shutdown request received.[0m
+[33m[ WARN] [1543821632.282997572]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821632.690501242]: advertising[0m
+[33m[ WARN] [1543821632.789317134]: Shutdown request received.[0m
+[33m[ WARN] [1543821632.789337918]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821633.223875397]: advertising[0m
+[33m[ WARN] [1543821633.294367746]: Shutdown request received.[0m
+[33m[ WARN] [1543821633.294386700]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821633.699134332]: Shutdown request received.[0m
+[33m[ WARN] [1543821633.699182949]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821634.123831623]: advertising[0m
+[33m[ WARN] [1543821634.204861469]: Shutdown request received.[0m
+[33m[ WARN] [1543821634.204880241]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821634.609564062]: Shutdown request received.[0m
+[33m[ WARN] [1543821634.609606921]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821635.023853351]: advertising[0m
+[33m[ WARN] [1543821635.115519669]: Shutdown request received.[0m
+[33m[ WARN] [1543821635.115541621]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821635.557197538]: advertising[0m
+[33m[ WARN] [1543821635.620524995]: Shutdown request received.[0m
+[33m[ WARN] [1543821635.620546601]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821636.229232779]: Shutdown request received.[0m
+[33m[ WARN] [1543821636.229272874]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821636.632382512]: Shutdown request received.[0m
+[33m[ WARN] [1543821636.632421246]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821637.038886720]: Shutdown request received.[0m
+[33m[ WARN] [1543821637.038924857]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821637.457233903]: advertising[0m
+[33m[ WARN] [1543821637.545027324]: Shutdown request received.[0m
+[33m[ WARN] [1543821637.545049372]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821637.957188870]: advertising[0m
+[33m[ WARN] [1543821638.051032715]: Shutdown request received.[0m
+[33m[ WARN] [1543821638.051055671]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821638.457238929]: advertising[0m
+[33m[ WARN] [1543821638.556884738]: Shutdown request received.[0m
+[33m[ WARN] [1543821638.556904221]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821638.990492717]: advertising[0m
+[33m[ WARN] [1543821639.062397602]: Shutdown request received.[0m
+[33m[ WARN] [1543821639.062418080]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821639.670932674]: Shutdown request received.[0m
+[33m[ WARN] [1543821639.670973822]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821640.090528947]: advertising[0m
+[33m[ WARN] [1543821640.177050051]: Shutdown request received.[0m
+[33m[ WARN] [1543821640.177070596]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821640.590544458]: advertising[0m
+[33m[ WARN] [1543821640.682450450]: Shutdown request received.[0m
+[33m[ WARN] [1543821640.682470510]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821641.090563935]: advertising[0m
+[33m[ WARN] [1543821641.187908422]: Shutdown request received.[0m
+[33m[ WARN] [1543821641.187928563]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821641.723832117]: advertising[0m
+[33m[ WARN] [1543821641.794118306]: Shutdown request received.[0m
+[33m[ WARN] [1543821641.794137038]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821642.401143169]: Shutdown request received.[0m
+[33m[ WARN] [1543821642.401183948]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821642.823838372]: advertising[0m
+[33m[ WARN] [1543821642.905644162]: Shutdown request received.[0m
+[33m[ WARN] [1543821642.905662809]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821643.523887702]: advertising[0m
+[33m[ WARN] [1543821643.612305648]: Shutdown request received.[0m
+[33m[ WARN] [1543821643.612324019]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821724.438625628]: advertising[0m
+[33m[ WARN] [1543821724.533324499]: Shutdown request received.[0m
+[33m[ WARN] [1543821724.533344615]: Reason given for shutdown: [new node registered with same name][0m
+[0m[ INFO] [1543821725.071113365]: advertising[0m
+[33m[ WARN] [1543821725.146370890]: Shutdown request received.[0m
+[33m[ WARN] [1543821725.146392184]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821725.551220170]: Shutdown request received.[0m
+[33m[ WARN] [1543821725.551260979]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821725.956337816]: Shutdown request received.[0m
+[33m[ WARN] [1543821725.956375662]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821726.361630668]: Shutdown request received.[0m
+[33m[ WARN] [1543821726.361667803]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821726.768037883]: Shutdown request received.[0m
+[33m[ WARN] [1543821726.768077956]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821727.172696139]: Shutdown request received.[0m
+[33m[ WARN] [1543821727.172735802]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821727.577450416]: Shutdown request received.[0m
+[33m[ WARN] [1543821727.577489536]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821727.982806603]: Shutdown request received.[0m
+[33m[ WARN] [1543821727.982847121]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821728.488037357]: Shutdown request received.[0m
+[33m[ WARN] [1543821728.488074042]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821728.897395896]: Shutdown request received.[0m
+[33m[ WARN] [1543821728.897440250]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821729.302541808]: Shutdown request received.[0m
+[33m[ WARN] [1543821729.302580296]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821729.808981936]: Shutdown request received.[0m
+[33m[ WARN] [1543821729.809023145]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821730.213986140]: Shutdown request received.[0m
+[33m[ WARN] [1543821730.214024406]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821730.720271355]: Shutdown request received.[0m
+[33m[ WARN] [1543821730.720309994]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821731.225077188]: Shutdown request received.[0m
+[33m[ WARN] [1543821731.225116981]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821731.730374130]: Shutdown request received.[0m
+[33m[ WARN] [1543821731.730411031]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821732.135199638]: Shutdown request received.[0m
+[33m[ WARN] [1543821732.135243001]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821732.539785302]: Shutdown request received.[0m
+[33m[ WARN] [1543821732.539826537]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821732.948288038]: Shutdown request received.[0m
+[33m[ WARN] [1543821732.948327045]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821733.353623505]: Shutdown request received.[0m
+[33m[ WARN] [1543821733.353664944]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821733.758708029]: Shutdown request received.[0m
+[33m[ WARN] [1543821733.758747344]: Reason given for shutdown: [new node registered with same name][0m
+[33m[ WARN] [1543821734.265353072]: Shutdown request received.[0m
+[33m[ WARN] [1543821734.265387076]: Reason given for shutdown: [new node registered with same name][0m

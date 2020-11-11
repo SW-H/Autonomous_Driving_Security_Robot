@@ -1,0 +1,3 @@
+float64 locationX
+float64 locationY
+float64 orientation

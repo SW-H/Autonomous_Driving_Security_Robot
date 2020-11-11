@@ -1,0 +1,19 @@
+[rospy.client][INFO] 2020-10-29 20:11:12,194: init_node, name[/rosbridge_websocket], pid[10883]
+[xmlrpc][INFO] 2020-10-29 20:11:12,195: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-29 20:11:12,195: Started XML-RPC server [http://freight1207:45880/]
+[rospy.init][INFO] 2020-10-29 20:11:12,195: ROS Slave URI: [http://freight1207:45880/]
+[rospy.impl.masterslave][INFO] 2020-10-29 20:11:12,195: _ready: http://freight1207:45880/
+[xmlrpc][INFO] 2020-10-29 20:11:12,196: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-29 20:11:12,196: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-10-29 20:11:12,295: registered with master
+[rospy.rosout][INFO] 2020-10-29 20:11:12,295: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-29 20:11:12,297: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-29 20:11:12,298: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2020-10-29 20:11:12,309: Rosbridge WebSocket server started on port 9090
+[rospy.internal][INFO] 2020-10-29 20:11:12,580: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-29 20:42:54,267: signal_shutdown [signal-15]
+[rospy.registration][WARNING] 2020-10-29 20:42:54,268: cannot unregister with master due to network issues
+[rospy.internal][INFO] 2020-10-29 20:42:54,268: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2020-10-29 20:42:54,268: signal-15
+[rospy.core][INFO] 2020-10-29 20:42:54,345: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-10-29 20:42:54,345: signal_shutdown [atexit]

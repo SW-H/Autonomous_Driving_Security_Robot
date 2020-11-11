@@ -1,0 +1,137 @@
+[rospy.client][INFO] 2018-12-06 22:34:37,996: init_node, name[/rostful_server], pid[7754]
+[xmlrpc][INFO] 2018-12-06 22:34:37,996: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-12-06 22:34:37,997: Started XML-RPC server [http://freight1207:46085/]
+[rospy.init][INFO] 2018-12-06 22:34:37,997: ROS Slave URI: [http://freight1207:46085/]
+[rospy.impl.masterslave][INFO] 2018-12-06 22:34:37,997: _ready: http://freight1207:46085/
+[xmlrpc][INFO] 2018-12-06 22:34:37,997: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-12-06 22:34:37,997: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2018-12-06 22:34:38,097: registered with master
+[rospy.rosout][INFO] 2018-12-06 22:34:38,097: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-12-06 22:34:38,099: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-12-06 22:34:38,099: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2018-12-06 22:34:38,103: rostful_server: Delaying the start 1 seconds
+[rospy.internal][INFO] 2018-12-06 22:34:38,373: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2018-12-06 22:34:39,160: rostful_server: Started server on port 8080
+[rospy.internal][INFO] 2018-12-06 22:34:39,165: topic[/cmd_undock] adding connection to [http://freight1207:46085/], count 0
+[rospy.internal][INFO] 2018-12-06 22:34:39,166: topic[/cmd_dock] adding connection to [http://freight1207:46085/], count 0
+[rospy.internal][INFO] 2018-12-06 22:34:39,168: topic[/enable_software_runstop] adding connection to [http://freight1207:46085/], count 0
+[rospy.internal][INFO] 2018-12-06 22:34:39,168: topic[/remote_control] adding connection to [http://freight1207:46085/], count 0
+[rospy.internal][INFO] 2018-12-06 22:34:39,170: topic[/local_control/cancel] adding connection to [http://freight1207:46085/], count 0
+[rospy.internal][INFO] 2018-12-06 22:34:39,171: topic[/local_control/initialpose] adding connection to [http://freight1207:46085/], count 0
+[rospy.internal][INFO] 2018-12-06 22:34:39,171: topic[/cmd_dock] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-06 22:34:39,172: topic[/cmd_undock] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-06 22:34:39,172: topic[/local_control/goto] adding connection to [http://freight1207:46085/], count 0
+[rospy.internal][INFO] 2018-12-06 22:34:39,173: topic[/enable_software_runstop] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-06 22:34:39,173: topic[/remote_control] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-06 22:34:39,173: topic[/local_control/cancel] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-06 22:34:39,174: topic[/local_control/initialpose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-06 22:34:39,174: topic[/local_control/goto] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-06 22:34:39,198: topic[/enable_software_runstop] adding connection to [/software_runstop], count 1
+[rospy.internal][INFO] 2018-12-06 22:34:39,376: topic[/local_control/cancel] adding connection to [/local_control_navigation], count 1
+[rospy.internal][INFO] 2018-12-06 22:34:39,376: topic[/local_control/initialpose] adding connection to [/local_control_initialpose], count 1
+[rospy.internal][INFO] 2018-12-06 22:34:39,376: topic[/local_control/goto] adding connection to [/local_control_navigation], count 1
+[rospy.internal][INFO] 2018-12-06 22:34:39,376: topic[/remote_control] adding connection to [/remote_control], count 1
+[rosout][WARNING] 2018-12-06 22:40:46,661: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: 3.97
+    locationY: 5.84
+    orientation: 6.09 to topic /local_control/goto
+[rospy.internal][INFO] 2018-12-06 22:49:13,761: topic[/cmd_dock] adding connection to [/dock_on_button], count 1
+[rospy.internal][INFO] 2018-12-06 22:49:13,765: topic[/cmd_undock] adding connection to [/undock_on_button], count 1
+[rosout][WARNING] 2018-12-06 22:49:23,533: publishing data: True to topic /cmd_dock
+[rosout][WARNING] 2018-12-06 22:49:54,289: publishing data: True to topic /cmd_undock
+[rosout][INFO] 2018-12-06 22:50:48,266: rostful_server: Shutting down the server
+[rospy.core][INFO] 2018-12-06 22:50:48,266: signal_shutdown [Closing]
+[rospy.internal][INFO] 2018-12-06 22:50:48,270: topic[/enable_software_runstop] removing connection to /rostful_server
+[rospy.internal][INFO] 2018-12-06 22:50:48,271: topic[/enable_software_runstop] removing connection to /software_runstop
+[rospy.internal][INFO] 2018-12-06 22:50:48,271: topic[/local_control/goto] removing connection to /rostful_server
+[rospy.internal][INFO] 2018-12-06 22:50:48,271: topic[/local_control/goto] removing connection to /local_control_navigation
+[rospy.internal][INFO] 2018-12-06 22:50:48,271: topic[/cmd_dock] removing connection to /rostful_server
+[rospy.internal][INFO] 2018-12-06 22:50:48,272: topic[/cmd_dock] removing connection to /dock_on_button
+[rospy.internal][INFO] 2018-12-06 22:50:48,272: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-12-06 22:50:48,272: topic[/local_control/initialpose] removing connection to /rostful_server
+[rospy.internal][INFO] 2018-12-06 22:50:48,272: topic[/local_control/initialpose] removing connection to /local_control_initialpose
+[rospy.internal][INFO] 2018-12-06 22:50:48,273: topic[/cmd_undock] removing connection to /rostful_server
+[rospy.internal][INFO] 2018-12-06 22:50:48,273: topic[/cmd_undock] removing connection to /undock_on_button
+[rospy.internal][ERROR] 2018-12-06 22:50:48,273: Unable to initiate TCP/IP socket to freight1207:43160 (http://freight1207:46085/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2018-12-06 22:50:48,273: topic[/remote_control] removing connection to /rostful_server
+[rospy.internal][ERROR] 2018-12-06 22:50:48,274: Unable to initiate TCP/IP socket to freight1207:43160 (http://freight1207:46085/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2018-12-06 22:50:48,273: Unable to initiate TCP/IP socket to freight1207:43160 (http://freight1207:46085/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2018-12-06 22:50:48,274: Unable to initiate TCP/IP socket to freight1207:43160 (http://freight1207:46085/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2018-12-06 22:50:48,274: topic[/remote_control] removing connection to /remote_control
+[rospy.internal][ERROR] 2018-12-06 22:50:48,274: Unable to initiate TCP/IP socket to freight1207:43160 (http://freight1207:46085/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2018-12-06 22:50:48,274: Unable to initiate TCP/IP socket to freight1207:43160 (http://freight1207:46085/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2018-12-06 22:50:48,274: topic[/local_control/cancel] removing connection to /rostful_server
+[rospy.internal][INFO] 2018-12-06 22:50:48,275: topic[/local_control/cancel] removing connection to /local_control_navigation
+[rospy.internal][ERROR] 2018-12-06 22:50:48,275: Unable to initiate TCP/IP socket to freight1207:43160 (http://freight1207:46085/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2018-12-06 22:50:48,275: topic[/enable_software_runstop] removing connection to http://freight1207:46085/
+[rospy.internal][INFO] 2018-12-06 22:50:48,275: topic[/local_control/goto] removing connection to http://freight1207:46085/
+[rospy.internal][INFO] 2018-12-06 22:50:48,275: topic[/cmd_dock] removing connection to http://freight1207:46085/
+[rospy.internal][INFO] 2018-12-06 22:50:48,275: topic[/local_control/initialpose] removing connection to http://freight1207:46085/
+[rospy.internal][INFO] 2018-12-06 22:50:48,275: topic[/cmd_undock] removing connection to http://freight1207:46085/
+[rospy.internal][INFO] 2018-12-06 22:50:48,275: topic[/remote_control] removing connection to http://freight1207:46085/
+[rospy.internal][INFO] 2018-12-06 22:50:48,275: topic[/local_control/cancel] removing connection to http://freight1207:46085/
+[rospy.impl.masterslave][INFO] 2018-12-06 22:50:48,276: Closing
+[rospy.core][INFO] 2018-12-06 22:50:48,391: signal_shutdown [atexit]

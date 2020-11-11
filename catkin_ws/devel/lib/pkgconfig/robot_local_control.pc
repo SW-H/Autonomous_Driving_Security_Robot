@@ -1,0 +1,8 @@
+prefix=/home/fetch/catkin_ws/devel
+
+Name: robot_local_control
+Description: Description of robot_local_control
+Version: 0.1.0
+Cflags: -I/home/fetch/catkin_ws/devel/include
+Libs: -L/home/fetch/catkin_ws/devel/lib 
+Requires: message_runtime

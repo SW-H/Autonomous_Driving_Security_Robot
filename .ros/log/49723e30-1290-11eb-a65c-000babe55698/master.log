@@ -1,0 +1,21 @@
+[rosmaster.main][INFO] 2020-10-19 21:54:08,355: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2020-10-19 21:54:08,355: Starting ROS Master Node
+[xmlrpc][INFO] 2020-10-19 21:54:08,356: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2020-10-19 21:54:08,356: Started XML-RPC server [http://freight1207:11311/]
+[xmlrpc][INFO] 2020-10-19 21:54:08,356: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2020-10-19 21:54:08,356: Master initialized: port[11311], uri[http://freight1207:11311/]
+[rosmaster.master][INFO] 2020-10-19 21:54:08,380: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2020-10-19 21:54:08,381: +PARAM [/roslaunch/uris/host_freight1207__52639] by /roslaunch
+[rosmaster.master][INFO] 2020-10-19 21:54:08,408: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2020-10-19 21:54:08,408: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2020-10-19 21:54:08,409: +SERVICE [/rosout/get_loggers] /rosout http://freight1207:56594/
+[rosmaster.master][INFO] 2020-10-19 21:54:08,410: +SERVICE [/rosout/set_logger_level] /rosout http://freight1207:56594/
+[rosmaster.master][INFO] 2020-10-19 21:54:08,411: +PUB [/rosout_agg] /rosout http://freight1207:56594/
+[rosmaster.master][INFO] 2020-10-19 21:54:08,413: +SUB [/rosout] /rosout http://freight1207:56594/
+[rosmaster.master][INFO] 2020-10-19 21:55:08,789: -PUB [/rosout_agg] /rosout http://freight1207:56594/
+[rosmaster.master][INFO] 2020-10-19 21:55:08,790: -SUB [/rosout] /rosout http://freight1207:56594/
+[rosmaster.master][INFO] 2020-10-19 21:55:08,790: -SERVICE [/rosout/get_loggers] /rosout rosrpc://freight1207:44047
+[rosmaster.master][INFO] 2020-10-19 21:55:08,790: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://freight1207:44047
+[rosmaster.main][INFO] 2020-10-19 21:55:08,866: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2020-10-19 21:55:08,866: stopping master...
+[rospy.core][INFO] 2020-10-19 21:55:08,866: signal_shutdown [atexit]

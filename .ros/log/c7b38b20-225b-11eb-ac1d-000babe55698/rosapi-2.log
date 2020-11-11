@@ -1,0 +1,36 @@
+[rospy.client][INFO] 2020-11-08 23:38:41,092: init_node, name[/rosapi], pid[3307]
+[xmlrpc][INFO] 2020-11-08 23:38:41,092: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-08 23:38:41,093: Started XML-RPC server [http://freight1207:51690/]
+[rospy.init][INFO] 2020-11-08 23:38:41,093: ROS Slave URI: [http://freight1207:51690/]
+[rospy.impl.masterslave][INFO] 2020-11-08 23:38:41,093: _ready: http://freight1207:51690/
+[xmlrpc][INFO] 2020-11-08 23:38:41,093: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-08 23:38:41,093: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-08 23:38:41,193: registered with master
+[rospy.rosout][INFO] 2020-11-08 23:38:41,193: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-08 23:38:41,195: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-08 23:38:41,196: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2020-11-08 23:38:41,217: Rosapi started
+[rospy.internal][INFO] 2020-11-08 23:38:41,407: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-08 23:54:37,060: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-11-08 23:54:37,067: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2020-11-08 23:54:37,067: signal-2
+[rospy.core][INFO] 2020-11-08 23:54:37,199: signal_shutdown [atexit]
+[rospy.client][INFO] 2020-11-08 23:55:18,463: init_node, name[/rosapi], pid[3469]
+[xmlrpc][INFO] 2020-11-08 23:55:18,463: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-08 23:55:18,463: Started XML-RPC server [http://freight1207:42190/]
+[rospy.init][INFO] 2020-11-08 23:55:18,463: ROS Slave URI: [http://freight1207:42190/]
+[rospy.impl.masterslave][INFO] 2020-11-08 23:55:18,464: _ready: http://freight1207:42190/
+[xmlrpc][INFO] 2020-11-08 23:55:18,464: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-08 23:55:18,464: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-08 23:55:18,564: registered with master
+[rospy.rosout][INFO] 2020-11-08 23:55:18,564: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-08 23:55:18,565: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-08 23:55:18,566: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2020-11-08 23:55:18,588: Rosapi started
+[rospy.internal][INFO] 2020-11-08 23:55:18,793: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-09 01:19:36,136: signal_shutdown [signal-15]
+[rospy.registration][WARNING] 2020-11-09 01:19:36,137: cannot unregister with master due to network issues
+[rospy.internal][INFO] 2020-11-09 01:19:36,137: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2020-11-09 01:19:36,137: signal-15
+[rospy.core][INFO] 2020-11-09 01:19:36,291: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 01:19:36,291: signal_shutdown [atexit]

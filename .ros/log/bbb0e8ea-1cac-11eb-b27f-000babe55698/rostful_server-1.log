@@ -1,0 +1,723 @@
+[rospy.client][INFO] 2020-11-01 18:13:05,216: init_node, name[/rostful_server], pid[4726]
+[xmlrpc][INFO] 2020-11-01 18:13:05,216: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-01 18:13:05,216: Started XML-RPC server [http://freight1207:59822/]
+[rospy.init][INFO] 2020-11-01 18:13:05,217: ROS Slave URI: [http://freight1207:59822/]
+[rospy.impl.masterslave][INFO] 2020-11-01 18:13:05,217: _ready: http://freight1207:59822/
+[xmlrpc][INFO] 2020-11-01 18:13:05,217: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-01 18:13:05,217: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-01 18:13:05,317: registered with master
+[rospy.rosout][INFO] 2020-11-01 18:13:05,317: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-01 18:13:05,320: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-01 18:13:05,321: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-11-01 18:13:05,326: rostful_server: Delaying the start 1 seconds
+[rospy.internal][INFO] 2020-11-01 18:13:05,566: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2020-11-01 18:13:06,372: topic[/enable_software_runstop] adding connection to [/software_runstop], count 0
+[rospy.internal][INFO] 2020-11-01 18:13:06,383: topic[/enable_software_runstop] adding connection to [http://freight1207:59822/], count 0
+[rospy.internal][INFO] 2020-11-01 18:13:06,384: topic[/enable_software_runstop] adding connection to [/rostful_server], count 1
+[rosout][INFO] 2020-11-01 18:13:06,400: rostful_server: Started server on port 8080
+[rospy.client][INFO] 2020-11-01 18:13:51,661: init_node, name[/rostful_server], pid[5089]
+[xmlrpc][INFO] 2020-11-01 18:13:51,661: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-01 18:13:51,662: Started XML-RPC server [http://freight1207:40099/]
+[rospy.init][INFO] 2020-11-01 18:13:51,662: ROS Slave URI: [http://freight1207:40099/]
+[rospy.impl.masterslave][INFO] 2020-11-01 18:13:51,662: _ready: http://freight1207:40099/
+[xmlrpc][INFO] 2020-11-01 18:13:51,662: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-01 18:13:51,663: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-01 18:13:51,762: registered with master
+[rospy.rosout][INFO] 2020-11-01 18:13:51,762: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-01 18:13:51,764: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-01 18:13:51,765: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-11-01 18:13:51,770: rostful_server: Delaying the start 1 seconds
+[rospy.impl.masterslave][INFO] 2020-11-01 18:13:51,826: external shutdown request from [/master]: new node registered with same name
+[rospy.core][INFO] 2020-11-01 18:13:51,826: signal_shutdown [external shutdown request from [/master]: [new node registered with same name]]
+[rospy.internal][INFO] 2020-11-01 18:13:51,828: topic[/enable_software_runstop] removing connection to /software_runstop
+[rospy.internal][INFO] 2020-11-01 18:13:51,828: topic[/enable_software_runstop] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-01 18:13:51,828: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-01 18:13:51,828: topic[/enable_software_runstop] removing connection to http://freight1207:59822/
+[rospy.internal][WARNING] 2020-11-01 18:13:51,830: Unknown error initiating TCP/IP socket to freight1207:38720 (http://freight1207:59822/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 556, in connect
+    self.write_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 607, in write_header
+    self.stat_bytes += write_ros_handshake_header(sock, protocol.get_header_fields())
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rosgraph/network.py", line 423, in write_ros_handshake_header
+    sock.sendall(s)
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+  File "/usr/lib/python2.7/socket.py", line 170, in _dummy
+    raise error(EBADF, 'Bad file descriptor')
+error: [Errno 9] Bad file descriptor
+
+[rospy.internal][INFO] 2020-11-01 18:13:52,027: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-01 18:13:52,797: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-11-01 18:13:52,799: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2020-11-01 18:13:52,799: atexit
+[rosout][INFO] 2020-11-01 18:13:56,145: rostful_server: Shutting down the server
+[rospy.core][INFO] 2020-11-01 18:13:56,146: signal_shutdown [Closing]
+[rospy.core][INFO] 2020-11-01 18:13:56,146: signal_shutdown [atexit]
+[rospy.client][INFO] 2020-11-01 18:14:00,423: init_node, name[/rostful_server], pid[5160]
+[xmlrpc][INFO] 2020-11-01 18:14:00,423: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-01 18:14:00,423: Started XML-RPC server [http://freight1207:60978/]
+[rospy.init][INFO] 2020-11-01 18:14:00,423: ROS Slave URI: [http://freight1207:60978/]
+[rospy.impl.masterslave][INFO] 2020-11-01 18:14:00,423: _ready: http://freight1207:60978/
+[xmlrpc][INFO] 2020-11-01 18:14:00,423: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-01 18:14:00,424: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-01 18:14:00,523: registered with master
+[rospy.rosout][INFO] 2020-11-01 18:14:00,524: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-01 18:14:00,525: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-01 18:14:00,526: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-11-01 18:14:00,530: rostful_server: Delaying the start 1 seconds
+[rospy.internal][INFO] 2020-11-01 18:14:00,740: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-11-01 18:14:01,561: rostful_server: Started server on port 8080
+[rospy.internal][INFO] 2020-11-01 18:14:01,589: topic[/enable_software_runstop] adding connection to [http://freight1207:60978/], count 0
+[rospy.internal][INFO] 2020-11-01 18:14:01,590: topic[/enable_software_runstop] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 18:14:01,612: topic[/enable_software_runstop] adding connection to [/software_runstop], count 1
+[rosout][INFO] 2020-11-01 18:15:17,827: rostful_server: Shutting down the server
+[rospy.core][INFO] 2020-11-01 18:15:17,827: signal_shutdown [Closing]
+[rospy.internal][INFO] 2020-11-01 18:15:17,829: topic[/enable_software_runstop] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-01 18:15:17,829: topic[/enable_software_runstop] removing connection to /software_runstop
+[rospy.internal][INFO] 2020-11-01 18:15:17,829: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-01 18:15:17,830: topic[/enable_software_runstop] removing connection to http://freight1207:60978/
+[rospy.impl.masterslave][INFO] 2020-11-01 18:15:17,830: Closing
+[rospy.internal][ERROR] 2020-11-01 18:15:17,830: Unable to initiate TCP/IP socket to freight1207:38065 (http://freight1207:60978/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.core][INFO] 2020-11-01 18:15:17,994: signal_shutdown [atexit]
+[rospy.client][INFO] 2020-11-01 18:15:24,177: init_node, name[/rostful_server], pid[5233]
+[xmlrpc][INFO] 2020-11-01 18:15:24,177: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-01 18:15:24,177: Started XML-RPC server [http://freight1207:32826/]
+[rospy.init][INFO] 2020-11-01 18:15:24,177: ROS Slave URI: [http://freight1207:32826/]
+[rospy.impl.masterslave][INFO] 2020-11-01 18:15:24,178: _ready: http://freight1207:32826/
+[xmlrpc][INFO] 2020-11-01 18:15:24,178: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-01 18:15:24,178: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-01 18:15:24,278: registered with master
+[rospy.rosout][INFO] 2020-11-01 18:15:24,278: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-01 18:15:24,280: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-01 18:15:24,280: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-11-01 18:15:24,285: rostful_server: Delaying the start 1 seconds
+[rospy.internal][INFO] 2020-11-01 18:15:24,490: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-11-01 18:15:25,317: rostful_server: Started server on port 8080
+[rospy.internal][INFO] 2020-11-01 18:15:25,344: topic[/enable_software_runstop] adding connection to [http://freight1207:32826/], count 0
+[rospy.internal][INFO] 2020-11-01 18:15:25,345: topic[/enable_software_runstop] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 18:15:25,395: topic[/enable_software_runstop] adding connection to [/software_runstop], count 1
+[rosout][INFO] 2020-11-01 18:16:24,455: rostful_server: Shutting down the server
+[rospy.core][INFO] 2020-11-01 18:16:24,456: signal_shutdown [Closing]
+[rospy.internal][INFO] 2020-11-01 18:16:24,458: topic[/enable_software_runstop] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-01 18:16:24,458: topic[/enable_software_runstop] removing connection to /software_runstop
+[rospy.internal][INFO] 2020-11-01 18:16:24,458: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-01 18:16:24,458: topic[/enable_software_runstop] removing connection to http://freight1207:32826/
+[rospy.impl.masterslave][INFO] 2020-11-01 18:16:24,458: Closing
+[rospy.internal][ERROR] 2020-11-01 18:16:24,459: Unable to initiate TCP/IP socket to freight1207:56842 (http://freight1207:32826/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.core][INFO] 2020-11-01 18:16:24,574: signal_shutdown [atexit]
+[rospy.client][INFO] 2020-11-01 18:17:27,871: init_node, name[/rostful_server], pid[5406]
+[xmlrpc][INFO] 2020-11-01 18:17:27,871: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-01 18:17:27,871: Started XML-RPC server [http://freight1207:46495/]
+[rospy.init][INFO] 2020-11-01 18:17:27,871: ROS Slave URI: [http://freight1207:46495/]
+[rospy.impl.masterslave][INFO] 2020-11-01 18:17:27,872: _ready: http://freight1207:46495/
+[xmlrpc][INFO] 2020-11-01 18:17:27,872: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-01 18:17:27,872: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-01 18:17:27,972: registered with master
+[rospy.rosout][INFO] 2020-11-01 18:17:27,972: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-01 18:17:27,974: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-01 18:17:27,974: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-11-01 18:17:27,978: rostful_server: Delaying the start 1 seconds
+[rospy.internal][INFO] 2020-11-01 18:17:28,220: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-11-01 18:17:29,029: rostful_server: Started server on port 8080
+[rospy.internal][INFO] 2020-11-01 18:17:29,036: topic[/enable_software_runstop] adding connection to [/software_runstop], count 0
+[rospy.internal][INFO] 2020-11-01 18:17:29,040: topic[/current/pose] adding connection to [http://freight1207:46495/], count 0
+[rospy.internal][INFO] 2020-11-01 18:17:29,040: topic[/current/pose] adding connection to [http://freight1207:60434/], count 0
+[rospy.internal][INFO] 2020-11-01 18:17:29,042: topic[/enable_software_runstop] adding connection to [http://freight1207:46495/], count 0
+[rospy.internal][INFO] 2020-11-01 18:17:29,043: topic[/local_control/cancel] adding connection to [http://freight1207:46495/], count 0
+[rospy.internal][INFO] 2020-11-01 18:17:29,044: topic[/local_control/initialpose] adding connection to [http://freight1207:46495/], count 0
+[rospy.internal][INFO] 2020-11-01 18:17:29,045: topic[/local_control/goto] adding connection to [http://freight1207:46495/], count 0
+[rospy.internal][INFO] 2020-11-01 18:17:29,045: topic[/current/pose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 18:17:29,046: topic[/enable_software_runstop] adding connection to [/rostful_server], count 1
+[rospy.internal][INFO] 2020-11-01 18:17:29,046: topic[/local_control/cancel] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 18:17:29,046: topic[/local_control/initialpose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 18:17:29,046: topic[/local_control/goto] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 18:17:29,222: topic[/local_control/initialpose] adding connection to [/local_control_initialpose], count 1
+[rospy.internal][INFO] 2020-11-01 18:17:29,223: topic[/local_control/goto] adding connection to [/local_control_navigation], count 1
+[rospy.internal][INFO] 2020-11-01 18:17:29,223: topic[/local_control/cancel] adding connection to [/local_control_navigation], count 1
+[rosout][WARNING] 2020-11-01 18:17:30,229: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: 0.5
+    locationY: -0.19
+    orientation: 0.49
+  - 
+    locationX: 0.45
+    locationY: -1.23
+    orientation: -0.71 to topic /local_control/goto
+[rosout][WARNING] 2020-11-01 18:17:39,440: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: 0.5
+    locationY: -0.19
+    orientation: 0.49
+  - 
+    locationX: 0.45
+    locationY: -1.23
+    orientation: -0.71 to topic /local_control/goto
+[rosout][WARNING] 2020-11-01 18:35:24,814: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: 0.5
+    locationY: -0.19
+    orientation: 0.49
+  - 
+    locationX: 0.45
+    locationY: -1.23
+    orientation: -0.71 to topic /local_control/goto
+[rosout][WARNING] 2020-11-01 19:02:20,972: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: 0.5
+    locationY: -0.19
+    orientation: 0.49
+  - 
+    locationX: 0.45
+    locationY: -1.23
+    orientation: -0.71 to topic /local_control/goto
+[rosout][INFO] 2020-11-01 19:08:39,754: rostful_server: Shutting down the server
+[rospy.core][INFO] 2020-11-01 19:08:39,755: signal_shutdown [Closing]
+[rospy.internal][INFO] 2020-11-01 19:08:39,758: topic[/enable_software_runstop] removing connection to /software_runstop
+[rospy.internal][INFO] 2020-11-01 19:08:39,758: topic[/enable_software_runstop] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-01 19:08:39,758: topic[/local_control/goto] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-01 19:08:39,759: topic[/local_control/goto] removing connection to /local_control_navigation
+[rospy.internal][INFO] 2020-11-01 19:08:39,759: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-01 19:08:39,759: topic[/local_control/initialpose] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-01 19:08:39,759: topic[/local_control/initialpose] removing connection to /local_control_initialpose
+[rospy.internal][ERROR] 2020-11-01 19:08:39,760: Unable to initiate TCP/IP socket to freight1207:50166 (http://freight1207:46495/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:08:39,760: topic[/local_control/cancel] removing connection to /rostful_server
+[rospy.internal][ERROR] 2020-11-01 19:08:39,760: Unable to initiate TCP/IP socket to freight1207:50166 (http://freight1207:46495/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-01 19:08:39,760: Unable to initiate TCP/IP socket to freight1207:50166 (http://freight1207:46495/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:08:39,760: topic[/local_control/cancel] removing connection to /local_control_navigation
+[rospy.internal][ERROR] 2020-11-01 19:08:39,761: Unable to initiate TCP/IP socket to freight1207:50166 (http://freight1207:46495/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:08:39,761: topic[/current/pose] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-01 19:08:39,761: topic[/enable_software_runstop] removing connection to http://freight1207:46495/
+[rospy.internal][ERROR] 2020-11-01 19:08:39,761: Unable to initiate TCP/IP socket to freight1207:50166 (http://freight1207:46495/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:08:39,761: topic[/local_control/initialpose] removing connection to http://freight1207:46495/
+[rospy.internal][INFO] 2020-11-01 19:08:39,761: topic[/local_control/goto] removing connection to http://freight1207:46495/
+[rospy.internal][INFO] 2020-11-01 19:08:39,761: topic[/local_control/cancel] removing connection to http://freight1207:46495/
+[rospy.internal][INFO] 2020-11-01 19:08:39,761: topic[/current/pose] removing connection to http://freight1207:46495/
+[rospy.internal][INFO] 2020-11-01 19:08:39,761: topic[/current/pose] removing connection to http://freight1207:60434/
+[rospy.impl.masterslave][INFO] 2020-11-01 19:08:39,762: Closing
+[rospy.core][INFO] 2020-11-01 19:08:39,877: signal_shutdown [atexit]
+[rospy.client][INFO] 2020-11-01 19:08:49,120: init_node, name[/rostful_server], pid[5908]
+[xmlrpc][INFO] 2020-11-01 19:08:49,120: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-01 19:08:49,120: Started XML-RPC server [http://freight1207:35408/]
+[rospy.init][INFO] 2020-11-01 19:08:49,120: ROS Slave URI: [http://freight1207:35408/]
+[rospy.impl.masterslave][INFO] 2020-11-01 19:08:49,120: _ready: http://freight1207:35408/
+[xmlrpc][INFO] 2020-11-01 19:08:49,121: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-01 19:08:49,121: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-01 19:08:49,221: registered with master
+[rospy.rosout][INFO] 2020-11-01 19:08:49,221: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-01 19:08:49,222: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-01 19:08:49,223: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-11-01 19:08:49,227: rostful_server: Delaying the start 1 seconds
+[rospy.internal][INFO] 2020-11-01 19:08:49,430: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-11-01 19:08:50,272: rostful_server: Started server on port 8080
+[rospy.internal][INFO] 2020-11-01 19:08:50,287: topic[/current/pose] adding connection to [http://freight1207:35408/], count 0
+[rospy.internal][INFO] 2020-11-01 19:08:50,289: topic[/enable_software_runstop] adding connection to [http://freight1207:35408/], count 0
+[rospy.internal][INFO] 2020-11-01 19:08:50,290: topic[/local_control/cancel] adding connection to [http://freight1207:35408/], count 0
+[rospy.internal][INFO] 2020-11-01 19:08:50,290: topic[/current/pose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:08:50,291: topic[/enable_software_runstop] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:08:50,292: topic[/local_control/initialpose] adding connection to [http://freight1207:35408/], count 0
+[rospy.internal][INFO] 2020-11-01 19:08:50,292: topic[/local_control/goto] adding connection to [http://freight1207:35408/], count 0
+[rospy.internal][INFO] 2020-11-01 19:08:50,293: topic[/local_control/cancel] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:08:50,293: topic[/local_control/initialpose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:08:50,293: topic[/local_control/goto] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:08:50,382: topic[/enable_software_runstop] adding connection to [/software_runstop], count 1
+[rosout][INFO] 2020-11-01 19:10:27,856: rostful_server: Shutting down the server
+[rospy.core][INFO] 2020-11-01 19:10:27,857: signal_shutdown [Closing]
+[rospy.internal][INFO] 2020-11-01 19:10:27,860: topic[/enable_software_runstop] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-01 19:10:27,860: topic[/enable_software_runstop] removing connection to /software_runstop
+[rospy.internal][INFO] 2020-11-01 19:10:27,861: topic[/local_control/goto] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-01 19:10:27,861: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-01 19:10:27,861: topic[/local_control/initialpose] removing connection to /rostful_server
+[rospy.internal][ERROR] 2020-11-01 19:10:27,861: Unable to initiate TCP/IP socket to freight1207:39511 (http://freight1207:35408/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:10:27,861: topic[/local_control/cancel] removing connection to /rostful_server
+[rospy.internal][ERROR] 2020-11-01 19:10:27,862: Unable to initiate TCP/IP socket to freight1207:39511 (http://freight1207:35408/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:10:27,862: topic[/current/pose] removing connection to /rostful_server
+[rospy.internal][ERROR] 2020-11-01 19:10:27,862: Unable to initiate TCP/IP socket to freight1207:39511 (http://freight1207:35408/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:10:27,862: topic[/enable_software_runstop] removing connection to http://freight1207:35408/
+[rospy.internal][ERROR] 2020-11-01 19:10:27,862: Unable to initiate TCP/IP socket to freight1207:39511 (http://freight1207:35408/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-01 19:10:27,863: Unable to initiate TCP/IP socket to freight1207:39511 (http://freight1207:35408/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:10:27,863: topic[/local_control/initialpose] removing connection to http://freight1207:35408/
+[rospy.internal][INFO] 2020-11-01 19:10:27,863: topic[/local_control/goto] removing connection to http://freight1207:35408/
+[rospy.internal][INFO] 2020-11-01 19:10:27,863: topic[/local_control/cancel] removing connection to http://freight1207:35408/
+[rospy.internal][INFO] 2020-11-01 19:10:27,863: topic[/current/pose] removing connection to http://freight1207:35408/
+[rospy.impl.masterslave][INFO] 2020-11-01 19:10:27,863: Closing
+[rospy.core][INFO] 2020-11-01 19:10:27,979: signal_shutdown [atexit]
+[rospy.client][INFO] 2020-11-01 19:10:28,087: init_node, name[/rostful_server], pid[6018]
+[xmlrpc][INFO] 2020-11-01 19:10:28,087: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-01 19:10:28,088: Started XML-RPC server [http://freight1207:54580/]
+[rospy.init][INFO] 2020-11-01 19:10:28,088: ROS Slave URI: [http://freight1207:54580/]
+[rospy.impl.masterslave][INFO] 2020-11-01 19:10:28,088: _ready: http://freight1207:54580/
+[xmlrpc][INFO] 2020-11-01 19:10:28,088: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-01 19:10:28,088: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-01 19:10:28,188: registered with master
+[rospy.rosout][INFO] 2020-11-01 19:10:28,188: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-01 19:10:28,190: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-01 19:10:28,191: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-11-01 19:10:28,195: rostful_server: Delaying the start 1 seconds
+[rospy.internal][INFO] 2020-11-01 19:10:28,368: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-11-01 19:10:29,239: rostful_server: Started server on port 8080
+[rospy.internal][INFO] 2020-11-01 19:10:29,255: topic[/current/pose] adding connection to [http://freight1207:54580/], count 0
+[rospy.internal][INFO] 2020-11-01 19:10:29,256: topic[/enable_software_runstop] adding connection to [http://freight1207:54580/], count 0
+[rospy.internal][INFO] 2020-11-01 19:10:29,257: topic[/local_control/cancel] adding connection to [http://freight1207:54580/], count 0
+[rospy.internal][INFO] 2020-11-01 19:10:29,258: topic[/current/pose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:10:29,259: topic[/local_control/initialpose] adding connection to [http://freight1207:54580/], count 0
+[rospy.internal][INFO] 2020-11-01 19:10:29,259: topic[/enable_software_runstop] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:10:29,260: topic[/local_control/goto] adding connection to [http://freight1207:54580/], count 0
+[rospy.internal][INFO] 2020-11-01 19:10:29,260: topic[/local_control/cancel] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:10:29,260: topic[/local_control/initialpose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:10:29,261: topic[/local_control/goto] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:10:29,317: topic[/enable_software_runstop] adding connection to [/software_runstop], count 1
+[rospy.client][INFO] 2020-11-01 19:21:04,584: init_node, name[/rostful_server], pid[6179]
+[xmlrpc][INFO] 2020-11-01 19:21:04,585: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-01 19:21:04,585: Started XML-RPC server [http://freight1207:48653/]
+[rospy.init][INFO] 2020-11-01 19:21:04,585: ROS Slave URI: [http://freight1207:48653/]
+[rospy.impl.masterslave][INFO] 2020-11-01 19:21:04,585: _ready: http://freight1207:48653/
+[xmlrpc][INFO] 2020-11-01 19:21:04,585: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-01 19:21:04,586: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-01 19:21:04,685: registered with master
+[rospy.rosout][INFO] 2020-11-01 19:21:04,685: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-01 19:21:04,687: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-01 19:21:04,688: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-11-01 19:21:04,692: rostful_server: Delaying the start 1 seconds
+[rospy.impl.masterslave][INFO] 2020-11-01 19:21:04,726: external shutdown request from [/master]: new node registered with same name
+[rospy.core][INFO] 2020-11-01 19:21:04,726: signal_shutdown [external shutdown request from [/master]: [new node registered with same name]]
+[rospy.internal][INFO] 2020-11-01 19:21:04,729: topic[/enable_software_runstop] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-01 19:21:04,729: topic[/enable_software_runstop] removing connection to /software_runstop
+[rospy.internal][INFO] 2020-11-01 19:21:04,729: topic[/local_control/goto] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-01 19:21:04,730: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-01 19:21:04,730: topic[/local_control/initialpose] removing connection to /rostful_server
+[rospy.internal][ERROR] 2020-11-01 19:21:04,730: Unable to initiate TCP/IP socket to freight1207:59902 (http://freight1207:54580/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:21:04,730: topic[/local_control/cancel] removing connection to /rostful_server
+[rospy.internal][ERROR] 2020-11-01 19:21:04,730: Unable to initiate TCP/IP socket to freight1207:59902 (http://freight1207:54580/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:21:04,731: topic[/current/pose] removing connection to /rostful_server
+[rospy.internal][ERROR] 2020-11-01 19:21:04,731: Unable to initiate TCP/IP socket to freight1207:59902 (http://freight1207:54580/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-01 19:21:04,731: Unable to initiate TCP/IP socket to freight1207:59902 (http://freight1207:54580/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:21:04,731: topic[/enable_software_runstop] removing connection to http://freight1207:54580/
+[rospy.internal][ERROR] 2020-11-01 19:21:04,732: Unable to initiate TCP/IP socket to freight1207:59902 (http://freight1207:54580/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:21:04,732: topic[/local_control/initialpose] removing connection to http://freight1207:54580/
+[rospy.internal][INFO] 2020-11-01 19:21:04,732: topic[/local_control/goto] removing connection to http://freight1207:54580/
+[rospy.internal][INFO] 2020-11-01 19:21:04,732: topic[/local_control/cancel] removing connection to http://freight1207:54580/
+[rospy.internal][INFO] 2020-11-01 19:21:04,732: topic[/current/pose] removing connection to http://freight1207:54580/
+[rospy.internal][INFO] 2020-11-01 19:21:04,927: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-01 19:21:05,730: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-11-01 19:21:05,733: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2020-11-01 19:21:05,733: atexit
+[rosout][INFO] 2020-11-01 19:21:08,895: rostful_server: Shutting down the server
+[rospy.core][INFO] 2020-11-01 19:21:08,895: signal_shutdown [Closing]
+[rospy.core][INFO] 2020-11-01 19:21:08,895: signal_shutdown [atexit]
+[rospy.client][INFO] 2020-11-01 19:21:13,269: init_node, name[/rostful_server], pid[6261]
+[xmlrpc][INFO] 2020-11-01 19:21:13,269: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-01 19:21:13,269: Started XML-RPC server [http://freight1207:53048/]
+[rospy.init][INFO] 2020-11-01 19:21:13,269: ROS Slave URI: [http://freight1207:53048/]
+[rospy.impl.masterslave][INFO] 2020-11-01 19:21:13,269: _ready: http://freight1207:53048/
+[xmlrpc][INFO] 2020-11-01 19:21:13,270: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-01 19:21:13,270: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-01 19:21:13,370: registered with master
+[rospy.rosout][INFO] 2020-11-01 19:21:13,370: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-01 19:21:13,372: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-01 19:21:13,372: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-11-01 19:21:13,377: rostful_server: Delaying the start 1 seconds
+[rospy.internal][INFO] 2020-11-01 19:21:13,611: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-11-01 19:21:14,421: rostful_server: Started server on port 8080
+[rospy.internal][INFO] 2020-11-01 19:21:14,438: topic[/current/pose] adding connection to [http://freight1207:53048/], count 0
+[rospy.internal][INFO] 2020-11-01 19:21:14,439: topic[/enable_software_runstop] adding connection to [http://freight1207:53048/], count 0
+[rospy.internal][INFO] 2020-11-01 19:21:14,439: topic[/enable_software_runstop] adding connection to [/software_runstop], count 0
+[rospy.internal][INFO] 2020-11-01 19:21:14,440: topic[/local_control/cancel] adding connection to [http://freight1207:53048/], count 0
+[rospy.internal][INFO] 2020-11-01 19:21:14,441: topic[/local_control/initialpose] adding connection to [http://freight1207:53048/], count 0
+[rospy.internal][INFO] 2020-11-01 19:21:14,442: topic[/local_control/goto] adding connection to [http://freight1207:53048/], count 0
+[rospy.internal][INFO] 2020-11-01 19:21:14,442: topic[/current/pose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:21:14,443: topic[/enable_software_runstop] adding connection to [/rostful_server], count 1
+[rospy.internal][INFO] 2020-11-01 19:21:14,443: topic[/local_control/cancel] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:21:14,444: topic[/local_control/initialpose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:21:14,444: topic[/local_control/goto] adding connection to [/rostful_server], count 0
+[rosout][WARNING] 2020-11-01 19:25:07,761: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: 0.5
+    locationY: -0.19
+    orientation: 0.49
+  - 
+    locationX: 0.45
+    locationY: -1.23
+    orientation: -0.71 to topic /local_control/goto
+[rosout][WARNING] 2020-11-01 19:26:50,228: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: 0.5
+    locationY: -0.19
+    orientation: 0.49
+  - 
+    locationX: 0.45
+    locationY: -1.23
+    orientation: -0.71 to topic /local_control/goto
+[rosout][INFO] 2020-11-01 19:34:30,138: rostful_server: Shutting down the server
+[rospy.core][INFO] 2020-11-01 19:34:30,138: signal_shutdown [Closing]
+[rospy.internal][INFO] 2020-11-01 19:34:30,142: topic[/enable_software_runstop] removing connection to /software_runstop
+[rospy.internal][INFO] 2020-11-01 19:34:30,142: topic[/enable_software_runstop] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-01 19:34:30,142: topic[/local_control/goto] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-01 19:34:30,142: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-01 19:34:30,143: topic[/local_control/initialpose] removing connection to /rostful_server
+[rospy.internal][ERROR] 2020-11-01 19:34:30,143: Unable to initiate TCP/IP socket to freight1207:55921 (http://freight1207:53048/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:34:30,143: topic[/local_control/cancel] removing connection to /rostful_server
+[rospy.internal][ERROR] 2020-11-01 19:34:30,143: Unable to initiate TCP/IP socket to freight1207:55921 (http://freight1207:53048/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:34:30,143: topic[/current/pose] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-01 19:34:30,144: topic[/enable_software_runstop] removing connection to http://freight1207:53048/
+[rospy.internal][INFO] 2020-11-01 19:34:30,144: topic[/local_control/initialpose] removing connection to http://freight1207:53048/
+[rospy.internal][ERROR] 2020-11-01 19:34:30,144: Unable to initiate TCP/IP socket to freight1207:55921 (http://freight1207:53048/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:34:30,144: topic[/local_control/goto] removing connection to http://freight1207:53048/
+[rospy.internal][ERROR] 2020-11-01 19:34:30,144: Unable to initiate TCP/IP socket to freight1207:55921 (http://freight1207:53048/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-01 19:34:30,144: Unable to initiate TCP/IP socket to freight1207:55921 (http://freight1207:53048/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:34:30,145: topic[/local_control/cancel] removing connection to http://freight1207:53048/
+[rospy.internal][INFO] 2020-11-01 19:34:30,145: topic[/current/pose] removing connection to http://freight1207:53048/
+[rospy.impl.masterslave][INFO] 2020-11-01 19:34:30,145: Closing
+[rospy.core][INFO] 2020-11-01 19:34:30,252: signal_shutdown [atexit]
+[rospy.client][INFO] 2020-11-01 19:37:22,188: init_node, name[/rostful_server], pid[6949]
+[xmlrpc][INFO] 2020-11-01 19:37:22,189: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-01 19:37:22,189: Started XML-RPC server [http://freight1207:44712/]
+[rospy.init][INFO] 2020-11-01 19:37:22,189: ROS Slave URI: [http://freight1207:44712/]
+[rospy.impl.masterslave][INFO] 2020-11-01 19:37:22,189: _ready: http://freight1207:44712/
+[xmlrpc][INFO] 2020-11-01 19:37:22,189: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-01 19:37:22,190: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-01 19:37:22,289: registered with master
+[rospy.rosout][INFO] 2020-11-01 19:37:22,289: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-01 19:37:22,292: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-01 19:37:22,293: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-11-01 19:37:22,298: rostful_server: Delaying the start 1 seconds
+[rospy.internal][INFO] 2020-11-01 19:37:22,534: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-11-01 19:37:23,347: rostful_server: Started server on port 8080
+[rospy.internal][INFO] 2020-11-01 19:37:23,357: topic[/current/pose] adding connection to [http://freight1207:44712/], count 0
+[rospy.internal][INFO] 2020-11-01 19:37:23,358: topic[/enable_software_runstop] adding connection to [http://freight1207:44712/], count 0
+[rospy.internal][INFO] 2020-11-01 19:37:23,360: topic[/local_control/cancel] adding connection to [http://freight1207:44712/], count 0
+[rospy.internal][INFO] 2020-11-01 19:37:23,361: topic[/current/pose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:37:23,361: topic[/local_control/goto] adding connection to [http://freight1207:44712/], count 0
+[rospy.internal][INFO] 2020-11-01 19:37:23,363: topic[/local_control/initialpose] adding connection to [http://freight1207:44712/], count 0
+[rospy.internal][INFO] 2020-11-01 19:37:23,363: topic[/enable_software_runstop] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:37:23,364: topic[/local_control/cancel] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:37:23,364: topic[/local_control/goto] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:37:23,364: topic[/local_control/initialpose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:37:23,364: topic[/enable_software_runstop] adding connection to [/software_runstop], count 1
+[rosout][WARNING] 2020-11-01 19:37:36,067: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: 0.5
+    locationY: -0.19
+    orientation: 0.49
+  - 
+    locationX: 0.45
+    locationY: -1.23
+    orientation: -0.71 to topic /local_control/goto
+[rosout][INFO] 2020-11-01 19:39:57,821: rostful_server: Shutting down the server
+[rospy.core][INFO] 2020-11-01 19:39:57,821: signal_shutdown [Closing]
+[rospy.internal][INFO] 2020-11-01 19:39:57,824: topic[/enable_software_runstop] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-01 19:39:57,825: topic[/enable_software_runstop] removing connection to /software_runstop
+[rospy.internal][INFO] 2020-11-01 19:39:57,825: topic[/local_control/goto] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-01 19:39:57,825: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-01 19:39:57,825: topic[/local_control/initialpose] removing connection to /rostful_server
+[rospy.internal][INFO] 2020-11-01 19:39:57,826: topic[/local_control/cancel] removing connection to /rostful_server
+[rospy.internal][ERROR] 2020-11-01 19:39:57,826: Unable to initiate TCP/IP socket to freight1207:38337 (http://freight1207:44712/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-01 19:39:57,826: Unable to initiate TCP/IP socket to freight1207:38337 (http://freight1207:44712/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:39:57,826: topic[/current/pose] removing connection to /rostful_server
+[rospy.internal][ERROR] 2020-11-01 19:39:57,827: Unable to initiate TCP/IP socket to freight1207:38337 (http://freight1207:44712/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-01 19:39:57,827: Unable to initiate TCP/IP socket to freight1207:38337 (http://freight1207:44712/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:39:57,827: topic[/enable_software_runstop] removing connection to http://freight1207:44712/
+[rospy.internal][ERROR] 2020-11-01 19:39:57,827: Unable to initiate TCP/IP socket to freight1207:38337 (http://freight1207:44712/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-01 19:39:57,827: topic[/local_control/initialpose] removing connection to http://freight1207:44712/
+[rospy.internal][INFO] 2020-11-01 19:39:57,827: topic[/local_control/goto] removing connection to http://freight1207:44712/
+[rospy.internal][INFO] 2020-11-01 19:39:57,827: topic[/local_control/cancel] removing connection to http://freight1207:44712/
+[rospy.internal][INFO] 2020-11-01 19:39:57,828: topic[/current/pose] removing connection to http://freight1207:44712/
+[rospy.impl.masterslave][INFO] 2020-11-01 19:39:57,828: Closing
+[rospy.core][INFO] 2020-11-01 19:39:57,959: signal_shutdown [atexit]
+[rospy.client][INFO] 2020-11-01 19:40:21,107: init_node, name[/rostful_server], pid[7169]
+[xmlrpc][INFO] 2020-11-01 19:40:21,108: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-01 19:40:21,108: Started XML-RPC server [http://freight1207:48323/]
+[rospy.init][INFO] 2020-11-01 19:40:21,108: ROS Slave URI: [http://freight1207:48323/]
+[rospy.impl.masterslave][INFO] 2020-11-01 19:40:21,108: _ready: http://freight1207:48323/
+[xmlrpc][INFO] 2020-11-01 19:40:21,108: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-01 19:40:21,109: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-01 19:40:21,208: registered with master
+[rospy.rosout][INFO] 2020-11-01 19:40:21,208: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-01 19:40:21,210: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-01 19:40:21,211: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-11-01 19:40:21,215: rostful_server: Delaying the start 1 seconds
+[rospy.internal][INFO] 2020-11-01 19:40:21,472: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-11-01 19:40:22,260: rostful_server: Started server on port 8080
+[rospy.internal][INFO] 2020-11-01 19:40:22,275: topic[/current/pose] adding connection to [http://freight1207:48323/], count 0
+[rospy.internal][INFO] 2020-11-01 19:40:22,276: topic[/enable_software_runstop] adding connection to [http://freight1207:48323/], count 0
+[rospy.internal][INFO] 2020-11-01 19:40:22,277: topic[/local_control/cancel] adding connection to [http://freight1207:48323/], count 0
+[rospy.internal][INFO] 2020-11-01 19:40:22,279: topic[/local_control/initialpose] adding connection to [http://freight1207:48323/], count 0
+[rospy.internal][INFO] 2020-11-01 19:40:22,279: topic[/enable_software_runstop] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:40:22,280: topic[/current/pose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:40:22,280: topic[/local_control/goto] adding connection to [http://freight1207:48323/], count 0
+[rospy.internal][INFO] 2020-11-01 19:40:22,280: topic[/local_control/cancel] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:40:22,281: topic[/local_control/initialpose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:40:22,281: topic[/local_control/goto] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2020-11-01 19:40:22,317: topic[/enable_software_runstop] adding connection to [/software_runstop], count 1
+[rosout][WARNING] 2020-11-01 19:40:24,314: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: 0.5
+    locationY: -0.19
+    orientation: 0.49
+  - 
+    locationX: 0.45
+    locationY: -1.23
+    orientation: -0.71 to topic /local_control/goto

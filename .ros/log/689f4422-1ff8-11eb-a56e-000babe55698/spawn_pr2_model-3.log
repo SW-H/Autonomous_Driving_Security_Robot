@@ -1,0 +1,19 @@
+[rospy.client][INFO] 2020-11-05 22:50:17,337: init_node, name[/spawn_pr2_model], pid[13527]
+[xmlrpc][INFO] 2020-11-05 22:50:17,337: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-05 22:50:17,338: Started XML-RPC server [http://freight1207:55093/]
+[rospy.init][INFO] 2020-11-05 22:50:17,338: ROS Slave URI: [http://freight1207:55093/]
+[rospy.impl.masterslave][INFO] 2020-11-05 22:50:17,338: _ready: http://freight1207:55093/
+[rospy.registration][INFO] 2020-11-05 22:50:17,339: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2020-11-05 22:50:17,340: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2020-11-05 22:50:17,438: registered with master
+[rospy.rosout][INFO] 2020-11-05 22:50:17,439: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-05 22:50:17,459: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-05 22:50:17,477: initializing /clock core topic
+[rospy.simtime][INFO] 2020-11-05 22:50:17,507: connected to core topic /clock
+[rosout][INFO] 2020-11-05 22:50:17,526: Loading model xml from ros parameter
+[rosout][INFO] 2020-11-05 22:50:17,547: Waiting for service /gazebo/spawn_urdf_model
+[rospy.internal][INFO] 2020-11-05 22:50:17,747: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-05 22:50:36,195: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-11-05 22:50:36,199: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2020-11-05 22:50:36,199: signal-2
+[rospy.core][INFO] 2020-11-05 22:50:36,335: signal_shutdown [atexit]

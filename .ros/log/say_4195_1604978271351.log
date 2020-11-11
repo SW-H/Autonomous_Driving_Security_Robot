@@ -1,0 +1,63 @@
+[rospy.client][INFO] 2020-11-09 19:17:51,376: init_node, name[/say_4195_1604978271351], pid[4195]
+[xmlrpc][INFO] 2020-11-09 19:17:51,377: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-09 19:17:51,377: Started XML-RPC server [http://freight1207:54249/]
+[rospy.init][INFO] 2020-11-09 19:17:51,377: ROS Slave URI: [http://freight1207:54249/]
+[rospy.impl.masterslave][INFO] 2020-11-09 19:17:51,377: _ready: http://freight1207:54249/
+[xmlrpc][INFO] 2020-11-09 19:17:51,378: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-09 19:17:51,378: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-09 19:17:51,477: registered with master
+[rospy.rosout][INFO] 2020-11-09 19:17:51,477: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-09 19:17:51,479: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-09 19:17:51,480: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-11-09 19:17:51,493: topic[/sound_play/feedback] adding connection to [http://freight1207:59468/], count 0
+[rospy.internal][INFO] 2020-11-09 19:17:51,493: topic[/sound_play/result] adding connection to [http://freight1207:59468/], count 0
+[rospy.internal][INFO] 2020-11-09 19:17:51,494: topic[/sound_play/status] adding connection to [http://freight1207:59468/], count 0
+[rospy.internal][INFO] 2020-11-09 19:17:51,518: topic[/robotsound] adding connection to [/sound_play], count 0
+[rospy.internal][INFO] 2020-11-09 19:17:51,518: topic[/sound_play/goal] adding connection to [/sound_play], count 0
+[rospy.internal][INFO] 2020-11-09 19:17:51,518: topic[/sound_play/cancel] adding connection to [/sound_play], count 0
+[rospy.internal][INFO] 2020-11-09 19:17:51,706: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-09 19:17:53,993: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-11-09 19:17:53,996: topic[/sound_play/cancel] removing connection to /sound_play
+[rospy.internal][INFO] 2020-11-09 19:17:53,996: topic[/sound_play/goal] removing connection to /sound_play
+[rospy.internal][INFO] 2020-11-09 19:17:53,996: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-09 19:17:53,997: topic[/robotsound] removing connection to /sound_play
+[rospy.internal][INFO] 2020-11-09 19:17:53,997: topic[/sound_play/result] removing connection to http://freight1207:59468/
+[rospy.internal][INFO] 2020-11-09 19:17:53,997: topic[/sound_play/status] removing connection to http://freight1207:59468/
+[rospy.internal][WARNING] 2020-11-09 19:17:53,997: Unknown error initiating TCP/IP socket to freight1207:46452 (http://freight1207:59468/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.topics][ERROR] 2020-11-09 19:17:53,997: Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/topics.py", line 307, in close
+    c.close()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 807, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.internal][INFO] 2020-11-09 19:17:53,998: topic[/sound_play/feedback] removing connection to http://freight1207:59468/
+[rospy.impl.masterslave][INFO] 2020-11-09 19:17:53,998: signal-2
+[rospy.core][INFO] 2020-11-09 19:17:57,756: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:17:58,026: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:17:58,251: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:17:58,466: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:17:58,673: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:17:58,859: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:17:59,063: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:17:59,314: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:17:59,544: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:17:59,758: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:18:00,246: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:18:01,025: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:18:01,807: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:18:02,000: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:18:02,757: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:18:03,183: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:18:03,472: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:18:03,725: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:18:03,911: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:18:06,182: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:18:06,382: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-11-09 19:18:06,568: signal_shutdown [signal-2]

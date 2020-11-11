@@ -1,0 +1,8 @@
+[0m[ INFO] [1544163369.040901334]: Requesting the map...[0m
+[0m[ INFO] [1544163369.042339204]: Received a 317 X 750 map @ 0.050 m/pix
+[0m
+[0m[ INFO] [1544163369.049525926]: Initializing likelihood field model; this can take some time on large maps...[0m
+[0m[ INFO] [1544163369.085964951]: Done initializing likelihood field model.[0m
+[33m[ WARN] [1544163429.021572881]: Ignoring initial pose in frame "base_link"; initial poses must be in the global frame, "map"[0m
+[0m[ INFO] [1544163489.175421986]: Setting pose (1544163489.175394): 3.515 4.668 -0.198[0m
+[0m[ INFO] [1544163494.069931514]: Setting pose (1544163494.069901): 3.560 4.725 0.283[0m

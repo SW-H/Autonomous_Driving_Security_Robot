@@ -1,0 +1,9 @@
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 23 requests (23 known processed) with 0 events remaining.
+Activating service name='org.a11y.atspi.Registry'
+Successfully activated service 'org.a11y.atspi.Registry'
+SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+
+** (at-spi2-registryd:1511): WARNING **: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+
+** (at-spi2-registryd:1511): WARNING **: Unable to register client with session manager

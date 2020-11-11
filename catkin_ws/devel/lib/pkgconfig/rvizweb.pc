@@ -1,0 +1,8 @@
+prefix=/home/fetch/catkin_ws/devel
+
+Name: rvizweb
+Description: Description of rvizweb
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/fetch/catkin_ws/devel/lib 
+Requires: 

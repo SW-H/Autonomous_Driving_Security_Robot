@@ -1,0 +1,91 @@
+[rospy.client][INFO] 2020-10-26 00:21:18,618: init_node, name[/rostopic_22351_1603696878599], pid[22351]
+[xmlrpc][INFO] 2020-10-26 00:21:18,618: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-26 00:21:18,618: Started XML-RPC server [http://freight1207:59561/]
+[rospy.init][INFO] 2020-10-26 00:21:18,618: ROS Slave URI: [http://freight1207:59561/]
+[rospy.impl.masterslave][INFO] 2020-10-26 00:21:18,618: _ready: http://freight1207:59561/
+[rospy.registration][INFO] 2020-10-26 00:21:18,619: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2020-10-26 00:21:18,619: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2020-10-26 00:21:18,719: registered with master
+[rospy.rosout][INFO] 2020-10-26 00:21:18,719: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-26 00:21:18,720: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-26 00:21:18,721: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-26 00:21:18,734: topic[/rosout] adding connection to [http://freight1207:47746/], count 0
+[rospy.internal][INFO] 2020-10-26 00:21:18,734: topic[/rosout] adding connection to [http://freight1207:41902/], count 0
+[rospy.internal][INFO] 2020-10-26 00:21:18,735: topic[/rosout] adding connection to [http://freight1207:33500/], count 0
+[rospy.internal][INFO] 2020-10-26 00:21:18,735: topic[/rosout] adding connection to [http://freight1207:36252/], count 0
+[rospy.internal][INFO] 2020-10-26 00:21:18,735: topic[/rosout] adding connection to [http://freight1207:47465/], count 1
+[rospy.internal][INFO] 2020-10-26 00:21:18,736: topic[/rosout] adding connection to [http://freight1207:50991/], count 3
+[rospy.internal][INFO] 2020-10-26 00:21:18,738: topic[/rosout] adding connection to [http://freight1207:56248/], count 5
+[rospy.internal][INFO] 2020-10-26 00:21:18,740: topic[/rosout] adding connection to [http://freight1207:35265/], count 6
+[rospy.internal][INFO] 2020-10-26 00:21:18,741: topic[/rosout] adding connection to [http://freight1207:48553/], count 6
+[rospy.internal][INFO] 2020-10-26 00:21:18,741: topic[/rosout] adding connection to [http://freight1207:57192/], count 7
+[rospy.internal][INFO] 2020-10-26 00:21:18,741: topic[/rosout] adding connection to [http://freight1207:45134/], count 7
+[rospy.internal][INFO] 2020-10-26 00:21:18,743: topic[/rosout] adding connection to [http://freight1207:41430/], count 10
+[rospy.internal][INFO] 2020-10-26 00:21:18,746: topic[/rosout] adding connection to [http://freight1207:59561/], count 12
+[rospy.internal][INFO] 2020-10-26 00:21:18,746: topic[/rosout] adding connection to [/rostopic_22351_1603696878599], count 0
+[rospy.internal][INFO] 2020-10-26 00:21:18,951: topic[/rosout] adding connection to [/rosout], count 1
+[rospy.core][INFO] 2020-10-26 00:21:21,184: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-10-26 00:21:21,187: topic[/rosout] removing connection to /rostopic_22351_1603696878599
+[rospy.internal][INFO] 2020-10-26 00:21:21,187: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-26 00:21:21,187: topic[/rosout] removing connection to http://freight1207:47746/
+[rospy.internal][INFO] 2020-10-26 00:21:21,188: topic[/rosout] removing connection to http://freight1207:41902/
+[rospy.internal][INFO] 2020-10-26 00:21:21,188: topic[/rosout] removing connection to http://freight1207:33500/
+[rospy.internal][WARNING] 2020-10-26 00:21:21,189: Unknown error initiating TCP/IP socket to freight1207:33312 (http://freight1207:41902/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+
+[rospy.internal][ERROR] 2020-10-26 00:21:21,189: Unable to initiate TCP/IP socket to freight1207:42149 (http://freight1207:59561/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][WARNING] 2020-10-26 00:21:21,189: Unknown error initiating TCP/IP socket to freight1207:60796 (http://freight1207:33500/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.topics][ERROR] 2020-10-26 00:21:21,189: Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/topics.py", line 307, in close
+    c.close()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 807, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.internal][INFO] 2020-10-26 00:21:21,190: topic[/rosout] removing connection to http://freight1207:36252/
+[rospy.internal][INFO] 2020-10-26 00:21:21,190: topic[/rosout] removing connection to http://freight1207:47465/
+[rospy.internal][WARNING] 2020-10-26 00:21:21,190: Unknown error initiating TCP/IP socket to freight1207:32994 (http://freight1207:47465/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+
+[rospy.internal][INFO] 2020-10-26 00:21:21,190: topic[/rosout] removing connection to http://freight1207:50991/
+[rospy.internal][WARNING] 2020-10-26 00:21:21,191: Unknown error initiating TCP/IP socket to freight1207:47617 (http://freight1207:50991/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+AttributeError: 'NoneType' object has no attribute 'buff_size'
+
+[rospy.topics][ERROR] 2020-10-26 00:21:21,191: Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/topics.py", line 307, in close
+    c.close()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 807, in close
+    self.socket.close()
+AttributeError: 'NoneType' object has no attribute 'close'
+
+[rospy.internal][INFO] 2020-10-26 00:21:21,191: topic[/rosout] removing connection to http://freight1207:56248/
+[rospy.internal][INFO] 2020-10-26 00:21:21,191: topic[/rosout] removing connection to http://freight1207:35265/
+[rospy.internal][INFO] 2020-10-26 00:21:21,191: topic[/rosout] removing connection to http://freight1207:48553/
+[rospy.internal][INFO] 2020-10-26 00:21:21,192: topic[/rosout] removing connection to http://freight1207:57192/
+[rospy.internal][INFO] 2020-10-26 00:21:21,192: topic[/rosout] removing connection to http://freight1207:45134/
+[rospy.internal][INFO] 2020-10-26 00:21:21,192: topic[/rosout] removing connection to http://freight1207:41430/
+[rospy.internal][INFO] 2020-10-26 00:21:21,192: topic[/rosout] removing connection to http://freight1207:59561/
+[rospy.impl.masterslave][INFO] 2020-10-26 00:21:21,192: signal-2
+[rospy.core][INFO] 2020-10-26 00:21:21,324: signal_shutdown [atexit]

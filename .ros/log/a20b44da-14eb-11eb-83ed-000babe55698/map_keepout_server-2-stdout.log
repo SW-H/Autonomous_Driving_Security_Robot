@@ -1,0 +1,4 @@
+[0m[ INFO] [1603429362.163777040]: Loading map from image "/opt/ros/indigo/share/fetch_maps/maps/3_1_16_keepout.png"[0m
+[0m[ INFO] [1603429362.186170319]: Read a 958 X 982 map @ 0.050 m/cell[0m
+[33m[ WARN] [1603429645.481817816]: Shutdown request received.[0m
+[33m[ WARN] [1603429645.481834709]: Reason given for shutdown: [new node registered with same name][0m

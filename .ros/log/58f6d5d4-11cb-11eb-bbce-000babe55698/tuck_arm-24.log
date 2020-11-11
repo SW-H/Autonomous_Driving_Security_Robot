@@ -1,0 +1,19 @@
+[rospy.client][INFO] 2020-10-18 23:01:39,932: init_node, name[/tuck_arm], pid[12092]
+[xmlrpc][INFO] 2020-10-18 23:01:39,933: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-18 23:01:39,933: Started XML-RPC server [http://freight1207:43525/]
+[rospy.init][INFO] 2020-10-18 23:01:39,933: ROS Slave URI: [http://freight1207:43525/]
+[rospy.impl.masterslave][INFO] 2020-10-18 23:01:39,933: _ready: http://freight1207:43525/
+[xmlrpc][INFO] 2020-10-18 23:01:39,933: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-18 23:01:39,934: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-10-18 23:01:40,033: registered with master
+[rospy.rosout][INFO] 2020-10-18 23:01:40,033: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-18 23:01:40,035: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-18 23:01:40,036: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2020-10-18 23:01:40,038: New tuck script running
+[rospy.internal][INFO] 2020-10-18 23:01:40,048: topic[/joy] adding connection to [http://freight1207:36639/], count 0
+[rospy.internal][INFO] 2020-10-18 23:01:40,245: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-18 23:02:04,070: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-10-18 23:02:04,072: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-18 23:02:04,072: topic[/joy] removing connection to http://freight1207:36639/
+[rospy.impl.masterslave][INFO] 2020-10-18 23:02:04,072: signal-2
+[rospy.core][INFO] 2020-10-18 23:02:04,188: signal_shutdown [atexit]

@@ -1,0 +1,13 @@
+[rospy.client][INFO] 2020-11-04 01:20:37,310: init_node, name[/say_18159_1604481637288], pid[18159]
+[xmlrpc][INFO] 2020-11-04 01:20:37,310: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-04 01:20:37,311: Started XML-RPC server [http://freight1207:50923/]
+[rospy.init][INFO] 2020-11-04 01:20:37,311: ROS Slave URI: [http://freight1207:50923/]
+[rospy.impl.masterslave][INFO] 2020-11-04 01:20:37,311: _ready: http://freight1207:50923/
+[xmlrpc][INFO] 2020-11-04 01:20:37,311: xml rpc node: starting XML-RPC server
+[rospy.core][INFO] 2020-11-04 01:21:05,232: signal_shutdown [signal-2]
+[rospy.init][INFO] 2020-11-04 01:21:10,334: registered with master
+[rospy.core][WARNING] 2020-11-04 01:21:10,334: add_shutdown_hook called after shutdown
+[rospy.impl.masterslave][INFO] 2020-11-04 01:21:10,335: already shutdown
+[rospy.client][WARNING] 2020-11-04 01:21:10,335: aborting node initialization as shutdown has been triggered
+[rospy.registration][INFO] 2020-11-04 01:21:10,335: Registering with master node http://localhost:11311
+[rospy.core][INFO] 2020-11-04 01:21:10,336: signal_shutdown [atexit]

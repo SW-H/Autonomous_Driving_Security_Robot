@@ -1,0 +1,16 @@
+[rospy.client][INFO] 2020-10-25 23:08:11,941: init_node, name[/rostopic_7995_1603692491922], pid[7995]
+[xmlrpc][INFO] 2020-10-25 23:08:11,941: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-25 23:08:11,941: Started XML-RPC server [http://freight1207:46535/]
+[rospy.init][INFO] 2020-10-25 23:08:11,941: ROS Slave URI: [http://freight1207:46535/]
+[rospy.impl.masterslave][INFO] 2020-10-25 23:08:11,941: _ready: http://freight1207:46535/
+[rospy.registration][INFO] 2020-10-25 23:08:11,942: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2020-10-25 23:08:11,942: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2020-10-25 23:08:12,042: registered with master
+[rospy.rosout][INFO] 2020-10-25 23:08:12,042: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-25 23:08:12,043: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-25 23:08:12,044: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-25 23:08:12,312: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-25 23:08:12,893: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-10-25 23:08:12,895: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2020-10-25 23:08:12,895: signal-2
+[rospy.core][INFO] 2020-10-25 23:08:13,010: signal_shutdown [atexit]

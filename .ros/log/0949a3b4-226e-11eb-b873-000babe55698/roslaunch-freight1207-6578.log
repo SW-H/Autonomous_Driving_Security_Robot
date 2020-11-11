@@ -1,0 +1,575 @@
+[roslaunch][INFO] 2020-11-09 02:49:57,708: Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2020-11-09 02:49:57,712: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2020-11-09 02:49:57,712: roslaunch starting with args ['/opt/ros/indigo/bin/roslaunch', 'fetch_navigation', 'freight_nav.launch']
+[roslaunch][INFO] 2020-11-09 02:49:57,712: roslaunch env is {'LC_NUMERIC': 'ko_KR.UTF-8', 'ROS_DISTRO': 'indigo', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SSH_CLIENT': '172.22.77.171 62718 22', 'CPATH': '/home/fetch/catkin_ws/devel/include:/opt/ros/indigo/include', 'LOGNAME': 'fetch', 'USER': 'fetch', 'HOME': '/home/fetch', 'LC_PAPER': 'ko_KR.UTF-8', 'PATH': '/opt/ros/indigo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'VIRTUALENVWRAPPER_SCRIPT': '/usr/share/virtualenvwrapper/virtualenvwrapper.sh', 'LD_LIBRARY_PATH': '/home/fetch/catkin_ws/devel/lib:/opt/ros/indigo/lib', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'ROS_LOG_FILENAME': '/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/roslaunch-freight1207-6578.log', 'LC_MONETARY': 'ko_KR.UTF-8', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'ROS_ETC_DIR': '/opt/ros/indigo/etc/ros', 'DISPLAY': 'localhost:12.0', '_VIRTUALENVWRAPPER_API': ' mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv', 'CMAKE_PREFIX_PATH': '/home/fetch/catkin_ws/devel:/opt/ros/indigo', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_ADDRESS': 'ko_KR.UTF-8', 'PYTHONPATH': '/home/fetch/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages', 'SHLVL': '1', 'ROS_ROOT': '/opt/ros/indigo/share/ros', 'PKG_CONFIG_PATH': '/home/fetch/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/fetch/catkin_ws/src:/opt/ros/indigo/share:/opt/ros/indigo/stacks', 'XDG_SESSION_ID': '3', '_': '/opt/ros/indigo/bin/roslaunch', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'SSH_CONNECTION': '172.22.77.171 62718 172.22.77.172 22', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_TTY': '/dev/pts/28', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/fetch/catkin_ws/devel/share/common-lisp', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'PWD': '/home/fetch', 'ROS_MASTER_URI': 'http://localhost:11311', 'LC_NAME': 'ko_KR.UTF-8', 'MAIL': '/var/mail/fetch', 'LC_TIME': 'ko_KR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'}
+[roslaunch][INFO] 2020-11-09 02:49:57,712: starting in server mode
+[roslaunch.parent][INFO] 2020-11-09 02:49:57,712: starting roslaunch parent run
+[roslaunch][INFO] 2020-11-09 02:49:57,712: loading roscore config file /opt/ros/indigo/etc/ros/roscore.xml
+[roslaunch][INFO] 2020-11-09 02:49:57,788: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.config][INFO] 2020-11-09 02:49:57,788: loading config file /opt/ros/indigo/share/fetch_navigation/launch/freight_nav.launch
+[roslaunch][INFO] 2020-11-09 02:49:57,825: Added node of type [map_server/map_server] in namespace [/]
+[roslaunch][INFO] 2020-11-09 02:49:57,825: Added node of type [rviz/rviz] in namespace [/]
+[roslaunch][INFO] 2020-11-09 02:49:57,830: Added node of type [amcl/amcl] in namespace [/]
+[roslaunch][INFO] 2020-11-09 02:49:57,847: Added node of type [move_base/move_base] in namespace [/]
+[roslaunch][INFO] 2020-11-09 02:49:57,847: ... selected machine [] for node of type [map_server/map_server]
+[roslaunch][INFO] 2020-11-09 02:49:57,847: ... selected machine [] for node of type [rviz/rviz]
+[roslaunch][INFO] 2020-11-09 02:49:57,847: ... selected machine [] for node of type [amcl/amcl]
+[roslaunch][INFO] 2020-11-09 02:49:57,847: ... selected machine [] for node of type [move_base/move_base]
+[roslaunch.pmon][INFO] 2020-11-09 02:49:57,848: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2020-11-09 02:49:57,848: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2020-11-09 02:49:57,848: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2020-11-09 02:49:57,848: starting parent XML-RPC server
+[roslaunch.server][INFO] 2020-11-09 02:49:57,848: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2020-11-09 02:49:57,848: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2020-11-09 02:49:57,848: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-09 02:49:57,849: Started XML-RPC server [http://freight1207:46761/]
+[xmlrpc][INFO] 2020-11-09 02:49:57,849: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2020-11-09 02:49:57,859: started roslaunch server http://freight1207:46761/
+[roslaunch.parent][INFO] 2020-11-09 02:49:57,860: ... parent XML-RPC server started
+[roslaunch][INFO] 2020-11-09 02:49:57,860: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2020-11-09 02:49:57,861: master.is_running[http://localhost:11311]
+[roslaunch][INFO] 2020-11-09 02:49:57,862: ROS_MASTER_URI=http://localhost:11311
+[roslaunch][INFO] 2020-11-09 02:49:57,863: setting /roslaunch/uris/host_freight1207__46761' to http://freight1207:46761/
+[roslaunch][INFO] 2020-11-09 02:49:57,864: load_parameters starting ...
+[roslaunch][INFO] 2020-11-09 02:49:57,884: ... load_parameters complete
+[roslaunch][INFO] 2020-11-09 02:49:57,884: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2020-11-09 02:49:57,884: ... preparing to launch node of type [map_server/map_server]
+[roslaunch][INFO] 2020-11-09 02:49:57,884: create_node_process: package[map_server] type[map_server] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2020-11-09 02:49:57,884: process[map_server-1]: env[{'LC_NUMERIC': 'ko_KR.UTF-8', 'ROS_DISTRO': 'indigo', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SSH_CLIENT': '172.22.77.171 62718 22', 'CPATH': '/home/fetch/catkin_ws/devel/include:/opt/ros/indigo/include', 'LOGNAME': 'fetch', 'USER': 'fetch', 'HOME': '/home/fetch', 'LC_PAPER': 'ko_KR.UTF-8', 'PATH': '/opt/ros/indigo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'CMAKE_PREFIX_PATH': '/home/fetch/catkin_ws/devel:/opt/ros/indigo', 'ROS_LOG_FILENAME': '/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/roslaunch-freight1207-6578.log', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'LC_MONETARY': 'ko_KR.UTF-8', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'DISPLAY': 'localhost:12.0', '_VIRTUALENVWRAPPER_API': ' mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_ADDRESS': 'ko_KR.UTF-8', 'PYTHONPATH': '/home/fetch/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/indigo/share/ros', 'PKG_CONFIG_PATH': '/home/fetch/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/fetch/catkin_ws/src:/opt/ros/indigo/share:/opt/ros/indigo/stacks', 'XDG_SESSION_ID': '3', '_': '/opt/ros/indigo/bin/roslaunch', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'LD_LIBRARY_PATH': '/home/fetch/catkin_ws/devel/lib:/opt/ros/indigo/lib', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_TTY': '/dev/pts/28', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/fetch/catkin_ws/devel/share/common-lisp', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'VIRTUALENVWRAPPER_SCRIPT': '/usr/share/virtualenvwrapper/virtualenvwrapper.sh', 'SHLVL': '1', 'PWD': '/home/fetch', 'ROS_ETC_DIR': '/opt/ros/indigo/etc/ros', 'ROS_MASTER_URI': 'http://localhost:11311', 'LC_NAME': 'ko_KR.UTF-8', 'MAIL': '/var/mail/fetch', 'LC_TIME': 'ko_KR.UTF-8', 'SSH_CONNECTION': '172.22.77.171 62718 172.22.77.172 22'}]
+[roslaunch][INFO] 2020-11-09 02:49:57,921: process[map_server-1]: args[[u'/opt/ros/indigo/lib/map_server/map_server', '/home/fetch/final_map.yaml', u'__name:=map_server']]
+[roslaunch][INFO] 2020-11-09 02:49:57,921: ... created process [map_server-1]
+[roslaunch.pmon][INFO] 2020-11-09 02:49:57,921: ProcessMonitor.register[map_server-1]
+[roslaunch.pmon][INFO] 2020-11-09 02:49:57,921: ProcessMonitor.register[map_server-1] complete
+[roslaunch][INFO] 2020-11-09 02:49:57,921: ... registered process [map_server-1]
+[roslaunch][INFO] 2020-11-09 02:49:57,921: process[map_server-1]: starting os process
+[roslaunch][INFO] 2020-11-09 02:49:57,921: process[map_server-1]: start w/ args [[u'/opt/ros/indigo/lib/map_server/map_server', '/home/fetch/final_map.yaml', u'__name:=map_server', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/map_server-1.log']]
+[roslaunch][INFO] 2020-11-09 02:49:57,921: process[map_server-1]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:57,923: process[map_server-1]: started with pid [6596]
+[roslaunch][INFO] 2020-11-09 02:49:57,923: ... successfully launched [map_server-1]
+[roslaunch][INFO] 2020-11-09 02:49:57,923: ... preparing to launch node of type [rviz/rviz]
+[roslaunch][INFO] 2020-11-09 02:49:57,923: create_node_process: package[rviz] type[rviz] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2020-11-09 02:49:57,923: process[rviz-2]: env[{'LC_NUMERIC': 'ko_KR.UTF-8', 'ROS_DISTRO': 'indigo', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SSH_CLIENT': '172.22.77.171 62718 22', 'CPATH': '/home/fetch/catkin_ws/devel/include:/opt/ros/indigo/include', 'LOGNAME': 'fetch', 'USER': 'fetch', 'HOME': '/home/fetch', 'LC_PAPER': 'ko_KR.UTF-8', 'PATH': '/opt/ros/indigo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'CMAKE_PREFIX_PATH': '/home/fetch/catkin_ws/devel:/opt/ros/indigo', 'ROS_LOG_FILENAME': '/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/roslaunch-freight1207-6578.log', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'LC_MONETARY': 'ko_KR.UTF-8', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'DISPLAY': 'localhost:12.0', '_VIRTUALENVWRAPPER_API': ' mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_ADDRESS': 'ko_KR.UTF-8', 'PYTHONPATH': '/home/fetch/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/indigo/share/ros', 'PKG_CONFIG_PATH': '/home/fetch/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/fetch/catkin_ws/src:/opt/ros/indigo/share:/opt/ros/indigo/stacks', 'XDG_SESSION_ID': '3', '_': '/opt/ros/indigo/bin/roslaunch', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'LD_LIBRARY_PATH': '/home/fetch/catkin_ws/devel/lib:/opt/ros/indigo/lib', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_TTY': '/dev/pts/28', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/fetch/catkin_ws/devel/share/common-lisp', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'VIRTUALENVWRAPPER_SCRIPT': '/usr/share/virtualenvwrapper/virtualenvwrapper.sh', 'SHLVL': '1', 'PWD': '/home/fetch', 'ROS_ETC_DIR': '/opt/ros/indigo/etc/ros', 'ROS_MASTER_URI': 'http://localhost:11311', 'LC_NAME': 'ko_KR.UTF-8', 'MAIL': '/var/mail/fetch', 'LC_TIME': 'ko_KR.UTF-8', 'SSH_CONNECTION': '172.22.77.171 62718 172.22.77.172 22'}]
+[roslaunch][INFO] 2020-11-09 02:49:57,925: process[rviz-2]: args[[u'/opt/ros/indigo/lib/rviz/rviz', '/opt/ros/indigo/share/fetch_navigation/config/navigation.rviz', u'__name:=rviz']]
+[roslaunch][INFO] 2020-11-09 02:49:57,926: ... created process [rviz-2]
+[roslaunch.pmon][INFO] 2020-11-09 02:49:57,926: ProcessMonitor.register[rviz-2]
+[roslaunch.pmon][INFO] 2020-11-09 02:49:57,926: ProcessMonitor.register[rviz-2] complete
+[roslaunch][INFO] 2020-11-09 02:49:57,926: ... registered process [rviz-2]
+[roslaunch][INFO] 2020-11-09 02:49:57,926: process[rviz-2]: starting os process
+[roslaunch][INFO] 2020-11-09 02:49:57,926: process[rviz-2]: start w/ args [[u'/opt/ros/indigo/lib/rviz/rviz', '/opt/ros/indigo/share/fetch_navigation/config/navigation.rviz', u'__name:=rviz', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/rviz-2.log']]
+[roslaunch][INFO] 2020-11-09 02:49:57,926: process[rviz-2]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:57,928: process[rviz-2]: started with pid [6597]
+[roslaunch][INFO] 2020-11-09 02:49:57,928: ... successfully launched [rviz-2]
+[roslaunch][INFO] 2020-11-09 02:49:57,928: ... preparing to launch node of type [amcl/amcl]
+[roslaunch][INFO] 2020-11-09 02:49:57,928: create_node_process: package[amcl] type[amcl] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2020-11-09 02:49:57,928: process[amcl-3]: env[{'LC_NUMERIC': 'ko_KR.UTF-8', 'ROS_DISTRO': 'indigo', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SSH_CLIENT': '172.22.77.171 62718 22', 'CPATH': '/home/fetch/catkin_ws/devel/include:/opt/ros/indigo/include', 'LOGNAME': 'fetch', 'USER': 'fetch', 'HOME': '/home/fetch', 'LC_PAPER': 'ko_KR.UTF-8', 'PATH': '/opt/ros/indigo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'CMAKE_PREFIX_PATH': '/home/fetch/catkin_ws/devel:/opt/ros/indigo', 'ROS_LOG_FILENAME': '/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/roslaunch-freight1207-6578.log', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'LC_MONETARY': 'ko_KR.UTF-8', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'DISPLAY': 'localhost:12.0', '_VIRTUALENVWRAPPER_API': ' mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_ADDRESS': 'ko_KR.UTF-8', 'PYTHONPATH': '/home/fetch/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/indigo/share/ros', 'PKG_CONFIG_PATH': '/home/fetch/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/fetch/catkin_ws/src:/opt/ros/indigo/share:/opt/ros/indigo/stacks', 'XDG_SESSION_ID': '3', '_': '/opt/ros/indigo/bin/roslaunch', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'LD_LIBRARY_PATH': '/home/fetch/catkin_ws/devel/lib:/opt/ros/indigo/lib', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_TTY': '/dev/pts/28', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/fetch/catkin_ws/devel/share/common-lisp', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'VIRTUALENVWRAPPER_SCRIPT': '/usr/share/virtualenvwrapper/virtualenvwrapper.sh', 'SHLVL': '1', 'PWD': '/home/fetch', 'ROS_ETC_DIR': '/opt/ros/indigo/etc/ros', 'ROS_MASTER_URI': 'http://localhost:11311', 'LC_NAME': 'ko_KR.UTF-8', 'MAIL': '/var/mail/fetch', 'LC_TIME': 'ko_KR.UTF-8', 'SSH_CONNECTION': '172.22.77.171 62718 172.22.77.172 22'}]
+[roslaunch][INFO] 2020-11-09 02:49:57,929: process[amcl-3]: args[[u'/opt/ros/indigo/lib/amcl/amcl', u'scan:=base_scan', u'map:=map', u'__name:=amcl']]
+[roslaunch][INFO] 2020-11-09 02:49:57,929: ... created process [amcl-3]
+[roslaunch.pmon][INFO] 2020-11-09 02:49:57,929: ProcessMonitor.register[amcl-3]
+[roslaunch.pmon][INFO] 2020-11-09 02:49:57,929: ProcessMonitor.register[amcl-3] complete
+[roslaunch][INFO] 2020-11-09 02:49:57,929: ... registered process [amcl-3]
+[roslaunch][INFO] 2020-11-09 02:49:57,929: process[amcl-3]: starting os process
+[roslaunch][INFO] 2020-11-09 02:49:57,929: process[amcl-3]: start w/ args [[u'/opt/ros/indigo/lib/amcl/amcl', u'scan:=base_scan', u'map:=map', u'__name:=amcl', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/amcl-3.log']]
+[roslaunch][INFO] 2020-11-09 02:49:57,929: process[amcl-3]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:57,931: process[amcl-3]: started with pid [6598]
+[roslaunch][INFO] 2020-11-09 02:49:57,931: ... successfully launched [amcl-3]
+[roslaunch][INFO] 2020-11-09 02:49:57,931: ... preparing to launch node of type [move_base/move_base]
+[roslaunch][INFO] 2020-11-09 02:49:57,931: create_node_process: package[move_base] type[move_base] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://localhost:11311]
+[roslaunch][INFO] 2020-11-09 02:49:57,931: process[move_base-4]: env[{'LC_NUMERIC': 'ko_KR.UTF-8', 'ROS_DISTRO': 'indigo', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SSH_CLIENT': '172.22.77.171 62718 22', 'CPATH': '/home/fetch/catkin_ws/devel/include:/opt/ros/indigo/include', 'LOGNAME': 'fetch', 'USER': 'fetch', 'HOME': '/home/fetch', 'LC_PAPER': 'ko_KR.UTF-8', 'PATH': '/opt/ros/indigo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games', 'CMAKE_PREFIX_PATH': '/home/fetch/catkin_ws/devel:/opt/ros/indigo', 'ROS_LOG_FILENAME': '/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/roslaunch-freight1207-6578.log', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-256color', 'SHELL': '/bin/bash', 'LC_MONETARY': 'ko_KR.UTF-8', 'QT_QPA_PLATFORMTHEME': 'appmenu-qt5', 'DISPLAY': 'localhost:12.0', '_VIRTUALENVWRAPPER_API': ' mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_ADDRESS': 'ko_KR.UTF-8', 'PYTHONPATH': '/home/fetch/catkin_ws/devel/lib/python2.7/dist-packages:/opt/ros/indigo/lib/python2.7/dist-packages', 'ROS_ROOT': '/opt/ros/indigo/share/ros', 'PKG_CONFIG_PATH': '/home/fetch/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig', 'ROS_PACKAGE_PATH': '/home/fetch/catkin_ws/src:/opt/ros/indigo/share:/opt/ros/indigo/stacks', 'XDG_SESSION_ID': '3', '_': '/opt/ros/indigo/bin/roslaunch', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'LD_LIBRARY_PATH': '/home/fetch/catkin_ws/devel/lib:/opt/ros/indigo/lib', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_TTY': '/dev/pts/28', 'ROSLISP_PACKAGE_DIRECTORIES': '/home/fetch/catkin_ws/devel/share/common-lisp', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'VIRTUALENVWRAPPER_SCRIPT': '/usr/share/virtualenvwrapper/virtualenvwrapper.sh', 'SHLVL': '1', 'PWD': '/home/fetch', 'ROS_ETC_DIR': '/opt/ros/indigo/etc/ros', 'ROS_MASTER_URI': 'http://localhost:11311', 'LC_NAME': 'ko_KR.UTF-8', 'MAIL': '/var/mail/fetch', 'LC_TIME': 'ko_KR.UTF-8', 'SSH_CONNECTION': '172.22.77.171 62718 172.22.77.172 22'}]
+[roslaunch][INFO] 2020-11-09 02:49:57,932: process[move_base-4]: args[[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base']]
+[roslaunch][INFO] 2020-11-09 02:49:57,932: ... created process [move_base-4]
+[roslaunch.pmon][INFO] 2020-11-09 02:49:57,932: ProcessMonitor.register[move_base-4]
+[roslaunch.pmon][INFO] 2020-11-09 02:49:57,932: ProcessMonitor.register[move_base-4] complete
+[roslaunch][INFO] 2020-11-09 02:49:57,932: ... registered process [move_base-4]
+[roslaunch][INFO] 2020-11-09 02:49:57,932: process[move_base-4]: starting os process
+[roslaunch][INFO] 2020-11-09 02:49:57,932: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:57,932: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:57,936: process[move_base-4]: started with pid [6599]
+[roslaunch][INFO] 2020-11-09 02:49:57,936: ... successfully launched [move_base-4]
+[roslaunch][INFO] 2020-11-09 02:49:57,936: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2020-11-09 02:49:57,936: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon 140294913537792)>
+[roslaunch.parent][INFO] 2020-11-09 02:49:57,936: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2020-11-09 02:49:57,936: spin
+[roslaunch][ERROR] 2020-11-09 02:49:57,948: [map_server-1] process has died [pid 6596, exit code -6, cmd /opt/ros/indigo/lib/map_server/map_server /home/fetch/final_map.yaml __name:=map_server __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/map_server-1.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/map_server-1*.log
+[roslaunch][ERROR] 2020-11-09 02:49:57,949: [amcl-3] process has died [pid 6598, exit code -6, cmd /opt/ros/indigo/lib/amcl/amcl scan:=base_scan map:=map __name:=amcl __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/amcl-3.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/amcl-3*.log
+[roslaunch][ERROR] 2020-11-09 02:49:57,949: [move_base-4] process has died [pid 6599, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch.pmon][INFO] 2020-11-09 02:49:57,949: ProcessMonitor.unregister[map_server-1] starting
+[roslaunch.pmon][INFO] 2020-11-09 02:49:57,949: ProcessMonitor.unregister[map_server-1] complete
+[roslaunch.pmon][INFO] 2020-11-09 02:49:57,949: ProcessMonitor.unregister[amcl-3] starting
+[roslaunch.pmon][INFO] 2020-11-09 02:49:57,949: ProcessMonitor.unregister[amcl-3] complete
+[roslaunch][INFO] 2020-11-09 02:49:57,949: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:57,949: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:57,949: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:57,949: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:57,951: process[move_base-4]: started with pid [6600]
+[roslaunch][ERROR] 2020-11-09 02:49:58,051: [move_base-4] process has died [pid 6600, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:58,051: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:58,051: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:58,051: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:58,052: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:58,053: process[move_base-4]: started with pid [6601]
+[roslaunch][ERROR] 2020-11-09 02:49:58,153: [move_base-4] process has died [pid 6601, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:58,154: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:58,154: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:58,154: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:58,154: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:58,155: process[move_base-4]: started with pid [6602]
+[roslaunch][ERROR] 2020-11-09 02:49:58,256: [rviz-2] process has died [pid 6597, exit code -6, cmd /opt/ros/indigo/lib/rviz/rviz /opt/ros/indigo/share/fetch_navigation/config/navigation.rviz __name:=rviz __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/rviz-2.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/rviz-2*.log
+[roslaunch][ERROR] 2020-11-09 02:49:58,256: [move_base-4] process has died [pid 6602, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch.pmon][INFO] 2020-11-09 02:49:58,256: ProcessMonitor.unregister[rviz-2] starting
+[roslaunch.pmon][INFO] 2020-11-09 02:49:58,256: ProcessMonitor.unregister[rviz-2] complete
+[roslaunch][INFO] 2020-11-09 02:49:58,256: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:58,256: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:58,257: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:58,257: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:58,258: process[move_base-4]: started with pid [6603]
+[roslaunch][ERROR] 2020-11-09 02:49:58,358: [move_base-4] process has died [pid 6603, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:58,359: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:58,359: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:58,359: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:58,359: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:58,360: process[move_base-4]: started with pid [6604]
+[roslaunch][ERROR] 2020-11-09 02:49:58,461: [move_base-4] process has died [pid 6604, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:58,461: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:58,461: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:58,461: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:58,461: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:58,463: process[move_base-4]: started with pid [6605]
+[roslaunch][ERROR] 2020-11-09 02:49:58,563: [move_base-4] process has died [pid 6605, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:58,563: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:58,564: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:58,564: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:58,564: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:58,566: process[move_base-4]: started with pid [6606]
+[roslaunch][ERROR] 2020-11-09 02:49:58,667: [move_base-4] process has died [pid 6606, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:58,667: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:58,667: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:58,667: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:58,667: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:58,669: process[move_base-4]: started with pid [6607]
+[roslaunch][ERROR] 2020-11-09 02:49:58,769: [move_base-4] process has died [pid 6607, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:58,769: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:58,770: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:58,770: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:58,770: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:58,772: process[move_base-4]: started with pid [6608]
+[roslaunch][ERROR] 2020-11-09 02:49:58,872: [move_base-4] process has died [pid 6608, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:58,872: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:58,873: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:58,873: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:58,873: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:58,874: process[move_base-4]: started with pid [6609]
+[roslaunch][ERROR] 2020-11-09 02:49:58,975: [move_base-4] process has died [pid 6609, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:58,975: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:58,975: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:58,975: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:58,975: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:58,977: process[move_base-4]: started with pid [6610]
+[roslaunch][ERROR] 2020-11-09 02:49:59,077: [move_base-4] process has died [pid 6610, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:59,077: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:59,077: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:59,077: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:59,077: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:59,079: process[move_base-4]: started with pid [6611]
+[roslaunch][ERROR] 2020-11-09 02:49:59,179: [move_base-4] process has died [pid 6611, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:59,180: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:59,180: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:59,180: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:59,180: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:59,181: process[move_base-4]: started with pid [6612]
+[roslaunch][ERROR] 2020-11-09 02:49:59,282: [move_base-4] process has died [pid 6612, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:59,282: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:59,282: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:59,282: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:59,282: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:59,284: process[move_base-4]: started with pid [6613]
+[roslaunch][ERROR] 2020-11-09 02:49:59,384: [move_base-4] process has died [pid 6613, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:59,384: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:59,384: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:59,384: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:59,384: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:59,386: process[move_base-4]: started with pid [6614]
+[roslaunch][ERROR] 2020-11-09 02:49:59,486: [move_base-4] process has died [pid 6614, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:59,486: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:59,486: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:59,487: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:59,487: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:59,488: process[move_base-4]: started with pid [6615]
+[roslaunch][ERROR] 2020-11-09 02:49:59,589: [move_base-4] process has died [pid 6615, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:59,589: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:59,589: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:59,589: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:59,589: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:59,590: process[move_base-4]: started with pid [6616]
+[roslaunch][ERROR] 2020-11-09 02:49:59,691: [move_base-4] process has died [pid 6616, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:59,691: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:59,691: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:59,691: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:59,691: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:59,693: process[move_base-4]: started with pid [6617]
+[roslaunch][ERROR] 2020-11-09 02:49:59,793: [move_base-4] process has died [pid 6617, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:59,793: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:59,793: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:59,794: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:59,794: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:59,795: process[move_base-4]: started with pid [6618]
+[roslaunch][ERROR] 2020-11-09 02:49:59,896: [move_base-4] process has died [pid 6618, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:59,896: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:59,896: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:59,896: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:59,896: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:49:59,898: process[move_base-4]: started with pid [6619]
+[roslaunch][ERROR] 2020-11-09 02:49:59,998: [move_base-4] process has died [pid 6619, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:49:59,998: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:49:59,998: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:49:59,998: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:49:59,998: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:00,000: process[move_base-4]: started with pid [6620]
+[roslaunch][ERROR] 2020-11-09 02:50:00,100: [move_base-4] process has died [pid 6620, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:00,100: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:00,101: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:00,101: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:00,101: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:00,102: process[move_base-4]: started with pid [6621]
+[roslaunch][ERROR] 2020-11-09 02:50:00,203: [move_base-4] process has died [pid 6621, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:00,203: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:00,203: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:00,203: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:00,203: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:00,204: process[move_base-4]: started with pid [6625]
+[roslaunch][ERROR] 2020-11-09 02:50:00,305: [move_base-4] process has died [pid 6625, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:00,305: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:00,305: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:00,305: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:00,305: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:00,307: process[move_base-4]: started with pid [6631]
+[roslaunch][ERROR] 2020-11-09 02:50:00,407: [move_base-4] process has died [pid 6631, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:00,407: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:00,407: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:00,408: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:00,408: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:00,409: process[move_base-4]: started with pid [6632]
+[roslaunch][ERROR] 2020-11-09 02:50:00,510: [move_base-4] process has died [pid 6632, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:00,510: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:00,510: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:00,510: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:00,510: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:00,512: process[move_base-4]: started with pid [6633]
+[roslaunch][ERROR] 2020-11-09 02:50:00,612: [move_base-4] process has died [pid 6633, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:00,612: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:00,612: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:00,612: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:00,612: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:00,614: process[move_base-4]: started with pid [6634]
+[roslaunch][ERROR] 2020-11-09 02:50:00,714: [move_base-4] process has died [pid 6634, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:00,714: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:00,715: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:00,715: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:00,715: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:00,717: process[move_base-4]: started with pid [6635]
+[roslaunch][ERROR] 2020-11-09 02:50:00,817: [move_base-4] process has died [pid 6635, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:00,818: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:00,818: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:00,818: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:00,818: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:00,819: process[move_base-4]: started with pid [6636]
+[roslaunch][ERROR] 2020-11-09 02:50:00,920: [move_base-4] process has died [pid 6636, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:00,920: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:00,920: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:00,920: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:00,920: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:00,922: process[move_base-4]: started with pid [6637]
+[roslaunch][ERROR] 2020-11-09 02:50:01,022: [move_base-4] process has died [pid 6637, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:01,022: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:01,022: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:01,022: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:01,023: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:01,024: process[move_base-4]: started with pid [6638]
+[roslaunch][ERROR] 2020-11-09 02:50:01,124: [move_base-4] process has died [pid 6638, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:01,125: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:01,125: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:01,125: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:01,125: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:01,126: process[move_base-4]: started with pid [6639]
+[roslaunch][ERROR] 2020-11-09 02:50:01,227: [move_base-4] process has died [pid 6639, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:01,227: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:01,227: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:01,227: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:01,227: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:01,229: process[move_base-4]: started with pid [6640]
+[roslaunch][ERROR] 2020-11-09 02:50:01,329: [move_base-4] process has died [pid 6640, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:01,329: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:01,329: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:01,329: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:01,329: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:01,331: process[move_base-4]: started with pid [6641]
+[roslaunch][ERROR] 2020-11-09 02:50:01,431: [move_base-4] process has died [pid 6641, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:01,432: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:01,432: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:01,432: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:01,432: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:01,433: process[move_base-4]: started with pid [6642]
+[roslaunch][ERROR] 2020-11-09 02:50:01,534: [move_base-4] process has died [pid 6642, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:01,534: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:01,534: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:01,534: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:01,534: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:01,536: process[move_base-4]: started with pid [6643]
+[roslaunch][ERROR] 2020-11-09 02:50:01,636: [move_base-4] process has died [pid 6643, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:01,636: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:01,636: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:01,636: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:01,637: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:01,638: process[move_base-4]: started with pid [6644]
+[roslaunch][ERROR] 2020-11-09 02:50:01,738: [move_base-4] process has died [pid 6644, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:01,739: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:01,739: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:01,739: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:01,739: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:01,740: process[move_base-4]: started with pid [6645]
+[roslaunch][ERROR] 2020-11-09 02:50:01,841: [move_base-4] process has died [pid 6645, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:01,841: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:01,841: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:01,841: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:01,841: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:01,843: process[move_base-4]: started with pid [6646]
+[roslaunch][ERROR] 2020-11-09 02:50:01,943: [move_base-4] process has died [pid 6646, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:01,943: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:01,943: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:01,944: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:01,944: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:01,945: process[move_base-4]: started with pid [6647]
+[roslaunch][ERROR] 2020-11-09 02:50:02,045: [move_base-4] process has died [pid 6647, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:02,046: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:02,046: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:02,046: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:02,046: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:02,047: process[move_base-4]: started with pid [6648]
+[roslaunch][ERROR] 2020-11-09 02:50:02,148: [move_base-4] process has died [pid 6648, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:02,148: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:02,148: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:02,148: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:02,148: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:02,150: process[move_base-4]: started with pid [6649]
+[roslaunch][ERROR] 2020-11-09 02:50:02,250: [move_base-4] process has died [pid 6649, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:02,250: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:02,250: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:02,250: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:02,250: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:02,252: process[move_base-4]: started with pid [6650]
+[roslaunch][ERROR] 2020-11-09 02:50:02,352: [move_base-4] process has died [pid 6650, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:02,352: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:02,353: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:02,353: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:02,353: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:02,354: process[move_base-4]: started with pid [6651]
+[roslaunch][ERROR] 2020-11-09 02:50:02,455: [move_base-4] process has died [pid 6651, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:02,455: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:02,455: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:02,455: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:02,455: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:02,457: process[move_base-4]: started with pid [6652]
+[roslaunch][ERROR] 2020-11-09 02:50:02,557: [move_base-4] process has died [pid 6652, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:02,557: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:02,557: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:02,557: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:02,557: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:02,559: process[move_base-4]: started with pid [6653]
+[roslaunch][ERROR] 2020-11-09 02:50:02,659: [move_base-4] process has died [pid 6653, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:02,660: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:02,660: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:02,660: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:02,660: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:02,663: process[move_base-4]: started with pid [6654]
+[roslaunch][ERROR] 2020-11-09 02:50:02,763: [move_base-4] process has died [pid 6654, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:02,763: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:02,763: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:02,764: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:02,764: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:02,766: process[move_base-4]: started with pid [6655]
+[roslaunch][ERROR] 2020-11-09 02:50:02,867: [move_base-4] process has died [pid 6655, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:02,867: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:02,867: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:02,867: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:02,867: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:02,869: process[move_base-4]: started with pid [6656]
+[roslaunch][ERROR] 2020-11-09 02:50:02,970: [move_base-4] process has died [pid 6656, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:02,970: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:02,970: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:02,970: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:02,970: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:02,972: process[move_base-4]: started with pid [6657]
+[roslaunch][ERROR] 2020-11-09 02:50:03,072: [move_base-4] process has died [pid 6657, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:03,072: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:03,072: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:03,072: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:03,072: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:03,074: process[move_base-4]: started with pid [6658]
+[roslaunch][ERROR] 2020-11-09 02:50:03,174: [move_base-4] process has died [pid 6658, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:03,175: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:03,175: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:03,175: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:03,175: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:03,176: process[move_base-4]: started with pid [6659]
+[roslaunch][ERROR] 2020-11-09 02:50:03,277: [move_base-4] process has died [pid 6659, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:03,277: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:03,277: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:03,277: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:03,277: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:03,279: process[move_base-4]: started with pid [6660]
+[roslaunch][ERROR] 2020-11-09 02:50:03,379: [move_base-4] process has died [pid 6660, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:03,379: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:03,379: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:03,380: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:03,380: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:03,381: process[move_base-4]: started with pid [6661]
+[roslaunch][ERROR] 2020-11-09 02:50:03,482: [move_base-4] process has died [pid 6661, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:03,482: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:03,482: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:03,482: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:03,482: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:03,483: process[move_base-4]: started with pid [6662]
+[roslaunch][ERROR] 2020-11-09 02:50:03,584: [move_base-4] process has died [pid 6662, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:03,584: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:03,584: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:03,584: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:03,584: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:03,586: process[move_base-4]: started with pid [6663]
+[roslaunch][ERROR] 2020-11-09 02:50:03,686: [move_base-4] process has died [pid 6663, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:03,686: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:03,686: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:03,686: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:03,687: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:03,688: process[move_base-4]: started with pid [6664]
+[roslaunch][ERROR] 2020-11-09 02:50:03,788: [move_base-4] process has died [pid 6664, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:03,789: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:03,789: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:03,789: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:03,789: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:03,790: process[move_base-4]: started with pid [6665]
+[roslaunch][ERROR] 2020-11-09 02:50:03,891: [move_base-4] process has died [pid 6665, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:03,891: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:03,891: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:03,891: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:03,891: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:03,893: process[move_base-4]: started with pid [6666]
+[roslaunch][ERROR] 2020-11-09 02:50:03,993: [move_base-4] process has died [pid 6666, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:03,993: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:03,993: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:03,994: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:03,994: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:03,995: process[move_base-4]: started with pid [6667]
+[roslaunch][ERROR] 2020-11-09 02:50:04,096: [move_base-4] process has died [pid 6667, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:04,096: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:04,096: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:04,096: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:04,096: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:04,098: process[move_base-4]: started with pid [6668]
+[roslaunch][ERROR] 2020-11-09 02:50:04,199: [move_base-4] process has died [pid 6668, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:04,199: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:04,199: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:04,199: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:04,199: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:04,201: process[move_base-4]: started with pid [6669]
+[roslaunch][ERROR] 2020-11-09 02:50:04,301: [move_base-4] process has died [pid 6669, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:04,301: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:04,301: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:04,301: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:04,301: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:04,303: process[move_base-4]: started with pid [6670]
+[roslaunch][ERROR] 2020-11-09 02:50:04,403: [move_base-4] process has died [pid 6670, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:04,403: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:04,404: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:04,404: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:04,404: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:04,405: process[move_base-4]: started with pid [6671]
+[roslaunch][ERROR] 2020-11-09 02:50:04,506: [move_base-4] process has died [pid 6671, exit code -6, cmd /opt/ros/indigo/lib/move_base/move_base cmd_vel:=cmd_vel odom:=odom map:=map __name:=move_base __log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log].
+log file: /home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4*.log
+[roslaunch][INFO] 2020-11-09 02:50:04,506: [move_base-4] restarting process
+[roslaunch][INFO] 2020-11-09 02:50:04,506: process[move_base-4]: restarting os process
+[roslaunch][INFO] 2020-11-09 02:50:04,506: process[move_base-4]: start w/ args [[u'/opt/ros/indigo/lib/move_base/move_base', u'cmd_vel:=cmd_vel', u'odom:=odom', u'map:=map', u'__name:=move_base', u'__log:=/home/fetch/.ros/log/0949a3b4-226e-11eb-b873-000babe55698/move_base-4.log']]
+[roslaunch][INFO] 2020-11-09 02:50:04,506: process[move_base-4]: cwd will be [/home/fetch/.ros]
+[roslaunch][INFO] 2020-11-09 02:50:04,508: process[move_base-4]: started with pid [6672]
+[roslaunch.pmon][INFO] 2020-11-09 02:50:04,551: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, started daemon 140294913537792)>
+[roslaunch.pmon][INFO] 2020-11-09 02:50:04,608: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 140294913537792)>
+[roslaunch.pmon][INFO] 2020-11-09 02:50:04,608: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon 140294913537792)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0x7f98f4a4f050>]
+[roslaunch.pmon][INFO] 2020-11-09 02:50:04,608: ProcessMonitor exit: killing move_base-4
+[roslaunch][INFO] 2020-11-09 02:50:04,609: [move_base-4] killing on exit
+[roslaunch.pmon][INFO] 2020-11-09 02:50:04,609: ProcessMonitor exit: cleaning up data structures and signals
+[roslaunch.pmon][INFO] 2020-11-09 02:50:04,609: ProcessMonitor exit: pmon has shutdown
+[roslaunch][INFO] 2020-11-09 02:50:04,614: process monitor is done spinning, initiating full shutdown
+[roslaunch][INFO] 2020-11-09 02:50:04,614: runner.stop()
+[roslaunch][INFO] 2020-11-09 02:50:04,614: shutting down processing monitor...
+[roslaunch][INFO] 2020-11-09 02:50:04,615: shutting down processing monitor <ProcessMonitor(ProcessMonitor-1, stopped daemon 140294913537792)>
+[roslaunch.pmon][INFO] 2020-11-09 02:50:04,615: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 140294913537792)>
+[roslaunch][INFO] 2020-11-09 02:50:04,615: ... shutting down processing monitor complete
+[roslaunch][INFO] 2020-11-09 02:50:04,615: done
+[roslaunch.pmon][INFO] 2020-11-09 02:50:04,615: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon 140294913537792)>
+[rospy.core][INFO] 2020-11-09 02:50:04,615: signal_shutdown [atexit]

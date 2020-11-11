@@ -1,0 +1,23 @@
+[rospy.client][INFO] 2020-11-02 23:29:04,254: init_node, name[/rostopic_9969_1604388544234], pid[9969]
+[xmlrpc][INFO] 2020-11-02 23:29:04,254: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-02 23:29:04,254: Started XML-RPC server [http://freight1207:35662/]
+[rospy.init][INFO] 2020-11-02 23:29:04,254: ROS Slave URI: [http://freight1207:35662/]
+[rospy.impl.masterslave][INFO] 2020-11-02 23:29:04,255: _ready: http://freight1207:35662/
+[rospy.registration][INFO] 2020-11-02 23:29:04,255: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2020-11-02 23:29:04,255: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2020-11-02 23:29:04,355: registered with master
+[rospy.rosout][INFO] 2020-11-02 23:29:04,355: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-02 23:29:04,356: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-02 23:29:04,357: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-11-02 23:29:04,564: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2020-11-02 23:29:10,784: topic[/amcl_pose] adding connection to [http://freight1207:52447/], count 0
+[rospy.core][INFO] 2020-11-02 23:33:00,066: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-11-02 23:33:00,068: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-02 23:33:00,068: topic[/amcl_pose] removing connection to http://freight1207:52447/
+[rospy.impl.masterslave][INFO] 2020-11-02 23:33:00,068: signal-2
+[rospy.internal][WARNING] 2020-11-02 23:33:00,069: Unknown error initiating TCP/IP socket to freight1207:57619 (http://freight1207:52447/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 558, in connect
+    self.local_endpoint = self.socket.getsockname()
+AttributeError: 'NoneType' object has no attribute 'getsockname'
+
+[rospy.core][INFO] 2020-11-02 23:33:00,200: signal_shutdown [atexit]

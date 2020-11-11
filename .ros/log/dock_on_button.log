@@ -1,0 +1,120 @@
+[rospy.client][INFO] 2018-12-04 21:23:58,168: init_node, name[/dock_on_button], pid[11879]
+[xmlrpc][INFO] 2018-12-04 21:23:58,169: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-12-04 21:23:58,169: Started XML-RPC server [http://freight1207:49768/]
+[rospy.init][INFO] 2018-12-04 21:23:58,169: ROS Slave URI: [http://freight1207:49768/]
+[rospy.impl.masterslave][INFO] 2018-12-04 21:23:58,169: _ready: http://freight1207:49768/
+[xmlrpc][INFO] 2018-12-04 21:23:58,170: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-12-04 21:23:58,170: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2018-12-04 21:23:58,269: registered with master
+[rospy.rosout][INFO] 2018-12-04 21:23:58,270: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-12-04 21:23:58,272: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-12-04 21:23:58,272: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-12-04 21:23:58,274: Connecting to /dock...
+[rospy.internal][INFO] 2018-12-04 21:23:58,501: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2018-12-04 21:24:01,974: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2018-12-04 21:24:01,976: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2018-12-04 21:24:01,977: signal-2
+[rosout][INFO] 2018-12-04 21:24:02,108: Done.
+[rospy.core][INFO] 2018-12-04 21:24:02,110: signal_shutdown [atexit]
+[rospy.client][INFO] 2018-12-04 21:24:05,026: init_node, name[/dock_on_button], pid[11904]
+[xmlrpc][INFO] 2018-12-04 21:24:05,026: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-12-04 21:24:05,027: Started XML-RPC server [http://freight1207:43895/]
+[rospy.init][INFO] 2018-12-04 21:24:05,027: ROS Slave URI: [http://freight1207:43895/]
+[rospy.impl.masterslave][INFO] 2018-12-04 21:24:05,027: _ready: http://freight1207:43895/
+[xmlrpc][INFO] 2018-12-04 21:24:05,027: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-12-04 21:24:05,027: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2018-12-04 21:24:05,127: registered with master
+[rospy.rosout][INFO] 2018-12-04 21:24:05,127: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-12-04 21:24:05,129: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-12-04 21:24:05,130: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-12-04 21:24:05,132: Connecting to /dock...
+[rospy.internal][INFO] 2018-12-04 21:24:05,351: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2018-12-04 21:24:20,506: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2018-12-04 21:24:20,509: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2018-12-04 21:24:20,509: signal-2
+[rosout][INFO] 2018-12-04 21:24:21,124: Done.
+[rospy.core][INFO] 2018-12-04 21:24:21,126: signal_shutdown [atexit]
+[rospy.client][INFO] 2018-12-04 21:24:26,936: init_node, name[/dock_on_button], pid[11936]
+[xmlrpc][INFO] 2018-12-04 21:24:26,936: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-12-04 21:24:26,936: Started XML-RPC server [http://freight1207:55896/]
+[rospy.init][INFO] 2018-12-04 21:24:26,936: ROS Slave URI: [http://freight1207:55896/]
+[rospy.impl.masterslave][INFO] 2018-12-04 21:24:26,936: _ready: http://freight1207:55896/
+[xmlrpc][INFO] 2018-12-04 21:24:26,937: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-12-04 21:24:26,937: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2018-12-04 21:24:27,036: registered with master
+[rospy.rosout][INFO] 2018-12-04 21:24:27,037: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-12-04 21:24:27,038: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-12-04 21:24:27,039: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-12-04 21:24:27,041: Connecting to /dock...
+[rospy.internal][INFO] 2018-12-04 21:24:27,241: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2018-12-04 21:24:33,458: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2018-12-04 21:24:33,461: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2018-12-04 21:24:33,461: signal-2
+[rosout][INFO] 2018-12-04 21:24:33,568: Done.
+[rospy.core][INFO] 2018-12-04 21:24:33,570: signal_shutdown [atexit]
+[rospy.client][INFO] 2018-12-04 21:25:18,468: init_node, name[/dock_on_button], pid[11975]
+[xmlrpc][INFO] 2018-12-04 21:25:18,469: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-12-04 21:25:18,469: Started XML-RPC server [http://freight1207:36216/]
+[rospy.init][INFO] 2018-12-04 21:25:18,469: ROS Slave URI: [http://freight1207:36216/]
+[rospy.impl.masterslave][INFO] 2018-12-04 21:25:18,469: _ready: http://freight1207:36216/
+[xmlrpc][INFO] 2018-12-04 21:25:18,470: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-12-04 21:25:18,470: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2018-12-04 21:25:18,569: registered with master
+[rospy.rosout][INFO] 2018-12-04 21:25:18,570: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-12-04 21:25:18,571: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-12-04 21:25:18,572: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-12-04 21:25:18,574: Connecting to /dock...
+[rospy.internal][INFO] 2018-12-04 21:25:18,814: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2018-12-04 21:25:28,940: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2018-12-04 21:25:28,943: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2018-12-04 21:25:28,943: signal-2
+[rosout][INFO] 2018-12-04 21:25:29,051: Done.
+[rospy.core][INFO] 2018-12-04 21:25:29,053: signal_shutdown [atexit]
+[rospy.client][INFO] 2018-12-06 22:49:13,377: init_node, name[/dock_on_button], pid[13376]
+[xmlrpc][INFO] 2018-12-06 22:49:13,378: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-12-06 22:49:13,379: Started XML-RPC server [http://freight1207:34538/]
+[rospy.init][INFO] 2018-12-06 22:49:13,379: ROS Slave URI: [http://freight1207:34538/]
+[rospy.impl.masterslave][INFO] 2018-12-06 22:49:13,379: _ready: http://freight1207:34538/
+[xmlrpc][INFO] 2018-12-06 22:49:13,379: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-12-06 22:49:13,379: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2018-12-06 22:49:13,479: registered with master
+[rospy.rosout][INFO] 2018-12-06 22:49:13,479: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-12-06 22:49:13,481: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-12-06 22:49:13,482: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2018-12-06 22:49:13,483: Connecting to /dock...
+[rospy.internal][INFO] 2018-12-06 22:49:13,494: topic[/dock/feedback] adding connection to [http://freight1207:46820/], count 0
+[rospy.internal][INFO] 2018-12-06 22:49:13,494: topic[/dock/result] adding connection to [http://freight1207:46820/], count 0
+[rospy.internal][INFO] 2018-12-06 22:49:13,495: topic[/dock/status] adding connection to [http://freight1207:46820/], count 0
+[rospy.internal][INFO] 2018-12-06 22:49:13,740: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2018-12-06 22:49:13,741: topic[/dock/goal] adding connection to [/auto_dock], count 0
+[rospy.internal][INFO] 2018-12-06 22:49:13,741: topic[/dock/cancel] adding connection to [/auto_dock], count 0
+[rosout][INFO] 2018-12-06 22:49:13,745: Done.
+[rospy.internal][INFO] 2018-12-06 22:49:13,760: topic[/joy] adding connection to [http://freight1207:41546/], count 0
+[rospy.internal][INFO] 2018-12-06 22:49:13,760: topic[/cmd_dock] adding connection to [http://freight1207:46085/], count 0
+[rospy.internal][ERROR] 2018-12-06 22:50:48,273: Unable to initiate TCP/IP socket to freight1207:43160 (http://freight1207:46085/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][WARNING] 2018-12-06 22:50:49,274: Unknown error initiating TCP/IP socket to freight1207:43160 (http://freight1207:46085/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2018-12-06 22:50:49,274: topic[/cmd_dock] removing connection to http://freight1207:46085/
+[rospy.core][INFO] 2018-12-06 22:50:51,110: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2018-12-06 22:50:51,115: topic[/dock/goal] removing connection to /auto_dock
+[rospy.internal][INFO] 2018-12-06 22:50:51,115: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2018-12-06 22:50:51,115: topic[/dock/cancel] removing connection to /auto_dock
+[rospy.internal][INFO] 2018-12-06 22:50:51,115: topic[/dock/feedback] removing connection to http://freight1207:46820/
+[rospy.internal][INFO] 2018-12-06 22:50:51,115: topic[/joy] removing connection to http://freight1207:41546/
+[rospy.internal][INFO] 2018-12-06 22:50:51,115: topic[/dock/result] removing connection to http://freight1207:46820/
+[rospy.internal][INFO] 2018-12-06 22:50:51,116: topic[/dock/status] removing connection to http://freight1207:46820/
+[rospy.impl.masterslave][INFO] 2018-12-06 22:50:51,116: signal-2
+[rospy.core][INFO] 2018-12-06 22:50:51,247: signal_shutdown [atexit]

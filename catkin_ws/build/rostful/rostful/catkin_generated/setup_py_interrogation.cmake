@@ -1,0 +1,6 @@
+set(rostful_SETUP_PY_VERSION "0.0.2")
+set(rostful_SETUP_PY_SCRIPTS "")
+set(rostful_SETUP_PY_PACKAGES "rostful")
+set(rostful_SETUP_PY_PACKAGE_DIRS "src/rostful")
+set(rostful_SETUP_PY_MODULES "")
+set(rostful_SETUP_PY_MODULE_DIRS "")

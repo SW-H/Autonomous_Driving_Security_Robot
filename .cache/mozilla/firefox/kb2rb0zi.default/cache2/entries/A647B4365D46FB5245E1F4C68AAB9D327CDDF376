@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Install package home:kozec / sc-controller</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+    <meta http-equiv="Content-Style-Type" content="text/css"/>
+
+    <link rel="search" type="application/opensearchdescription+xml" title="openSUSE Software" href="/search_software.xml" />
+
+    <link rel="stylesheet" media="screen" href="/assets/application-474ef4c5286089f1fa0d1e93e00dfe291d25fcfcfc1d5f9dc295de93d20d82ef.css" />
+    <script src="/assets/application-72531e0ffe7e7db032ad4c7792f76121aa566154abff11cc689c1095f862eb80.js"></script>
+    <link href="https://software.opensuse.org/favicon.ico" rel="shortcut icon" />
+
+    
+
+    <script type="text/javascript">
+      /* <![CDATA[ */
+
+  $(function() {
+
+  });
+  /* ]]> */
+    </script>
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      (function(){
+        var u="https://beans.opensuse.org/piwik/";
+        _paq.push(['setSiteId', 7]);
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['trackPageView']);
+        _paq.push([ 'setDomains', ["*.opensuse.org"]]);
+        var d=document,
+        g=d.createElement('script'),
+        s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript';
+        g.defer=true;
+        g.async=true;
+        g.src=u+'piwik.js';
+        s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Piwik Code -->
+
+    <style>
+      html, body {
+        min-height:100vh;
+      }
+      body {
+        display: flex;
+        flex-flow: column;
+      }
+      #content {
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <nav id="global-navbar" class="navbar navbar-expand-md navbar-toggleable navbar-dark bg-dark">
+
+  <a class="navbar-brand" href="https://www.opensuse.org/">
+    <img width="48" height="30" class="d-inline-block align-top" alt="openSUSE Logo" src="/images/logo/logo-white.svg" />
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#global-navbar-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="global-navbar-content">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/distributions">Download</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="/explore">Software</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://doc.opensuse.org/">Documentation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://en.opensuse.org/">Wiki</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://forums.opensuse.org/">Forums</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+        <div class="search-box py-5">
+  <div class="container">
+    <form action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-8">
+          <div class="form-group">
+            <input type="text" name="q" id="search-form" class="form-control" placeholder="Search packages..." autocomplete="off" autofocus="autofocus" />
+          </div>
+        </div>
+        <div class="col-6 col-sm-3 col-lg-2">
+          <button id="search-button" type="submit" class="btn btn-primary btn-block">
+            <span class="typcn typcn-lg typcn-zoom-outline"></span>
+            Search
+          </button>
+        </div>
+        <div class="col-6 col-sm-3 col-lg-2">
+          <button id="settings-button" type="button" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#search-settings">
+            <span class="typcn typcn-lg typcn-spanner-outline"></span>
+            Settings
+          </button>
+        </div>
+      </div>
+</form>  </div>
+</div>
+<div class="modal fade" id="search-settings" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Search settings</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name">Distribution:</label>
+            <select name="baseproject" id="baseproject" class="form-control"></select>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" name="search_devel" id="search_devel" value="true" />
+              Show development packages
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" name="search_lang" id="search_lang" value="true" />
+              Show language packages
+            </label>
+          </div>
+
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" name="search_debug" id="search_debug" value="true" />
+              Show debug packages
+            </label>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="ok-button btn btn-primary">OK</button>
+          <button type="button" class="cancel-button btn btn-secondary">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+    <style type="text/css">
+body {
+  
+}
+h1, h2 {
+  
+  
+}
+body a, .btn-link {
+  color: #00a489;
+}
+body a:hover, .btn-link:focus, .btn-link:hover {
+  color: #005849;
+}
+.btn:focus, .btn.focus {
+  ;
+}
+.btn-pointer {
+  cursor: pointer;
+}
+.btn-primary {
+  border-color: #00a489;
+  background: #00a489;
+}
+.btn-primary:hover, btn-primary:focus {
+  background: #005849;
+  border-color: #005849;
+}
+html, body {
+  min-height:100vh;
+}
+body {
+  display: flex;
+  flex-flow: column;
+}
+#content {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+</style>
+
+
+<div class="container" id="content">
+<div class="soo_download_#{@project}_#{@package}">
+   <h1 class="font-weight-normal"><b>sc-controller</b> from <b>home:kozec</b> project</h1>
+   <h2 class="my-4">Select Your Operating System</h2>
+   <div class="row py-3">
+      <button class="col btn btn-link btn-pointer align-items-center p-0" id="Debian_button" data-toggle="collapse" data-target="#Debian" aria-expanded="false" aria-controls="Debian">
+         <img src="/assets/download/debian-7f6aaffbc314e94cb16969fcbcce47c210283c398dfe9979f9cd2c796f528bd0.png" alt="Debian" />
+         <h6>Debian</h6>
+      </button>
+      </h5>
+      <button class="col btn btn-link btn-pointer align-items-center p-0" id="Fedora_button" data-toggle="collapse" data-target="#Fedora" aria-expanded="false" aria-controls="Fedora">
+         <img src="/assets/download/fedora-e0120aaf2511d62ab5ef03690db25e039a362712f21ef43680865a10fb933903.png" alt="Fedora" />
+         <h6>Fedora</h6>
+      </button>
+      </h5>
+      <button class="col btn btn-link btn-pointer align-items-center p-0" id="openSUSE_button" data-toggle="collapse" data-target="#openSUSE" aria-expanded="false" aria-controls="openSUSE">
+         <img src="/assets/download/opensuse-7e73fc3458d3336903188982bb1e5faa07c396d0f83ba6315556fad9f269ea3a.png" alt="openSUSE" />
+         <h6>openSUSE</h6>
+      </button>
+      </h5>
+      <button class="col btn btn-link btn-pointer align-items-center p-0" id="Ubuntu_button" data-toggle="collapse" data-target="#Ubuntu" aria-expanded="false" aria-controls="Ubuntu">
+         <img src="/assets/download/ubuntu-325a22d7bcc94bc4b7744a0a0d4e321079e9c9d298177ff5798afca29f0ddc1d.png" alt="Ubuntu" />
+         <h6>Ubuntu</h6>
+      </button>
+      </h5>
+   </div>
+   <div id="accordion">
+      <div class="card border-0">
+         <div id="Debian" class="collapse" aria-labelledby="headingDebian" data-parent="#accordion">
+            <div class="card-body p-3">
+               <div class="row w-100">
+               </div>
+               <div>
+                  <a data-toggle="collapse" href="#manualDebian" role="button" aria-expanded="false" aria-controls="manualDebian">
+                  <h4 class="my-3">Add repository and install manually</h4>
+                  </a>
+                  <div class="collapse" id="manualDebian" aria-labelledby="manualDebian">
+                  <h5>For <strong>Debian&nbsp;9.0</strong> run the following as <strong>root</strong>:</h5>
+                  <pre>echo &#39;deb http://download.opensuse.org/repositories/home:/kozec/Debian_9.0/ /&#39; &gt; /etc/apt/sources.list.d/home:kozec.list
+apt-get update
+apt-get install sc-controller</pre>
+                  <h5>You can add the repository key to apt. Keep in mind that the owner of the key may distribute updates, packages and repositories that your system will trust (<a href="https://wiki.debian.org/SecureApt">more information</a>). To add the key, run:</h5>
+                  <pre>wget -nv https://download.opensuse.org/repositories/home:kozec/Debian_9.0/Release.key -O Release.key
+apt-key add - < Release.key
+apt-get update</pre>
+                  
+                  
+                  <h5>For <strong>Debian&nbsp;8.0</strong> run the following as <strong>root</strong>:</h5>
+                  <pre>echo &#39;deb http://download.opensuse.org/repositories/home:/kozec/Debian_8.0/ /&#39; &gt; /etc/apt/sources.list.d/home:kozec.list
+apt-get update
+apt-get install sc-controller</pre>
+                  <h5>You can add the repository key to apt. Keep in mind that the owner of the key may distribute updates, packages and repositories that your system will trust (<a href="https://wiki.debian.org/SecureApt">more information</a>). To add the key, run:</h5>
+                  <pre>wget -nv https://download.opensuse.org/repositories/home:kozec/Debian_8.0/Release.key -O Release.key
+apt-key add - < Release.key
+apt-get update</pre>
+                  
+                  
+                  </div>
+               </div>
+               <a data-toggle="collapse" href="#directDebian" role="button" aria-expanded="false" aria-controls="directDebian">
+                  <h4 class="my-3">Grab binary packages directly</h4>
+                  </a>
+                  <div class="collapse" id="directDebian" aria-labelledby="directDebian">
+               <div class="w-100 row">
+                  <div class="text-center col">
+                     <p>Packages for <strong>Debian&nbsp;9.0</strong>:</p>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/Debian_9.0/amd64/sc-controller_0.4.5_amd64.deb"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller_0.4.5_amd64.deb</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/Debian_9.0/arm64/sc-controller_0.4.5_arm64.deb"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller_0.4.5_arm64.deb</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/Debian_9.0/armhf/sc-controller_0.4.5_armhf.deb"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller_0.4.5_armhf.deb</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/Debian_9.0/i386/sc-controller_0.4.5_i386.deb"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller_0.4.5_i386.deb</span>
+                     </button></a>
+                  </div>
+                  
+                  <div class="text-center col">
+                     <p>Packages for <strong>Debian&nbsp;8.0</strong>:</p>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/Debian_8.0/amd64/sc-controller_0.4.5_amd64.deb"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller_0.4.5_amd64.deb</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/Debian_8.0/i386/sc-controller_0.4.5_i386.deb"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller_0.4.5_i386.deb</span>
+                     </button></a>
+                  </div>
+                  
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="card border-0">
+         <div id="Fedora" class="collapse" aria-labelledby="headingFedora" data-parent="#accordion">
+            <div class="card-body p-3">
+               <div class="row w-100">
+               </div>
+               <div>
+                  <a data-toggle="collapse" href="#manualFedora" role="button" aria-expanded="false" aria-controls="manualFedora">
+                  <h4 class="my-3">Add repository and install manually</h4>
+                  </a>
+                  <div class="collapse" id="manualFedora" aria-labelledby="manualFedora">
+                  <h5>For <strong>Fedora&nbsp;28</strong> run the following as <strong>root</strong>:</h5>
+                  <pre>dnf config-manager --add-repo https://download.opensuse.org/repositories/home:kozec/Fedora_28/home:kozec.repo
+dnf install sc-controller</pre>
+                  
+                  <h5>For <strong>Fedora&nbsp;26</strong> run the following as <strong>root</strong>:</h5>
+                  <pre>dnf config-manager --add-repo https://download.opensuse.org/repositories/home:kozec/Fedora_26/home:kozec.repo
+dnf install sc-controller</pre>
+                  
+                  <h5>For <strong>Fedora&nbsp;25</strong> run the following as <strong>root</strong>:</h5>
+                  <pre>dnf config-manager --add-repo https://download.opensuse.org/repositories/home:kozec/Fedora_25/home:kozec.repo
+dnf install sc-controller</pre>
+                  
+                  </div>
+               </div>
+               <a data-toggle="collapse" href="#directFedora" role="button" aria-expanded="false" aria-controls="directFedora">
+                  <h4 class="my-3">Grab binary packages directly</h4>
+                  </a>
+                  <div class="collapse" id="directFedora" aria-labelledby="directFedora">
+               <div class="w-100 row">
+                  <div class="text-center col">
+                     <p>Packages for <strong>Fedora&nbsp;28</strong>:</p>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/Fedora_28/src/sc-controller-0.4.5-1.1.src.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.5-1.1.src.rpm</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/Fedora_28/x86_64/sc-controller-0.4.5-1.1.x86_64.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.5-1.1.x86_64.rpm</span>
+                     </button></a>
+                  </div>
+                  
+                  <div class="text-center col">
+                     <p>Packages for <strong>Fedora&nbsp;26</strong>:</p>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/Fedora_26/src/sc-controller-0.4.5-1.1.src.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.5-1.1.src.rpm</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/Fedora_26/x86_64/sc-controller-0.4.5-1.1.x86_64.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.5-1.1.x86_64.rpm</span>
+                     </button></a>
+                  </div>
+                  
+                  <div class="text-center col">
+                     <p>Packages for <strong>Fedora&nbsp;25</strong>:</p>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/Fedora_25/i686/sc-controller-0.4.5-1.1.i686.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.5-1.1.i686.rpm</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/Fedora_25/src/sc-controller-0.4.5-1.1.src.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.5-1.1.src.rpm</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/Fedora_25/x86_64/sc-controller-0.4.5-1.1.x86_64.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.5-1.1.x86_64.rpm</span>
+                     </button></a>
+                  </div>
+                  
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="card border-0">
+         <div id="openSUSE" class="collapse" aria-labelledby="headingopenSUSE" data-parent="#accordion">
+            <div class="card-body p-3">
+               <div class="row w-100">
+                  <div class="text-center col">
+                     <a href="https://software.opensuse.org/ymp/home:kozec/openSUSE_Tumbleweed/sc-controller.ymp"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>openSUSE&nbsp;Tumbleweed</span>
+                     </button></a>
+                  </div>
+                  <div class="text-center col">
+                     <a href="https://software.opensuse.org/ymp/home:kozec/openSUSE_Leap_42.3/sc-controller.ymp"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>openSUSE&nbsp;Leap&nbsp;42.3</span>
+                     </button></a>
+                  </div>
+                  <div class="text-center col">
+                     <a href="https://software.opensuse.org/ymp/home:kozec/openSUSE_Factory/sc-controller.ymp"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>openSUSE&nbsp;Factory</span>
+                     </button></a>
+                  </div>
+                  <div class="text-center col">
+                     <a href="https://software.opensuse.org/ymp/home:kozec/openSUSE_13.2/sc-controller.ymp"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>openSUSE&nbsp;13.2</span>
+                     </button></a>
+                  </div>
+               </div>
+               <div>
+                  <a data-toggle="collapse" href="#manualopenSUSE" role="button" aria-expanded="false" aria-controls="manualopenSUSE">
+                  <h4 class="my-3">Add repository and install manually</h4>
+                  </a>
+                  <div class="collapse" id="manualopenSUSE" aria-labelledby="manualopenSUSE">
+                  <h5>For <strong>openSUSE&nbsp;Tumbleweed</strong> run the following as <strong>root</strong>:</h5>
+                  <pre>zypper addrepo https://download.opensuse.org/repositories/home:kozec/openSUSE_Tumbleweed/home:kozec.repo
+zypper refresh
+zypper install sc-controller</pre>
+                  
+                  <h5>For <strong>openSUSE&nbsp;Leap&nbsp;42.3</strong> run the following as <strong>root</strong>:</h5>
+                  <pre>zypper addrepo https://download.opensuse.org/repositories/home:kozec/openSUSE_Leap_42.3/home:kozec.repo
+zypper refresh
+zypper install sc-controller</pre>
+                  
+                  <h5>For <strong>openSUSE&nbsp;Factory</strong> run the following as <strong>root</strong>:</h5>
+                  <pre>zypper addrepo https://download.opensuse.org/repositories/home:kozec/openSUSE_Factory/home:kozec.repo
+zypper refresh
+zypper install sc-controller</pre>
+                  
+                  <h5>For <strong>openSUSE&nbsp;13.2</strong> run the following as <strong>root</strong>:</h5>
+                  <pre>zypper addrepo https://download.opensuse.org/repositories/home:kozec/openSUSE_13.2/home:kozec.repo
+zypper refresh
+zypper install sc-controller</pre>
+                  
+                  </div>
+               </div>
+               <a data-toggle="collapse" href="#directopenSUSE" role="button" aria-expanded="false" aria-controls="directopenSUSE">
+                  <h4 class="my-3">Grab binary packages directly</h4>
+                  </a>
+                  <div class="collapse" id="directopenSUSE" aria-labelledby="directopenSUSE">
+               <div class="w-100 row">
+                  <div class="text-center col">
+                     <p>Packages for <strong>openSUSE&nbsp;Tumbleweed</strong>:</p>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/openSUSE_Tumbleweed/i586/sc-controller-0.4.5-1.2.i586.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.5-1.2.i586.rpm</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/openSUSE_Tumbleweed/src/sc-controller-0.4.5-1.2.src.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.5-1.2.src.rpm</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/openSUSE_Tumbleweed/x86_64/sc-controller-0.4.5-1.2.x86_64.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.5-1.2.x86_64.rpm</span>
+                     </button></a>
+                  </div>
+                  
+                  <div class="text-center col">
+                     <p>Packages for <strong>openSUSE&nbsp;Leap&nbsp;42.3</strong>:</p>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/openSUSE_Leap_42.3/src/sc-controller-0.4.5-1.1.src.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.5-1.1.src.rpm</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/openSUSE_Leap_42.3/x86_64/sc-controller-0.4.5-1.1.x86_64.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.5-1.1.x86_64.rpm</span>
+                     </button></a>
+                  </div>
+                  
+                  <div class="text-center col">
+                     <p>Packages for <strong>openSUSE&nbsp;Factory</strong>:</p>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/openSUSE_Factory/i586/sc-controller-0.4.5-1.2.i586.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.5-1.2.i586.rpm</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/openSUSE_Factory/src/sc-controller-0.4.5-1.2.src.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.5-1.2.src.rpm</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/openSUSE_Factory/x86_64/sc-controller-0.4.5-1.2.x86_64.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.5-1.2.x86_64.rpm</span>
+                     </button></a>
+                  </div>
+                  
+                  <div class="text-center col">
+                     <p>Packages for <strong>openSUSE&nbsp;13.2</strong>:</p>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/openSUSE_13.2/i586/sc-controller-0.3.14.1-3.1.i586.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.3.14.1-3.1.i586.rpm</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/openSUSE_13.2/src/sc-controller-0.3.14.1-3.1.src.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.3.14.1-3.1.src.rpm</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/openSUSE_13.2/x86_64/sc-controller-0.3.14.1-3.1.x86_64.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.3.14.1-3.1.x86_64.rpm</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/openSUSE_13.2/i586/sc-controller-0.4.2-2.1.i586.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.2-2.1.i586.rpm</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/openSUSE_13.2/src/sc-controller-0.4.2-2.1.src.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.2-2.1.src.rpm</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/openSUSE_13.2/x86_64/sc-controller-0.4.2-2.1.x86_64.rpm"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller-0.4.2-2.1.x86_64.rpm</span>
+                     </button></a>
+                  </div>
+                  
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="card border-0">
+         <div id="Ubuntu" class="collapse" aria-labelledby="headingUbuntu" data-parent="#accordion">
+            <div class="card-body p-3">
+               <div class="row w-100">
+               </div>
+               <div>
+                  <a data-toggle="collapse" href="#manualUbuntu" role="button" aria-expanded="false" aria-controls="manualUbuntu">
+                  <h4 class="my-3">Add repository and install manually</h4>
+                  </a>
+                  <div class="collapse" id="manualUbuntu" aria-labelledby="manualUbuntu">
+                  <h5>For <strong>xUbuntu&nbsp;18.10</strong> run the following:</h5>
+                  <pre>sudo sh -c &quot;echo &#39;deb http://download.opensuse.org/repositories/home:/kozec/xUbuntu_18.10/ /&#39; &gt; /etc/apt/sources.list.d/home:kozec.list&quot;
+sudo apt-get update
+sudo apt-get install sc-controller</pre>
+                  <h5>You can add the repository key to apt. Keep in mind that the owner of the key may distribute updates, packages and repositories that your system will trust (<a href="https://help.ubuntu.com/community/SecureApt">more information</a>). To add the key, run:</h5>
+                  <pre>wget -nv https://download.opensuse.org/repositories/home:kozec/xUbuntu_18.10/Release.key -O Release.key
+sudo apt-key add - < Release.key
+sudo apt-get update</pre>
+                  
+                  
+                  <h5>For <strong>xUbuntu&nbsp;18.04</strong> run the following:</h5>
+                  <pre>sudo sh -c &quot;echo &#39;deb http://download.opensuse.org/repositories/home:/kozec/xUbuntu_18.04/ /&#39; &gt; /etc/apt/sources.list.d/home:kozec.list&quot;
+sudo apt-get update
+sudo apt-get install sc-controller</pre>
+                  <h5>You can add the repository key to apt. Keep in mind that the owner of the key may distribute updates, packages and repositories that your system will trust (<a href="https://help.ubuntu.com/community/SecureApt">more information</a>). To add the key, run:</h5>
+                  <pre>wget -nv https://download.opensuse.org/repositories/home:kozec/xUbuntu_18.04/Release.key -O Release.key
+sudo apt-key add - < Release.key
+sudo apt-get update</pre>
+                  
+                  
+                  <h5>For <strong>xUbuntu&nbsp;17.04</strong> run the following:</h5>
+                  <pre>sudo sh -c &quot;echo &#39;deb http://download.opensuse.org/repositories/home:/kozec/xUbuntu_17.04/ /&#39; &gt; /etc/apt/sources.list.d/home:kozec.list&quot;
+sudo apt-get update
+sudo apt-get install sc-controller</pre>
+                  <h5>You can add the repository key to apt. Keep in mind that the owner of the key may distribute updates, packages and repositories that your system will trust (<a href="https://help.ubuntu.com/community/SecureApt">more information</a>). To add the key, run:</h5>
+                  <pre>wget -nv https://download.opensuse.org/repositories/home:kozec/xUbuntu_17.04/Release.key -O Release.key
+sudo apt-key add - < Release.key
+sudo apt-get update</pre>
+                  
+                  
+                  <h5>For <strong>xUbuntu&nbsp;16.04</strong> run the following:</h5>
+                  <pre>sudo sh -c &quot;echo &#39;deb http://download.opensuse.org/repositories/home:/kozec/xUbuntu_16.04/ /&#39; &gt; /etc/apt/sources.list.d/home:kozec.list&quot;
+sudo apt-get update
+sudo apt-get install sc-controller</pre>
+                  <h5>You can add the repository key to apt. Keep in mind that the owner of the key may distribute updates, packages and repositories that your system will trust (<a href="https://help.ubuntu.com/community/SecureApt">more information</a>). To add the key, run:</h5>
+                  <pre>wget -nv https://download.opensuse.org/repositories/home:kozec/xUbuntu_16.04/Release.key -O Release.key
+sudo apt-key add - < Release.key
+sudo apt-get update</pre>
+                  
+                  
+                  </div>
+               </div>
+               <a data-toggle="collapse" href="#directUbuntu" role="button" aria-expanded="false" aria-controls="directUbuntu">
+                  <h4 class="my-3">Grab binary packages directly</h4>
+                  </a>
+                  <div class="collapse" id="directUbuntu" aria-labelledby="directUbuntu">
+               <div class="w-100 row">
+                  <div class="text-center col">
+                     <p>Packages for <strong>xUbuntu&nbsp;18.10</strong>:</p>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/xUbuntu_18.10/amd64/sc-controller_0.4.5_amd64.deb"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller_0.4.5_amd64.deb</span>
+                     </button></a>
+                  </div>
+                  
+                  <div class="text-center col">
+                     <p>Packages for <strong>xUbuntu&nbsp;18.04</strong>:</p>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/xUbuntu_18.04/amd64/sc-controller_0.4.5_amd64.deb"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller_0.4.5_amd64.deb</span>
+                     </button></a>
+                  </div>
+                  
+                  <div class="text-center col">
+                     <p>Packages for <strong>xUbuntu&nbsp;17.04</strong>:</p>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/xUbuntu_17.04/amd64/sc-controller_0.4.5_amd64.deb"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller_0.4.5_amd64.deb</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/xUbuntu_17.04/i386/sc-controller_0.4.5_i386.deb"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller_0.4.5_i386.deb</span>
+                     </button></a>
+                  </div>
+                  
+                  <div class="text-center col">
+                     <p>Packages for <strong>xUbuntu&nbsp;16.04</strong>:</p>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/xUbuntu_16.04/amd64/sc-controller_0.4.5_amd64.deb"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller_0.4.5_amd64.deb</span>
+                     </button></a>
+                     <a href="https://download.opensuse.org/repositories/home:/kozec/xUbuntu_16.04/i386/sc-controller_0.4.5_i386.deb"><button class="mb-3 mr-3 w-100 btn btn-primary">
+                     <span class="typcn typcn-lg typcn-download"></span>
+                     <span>sc-controller_0.4.5_i386.deb</span>
+                     </button></a>
+                  </div>
+                  
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+</div>
+
+
+    <footer class="global-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-md-3">
+        <h6>Developers</h6>
+        <ul class="list-unstyled">
+          <li><a href="https://en.opensuse.org/Portal:Development">Documentation</a></li>
+          <li><a href="https://build.opensuse.org/">Build service</a></li>
+          <li><a href="https://bugzilla.opensuse.org/">Bugzilla</a></li>
+          <li><a href="https://github.com/openSUSE">Github</a></li>
+          <li><a href="https://features.opensuse.org/">openFATE</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <h6>Information</h6>
+        <ul class="list-unstyled">
+          <li><a href="https://news.opensuse.org/">News</a></li>
+          <li><a href="https://doc.opensuse.org/release-notes/">Release notes</a></li>
+          <li><a href="https://events.opensuse.org/">Events</a></li>
+          <li><a href="http://planet.opensuse.org/">Planet</a></li>
+          <li><a href="https://shop.opensuse.org/">Shop</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <h6>Community</h6>
+        <ul class="list-unstyled">
+          <li><a href="https://forums.opensuse.org/">Forums</a></li>
+          <li><a href="https://connect.opensuse.org/">Connect</a></li>
+          <li><a href="https://www.facebook.com/groups/opensuseproject/">Facebook group</a></li>
+          <li><a href="https://plus.google.com/communities/115444043324891769569">Google+ group</a></li>
+          <li><a href="https://en.opensuse.org/openSUSE:Mailing_lists_subscription">Mail lists</a></li>
+          <li><a href="https://en.opensuse.org/openSUSE:IRC_list">IRC channels</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <h6>Social Media</h6>
+        <ul class="list-unstyled">
+          <li><a href="https://www.facebook.com/en.openSUSE">Facebook</a></li>
+          <li><a href="https://plus.google.com/+openSUSE">Google+</a></li>
+          <li><a href="https://twitter.com/opensuse">Twitter</a></li>
+          <li><a href="https://www.youtube.com/user/opensusetv">YouTube</a></li>
+          <li><a href="https://t.me/opensusenews">Telegram</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-copyright-language-row">
+      <div class="footer-copyright">
+        &copy; 2011&ndash;2017 openSUSE contributors
+      </div>
+      <div class="footer-language">
+        Language <!-- This label should not be translated! -->
+        <div class="btn-group dropup language-menu">
+          <button class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+            <span class="selected-language">English</span>
+            <span class="caret"></span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="/download/package?locale=ar">العربية</a>
+              <a class="dropdown-item" href="/download/package?locale=bg">Български</a>
+              <a class="dropdown-item" href="/download/package?locale=ca">Català</a>
+              <a class="dropdown-item" href="/download/package?locale=cs">Čeština</a>
+              <a class="dropdown-item" href="/download/package?locale=da">Dansk</a>
+              <a class="dropdown-item" href="/download/package?locale=de">Deutsch</a>
+              <a class="dropdown-item" href="/download/package?locale=el">Ελληνικά</a>
+              <a class="dropdown-item" href="/download/package?locale=en">English</a>
+              <a class="dropdown-item" href="/download/package?locale=es">Español</a>
+              <a class="dropdown-item" href="/download/package?locale=fa">فارسی</a>
+              <a class="dropdown-item" href="/download/package?locale=fi">Suomi</a>
+              <a class="dropdown-item" href="/download/package?locale=fr">Français</a>
+              <a class="dropdown-item" href="/download/package?locale=gl">Galego</a>
+              <a class="dropdown-item" href="/download/package?locale=hi">हिन्दी</a>
+              <a class="dropdown-item" href="/download/package?locale=hu">Magyar</a>
+              <a class="dropdown-item" href="/download/package?locale=id">Bahasa Indonesia</a>
+              <a class="dropdown-item" href="/download/package?locale=it">Italiano</a>
+              <a class="dropdown-item" href="/download/package?locale=ja">日本語</a>
+              <a class="dropdown-item" href="/download/package?locale=km">ភាសាខ្មែរ</a>
+              <a class="dropdown-item" href="/download/package?locale=ko">한국어</a>
+              <a class="dropdown-item" href="/download/package?locale=lt">Lietuvių</a>
+              <a class="dropdown-item" href="/download/package?locale=nb">Bokmål</a>
+              <a class="dropdown-item" href="/download/package?locale=nl">Nederlands</a>
+              <a class="dropdown-item" href="/download/package?locale=nn">Nynorsk</a>
+              <a class="dropdown-item" href="/download/package?locale=pl">Polski</a>
+              <a class="dropdown-item" href="/download/package?locale=pt_BR">Português</a>
+              <a class="dropdown-item" href="/download/package?locale=ro">Română</a>
+              <a class="dropdown-item" href="/download/package?locale=ru">Русский</a>
+              <a class="dropdown-item" href="/download/package?locale=sk">Slovenčina</a>
+              <a class="dropdown-item" href="/download/package?locale=sv">Svenska</a>
+              <a class="dropdown-item" href="/download/package?locale=th">ภาษาไทย</a>
+              <a class="dropdown-item" href="/download/package?locale=uk">Українська</a>
+              <a class="dropdown-item" href="/download/package?locale=wa">Walon</a>
+              <a class="dropdown-item" href="/download/package?locale=zh_CN">简体中文</a>
+              <a class="dropdown-item" href="/download/package?locale=zh_TW">繁體中文</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /.container -->
+</footer>
+
+
+  </body>
+</html>
+6�����      \�y\�?�]�       W    :https://software.opensuse.org/download.html?project=home%3Akozec&package=sc-controller necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Mon, 03 Dec 2018 07:00:11 GMT
+Server: Apache/2.4.23 (Linux/SUSE)
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: text/html; charset=utf-8
+ETag: W/"424b41e68261157a54c8a0868c85fe3a"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 71ea68b2-e15b-4ae6-b159-5f8a226e51c1
+X-Runtime: 0.075022
+Strict-Transport-Security: max-age=15768000
+ original-response-headers Date: Mon, 03 Dec 2018 07:00:11 GMT
+Server: Apache/2.4.23 (Linux/SUSE)
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: text/html; charset=utf-8
+ETag: W/"424b41e68261157a54c8a0868c85fe3a"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 71ea68b2-e15b-4ae6-b159-5f8a226e51c1
+X-Runtime: 0.075022
+Set-Cookie: _softwareoo_session=KzExNFF4R2R5RkNPR1N0M3FKckMrd2pCQWhQQVl0RmtzNjh4SXF3bjgzRjVnaWp0WkhIYzRRK3FKaW9vajFobWsvbVh3WW55ZTlFcEZnQTB5VWU4b2c9PS0tS1VnUFUzWjU5QkxmdDlyL1pZRitFQT09--c78ea4f9425a9bb7cca26f1cd1abe01949d568c2; path=/; HttpOnly
+Transfer-Encoding: chunked
+Strict-Transport-Security: max-age=15768000
+ uncompressed-len 0 predictor::resource-count 14 predictor::https://software.opensuse.org/assets/application-474ef4c5286089f1fa0d1e93e00dfe291d25fcfcfc1d5f9dc295de93d20d82ef.css 1,1,1543821945,4097 predictor::https://software.opensuse.org/assets/application-72531e0ffe7e7db032ad4c7792f76121aa566154abff11cc689c1095f862eb80.js 1,1,1543821945,4097 predictor::https://software.opensuse.org/images/logo/logo-white.svg 1,1,1543821945,4097 predictor::https://software.opensuse.org/assets/download/debian-7f6aaffbc314e94cb16969fcbcce47c210283c398dfe9979f9cd2c796f528bd0.png 1,1,1543821945,4097 predictor::https://software.opensuse.org/assets/download/fedora-e0120aaf2511d62ab5ef03690db25e039a362712f21ef43680865a10fb933903.png 1,1,1543821945,4097 predictor::https://software.opensuse.org/assets/download/opensuse-7e73fc3458d3336903188982bb1e5faa07c396d0f83ba6315556fad9f269ea3a.png 1,1,1543821945,4097 predictor::https://software.opensuse.org/assets/download/ubuntu-325a22d7bcc94bc4b7744a0a0d4e321079e9c9d298177ff5798afca29f0ddc1d.png 1,1,1543821945,4097 net-response-time-onstart 1550 net-response-time-onstop 2044 predictor::https://beans.opensuse.org/piwik/piwik.js 1,1,1543821945,4096 predictor::https://software.opensuse.org/assets/chameleon/OpenSans-Regular-4c1c2e95835201077586a3698cd47806dd18df10d32a1e6cb6aa9e47224a55e3.woff2 1,1,1543821945,4096 predictor::https://software.opensuse.org/assets/chameleon/typicons-c2430aad2b6a33948dc064cfaee8ad65ff9e3ca439834f3aaa84abec3d10dea8.woff 1,1,1543821945,4096 predictor::https://software.opensuse.org/assets/chameleon/OpenSans-CondBold-311927b3f682a4d26c04ff211927ab4fc6177852ad37d4e16c54408c36b9d124.woff 1,1,1543821945,4096 predictor::https://software.opensuse.org/assets/gradient-light-short-fb6e67105d0a340918a1446b66aec3be6806d1c179446cc819f0c1008b5d4a6d.png 1,1,1543821945,4096 predictor::https://software.opensuse.org/assets/chameleon/OpenSans-Bold-c1c24d6a7ce4bd24b1f3f51ab6f74667c94263fa4b109cc3ff32f4f22848087f.woff2 1,1,1543821945,4096 predictor::https://software.opensuse.org/assets/chameleon/OpenSans-CondLight-3ccc9d160de37cd0f7c87a94706f44f5892e044dcab58689d48be7997015a019.woff 1,1,1543821945,4096   ��

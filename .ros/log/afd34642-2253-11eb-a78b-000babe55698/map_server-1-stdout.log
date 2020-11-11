@@ -1,0 +1,5 @@
+[0m[ INFO] [1604905282.183368178]: Loading map from image "/home/fetch/final_map.pgm"[0m
+[0m[ INFO] [1604905282.187202274]: Read a 693 X 400 map @ 0.050 m/cell[0m
+[0m[ INFO] [1604905282.297914576]: Sending map[0m
+[33m[ WARN] [1604905282.205549568]: Shutdown request received.[0m
+[33m[ WARN] [1604905282.205569310]: Reason given for shutdown: [new node registered with same name][0m

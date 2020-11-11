@@ -1,0 +1,99 @@
+[rosmaster.main][INFO] 2020-11-03 18:52:30,260: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2020-11-03 18:52:30,260: Starting ROS Master Node
+[xmlrpc][INFO] 2020-11-03 18:52:30,260: XML-RPC server binding to 0.0.0.0:11311
+[xmlrpc][INFO] 2020-11-03 18:52:30,261: Started XML-RPC server [http://freight1207:11311/]
+[xmlrpc][INFO] 2020-11-03 18:52:30,261: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2020-11-03 18:52:30,261: Master initialized: port[11311], uri[http://freight1207:11311/]
+[rosmaster.master][INFO] 2020-11-03 18:52:30,278: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,279: +PARAM [/roslaunch/uris/host_freight1207__53520] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,322: +PARAM [/rosbridge_websocket/port] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,322: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,323: +PARAM [/rosbridge_websocket/fragment_timeout] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,323: +PARAM [/rosbridge_websocket/bson_only_mode] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,323: +PARAM [/rosbridge_websocket/delay_between_messages] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,323: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,323: +PARAM [/rosbridge_websocket/topics_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,323: +PARAM [/rosbridge_websocket/authenticate] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,323: +PARAM [/rosbridge_websocket/params_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,323: +PARAM [/rosapi/params_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,323: +PARAM [/rosapi/services_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,324: +SERVICE [/rosout/get_loggers] /rosout http://freight1207:37543/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,324: +PARAM [/rosbridge_websocket/retry_startup_delay] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,324: +PARAM [/rosbridge_websocket/services_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,324: +PARAM [/rosbridge_websocket/address] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,324: +SERVICE [/rosout/set_logger_level] /rosout http://freight1207:37543/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,324: +PARAM [/rosapi/topics_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,325: +PARAM [/rosbridge_websocket/max_message_size] by /roslaunch
+[rosmaster.master][INFO] 2020-11-03 18:52:30,326: +PUB [/rosout_agg] /rosout http://freight1207:37543/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,328: +SUB [/rosout] /rosout http://freight1207:37543/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,585: +PUB [/rosout] /rosbridge_websocket http://freight1207:56343/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,587: +SERVICE [/rosbridge_websocket/get_loggers] /rosbridge_websocket http://freight1207:56343/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,588: +SERVICE [/rosbridge_websocket/set_logger_level] /rosbridge_websocket http://freight1207:56343/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,661: publisherUpdate[/rosout] -> http://freight1207:37543/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,911: +PUB [/rosout] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,913: +SERVICE [/rosapi/get_loggers] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,914: +SERVICE [/rosapi/set_logger_level] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,916: +SERVICE [/rosapi/topics] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,917: +SERVICE [/rosapi/topics_for_type] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,918: +SERVICE [/rosapi/services] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,919: +SERVICE [/rosapi/services_for_type] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,919: +SERVICE [/rosapi/nodes] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,920: +SERVICE [/rosapi/node_details] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,921: +SERVICE [/rosapi/action_servers] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,922: +SERVICE [/rosapi/topic_type] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,922: +SERVICE [/rosapi/service_type] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,923: +SERVICE [/rosapi/publishers] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,924: +SERVICE [/rosapi/subscribers] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,925: +SERVICE [/rosapi/service_providers] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,925: +SERVICE [/rosapi/service_node] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,926: +SERVICE [/rosapi/service_host] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,927: +SERVICE [/rosapi/message_details] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,928: +SERVICE [/rosapi/service_request_details] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,928: +SERVICE [/rosapi/service_response_details] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,929: +SERVICE [/rosapi/set_param] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,930: +SERVICE [/rosapi/get_param] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,931: +SERVICE [/rosapi/has_param] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,931: +SERVICE [/rosapi/search_param] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,932: +SERVICE [/rosapi/delete_param] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,933: +SERVICE [/rosapi/get_param_names] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,933: +SERVICE [/rosapi/get_time] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:52:30,961: publisherUpdate[/rosout] -> http://freight1207:37543/
+[rosmaster.master][INFO] 2020-11-03 18:53:05,426: -PUB [/rosout] /rosbridge_websocket http://freight1207:56343/
+[rosmaster.master][INFO] 2020-11-03 18:53:05,426: -SERVICE [/rosbridge_websocket/set_logger_level] /rosbridge_websocket rosrpc://freight1207:51031
+[rosmaster.master][INFO] 2020-11-03 18:53:05,428: -PUB [/rosout] /rosapi http://freight1207:44380/
+[rosmaster.master][INFO] 2020-11-03 18:53:05,428: -SERVICE [/rosbridge_websocket/get_loggers] /rosbridge_websocket rosrpc://freight1207:51031
+[rosmaster.master][INFO] 2020-11-03 18:53:05,428: -SERVICE [/rosapi/get_loggers] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,428: -SERVICE [/rosapi/has_param] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,428: -SERVICE [/rosapi/delete_param] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,428: -SERVICE [/rosapi/search_param] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,428: -SERVICE [/rosapi/action_servers] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,428: -SERVICE [/rosapi/topic_type] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,429: -SERVICE [/rosapi/subscribers] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,429: -SERVICE [/rosapi/set_logger_level] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,429: -SERVICE [/rosapi/service_response_details] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,429: -SERVICE [/rosapi/service_host] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,429: -SERVICE [/rosapi/publishers] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,429: -SERVICE [/rosapi/topics] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,429: -SERVICE [/rosapi/get_param_names] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,429: -SERVICE [/rosapi/get_time] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,429: -SERVICE [/rosapi/message_details] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,429: -SERVICE [/rosapi/services] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,429: -SERVICE [/rosapi/service_node] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,429: -SERVICE [/rosapi/services_for_type] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,429: -SERVICE [/rosapi/nodes] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,429: -SERVICE [/rosapi/node_details] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,429: -SERVICE [/rosapi/service_providers] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,429: -SERVICE [/rosapi/get_param] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,430: -SERVICE [/rosapi/topics_for_type] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,430: -SERVICE [/rosapi/set_param] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,430: -SERVICE [/rosapi/service_request_details] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,430: -SERVICE [/rosapi/service_type] /rosapi rosrpc://freight1207:56855
+[rosmaster.master][INFO] 2020-11-03 18:53:05,508: publisherUpdate[/rosout] -> http://freight1207:37543/
+[rosmaster.master][INFO] 2020-11-03 18:53:05,509: publisherUpdate[/rosout] -> http://freight1207:37543/
+[rosmaster.master][INFO] 2020-11-03 18:53:05,710: -PUB [/rosout_agg] /rosout http://freight1207:37543/
+[rosmaster.master][INFO] 2020-11-03 18:53:05,711: -SUB [/rosout] /rosout http://freight1207:37543/
+[rosmaster.master][INFO] 2020-11-03 18:53:05,711: -SERVICE [/rosout/get_loggers] /rosout rosrpc://freight1207:59609
+[rosmaster.master][INFO] 2020-11-03 18:53:05,712: -SERVICE [/rosout/set_logger_level] /rosout rosrpc://freight1207:59609
+[rosmaster.main][INFO] 2020-11-03 18:53:05,726: keyboard interrupt, will exit
+[rosmaster.main][INFO] 2020-11-03 18:53:05,726: stopping master...
+[rospy.core][INFO] 2020-11-03 18:53:05,726: signal_shutdown [atexit]

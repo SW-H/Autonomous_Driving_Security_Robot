@@ -1,0 +1,54 @@
+[rospy.client][INFO] 2020-11-05 21:32:19,820: init_node, name[/rosbridge_websocket], pid[3317]
+[xmlrpc][INFO] 2020-11-05 21:32:19,820: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-05 21:32:19,821: Started XML-RPC server [http://freight1207:59604/]
+[rospy.init][INFO] 2020-11-05 21:32:19,821: ROS Slave URI: [http://freight1207:59604/]
+[rospy.impl.masterslave][INFO] 2020-11-05 21:32:19,821: _ready: http://freight1207:59604/
+[xmlrpc][INFO] 2020-11-05 21:32:19,821: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-05 21:32:19,821: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-05 21:32:19,921: registered with master
+[rospy.rosout][INFO] 2020-11-05 21:32:19,921: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-05 21:32:19,923: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-05 21:32:19,923: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2020-11-05 21:32:19,934: Rosbridge WebSocket server started on port 9090
+[rospy.internal][INFO] 2020-11-05 21:32:20,201: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-11-05 21:32:21,618: Client connected.  1 clients total.
+[rospy.internal][INFO] 2020-11-05 21:32:24,709: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rosout][INFO] 2020-11-05 21:32:46,491: Client disconnected. 0 clients total.
+[rosout][INFO] 2020-11-05 21:32:47,286: Client connected.  1 clients total.
+[rosout][INFO] 2020-11-05 21:37:59,755: Client disconnected. 0 clients total.
+[rosout][INFO] 2020-11-05 21:38:02,083: Client connected.  1 clients total.
+[rosout][INFO] 2020-11-05 21:38:44,429: Client disconnected. 0 clients total.
+[rosout][INFO] 2020-11-05 21:38:45,330: Client connected.  1 clients total.
+[rosout][INFO] 2020-11-05 21:40:28,421: Client disconnected. 0 clients total.
+[rosout][INFO] 2020-11-05 21:40:33,650: Client connected.  1 clients total.
+[rospy.internal][INFO] 2020-11-05 21:40:38,422: topic impl's ref count is zero, deleting topic /cmd_vel...
+[rospy.internal][INFO] 2020-11-05 21:40:38,422: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.internal][INFO] 2020-11-05 21:40:49,904: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rosout][INFO] 2020-11-05 21:40:56,872: Client disconnected. 0 clients total.
+[rospy.core][INFO] 2020-11-05 21:40:59,456: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-11-05 21:40:59,461: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-05 21:40:59,461: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-11-05 21:40:59,461: signal-2
+[rospy.core][INFO] 2020-11-05 21:41:06,872: signal_shutdown [atexit]
+[rospy.client][INFO] 2020-11-05 21:49:02,451: init_node, name[/rosbridge_websocket], pid[6933]
+[xmlrpc][INFO] 2020-11-05 21:49:02,451: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-05 21:49:02,451: Started XML-RPC server [http://freight1207:52372/]
+[rospy.init][INFO] 2020-11-05 21:49:02,451: ROS Slave URI: [http://freight1207:52372/]
+[rospy.impl.masterslave][INFO] 2020-11-05 21:49:02,451: _ready: http://freight1207:52372/
+[xmlrpc][INFO] 2020-11-05 21:49:02,452: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-05 21:49:02,452: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-05 21:49:02,551: registered with master
+[rospy.rosout][INFO] 2020-11-05 21:49:02,552: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-05 21:49:02,553: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-05 21:49:02,554: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2020-11-05 21:49:02,565: Rosbridge WebSocket server started on port 9090
+[rospy.internal][INFO] 2020-11-05 21:49:02,767: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-11-05 21:49:36,097: Client connected.  1 clients total.
+[rosout][INFO] 2020-11-05 21:49:39,289: Client disconnected. 0 clients total.
+[rosout][INFO] 2020-11-05 21:49:46,012: Client connected.  1 clients total.
+[rospy.internal][INFO] 2020-11-05 21:49:50,229: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.core][INFO] 2020-11-05 21:51:46,717: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-11-05 21:51:46,721: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-05 21:51:46,721: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-11-05 21:51:46,721: signal-2
+[rospy.core][INFO] 2020-11-05 21:51:46,885: signal_shutdown [atexit]

@@ -1,0 +1,799 @@
+[rospy.client][INFO] 2018-12-02 23:47:39,356: init_node, name[/teleop_twist_keyboard], pid[3195]
+[xmlrpc][INFO] 2018-12-02 23:47:39,357: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-12-02 23:47:39,357: Started XML-RPC server [http://freight1207:41934/]
+[rospy.init][INFO] 2018-12-02 23:47:39,357: ROS Slave URI: [http://freight1207:41934/]
+[rospy.impl.masterslave][INFO] 2018-12-02 23:47:39,357: _ready: http://freight1207:41934/
+[xmlrpc][INFO] 2018-12-02 23:47:39,357: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-12-02 23:47:39,358: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2018-12-02 23:47:39,358: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2018-12-02 23:47:39,457: registered with master
+[rospy.rosout][INFO] 2018-12-02 23:47:39,457: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-12-02 23:47:39,459: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-12-02 23:47:39,459: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-12-02 23:47:39,570: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2018-12-02 23:47:39,570: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.client][INFO] 2018-12-03 00:03:42,254: init_node, name[/teleop_twist_keyboard], pid[3080]
+[xmlrpc][INFO] 2018-12-03 00:03:42,255: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-12-03 00:03:42,255: Started XML-RPC server [http://freight1207:43835/]
+[rospy.init][INFO] 2018-12-03 00:03:42,255: ROS Slave URI: [http://freight1207:43835/]
+[rospy.impl.masterslave][INFO] 2018-12-03 00:03:42,255: _ready: http://freight1207:43835/
+[xmlrpc][INFO] 2018-12-03 00:03:42,256: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-12-03 00:03:42,256: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2018-12-03 00:03:42,256: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2018-12-03 00:03:42,356: registered with master
+[rospy.rosout][INFO] 2018-12-03 00:03:42,356: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-12-03 00:03:42,357: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-12-03 00:03:42,358: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2018-12-03 00:03:42,509: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2018-12-03 00:03:42,609: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.client][INFO] 2020-10-16 07:25:02,672: init_node, name[/teleop_twist_keyboard], pid[3371]
+[xmlrpc][INFO] 2020-10-16 07:25:02,672: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-16 07:25:02,672: Started XML-RPC server [http://freight1207:38851/]
+[rospy.init][INFO] 2020-10-16 07:25:02,673: ROS Slave URI: [http://freight1207:38851/]
+[rospy.impl.masterslave][INFO] 2020-10-16 07:25:02,673: _ready: http://freight1207:38851/
+[xmlrpc][INFO] 2020-10-16 07:25:02,673: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-16 07:25:02,673: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-16 07:25:02,673: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-16 07:25:02,773: registered with master
+[rospy.rosout][INFO] 2020-10-16 07:25:02,773: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-16 07:25:02,774: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-16 07:25:02,775: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-16 07:25:02,889: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-16 07:25:02,990: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-16 07:27:04,444: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-16 07:27:04,446: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-16 07:27:04,446: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-16 07:27:04,446: atexit
+[rospy.client][INFO] 2020-10-16 08:10:11,974: init_node, name[/teleop_twist_keyboard], pid[3296]
+[xmlrpc][INFO] 2020-10-16 08:10:11,974: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-16 08:10:11,975: Started XML-RPC server [http://freight1207:39893/]
+[rospy.init][INFO] 2020-10-16 08:10:11,975: ROS Slave URI: [http://freight1207:39893/]
+[rospy.impl.masterslave][INFO] 2020-10-16 08:10:11,975: _ready: http://freight1207:39893/
+[xmlrpc][INFO] 2020-10-16 08:10:11,975: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-16 08:10:11,975: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-16 08:10:11,976: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-16 08:10:12,075: registered with master
+[rospy.rosout][INFO] 2020-10-16 08:10:12,075: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-16 08:10:12,076: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-16 08:10:12,077: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-16 08:10:12,219: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-16 08:10:12,319: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-16 08:10:23,167: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-16 08:10:23,169: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-16 08:10:23,169: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-16 08:10:23,170: atexit
+[rospy.client][INFO] 2020-10-18 22:09:20,428: init_node, name[/teleop_twist_keyboard], pid[3854]
+[xmlrpc][INFO] 2020-10-18 22:09:20,429: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-18 22:09:20,429: Started XML-RPC server [http://freight1207:32918/]
+[rospy.init][INFO] 2020-10-18 22:09:20,429: ROS Slave URI: [http://freight1207:32918/]
+[rospy.impl.masterslave][INFO] 2020-10-18 22:09:20,429: _ready: http://freight1207:32918/
+[xmlrpc][INFO] 2020-10-18 22:09:20,430: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-18 22:09:20,430: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-18 22:09:20,430: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-18 22:09:20,530: registered with master
+[rospy.rosout][INFO] 2020-10-18 22:09:20,530: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-18 22:09:20,531: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-18 22:09:20,532: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-18 22:09:20,655: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-18 22:09:20,755: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.client][INFO] 2020-10-18 23:21:04,661: init_node, name[/teleop_twist_keyboard], pid[17438]
+[xmlrpc][INFO] 2020-10-18 23:21:04,662: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-18 23:21:04,662: Started XML-RPC server [http://freight1207:59246/]
+[rospy.init][INFO] 2020-10-18 23:21:04,662: ROS Slave URI: [http://freight1207:59246/]
+[rospy.impl.masterslave][INFO] 2020-10-18 23:21:04,662: _ready: http://freight1207:59246/
+[xmlrpc][INFO] 2020-10-18 23:21:04,663: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-18 23:21:04,663: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-18 23:21:04,663: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-18 23:21:04,763: registered with master
+[rospy.rosout][INFO] 2020-10-18 23:21:04,763: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-18 23:21:04,764: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-18 23:21:04,765: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-18 23:21:04,887: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-18 23:21:04,988: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-18 23:21:58,220: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-18 23:21:58,223: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-18 23:21:58,224: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-18 23:21:58,224: atexit
+[rospy.client][INFO] 2020-10-18 23:22:01,026: init_node, name[/teleop_twist_keyboard], pid[17568]
+[xmlrpc][INFO] 2020-10-18 23:22:01,026: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-18 23:22:01,027: Started XML-RPC server [http://freight1207:51793/]
+[rospy.init][INFO] 2020-10-18 23:22:01,027: ROS Slave URI: [http://freight1207:51793/]
+[rospy.impl.masterslave][INFO] 2020-10-18 23:22:01,027: _ready: http://freight1207:51793/
+[xmlrpc][INFO] 2020-10-18 23:22:01,027: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-18 23:22:01,027: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-18 23:22:01,028: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-18 23:22:01,127: registered with master
+[rospy.rosout][INFO] 2020-10-18 23:22:01,127: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-18 23:22:01,129: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-18 23:22:01,129: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-18 23:22:01,299: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-18 23:22:01,400: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-18 23:22:37,737: signal_shutdown [signal-15]
+[rospy.registration][WARNING] 2020-10-18 23:22:37,738: cannot unregister with master due to network issues
+[rospy.internal][INFO] 2020-10-18 23:22:37,738: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-18 23:22:37,738: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-18 23:22:37,738: signal-15
+[rospy.client][INFO] 2020-10-18 23:24:55,436: init_node, name[/teleop_twist_keyboard], pid[3296]
+[xmlrpc][INFO] 2020-10-18 23:24:55,436: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-18 23:24:55,436: Started XML-RPC server [http://freight1207:55992/]
+[rospy.init][INFO] 2020-10-18 23:24:55,436: ROS Slave URI: [http://freight1207:55992/]
+[rospy.impl.masterslave][INFO] 2020-10-18 23:24:55,436: _ready: http://freight1207:55992/
+[xmlrpc][INFO] 2020-10-18 23:24:55,437: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-18 23:24:55,437: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-18 23:24:55,437: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-18 23:24:55,537: registered with master
+[rospy.rosout][INFO] 2020-10-18 23:24:55,537: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-18 23:24:55,538: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-18 23:24:55,539: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-18 23:24:55,707: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-18 23:24:55,807: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-18 23:25:41,113: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-18 23:25:41,115: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-18 23:25:41,115: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-18 23:25:41,115: atexit
+[rospy.client][INFO] 2020-10-18 23:25:43,023: init_node, name[/teleop_twist_keyboard], pid[3546]
+[xmlrpc][INFO] 2020-10-18 23:25:43,024: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-18 23:25:43,024: Started XML-RPC server [http://freight1207:33265/]
+[rospy.init][INFO] 2020-10-18 23:25:43,024: ROS Slave URI: [http://freight1207:33265/]
+[rospy.impl.masterslave][INFO] 2020-10-18 23:25:43,024: _ready: http://freight1207:33265/
+[xmlrpc][INFO] 2020-10-18 23:25:43,024: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-18 23:25:43,025: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-18 23:25:43,025: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-18 23:25:43,124: registered with master
+[rospy.rosout][INFO] 2020-10-18 23:25:43,124: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-18 23:25:43,126: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-18 23:25:43,127: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-18 23:25:43,270: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-18 23:25:43,371: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-18 23:28:55,181: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-18 23:28:55,183: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-18 23:28:55,183: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-18 23:28:55,184: atexit
+[rospy.client][INFO] 2020-10-19 00:09:36,248: init_node, name[/teleop_twist_keyboard], pid[9377]
+[xmlrpc][INFO] 2020-10-19 00:09:36,249: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-19 00:09:36,249: Started XML-RPC server [http://freight1207:41469/]
+[rospy.init][INFO] 2020-10-19 00:09:36,249: ROS Slave URI: [http://freight1207:41469/]
+[rospy.impl.masterslave][INFO] 2020-10-19 00:09:36,249: _ready: http://freight1207:41469/
+[xmlrpc][INFO] 2020-10-19 00:09:36,249: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-19 00:09:36,250: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-19 00:09:36,250: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-19 00:09:36,349: registered with master
+[rospy.rosout][INFO] 2020-10-19 00:09:36,349: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-19 00:09:36,351: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-19 00:09:36,352: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-19 00:09:36,471: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-19 00:09:36,572: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-19 00:11:46,893: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-19 00:11:46,895: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-19 00:11:46,895: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-19 00:11:46,895: atexit
+[rospy.client][INFO] 2020-10-19 00:30:03,263: init_node, name[/teleop_twist_keyboard], pid[15082]
+[xmlrpc][INFO] 2020-10-19 00:30:03,264: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-19 00:30:03,264: Started XML-RPC server [http://freight1207:56365/]
+[rospy.init][INFO] 2020-10-19 00:30:03,265: ROS Slave URI: [http://freight1207:56365/]
+[rospy.impl.masterslave][INFO] 2020-10-19 00:30:03,265: _ready: http://freight1207:56365/
+[xmlrpc][INFO] 2020-10-19 00:30:03,265: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-19 00:30:03,266: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-19 00:30:03,266: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-19 00:30:03,365: registered with master
+[rospy.rosout][INFO] 2020-10-19 00:30:03,365: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-19 00:30:03,367: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-19 00:30:03,367: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-19 00:30:03,542: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-19 00:30:03,643: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-19 00:31:12,041: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-19 00:31:12,043: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-19 00:31:12,043: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-19 00:31:12,043: atexit
+[rospy.client][INFO] 2020-10-19 19:40:15,058: init_node, name[/teleop_twist_keyboard], pid[3559]
+[xmlrpc][INFO] 2020-10-19 19:40:15,059: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-19 19:40:15,059: Started XML-RPC server [http://freight1207:35831/]
+[rospy.init][INFO] 2020-10-19 19:40:15,059: ROS Slave URI: [http://freight1207:35831/]
+[rospy.impl.masterslave][INFO] 2020-10-19 19:40:15,059: _ready: http://freight1207:35831/
+[xmlrpc][INFO] 2020-10-19 19:40:15,060: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-19 19:40:15,060: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-19 19:40:15,060: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-19 19:40:15,160: registered with master
+[rospy.rosout][INFO] 2020-10-19 19:40:15,160: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-19 19:40:15,161: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-19 19:40:15,162: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-19 19:40:15,357: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-19 19:40:15,457: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.client][INFO] 2020-10-19 19:44:48,316: init_node, name[/teleop_twist_keyboard], pid[3361]
+[xmlrpc][INFO] 2020-10-19 19:44:48,317: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-19 19:44:48,317: Started XML-RPC server [http://freight1207:48109/]
+[rospy.init][INFO] 2020-10-19 19:44:48,317: ROS Slave URI: [http://freight1207:48109/]
+[rospy.impl.masterslave][INFO] 2020-10-19 19:44:48,317: _ready: http://freight1207:48109/
+[xmlrpc][INFO] 2020-10-19 19:44:48,317: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-19 19:44:48,318: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-19 19:44:48,318: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-19 19:44:48,417: registered with master
+[rospy.rosout][INFO] 2020-10-19 19:44:48,417: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-19 19:44:48,419: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-19 19:44:48,419: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-19 19:44:48,590: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-19 19:44:48,691: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-19 19:49:49,300: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-19 19:49:49,302: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-19 19:49:49,302: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-19 19:49:49,302: atexit
+[rospy.client][INFO] 2020-10-19 21:28:48,822: init_node, name[/teleop_twist_keyboard], pid[3368]
+[xmlrpc][INFO] 2020-10-19 21:28:48,822: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-19 21:28:48,823: Started XML-RPC server [http://freight1207:50680/]
+[rospy.init][INFO] 2020-10-19 21:28:48,823: ROS Slave URI: [http://freight1207:50680/]
+[rospy.impl.masterslave][INFO] 2020-10-19 21:28:48,823: _ready: http://freight1207:50680/
+[xmlrpc][INFO] 2020-10-19 21:28:48,823: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-19 21:28:48,823: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-19 21:28:48,824: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-19 21:28:48,923: registered with master
+[rospy.rosout][INFO] 2020-10-19 21:28:48,923: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-19 21:28:48,924: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-19 21:28:48,925: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-19 21:28:49,039: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-19 21:28:49,139: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-19 21:29:08,827: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-19 21:29:08,829: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-19 21:29:08,829: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-19 21:29:08,830: atexit
+[rospy.client][INFO] 2020-10-19 22:19:37,045: init_node, name[/teleop_twist_keyboard], pid[3864]
+[xmlrpc][INFO] 2020-10-19 22:19:37,046: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-19 22:19:37,046: Started XML-RPC server [http://freight1207:41632/]
+[rospy.init][INFO] 2020-10-19 22:19:37,046: ROS Slave URI: [http://freight1207:41632/]
+[rospy.impl.masterslave][INFO] 2020-10-19 22:19:37,046: _ready: http://freight1207:41632/
+[xmlrpc][INFO] 2020-10-19 22:19:37,046: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-19 22:19:37,046: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-19 22:19:37,047: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-19 22:19:37,146: registered with master
+[rospy.rosout][INFO] 2020-10-19 22:19:37,146: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-19 22:19:37,147: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-19 22:19:37,148: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-19 22:19:37,259: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-19 22:19:37,359: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-19 22:19:41,873: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-19 22:19:41,875: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-19 22:19:41,875: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-19 22:19:41,875: atexit
+[rospy.client][INFO] 2020-10-19 22:21:51,066: init_node, name[/teleop_twist_keyboard], pid[5332]
+[xmlrpc][INFO] 2020-10-19 22:21:51,066: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-19 22:21:51,067: Started XML-RPC server [http://freight1207:34563/]
+[rospy.init][INFO] 2020-10-19 22:21:51,067: ROS Slave URI: [http://freight1207:34563/]
+[rospy.impl.masterslave][INFO] 2020-10-19 22:21:51,067: _ready: http://freight1207:34563/
+[xmlrpc][INFO] 2020-10-19 22:21:51,067: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-19 22:21:51,067: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-19 22:21:51,068: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-19 22:21:51,167: registered with master
+[rospy.rosout][INFO] 2020-10-19 22:21:51,167: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-19 22:21:51,168: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-19 22:21:51,169: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-19 22:21:51,307: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-19 22:21:51,407: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-19 22:21:54,561: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-19 22:21:54,563: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-19 22:21:54,563: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-19 22:21:54,563: atexit
+[rospy.client][INFO] 2020-10-19 22:34:22,692: init_node, name[/teleop_twist_keyboard], pid[11446]
+[xmlrpc][INFO] 2020-10-19 22:34:22,693: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-19 22:34:22,693: Started XML-RPC server [http://freight1207:40867/]
+[rospy.init][INFO] 2020-10-19 22:34:22,693: ROS Slave URI: [http://freight1207:40867/]
+[rospy.impl.masterslave][INFO] 2020-10-19 22:34:22,693: _ready: http://freight1207:40867/
+[xmlrpc][INFO] 2020-10-19 22:34:22,693: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-19 22:34:22,693: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-19 22:34:22,693: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-19 22:34:22,793: registered with master
+[rospy.rosout][INFO] 2020-10-19 22:34:22,793: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-19 22:34:22,795: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-19 22:34:22,795: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-19 22:34:22,941: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-19 22:34:23,042: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-19 22:34:27,127: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-19 22:34:27,129: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-19 22:34:27,129: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-19 22:34:27,129: atexit
+[rospy.client][INFO] 2020-10-19 23:15:22,414: init_node, name[/teleop_twist_keyboard], pid[27453]
+[xmlrpc][INFO] 2020-10-19 23:15:22,414: XML-RPC server binding to 127.0.0.1:0
+[xmlrpc][INFO] 2020-10-19 23:15:22,415: Started XML-RPC server [http://localhost:42035/]
+[rospy.init][INFO] 2020-10-19 23:15:22,415: ROS Slave URI: [http://localhost:42035/]
+[rospy.impl.masterslave][INFO] 2020-10-19 23:15:22,415: _ready: http://localhost:42035/
+[xmlrpc][INFO] 2020-10-19 23:15:22,415: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-19 23:15:22,415: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-19 23:15:22,415: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-19 23:15:22,515: registered with master
+[rospy.rosout][INFO] 2020-10-19 23:15:22,515: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-19 23:15:22,516: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-19 23:15:22,517: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-19 23:15:22,630: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-19 23:15:22,731: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-19 23:15:30,837: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-19 23:15:30,839: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-19 23:15:30,839: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-19 23:15:30,839: atexit
+[rospy.client][INFO] 2020-10-20 17:54:48,769: init_node, name[/teleop_twist_keyboard], pid[3406]
+[xmlrpc][INFO] 2020-10-20 17:54:48,769: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-20 17:54:48,769: Started XML-RPC server [http://freight1207:39315/]
+[rospy.init][INFO] 2020-10-20 17:54:48,769: ROS Slave URI: [http://freight1207:39315/]
+[rospy.impl.masterslave][INFO] 2020-10-20 17:54:48,770: _ready: http://freight1207:39315/
+[xmlrpc][INFO] 2020-10-20 17:54:48,770: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-20 17:54:48,770: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-20 17:54:48,770: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-20 17:54:48,870: registered with master
+[rospy.rosout][INFO] 2020-10-20 17:54:48,870: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-20 17:54:48,871: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-20 17:54:48,872: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-20 17:54:49,001: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-20 17:54:49,101: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-20 17:54:52,960: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-20 17:54:52,962: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-20 17:54:52,962: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-20 17:54:52,962: atexit
+[rospy.client][INFO] 2020-10-20 23:27:09,829: init_node, name[/teleop_twist_keyboard], pid[3477]
+[xmlrpc][INFO] 2020-10-20 23:27:09,830: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-20 23:27:09,830: Started XML-RPC server [http://freight1207:36118/]
+[rospy.init][INFO] 2020-10-20 23:27:09,830: ROS Slave URI: [http://freight1207:36118/]
+[rospy.impl.masterslave][INFO] 2020-10-20 23:27:09,830: _ready: http://freight1207:36118/
+[xmlrpc][INFO] 2020-10-20 23:27:09,830: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-20 23:27:09,831: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-20 23:27:09,831: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-20 23:27:09,930: registered with master
+[rospy.rosout][INFO] 2020-10-20 23:27:09,930: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-20 23:27:09,932: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-20 23:27:09,932: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-20 23:27:10,083: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-20 23:27:10,183: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-20 23:27:13,579: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-20 23:27:13,581: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-20 23:27:13,581: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-20 23:27:13,581: atexit
+[rospy.client][INFO] 2020-10-20 23:27:50,343: init_node, name[/teleop_twist_keyboard], pid[3836]
+[xmlrpc][INFO] 2020-10-20 23:27:50,343: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-20 23:27:50,343: Started XML-RPC server [http://freight1207:59513/]
+[rospy.init][INFO] 2020-10-20 23:27:50,343: ROS Slave URI: [http://freight1207:59513/]
+[rospy.impl.masterslave][INFO] 2020-10-20 23:27:50,344: _ready: http://freight1207:59513/
+[xmlrpc][INFO] 2020-10-20 23:27:50,344: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-20 23:27:50,344: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-20 23:27:50,344: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-20 23:27:50,444: registered with master
+[rospy.rosout][INFO] 2020-10-20 23:27:50,444: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-20 23:27:50,445: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-20 23:27:50,446: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-20 23:27:50,558: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-20 23:27:50,659: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-20 23:28:00,018: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-20 23:28:00,021: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-20 23:28:00,021: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-20 23:28:00,021: atexit
+[rospy.client][INFO] 2020-10-20 23:31:10,647: init_node, name[/teleop_twist_keyboard], pid[5574]
+[xmlrpc][INFO] 2020-10-20 23:31:10,648: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-20 23:31:10,648: Started XML-RPC server [http://freight1207:39253/]
+[rospy.init][INFO] 2020-10-20 23:31:10,648: ROS Slave URI: [http://freight1207:39253/]
+[rospy.impl.masterslave][INFO] 2020-10-20 23:31:10,648: _ready: http://freight1207:39253/
+[xmlrpc][INFO] 2020-10-20 23:31:10,648: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-20 23:31:10,649: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-20 23:31:10,649: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-20 23:31:10,748: registered with master
+[rospy.rosout][INFO] 2020-10-20 23:31:10,748: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-20 23:31:10,750: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-20 23:31:10,750: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-20 23:31:10,880: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-20 23:31:10,981: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.client][INFO] 2020-10-20 23:59:45,466: init_node, name[/teleop_twist_keyboard], pid[9073]
+[xmlrpc][INFO] 2020-10-20 23:59:45,467: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-20 23:59:45,467: Started XML-RPC server [http://freight1207:49606/]
+[rospy.init][INFO] 2020-10-20 23:59:45,467: ROS Slave URI: [http://freight1207:49606/]
+[rospy.impl.masterslave][INFO] 2020-10-20 23:59:45,467: _ready: http://freight1207:49606/
+[xmlrpc][INFO] 2020-10-20 23:59:45,467: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-20 23:59:45,468: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-20 23:59:45,468: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-20 23:59:45,567: registered with master
+[rospy.rosout][INFO] 2020-10-20 23:59:45,567: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-20 23:59:45,569: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-20 23:59:45,570: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-20 23:59:45,713: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-20 23:59:45,814: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-21 00:02:47,566: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-21 00:02:47,568: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-21 00:02:47,568: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-21 00:02:47,568: atexit
+[rospy.client][INFO] 2020-10-21 00:20:18,057: init_node, name[/teleop_twist_keyboard], pid[19910]
+[xmlrpc][INFO] 2020-10-21 00:20:18,057: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-21 00:20:18,057: Started XML-RPC server [http://freight1207:44371/]
+[rospy.init][INFO] 2020-10-21 00:20:18,057: ROS Slave URI: [http://freight1207:44371/]
+[rospy.impl.masterslave][INFO] 2020-10-21 00:20:18,057: _ready: http://freight1207:44371/
+[xmlrpc][INFO] 2020-10-21 00:20:18,058: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-21 00:20:18,058: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-21 00:20:18,058: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-21 00:20:18,158: registered with master
+[rospy.rosout][INFO] 2020-10-21 00:20:18,158: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-21 00:20:18,159: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-21 00:20:18,160: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-21 00:20:18,313: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-21 00:20:18,413: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.client][INFO] 2020-10-22 17:32:02,027: init_node, name[/teleop_twist_keyboard], pid[3696]
+[xmlrpc][INFO] 2020-10-22 17:32:02,027: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-22 17:32:02,027: Started XML-RPC server [http://freight1207:34369/]
+[rospy.init][INFO] 2020-10-22 17:32:02,027: ROS Slave URI: [http://freight1207:34369/]
+[rospy.impl.masterslave][INFO] 2020-10-22 17:32:02,027: _ready: http://freight1207:34369/
+[xmlrpc][INFO] 2020-10-22 17:32:02,028: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-22 17:32:02,028: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-22 17:32:02,028: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-22 17:32:02,128: registered with master
+[rospy.rosout][INFO] 2020-10-22 17:32:02,128: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-22 17:32:02,129: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-22 17:32:02,130: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-22 17:32:02,255: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-22 17:32:02,356: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-22 18:13:27,017: signal_shutdown [signal-15]
+[rospy.registration][WARNING] 2020-10-22 18:13:27,018: cannot unregister with master due to network issues
+[rospy.internal][INFO] 2020-10-22 18:13:27,018: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-22 18:13:27,018: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.client][INFO] 2020-10-22 18:19:08,536: init_node, name[/teleop_twist_keyboard], pid[4699]
+[xmlrpc][INFO] 2020-10-22 18:19:08,536: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-22 18:19:08,537: Started XML-RPC server [http://freight1207:34826/]
+[rospy.init][INFO] 2020-10-22 18:19:08,537: ROS Slave URI: [http://freight1207:34826/]
+[rospy.impl.masterslave][INFO] 2020-10-22 18:19:08,537: _ready: http://freight1207:34826/
+[xmlrpc][INFO] 2020-10-22 18:19:08,537: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-22 18:19:08,537: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-22 18:19:08,537: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-22 18:19:08,637: registered with master
+[rospy.rosout][INFO] 2020-10-22 18:19:08,637: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-22 18:19:08,638: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-22 18:19:08,639: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-22 18:19:08,752: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-22 18:19:08,853: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.client][INFO] 2020-10-22 20:18:24,643: init_node, name[/teleop_twist_keyboard], pid[12002]
+[xmlrpc][INFO] 2020-10-22 20:18:24,644: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-22 20:18:24,644: Started XML-RPC server [http://freight1207:47013/]
+[rospy.init][INFO] 2020-10-22 20:18:24,644: ROS Slave URI: [http://freight1207:47013/]
+[rospy.impl.masterslave][INFO] 2020-10-22 20:18:24,644: _ready: http://freight1207:47013/
+[xmlrpc][INFO] 2020-10-22 20:18:24,644: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-22 20:18:24,645: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-22 20:18:24,645: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-22 20:18:24,744: registered with master
+[rospy.rosout][INFO] 2020-10-22 20:18:24,744: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-22 20:18:24,746: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-22 20:18:24,746: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-22 20:18:24,818: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-22 20:18:25,018: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-22 20:34:10,651: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-22 20:34:10,653: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-22 20:34:10,654: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-22 20:34:10,654: atexit
+[rospy.client][INFO] 2020-10-27 23:36:17,064: init_node, name[/teleop_twist_keyboard], pid[21672]
+[xmlrpc][INFO] 2020-10-27 23:36:17,064: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-27 23:36:17,064: Started XML-RPC server [http://freight1207:56504/]
+[rospy.init][INFO] 2020-10-27 23:36:17,065: ROS Slave URI: [http://freight1207:56504/]
+[rospy.impl.masterslave][INFO] 2020-10-27 23:36:17,065: _ready: http://freight1207:56504/
+[xmlrpc][INFO] 2020-10-27 23:36:17,065: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-27 23:36:17,065: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-27 23:36:17,065: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-27 23:36:17,165: registered with master
+[rospy.rosout][INFO] 2020-10-27 23:36:17,165: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-27 23:36:17,166: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-27 23:36:17,167: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-27 23:36:17,276: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-27 23:36:17,376: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-27 23:41:29,728: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-27 23:41:29,730: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-27 23:41:29,730: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-27 23:41:29,730: atexit
+[rospy.client][INFO] 2020-10-29 00:52:38,874: init_node, name[/teleop_twist_keyboard], pid[10934]
+[xmlrpc][INFO] 2020-10-29 00:52:38,874: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-29 00:52:38,875: Started XML-RPC server [http://freight1207:54821/]
+[rospy.init][INFO] 2020-10-29 00:52:38,875: ROS Slave URI: [http://freight1207:54821/]
+[rospy.impl.masterslave][INFO] 2020-10-29 00:52:38,875: _ready: http://freight1207:54821/
+[xmlrpc][INFO] 2020-10-29 00:52:38,875: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-29 00:52:38,875: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-29 00:52:38,876: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-29 00:52:38,975: registered with master
+[rospy.rosout][INFO] 2020-10-29 00:52:38,975: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-29 00:52:38,976: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-29 00:52:38,977: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-29 00:52:39,083: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-29 00:52:39,183: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-29 00:53:35,711: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-29 00:53:35,714: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-29 00:53:35,714: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-29 00:53:35,714: atexit
+[rospy.client][INFO] 2020-10-29 19:48:21,549: init_node, name[/teleop_twist_keyboard], pid[4771]
+[xmlrpc][INFO] 2020-10-29 19:48:21,550: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-29 19:48:21,551: Started XML-RPC server [http://freight1207:50644/]
+[rospy.init][INFO] 2020-10-29 19:48:21,551: ROS Slave URI: [http://freight1207:50644/]
+[rospy.impl.masterslave][INFO] 2020-10-29 19:48:21,551: _ready: http://freight1207:50644/
+[xmlrpc][INFO] 2020-10-29 19:48:21,551: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-29 19:48:21,551: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-29 19:48:21,551: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-29 19:48:21,651: registered with master
+[rospy.rosout][INFO] 2020-10-29 19:48:21,651: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-29 19:48:21,652: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-29 19:48:21,653: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-29 19:48:21,825: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-29 19:48:21,926: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-29 19:57:00,668: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-29 19:57:00,670: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-29 19:57:00,670: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-29 19:57:00,670: atexit
+[rospy.client][INFO] 2020-10-29 21:33:02,168: init_node, name[/teleop_twist_keyboard], pid[6391]
+[xmlrpc][INFO] 2020-10-29 21:33:02,169: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-29 21:33:02,169: Started XML-RPC server [http://freight1207:48286/]
+[rospy.init][INFO] 2020-10-29 21:33:02,169: ROS Slave URI: [http://freight1207:48286/]
+[rospy.impl.masterslave][INFO] 2020-10-29 21:33:02,169: _ready: http://freight1207:48286/
+[xmlrpc][INFO] 2020-10-29 21:33:02,169: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-29 21:33:02,170: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-29 21:33:02,170: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-29 21:33:02,269: registered with master
+[rospy.rosout][INFO] 2020-10-29 21:33:02,269: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-29 21:33:02,271: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-29 21:33:02,271: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-29 21:33:02,388: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-29 21:33:02,488: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-29 21:34:01,151: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-29 21:34:01,153: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-29 21:34:01,154: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-29 21:34:01,154: atexit
+[rospy.client][INFO] 2020-10-29 21:34:04,525: init_node, name[/teleop_twist_keyboard], pid[6599]
+[xmlrpc][INFO] 2020-10-29 21:34:04,525: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-29 21:34:04,525: Started XML-RPC server [http://freight1207:33612/]
+[rospy.init][INFO] 2020-10-29 21:34:04,525: ROS Slave URI: [http://freight1207:33612/]
+[rospy.impl.masterslave][INFO] 2020-10-29 21:34:04,525: _ready: http://freight1207:33612/
+[xmlrpc][INFO] 2020-10-29 21:34:04,526: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-29 21:34:04,526: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-29 21:34:04,526: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-29 21:34:04,625: registered with master
+[rospy.rosout][INFO] 2020-10-29 21:34:04,626: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-29 21:34:04,627: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-29 21:34:04,628: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-29 21:34:04,768: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-29 21:34:04,869: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-29 21:37:39,152: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-29 21:37:39,154: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-29 21:37:39,154: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-29 21:37:39,154: atexit
+[rospy.client][INFO] 2020-10-30 01:30:46,582: init_node, name[/teleop_twist_keyboard], pid[17373]
+[xmlrpc][INFO] 2020-10-30 01:30:46,582: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-30 01:30:46,583: Started XML-RPC server [http://freight1207:37646/]
+[rospy.init][INFO] 2020-10-30 01:30:46,583: ROS Slave URI: [http://freight1207:37646/]
+[rospy.impl.masterslave][INFO] 2020-10-30 01:30:46,583: _ready: http://freight1207:37646/
+[rospy.registration][INFO] 2020-10-30 01:30:46,583: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2020-10-30 01:30:46,583: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-30 01:30:46,583: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-30 01:30:46,683: registered with master
+[rospy.rosout][INFO] 2020-10-30 01:30:46,683: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-30 01:30:46,684: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-30 01:30:46,685: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-30 01:30:46,792: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-30 01:30:46,893: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-30 01:32:43,724: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-30 01:32:43,726: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-30 01:32:43,726: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-30 01:32:43,726: atexit
+[rospy.client][INFO] 2020-10-30 01:35:13,418: init_node, name[/teleop_twist_keyboard], pid[17793]
+[xmlrpc][INFO] 2020-10-30 01:35:13,418: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-30 01:35:13,418: Started XML-RPC server [http://freight1207:53635/]
+[rospy.init][INFO] 2020-10-30 01:35:13,418: ROS Slave URI: [http://freight1207:53635/]
+[rospy.impl.masterslave][INFO] 2020-10-30 01:35:13,418: _ready: http://freight1207:53635/
+[xmlrpc][INFO] 2020-10-30 01:35:13,419: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-30 01:35:13,419: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-30 01:35:13,419: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-30 01:35:13,519: registered with master
+[rospy.rosout][INFO] 2020-10-30 01:35:13,519: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-30 01:35:13,520: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-30 01:35:13,521: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-30 01:35:13,649: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-30 01:35:13,749: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-30 01:37:39,986: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-30 01:37:39,988: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-30 01:37:39,989: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-30 01:37:39,989: atexit
+[rospy.client][INFO] 2020-10-30 01:41:12,461: init_node, name[/teleop_twist_keyboard], pid[3186]
+[xmlrpc][INFO] 2020-10-30 01:41:12,462: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-30 01:41:12,462: Started XML-RPC server [http://freight1207:48488/]
+[rospy.init][INFO] 2020-10-30 01:41:12,462: ROS Slave URI: [http://freight1207:48488/]
+[rospy.impl.masterslave][INFO] 2020-10-30 01:41:12,462: _ready: http://freight1207:48488/
+[xmlrpc][INFO] 2020-10-30 01:41:12,463: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-30 01:41:12,463: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-10-30 01:41:12,463: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-10-30 01:41:12,562: registered with master
+[rospy.rosout][INFO] 2020-10-30 01:41:12,562: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-30 01:41:12,564: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-30 01:41:12,564: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-10-30 01:41:12,723: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-10-30 01:41:12,823: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-30 01:42:52,993: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-30 01:42:52,998: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-10-30 01:42:52,998: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-10-30 01:42:52,998: atexit
+[rospy.client][INFO] 2020-11-03 00:55:11,138: init_node, name[/teleop_twist_keyboard], pid[5000]
+[xmlrpc][INFO] 2020-11-03 00:55:11,138: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-03 00:55:11,139: Started XML-RPC server [http://freight1207:38631/]
+[rospy.init][INFO] 2020-11-03 00:55:11,139: ROS Slave URI: [http://freight1207:38631/]
+[rospy.impl.masterslave][INFO] 2020-11-03 00:55:11,139: _ready: http://freight1207:38631/
+[rospy.registration][INFO] 2020-11-03 00:55:11,139: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2020-11-03 00:55:11,139: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-03 00:55:11,139: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-11-03 00:55:11,239: registered with master
+[rospy.rosout][INFO] 2020-11-03 00:55:11,239: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-03 00:55:11,240: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-03 00:55:11,241: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-11-03 00:55:11,359: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-11-03 00:55:11,459: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-03 00:55:51,728: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-11-03 00:55:51,731: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-03 00:55:51,731: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-11-03 00:55:51,731: atexit
+[rospy.client][INFO] 2020-11-03 00:56:20,869: init_node, name[/teleop_twist_keyboard], pid[5575]
+[xmlrpc][INFO] 2020-11-03 00:56:20,869: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-03 00:56:20,869: Started XML-RPC server [http://freight1207:40164/]
+[rospy.impl.masterslave][INFO] 2020-11-03 00:56:20,870: _ready: http://freight1207:40164/
+[rospy.init][INFO] 2020-11-03 00:56:20,870: ROS Slave URI: [http://freight1207:40164/]
+[xmlrpc][INFO] 2020-11-03 00:56:20,870: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-03 00:56:20,870: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-11-03 00:56:20,870: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-11-03 00:56:20,970: registered with master
+[rospy.rosout][INFO] 2020-11-03 00:56:20,970: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-03 00:56:20,972: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-03 00:56:20,972: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-11-03 00:56:21,147: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-11-03 00:56:21,248: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-03 00:57:10,853: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-11-03 00:57:10,855: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-03 00:57:10,855: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-11-03 00:57:10,856: atexit
+[rospy.client][INFO] 2020-11-03 22:25:34,798: init_node, name[/teleop_twist_keyboard], pid[5520]
+[xmlrpc][INFO] 2020-11-03 22:25:34,798: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-03 22:25:34,798: Started XML-RPC server [http://freight1207:39694/]
+[rospy.init][INFO] 2020-11-03 22:25:34,798: ROS Slave URI: [http://freight1207:39694/]
+[rospy.impl.masterslave][INFO] 2020-11-03 22:25:34,798: _ready: http://freight1207:39694/
+[xmlrpc][INFO] 2020-11-03 22:25:34,799: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-03 22:25:34,799: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-11-03 22:25:34,799: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-11-03 22:25:34,899: registered with master
+[rospy.rosout][INFO] 2020-11-03 22:25:34,899: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-03 22:25:34,900: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-03 22:25:34,901: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-11-03 22:25:35,004: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-11-03 22:25:35,105: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.client][INFO] 2020-11-03 22:26:16,668: init_node, name[/teleop_twist_keyboard], pid[5852]
+[xmlrpc][INFO] 2020-11-03 22:26:16,668: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-03 22:26:16,668: Started XML-RPC server [http://freight1207:42271/]
+[rospy.init][INFO] 2020-11-03 22:26:16,669: ROS Slave URI: [http://freight1207:42271/]
+[rospy.impl.masterslave][INFO] 2020-11-03 22:26:16,669: _ready: http://freight1207:42271/
+[xmlrpc][INFO] 2020-11-03 22:26:16,669: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-03 22:26:16,669: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-11-03 22:26:16,669: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.impl.masterslave][INFO] 2020-11-03 22:26:16,757: external shutdown request from [/master]: new node registered with same name
+[rospy.core][INFO] 2020-11-03 22:26:16,757: signal_shutdown [external shutdown request from [/master]: [new node registered with same name]]
+[rospy.internal][INFO] 2020-11-03 22:26:16,759: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-03 22:26:16,759: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.init][INFO] 2020-11-03 22:26:16,769: registered with master
+[rospy.rosout][INFO] 2020-11-03 22:26:16,769: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-03 22:26:16,770: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-03 22:26:16,771: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-11-03 22:26:16,961: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-11-03 22:26:17,062: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-03 22:28:04,393: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-11-03 22:28:04,395: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-03 22:28:04,395: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-11-03 22:28:04,395: atexit
+[rospy.core][INFO] 2020-11-03 22:28:04,419: signal_shutdown [signal-2]
+[rospy.client][INFO] 2020-11-03 23:42:33,906: init_node, name[/teleop_twist_keyboard], pid[6177]
+[xmlrpc][INFO] 2020-11-03 23:42:33,907: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-03 23:42:33,907: Started XML-RPC server [http://freight1207:45448/]
+[rospy.init][INFO] 2020-11-03 23:42:33,907: ROS Slave URI: [http://freight1207:45448/]
+[rospy.impl.masterslave][INFO] 2020-11-03 23:42:33,907: _ready: http://freight1207:45448/
+[xmlrpc][INFO] 2020-11-03 23:42:33,908: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-03 23:42:33,908: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-11-03 23:42:33,908: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-11-03 23:42:34,007: registered with master
+[rospy.rosout][INFO] 2020-11-03 23:42:34,008: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-03 23:42:34,009: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-03 23:42:34,010: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-11-03 23:42:34,176: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-11-03 23:42:34,276: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-03 23:42:56,223: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-11-03 23:42:56,225: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-03 23:42:56,225: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-11-03 23:42:56,225: atexit
+[rospy.client][INFO] 2020-11-04 19:40:00,940: init_node, name[/teleop_twist_keyboard], pid[9000]
+[xmlrpc][INFO] 2020-11-04 19:40:00,940: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-04 19:40:00,940: Started XML-RPC server [http://freight1207:58842/]
+[rospy.init][INFO] 2020-11-04 19:40:00,940: ROS Slave URI: [http://freight1207:58842/]
+[rospy.impl.masterslave][INFO] 2020-11-04 19:40:00,940: _ready: http://freight1207:58842/
+[xmlrpc][INFO] 2020-11-04 19:40:00,941: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-04 19:40:00,941: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-11-04 19:40:00,941: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-11-04 19:40:01,041: registered with master
+[rospy.rosout][INFO] 2020-11-04 19:40:01,041: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-04 19:40:01,042: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-04 19:40:01,043: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-11-04 19:40:01,216: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-11-04 19:40:01,316: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-04 19:40:09,925: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-11-04 19:40:09,927: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-04 19:40:09,927: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-11-04 19:40:09,927: atexit
+[rospy.client][INFO] 2020-11-05 21:52:48,197: init_node, name[/teleop_twist_keyboard], pid[8779]
+[xmlrpc][INFO] 2020-11-05 21:52:48,198: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-05 21:52:48,198: Started XML-RPC server [http://freight1207:42137/]
+[rospy.init][INFO] 2020-11-05 21:52:48,198: ROS Slave URI: [http://freight1207:42137/]
+[rospy.impl.masterslave][INFO] 2020-11-05 21:52:48,198: _ready: http://freight1207:42137/
+[xmlrpc][INFO] 2020-11-05 21:52:48,199: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-05 21:52:48,199: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-11-05 21:52:48,199: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-11-05 21:52:48,299: registered with master
+[rospy.rosout][INFO] 2020-11-05 21:52:48,299: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-05 21:52:48,300: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-05 21:52:48,301: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-11-05 21:52:48,488: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-11-05 21:52:48,588: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-05 21:53:39,876: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-11-05 21:53:39,878: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-05 21:53:39,878: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-11-05 21:53:39,879: atexit
+[rospy.client][INFO] 2020-11-05 21:55:14,565: init_node, name[/teleop_twist_keyboard], pid[9361]
+[xmlrpc][INFO] 2020-11-05 21:55:14,565: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-05 21:55:14,565: Started XML-RPC server [http://freight1207:60854/]
+[rospy.init][INFO] 2020-11-05 21:55:14,565: ROS Slave URI: [http://freight1207:60854/]
+[rospy.impl.masterslave][INFO] 2020-11-05 21:55:14,565: _ready: http://freight1207:60854/
+[xmlrpc][INFO] 2020-11-05 21:55:14,566: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-05 21:55:14,566: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-11-05 21:55:14,566: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-11-05 21:55:14,666: registered with master
+[rospy.rosout][INFO] 2020-11-05 21:55:14,666: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-05 21:55:14,667: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-05 21:55:14,668: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-11-05 21:55:14,777: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-11-05 21:55:14,878: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-05 21:55:20,950: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-11-05 21:55:20,952: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-05 21:55:20,952: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-11-05 21:55:20,952: atexit
+[rospy.client][INFO] 2020-11-09 18:14:17,556: init_node, name[/teleop_twist_keyboard], pid[11744]
+[xmlrpc][INFO] 2020-11-09 18:14:17,556: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-09 18:14:17,556: Started XML-RPC server [http://freight1207:56734/]
+[rospy.init][INFO] 2020-11-09 18:14:17,557: ROS Slave URI: [http://freight1207:56734/]
+[rospy.impl.masterslave][INFO] 2020-11-09 18:14:17,557: _ready: http://freight1207:56734/
+[xmlrpc][INFO] 2020-11-09 18:14:17,557: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-09 18:14:17,557: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-11-09 18:14:17,557: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-11-09 18:14:17,657: registered with master
+[rospy.rosout][INFO] 2020-11-09 18:14:17,657: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-09 18:14:17,658: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-09 18:14:17,659: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-11-09 18:14:17,826: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-11-09 18:14:17,827: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-09 18:15:55,630: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-11-09 18:15:55,633: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-09 18:15:55,633: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-11-09 18:15:55,633: atexit
+[rospy.client][INFO] 2020-11-09 18:15:58,291: init_node, name[/teleop_twist_keyboard], pid[11777]
+[xmlrpc][INFO] 2020-11-09 18:15:58,291: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-09 18:15:58,291: Started XML-RPC server [http://freight1207:53271/]
+[rospy.init][INFO] 2020-11-09 18:15:58,291: ROS Slave URI: [http://freight1207:53271/]
+[rospy.impl.masterslave][INFO] 2020-11-09 18:15:58,292: _ready: http://freight1207:53271/
+[xmlrpc][INFO] 2020-11-09 18:15:58,292: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-09 18:15:58,292: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-11-09 18:15:58,292: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-11-09 18:15:58,392: registered with master
+[rospy.rosout][INFO] 2020-11-09 18:15:58,392: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-09 18:15:58,393: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-09 18:15:58,394: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-11-09 18:15:58,544: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-11-09 18:15:58,645: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-09 18:17:45,059: signal_shutdown [signal-15]
+[rospy.client][INFO] 2020-11-09 22:55:14,679: init_node, name[/teleop_twist_keyboard], pid[8226]
+[xmlrpc][INFO] 2020-11-09 22:55:14,679: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-09 22:55:14,679: Started XML-RPC server [http://freight1207:48676/]
+[rospy.init][INFO] 2020-11-09 22:55:14,679: ROS Slave URI: [http://freight1207:48676/]
+[rospy.impl.masterslave][INFO] 2020-11-09 22:55:14,679: _ready: http://freight1207:48676/
+[xmlrpc][INFO] 2020-11-09 22:55:14,680: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-09 22:55:14,680: Registering with master node http://localhost:11311
+[rospy.registration][INFO] 2020-11-09 22:55:14,680: Registering publisher topic [/cmd_vel] type [geometry_msgs/Twist] with master
+[rospy.init][INFO] 2020-11-09 22:55:14,780: registered with master
+[rospy.rosout][INFO] 2020-11-09 22:55:14,780: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-09 22:55:14,781: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-09 22:55:14,782: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-11-09 22:55:14,898: topic[/cmd_vel] adding connection to [/cmd_vel_mux], count 0
+[rospy.internal][INFO] 2020-11-09 22:55:14,998: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-09 22:56:19,904: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-11-09 22:56:19,906: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-09 22:56:19,906: topic[/cmd_vel] removing connection to /cmd_vel_mux
+[rospy.impl.masterslave][INFO] 2020-11-09 22:56:19,906: atexit

@@ -1,0 +1,25 @@
+[rospy.client][INFO] 2020-11-09 19:45:52,786: init_node, name[/rostopic_4918_1604979952762], pid[4918]
+[xmlrpc][INFO] 2020-11-09 19:45:52,786: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-09 19:45:52,787: Started XML-RPC server [http://freight1207:51005/]
+[rospy.init][INFO] 2020-11-09 19:45:52,787: ROS Slave URI: [http://freight1207:51005/]
+[rospy.impl.masterslave][INFO] 2020-11-09 19:45:52,787: _ready: http://freight1207:51005/
+[rospy.registration][INFO] 2020-11-09 19:45:52,787: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2020-11-09 19:45:52,787: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2020-11-09 19:45:52,887: registered with master
+[rospy.rosout][INFO] 2020-11-09 19:45:52,887: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-09 19:45:52,888: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-09 19:45:52,889: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-11-09 19:45:52,901: topic[/odom] adding connection to [http://freight1207:33457/], count 0
+[rospy.internal][INFO] 2020-11-09 19:45:53,145: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-11-09 19:45:57,080: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-11-09 19:45:57,082: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-09 19:45:57,082: topic[/odom] removing connection to http://freight1207:33457/
+[rospy.impl.masterslave][INFO] 2020-11-09 19:45:57,082: signal-2
+[rospy.internal][ERROR] 2020-11-09 19:45:57,082: Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 698, in receive_once
+    self.stat_bytes += recv_buff(sock, b, p.buff_size)
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 103, in recv_buff
+    d = sock.recv(buff_size)
+error: [Errno 104] Connection reset by peer
+
+[rospy.core][INFO] 2020-11-09 19:45:57,246: signal_shutdown [atexit]

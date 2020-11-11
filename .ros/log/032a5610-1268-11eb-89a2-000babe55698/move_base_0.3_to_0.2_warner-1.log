@@ -1,0 +1,17 @@
+[rospy.client][INFO] 2020-10-19 17:25:32,356: init_node, name[/move_base_0.3_to_0.2_warner], pid[4280]
+[xmlrpc][INFO] 2020-10-19 17:25:32,358: XML-RPC server binding to 0.0.0.0:0
+[rospy.init][INFO] 2020-10-19 17:25:32,358: ROS Slave URI: [http://freight1207:53248/]
+[xmlrpc][INFO] 2020-10-19 17:25:32,358: Started XML-RPC server [http://freight1207:53248/]
+[rospy.impl.masterslave][INFO] 2020-10-19 17:25:32,358: _ready: http://freight1207:53248/
+[xmlrpc][INFO] 2020-10-19 17:25:32,358: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-19 17:25:32,359: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-10-19 17:25:32,458: registered with master
+[rospy.rosout][INFO] 2020-10-19 17:25:32,458: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-19 17:25:32,461: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-19 17:25:32,462: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-10-19 17:25:32,466: You are launching the move_base_0.3_to_0.2.launch file which allows for a deprecated interface to move_base to be used. Please update your code and remove this launch file as soon as possible
+[rospy.internal][INFO] 2020-10-19 17:25:32,700: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-19 17:25:49,371: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-10-19 17:25:49,373: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2020-10-19 17:25:49,373: signal-2
+[rospy.core][INFO] 2020-10-19 17:25:49,480: signal_shutdown [atexit]

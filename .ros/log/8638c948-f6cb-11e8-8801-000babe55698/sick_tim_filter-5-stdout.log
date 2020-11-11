@@ -1,0 +1,22 @@
+[33m[ WARN] [1543821724.225253814]: /sick_tim_filter (type=Chain) initialized as an empty filter sequence[0m
+[0m[ INFO] [1543821724.225307311]: Using default filter setup.[0m
+[33m[ WARN] [1543821724.238669955]: NoFilterBranch (type=Chain) initialized as an empty filter sequence[0m
+[0m[ INFO] [1543821724.243597876]: NoFilterPublisher (type=Publisher) : publishing on topic /base_scan_no_self_filter[0m
+[33m[ WARN] [1543821724.353719563]: IntensityFilterBranch (type=Chain) initialized as an empty filter sequence[0m
+[0m[ INFO] [1543821724.357369121]: Using default range/intensity adjustment values.[0m
+[0m[ INFO] [1543821724.357414590]: > Range: 0.0000  Min Intensity: 255.0000[0m
+[0m[ INFO] [1543821724.357427902]: > Range: 0.1000  Min Intensity: 227.0000[0m
+[0m[ INFO] [1543821724.357441766]: > Range: 0.1800  Min Intensity: 225.0000[0m
+[0m[ INFO] [1543821724.357453833]: > Range: 0.3000  Min Intensity: 229.0000[0m
+[0m[ INFO] [1543821724.357464315]: > Range: 0.5000  Min Intensity: 234.0000[0m
+[0m[ INFO] [1543821724.357475209]: > Range: 0.7500  Min Intensity: 235.0000[0m
+[0m[ INFO] [1543821724.357486239]: > Range: 1.0000  Min Intensity: 235.0000[0m
+[0m[ INFO] [1543821724.357495413]: > Range: 1.5000  Min Intensity: 236.0000[0m
+[0m[ INFO] [1543821724.357503630]: > Range: 2.0000  Min Intensity: 233.0000[0m
+[0m[ INFO] [1543821724.357514156]: > Range: 2.5000  Min Intensity: 231.0000[0m
+[0m[ INFO] [1543821724.357524597]: > Range: 3.0000  Min Intensity: 230.0000[0m
+[0m[ INFO] [1543821724.357532780]: > Range: 3.5000  Min Intensity: 227.0000[0m
+[0m[ INFO] [1543821724.357541423]: > Range: 3.7500  Min Intensity: 255.0000[0m
+[0m[ INFO] [1543821724.358296298]: IntensitySmallClusterFilter (type=MinimumNeighborhoodFilter) Filtering min_neighbors < (3)[0m
+[0m[ INFO] [1543821724.359619803]: IntensityPublisher (type=Publisher) : publishing on topic /base_scan_tagged[0m
+[0m[ INFO] [1543821724.360649821]: Output (type=Publisher) : publishing on topic /out[0m

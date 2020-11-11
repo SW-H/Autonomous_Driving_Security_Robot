@@ -1,0 +1,13 @@
+[rospy.client][INFO] 2018-12-04 19:21:27,569: init_node, name[/rostopic_20416_1543980087554], pid[20416]
+[xmlrpc][INFO] 2018-12-04 19:21:27,570: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-12-04 19:21:27,570: Started XML-RPC server [http://freight1207:36729/]
+[rospy.init][INFO] 2018-12-04 19:21:27,570: ROS Slave URI: [http://freight1207:36729/]
+[rospy.impl.masterslave][INFO] 2018-12-04 19:21:27,570: _ready: http://freight1207:36729/
+[xmlrpc][INFO] 2018-12-04 19:21:27,571: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-12-04 19:21:27,571: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2018-12-04 19:21:27,671: registered with master
+[rospy.internal][INFO] 2018-12-04 19:21:27,690: topic[/enable_software_runstop] adding connection to [/software_runstop], count 0
+[rospy.core][INFO] 2018-12-04 19:21:36,276: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2018-12-04 19:21:36,278: topic[/enable_software_runstop] removing connection to /software_runstop
+[rospy.impl.masterslave][INFO] 2018-12-04 19:21:36,278: signal-2
+[rospy.core][INFO] 2018-12-04 19:21:36,394: signal_shutdown [atexit]

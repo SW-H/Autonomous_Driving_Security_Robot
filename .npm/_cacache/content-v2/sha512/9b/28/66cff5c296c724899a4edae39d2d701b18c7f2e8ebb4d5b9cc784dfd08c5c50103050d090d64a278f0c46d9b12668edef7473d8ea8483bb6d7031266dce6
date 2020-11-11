@@ -1,0 +1,1 @@
+{"name":"btoa-lite","dist-tags":{"latest":"1.0.0"},"versions":{"1.0.0":{"name":"btoa-lite","version":"1.0.0","devDependencies":{"browserify":"^10.2.4","smokestack":"^3.3.0","tap-spec":"^4.0.0","tape":"^4.0.0"},"dist":{"shasum":"337766da15801210fdd956c22e9c6891ab9d0337","tarball":"https://registry.npmjs.org/btoa-lite/-/btoa-lite-1.0.0.tgz"}}},"modified":"2015-06-25T16:43:35.275Z"}

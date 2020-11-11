@@ -1,0 +1,3 @@
+#ROS_PACKAGE_PATH=/opt/ros/indigo/share:/opt/ros/indigo/stacks
+/opt/ros/indigo/share/joystick_drivers
+/opt/ros/indigo/share/ros

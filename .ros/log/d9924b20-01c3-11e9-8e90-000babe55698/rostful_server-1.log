@@ -1,0 +1,121 @@
+[rospy.client][INFO] 2018-12-16 22:33:38,317: init_node, name[/rostful_server], pid[5277]
+[xmlrpc][INFO] 2018-12-16 22:33:38,317: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-12-16 22:33:38,317: Started XML-RPC server [http://freight1207:57624/]
+[rospy.init][INFO] 2018-12-16 22:33:38,317: ROS Slave URI: [http://freight1207:57624/]
+[rospy.impl.masterslave][INFO] 2018-12-16 22:33:38,317: _ready: http://freight1207:57624/
+[xmlrpc][INFO] 2018-12-16 22:33:38,318: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-12-16 22:33:38,318: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2018-12-16 22:33:38,418: registered with master
+[rospy.rosout][INFO] 2018-12-16 22:33:38,418: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-12-16 22:33:38,420: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-12-16 22:33:38,421: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2018-12-16 22:33:38,425: rostful_server: Delaying the start 1 seconds
+[rospy.internal][INFO] 2018-12-16 22:33:38,621: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2018-12-16 22:33:39,476: rostful_server: Started server on port 8080
+[rospy.internal][INFO] 2018-12-16 22:33:39,483: topic[/current/pose] adding connection to [http://freight1207:39347/], count 0
+[rospy.internal][INFO] 2018-12-16 22:33:39,484: topic[/current/pose] adding connection to [http://freight1207:57624/], count 0
+[rospy.internal][INFO] 2018-12-16 22:33:39,486: topic[/enable_software_runstop] adding connection to [http://freight1207:57624/], count 0
+[rospy.internal][INFO] 2018-12-16 22:33:39,488: topic[/remote_control] adding connection to [http://freight1207:57624/], count 0
+[rospy.internal][INFO] 2018-12-16 22:33:39,488: topic[/current/pose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-16 22:33:39,489: topic[/local_control/cancel] adding connection to [http://freight1207:57624/], count 0
+[rospy.internal][INFO] 2018-12-16 22:33:39,490: topic[/local_control/initialpose] adding connection to [http://freight1207:57624/], count 0
+[rospy.internal][INFO] 2018-12-16 22:33:39,490: topic[/enable_software_runstop] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-16 22:33:39,491: topic[/local_control/goto] adding connection to [http://freight1207:57624/], count 0
+[rospy.internal][INFO] 2018-12-16 22:33:39,491: topic[/remote_control] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-16 22:33:39,492: topic[/local_control/cancel] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-16 22:33:39,492: topic[/local_control/initialpose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-16 22:33:39,492: topic[/local_control/goto] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-16 22:33:39,541: topic[/enable_software_runstop] adding connection to [/software_runstop], count 1
+[rospy.internal][INFO] 2018-12-16 22:33:39,723: topic[/local_control/initialpose] adding connection to [/local_control_initialpose], count 1
+[rospy.internal][INFO] 2018-12-16 22:33:39,724: topic[/local_control/cancel] adding connection to [/local_control_navigation], count 1
+[rospy.internal][INFO] 2018-12-16 22:33:39,724: topic[/local_control/goto] adding connection to [/local_control_navigation], count 1
+[rospy.internal][INFO] 2018-12-16 22:33:39,724: topic[/remote_control] adding connection to [/remote_control], count 1
+[rosout][WARNING] 2018-12-16 22:33:58,900: publishing locationX: 0
+locationY: 0
+orientation: 0 to topic /local_control/initialpose
+[rosout][WARNING] 2018-12-16 22:34:08,910: publishing locationX: 0
+locationY: 0
+orientation: 1 to topic /local_control/initialpose
+[rosout][WARNING] 2018-12-16 22:34:27,856: publishing locationX: 2
+locationY: 2
+orientation: 2 to topic /local_control/initialpose
+[rosout][WARNING] 2018-12-16 22:34:46,928: publishing data: right to topic /remote_control
+[rosout][WARNING] 2018-12-16 23:13:41,656: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: 578.65625
+    locationY: 0.0
+    orientation: 0.0
+  - 
+    locationX: 0.0
+    locationY: 314.388916016
+    orientation: 0.0
+  - 
+    locationX: 0.0
+    locationY: 0.0
+    orientation: 30.8537006378 to topic /local_control/goto
+[rosout][WARNING] 2018-12-16 23:14:04,152: publishing data: False to topic /enable_software_runstop
+[rosout][WARNING] 2018-12-16 23:15:07,761: publishing data: True to topic /enable_software_runstop
+[rosout][WARNING] 2018-12-16 23:16:02,550: publishing data: left to topic /remote_control
+[rosout][WARNING] 2018-12-16 23:19:12,863: publishing data: left to topic /remote_control
+[rosout][WARNING] 2018-12-16 23:19:45,767: publishing data: right to topic /remote_control
+[rosout][WARNING] 2018-12-16 23:20:00,471: publishing data: True to topic /local_control/cancel
+[rosout][WARNING] 2018-12-16 23:20:09,667: publishing data: left to topic /remote_control
+[rosout][WARNING] 2018-12-16 23:21:25,914: publishing data: True to topic /local_control/cancel
+[rosout][WARNING] 2018-12-16 23:21:34,151: publishing data: right to topic /remote_control
+[rosout][WARNING] 2018-12-16 23:22:59,931: publishing data: False to topic /enable_software_runstop
+[rosout][WARNING] 2018-12-16 23:23:11,231: publishing data: left to topic /remote_control
+[rosout][WARNING] 2018-12-16 23:23:19,070: publishing data: left to topic /remote_control
+[rosout][WARNING] 2018-12-16 23:23:21,083: publishing data: right to topic /remote_control
+[rosout][WARNING] 2018-12-16 23:23:39,327: publishing data: False to topic /enable_software_runstop
+[rosout][WARNING] 2018-12-16 23:25:31,851: publishing data: False to topic /enable_software_runstop
+[rosout][WARNING] 2018-12-16 23:28:52,934: publishing data: True to topic /local_control/cancel
+[rosout][WARNING] 2018-12-16 23:31:39,436: publishing data: True to topic /local_control/cancel
+[rosout][WARNING] 2018-12-16 23:32:53,266: publishing data: True to topic /local_control/cancel
+[rosout][WARNING] 2018-12-17 00:07:34,653: publishing locationX: 1
+locationY: 1
+orientation: 1 to topic /local_control/initialpose
+[rosout][WARNING] 2018-12-17 00:11:56,763: publishing locationX: 605.418212891
+locationY: 0.0
+orientation: 0.0 to topic /local_control/initialpose
+[rosout][WARNING] 2018-12-17 00:17:58,635: publishing locationX: 570.159790039
+locationY: 0.0
+orientation: 0.0 to topic /local_control/initialpose
+[rosout][WARNING] 2018-12-17 00:18:30,664: publishing locationX: 576.880981445
+locationY: 0.0
+orientation: 0.0 to topic /local_control/initialpose
+[rosout][WARNING] 2018-12-17 00:18:32,840: publishing locationX: 391.440429688
+locationY: 0.0
+orientation: 0.0 to topic /local_control/initialpose
+[rosout][WARNING] 2018-12-17 00:19:37,095: publishing locationX: 537.938476562
+locationY: 0.0
+orientation: 0.0 to topic /local_control/initialpose
+[rosout][WARNING] 2018-12-17 00:20:42,738: publishing locationX: 600
+locationY: 500
+orientation: 3 to topic /local_control/initialpose
+[rosout][WARNING] 2018-12-17 00:21:23,274: publishing locationX: 346.412841797
+locationY: 0.0
+orientation: 0.0 to topic /local_control/initialpose
+[rosout][WARNING] 2018-12-17 00:22:57,980: publishing header: 
+  seq: 0
+  stamp: 
+    secs: 0
+    nsecs:         0
+  frame_id: ''
+goals: 
+  - 
+    locationX: 1
+    locationY: 1
+    orientation: 1 to topic /local_control/goto
+[rosout][WARNING] 2018-12-17 00:23:09,790: publishing data: True to topic /local_control/cancel
+[rosout][WARNING] 2018-12-17 00:23:15,515: publishing locationX: 1
+locationY: 1
+orientation: 1 to topic /local_control/initialpose
+[rosout][WARNING] 2018-12-17 00:24:40,348: publishing locationX: 458.283691406
+locationY: 0.0
+orientation: 0.0 to topic /local_control/initialpose

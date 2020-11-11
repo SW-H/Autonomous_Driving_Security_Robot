@@ -1,0 +1,13 @@
+[0m[ INFO] [1603679564.631910123]: rviz version 1.11.18[0m
+[0m[ INFO] [1603679564.631943674]: compiled against Qt version 4.8.6[0m
+[0m[ INFO] [1603679564.631951218]: compiled against OGRE version 1.8.1 (Byatis)[0m
+[0m[ INFO] [1603679564.993325592]: Stereo is NOT SUPPORTED[0m
+[0m[ INFO] [1603679564.993371288]: OpenGl version: 3 (GLSL 1.3).[0m
+[0m[ INFO] [1603679611.834377522]: Setting goal: Frame:map, Position(0.111, 2.074, 0.000), Orientation(0.000, 0.000, 0.000, 1.000) = Angle: 0.000
+[0m
+[0m[ INFO] [1603679634.166469830]: Setting goal: Frame:map, Position(0.236, 2.286, 0.000), Orientation(0.000, 0.000, 0.989, 0.148) = Angle: 2.844
+[0m
+[0m[ INFO] [1603679817.471611959]: Setting goal: Frame:map, Position(0.723, -0.140, 0.000), Orientation(0.000, 0.000, -0.411, 0.912) = Angle: -0.847
+[0m
+[0m[ INFO] [1603680242.842611440]: Setting goal: Frame:map, Position(2.266, 1.246, 0.000), Orientation(0.000, 0.000, 0.000, 1.000) = Angle: 0.000
+[0m

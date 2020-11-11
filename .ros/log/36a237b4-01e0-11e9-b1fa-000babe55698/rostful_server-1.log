@@ -1,0 +1,32 @@
+[rospy.client][INFO] 2018-12-17 02:05:43,288: init_node, name[/rostful_server], pid[4331]
+[xmlrpc][INFO] 2018-12-17 02:05:43,288: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2018-12-17 02:05:43,288: Started XML-RPC server [http://freight1207:45067/]
+[rospy.init][INFO] 2018-12-17 02:05:43,288: ROS Slave URI: [http://freight1207:45067/]
+[rospy.impl.masterslave][INFO] 2018-12-17 02:05:43,288: _ready: http://freight1207:45067/
+[xmlrpc][INFO] 2018-12-17 02:05:43,289: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2018-12-17 02:05:43,289: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2018-12-17 02:05:43,389: registered with master
+[rospy.rosout][INFO] 2018-12-17 02:05:43,389: initializing /rosout core topic
+[rospy.rosout][INFO] 2018-12-17 02:05:43,390: connected to core topic /rosout
+[rospy.simtime][INFO] 2018-12-17 02:05:43,391: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2018-12-17 02:05:43,395: rostful_server: Delaying the start 1 seconds
+[rospy.internal][INFO] 2018-12-17 02:05:43,642: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2018-12-17 02:05:44,446: rostful_server: Started server on port 8080
+[rospy.internal][INFO] 2018-12-17 02:05:44,456: topic[/current/pose] adding connection to [http://freight1207:42147/], count 0
+[rospy.internal][INFO] 2018-12-17 02:05:44,458: topic[/current/pose] adding connection to [http://freight1207:45067/], count 1
+[rospy.internal][INFO] 2018-12-17 02:05:44,459: topic[/remote_control] adding connection to [http://freight1207:45067/], count 0
+[rospy.internal][INFO] 2018-12-17 02:05:44,460: topic[/enable_software_runstop] adding connection to [http://freight1207:45067/], count 0
+[rospy.internal][INFO] 2018-12-17 02:05:44,462: topic[/local_control/cancel] adding connection to [http://freight1207:45067/], count 0
+[rospy.internal][INFO] 2018-12-17 02:05:44,462: topic[/current/pose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-17 02:05:44,463: topic[/remote_control] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-17 02:05:44,463: topic[/local_control/initialpose] adding connection to [http://freight1207:45067/], count 0
+[rospy.internal][INFO] 2018-12-17 02:05:44,464: topic[/enable_software_runstop] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-17 02:05:44,464: topic[/local_control/cancel] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-17 02:05:44,465: topic[/local_control/goto] adding connection to [http://freight1207:45067/], count 0
+[rospy.internal][INFO] 2018-12-17 02:05:44,465: topic[/enable_software_runstop] adding connection to [/software_runstop], count 1
+[rospy.internal][INFO] 2018-12-17 02:05:44,466: topic[/local_control/initialpose] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-17 02:05:44,466: topic[/local_control/goto] adding connection to [/rostful_server], count 0
+[rospy.internal][INFO] 2018-12-17 02:05:44,644: topic[/local_control/initialpose] adding connection to [/local_control_initialpose], count 1
+[rospy.internal][INFO] 2018-12-17 02:05:44,644: topic[/local_control/cancel] adding connection to [/local_control_navigation], count 1
+[rospy.internal][INFO] 2018-12-17 02:05:44,644: topic[/local_control/goto] adding connection to [/local_control_navigation], count 1
+[rospy.internal][INFO] 2018-12-17 02:05:44,644: topic[/remote_control] adding connection to [/remote_control], count 1

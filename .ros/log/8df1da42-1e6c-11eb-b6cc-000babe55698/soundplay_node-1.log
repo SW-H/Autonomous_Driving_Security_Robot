@@ -1,0 +1,617 @@
+[rospy.client][INFO] 2020-11-04 00:07:02,830: init_node, name[/soundplay_node], pid[7897]
+[xmlrpc][INFO] 2020-11-04 00:07:02,831: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-04 00:07:02,831: Started XML-RPC server [http://freight1207:60615/]
+[rospy.init][INFO] 2020-11-04 00:07:02,831: ROS Slave URI: [http://freight1207:60615/]
+[rospy.impl.masterslave][INFO] 2020-11-04 00:07:02,831: _ready: http://freight1207:60615/
+[xmlrpc][INFO] 2020-11-04 00:07:02,831: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-04 00:07:02,832: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-04 00:07:02,931: registered with master
+[rospy.rosout][INFO] 2020-11-04 00:07:02,931: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-04 00:07:02,933: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-04 00:07:02,934: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.core][INFO] 2020-11-04 00:07:02,940: signal_shutdown [atexit]
+[rospy.impl.masterslave][INFO] 2020-11-04 00:07:02,942: atexit
+[rospy.client][INFO] 2020-11-04 00:08:05,575: init_node, name[/soundplay_node], pid[8245]
+[xmlrpc][INFO] 2020-11-04 00:08:05,575: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-11-04 00:08:05,575: Started XML-RPC server [http://freight1207:39551/]
+[rospy.init][INFO] 2020-11-04 00:08:05,575: ROS Slave URI: [http://freight1207:39551/]
+[rospy.impl.masterslave][INFO] 2020-11-04 00:08:05,575: _ready: http://freight1207:39551/
+[xmlrpc][INFO] 2020-11-04 00:08:05,576: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-11-04 00:08:05,576: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-11-04 00:08:05,675: registered with master
+[rospy.rosout][INFO] 2020-11-04 00:08:05,676: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-11-04 00:08:05,678: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-11-04 00:08:05,678: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-11-04 00:08:05,837: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.internal][INFO] 2020-11-04 00:08:05,937: topic[/diagnostics] adding connection to [/diagnostic_aggregator], count 0
+[rosout][INFO] 2020-11-04 00:08:06,211: sound_play node is ready to play sound
+[rospy.internal][INFO] 2020-11-04 00:08:32,017: topic[/sound_play/feedback] adding connection to [/say_8534_1604477311874], count 0
+[rospy.internal][INFO] 2020-11-04 00:08:32,017: topic[/sound_play/result] adding connection to [/say_8534_1604477311874], count 0
+[rospy.internal][INFO] 2020-11-04 00:08:32,017: topic[/sound_play/status] adding connection to [/say_8534_1604477311874], count 0
+[rospy.internal][INFO] 2020-11-04 00:08:32,111: topic[/robotsound] adding connection to [http://freight1207:42271/], count 0
+[rospy.internal][INFO] 2020-11-04 00:08:32,111: topic[/sound_play/cancel] adding connection to [http://freight1207:42271/], count 0
+[rospy.internal][INFO] 2020-11-04 00:08:32,111: topic[/sound_play/goal] adding connection to [http://freight1207:42271/], count 0
+[rospy.internal][ERROR] 2020-11-04 00:08:34,016: Unable to initiate TCP/IP socket to freight1207:47799 (http://freight1207:42271/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:08:34,017: Unable to initiate TCP/IP socket to freight1207:47799 (http://freight1207:42271/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:08:34,017: Unable to initiate TCP/IP socket to freight1207:47799 (http://freight1207:42271/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-04 00:08:34,311: topic[/sound_play/status] removing connection to /say_8534_1604477311874
+[rosout][WARNING] 2020-11-04 00:08:34,640: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2020-11-04 00:08:34,641: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rosgraph/network.py", line 365, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rosout][WARNING] 2020-11-04 00:08:34,641: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2020-11-04 00:08:34,641: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rosgraph/network.py", line 365, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][WARNING] 2020-11-04 00:08:35,018: Unknown error initiating TCP/IP socket to freight1207:47799 (http://freight1207:42271/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:08:35,019: topic[/sound_play/cancel] removing connection to http://freight1207:42271/
+[rospy.internal][WARNING] 2020-11-04 00:08:35,019: Unknown error initiating TCP/IP socket to freight1207:47799 (http://freight1207:42271/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][WARNING] 2020-11-04 00:08:35,019: Unknown error initiating TCP/IP socket to freight1207:47799 (http://freight1207:42271/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:08:35,019: topic[/robotsound] removing connection to http://freight1207:42271/
+[rospy.internal][INFO] 2020-11-04 00:08:35,020: topic[/sound_play/goal] removing connection to http://freight1207:42271/
+[rospy.internal][INFO] 2020-11-04 00:09:18,159: topic[/sound_play/feedback] adding connection to [/play_8674_1604477358016], count 1
+[rospy.internal][INFO] 2020-11-04 00:09:18,160: topic[/sound_play/result] adding connection to [/play_8674_1604477358016], count 1
+[rospy.internal][INFO] 2020-11-04 00:09:18,160: topic[/sound_play/status] adding connection to [/play_8674_1604477358016], count 0
+[rospy.internal][INFO] 2020-11-04 00:09:18,285: topic[/robotsound] adding connection to [http://freight1207:37972/], count 0
+[rospy.internal][INFO] 2020-11-04 00:09:18,285: topic[/sound_play/cancel] adding connection to [http://freight1207:37972/], count 0
+[rospy.internal][INFO] 2020-11-04 00:09:18,286: topic[/sound_play/goal] adding connection to [http://freight1207:37972/], count 0
+[rospy.internal][ERROR] 2020-11-04 00:09:20,178: Unable to initiate TCP/IP socket to freight1207:55937 (http://freight1207:37972/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:09:20,179: Unable to initiate TCP/IP socket to freight1207:55937 (http://freight1207:37972/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:09:20,180: Unable to initiate TCP/IP socket to freight1207:55937 (http://freight1207:37972/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rosout][WARNING] 2020-11-04 00:09:20,180: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2020-11-04 00:09:20,181: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rosgraph/network.py", line 365, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][INFO] 2020-11-04 00:09:20,511: topic[/sound_play/status] removing connection to /play_8674_1604477358016
+[rospy.internal][WARNING] 2020-11-04 00:09:21,179: Unknown error initiating TCP/IP socket to freight1207:55937 (http://freight1207:37972/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:09:21,179: topic[/sound_play/cancel] removing connection to http://freight1207:37972/
+[rospy.internal][WARNING] 2020-11-04 00:09:21,180: Unknown error initiating TCP/IP socket to freight1207:55937 (http://freight1207:37972/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:09:21,180: topic[/sound_play/goal] removing connection to http://freight1207:37972/
+[rospy.internal][WARNING] 2020-11-04 00:09:21,181: Unknown error initiating TCP/IP socket to freight1207:55937 (http://freight1207:37972/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:09:21,182: topic[/robotsound] removing connection to http://freight1207:37972/
+[rospy.internal][INFO] 2020-11-04 00:09:23,544: topic[/sound_play/feedback] adding connection to [/play_8775_1604477363401], count 2
+[rospy.internal][INFO] 2020-11-04 00:09:23,544: topic[/sound_play/result] adding connection to [/play_8775_1604477363401], count 2
+[rospy.internal][INFO] 2020-11-04 00:09:23,545: topic[/sound_play/status] adding connection to [/play_8775_1604477363401], count 0
+[rospy.internal][INFO] 2020-11-04 00:09:23,601: topic[/sound_play/cancel] adding connection to [http://freight1207:34463/], count 0
+[rospy.internal][INFO] 2020-11-04 00:09:23,601: topic[/robotsound] adding connection to [http://freight1207:34463/], count 0
+[rospy.internal][INFO] 2020-11-04 00:09:23,601: topic[/sound_play/goal] adding connection to [http://freight1207:34463/], count 0
+[rospy.internal][ERROR] 2020-11-04 00:09:25,558: Unable to initiate TCP/IP socket to freight1207:40812 (http://freight1207:34463/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:09:25,558: Unable to initiate TCP/IP socket to freight1207:40812 (http://freight1207:34463/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:09:25,559: Unable to initiate TCP/IP socket to freight1207:40812 (http://freight1207:34463/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-04 00:09:25,911: topic[/sound_play/status] removing connection to /play_8775_1604477363401
+[rospy.internal][WARNING] 2020-11-04 00:09:26,559: Unknown error initiating TCP/IP socket to freight1207:40812 (http://freight1207:34463/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:09:26,559: topic[/sound_play/cancel] removing connection to http://freight1207:34463/
+[rospy.internal][WARNING] 2020-11-04 00:09:26,560: Unknown error initiating TCP/IP socket to freight1207:40812 (http://freight1207:34463/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:09:26,560: topic[/sound_play/goal] removing connection to http://freight1207:34463/
+[rospy.internal][WARNING] 2020-11-04 00:09:26,560: Unknown error initiating TCP/IP socket to freight1207:40812 (http://freight1207:34463/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:09:26,560: topic[/robotsound] removing connection to http://freight1207:34463/
+[rospy.internal][INFO] 2020-11-04 00:15:29,996: topic[/sound_play/result] adding connection to [/play_8902_1604477729854], count 3
+[rospy.internal][INFO] 2020-11-04 00:15:29,997: topic[/sound_play/feedback] adding connection to [/play_8902_1604477729854], count 3
+[rospy.internal][INFO] 2020-11-04 00:15:29,997: topic[/sound_play/status] adding connection to [/play_8902_1604477729854], count 0
+[rospy.internal][INFO] 2020-11-04 00:15:30,096: topic[/robotsound] adding connection to [http://freight1207:40458/], count 0
+[rospy.internal][INFO] 2020-11-04 00:15:30,096: topic[/sound_play/cancel] adding connection to [http://freight1207:40458/], count 0
+[rospy.internal][INFO] 2020-11-04 00:15:30,097: topic[/sound_play/goal] adding connection to [http://freight1207:40458/], count 0
+[rospy.internal][ERROR] 2020-11-04 00:15:32,016: Unable to initiate TCP/IP socket to freight1207:58070 (http://freight1207:40458/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:15:32,017: Unable to initiate TCP/IP socket to freight1207:58070 (http://freight1207:40458/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:15:32,018: Unable to initiate TCP/IP socket to freight1207:58070 (http://freight1207:40458/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-04 00:15:32,311: topic[/sound_play/status] removing connection to /play_8902_1604477729854
+[rospy.internal][WARNING] 2020-11-04 00:15:33,018: Unknown error initiating TCP/IP socket to freight1207:58070 (http://freight1207:40458/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][WARNING] 2020-11-04 00:15:33,018: Unknown error initiating TCP/IP socket to freight1207:58070 (http://freight1207:40458/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:15:33,018: topic[/sound_play/cancel] removing connection to http://freight1207:40458/
+[rospy.internal][WARNING] 2020-11-04 00:15:33,018: Unknown error initiating TCP/IP socket to freight1207:58070 (http://freight1207:40458/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:15:33,018: topic[/robotsound] removing connection to http://freight1207:40458/
+[rospy.internal][INFO] 2020-11-04 00:15:33,018: topic[/sound_play/goal] removing connection to http://freight1207:40458/
+[rospy.internal][INFO] 2020-11-04 00:22:27,501: topic[/sound_play/feedback] adding connection to [/play_13579_1604478147359], count 4
+[rospy.internal][INFO] 2020-11-04 00:22:27,503: topic[/sound_play/result] adding connection to [/play_13579_1604478147359], count 4
+[rospy.internal][INFO] 2020-11-04 00:22:27,504: topic[/sound_play/status] adding connection to [/play_13579_1604478147359], count 0
+[rospy.internal][INFO] 2020-11-04 00:22:27,552: topic[/robotsound] adding connection to [http://freight1207:46939/], count 0
+[rospy.internal][INFO] 2020-11-04 00:22:27,553: topic[/sound_play/cancel] adding connection to [http://freight1207:46939/], count 0
+[rospy.internal][INFO] 2020-11-04 00:22:27,553: topic[/sound_play/goal] adding connection to [http://freight1207:46939/], count 0
+[rospy.internal][ERROR] 2020-11-04 00:22:29,516: Unable to initiate TCP/IP socket to freight1207:56619 (http://freight1207:46939/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:22:29,516: Unable to initiate TCP/IP socket to freight1207:56619 (http://freight1207:46939/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:22:29,517: Unable to initiate TCP/IP socket to freight1207:56619 (http://freight1207:46939/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-04 00:22:29,911: topic[/sound_play/status] removing connection to /play_13579_1604478147359
+[rosout][WARNING] 2020-11-04 00:22:30,140: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2020-11-04 00:22:30,141: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rosgraph/network.py", line 365, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][WARNING] 2020-11-04 00:22:30,517: Unknown error initiating TCP/IP socket to freight1207:56619 (http://freight1207:46939/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:22:30,517: topic[/sound_play/cancel] removing connection to http://freight1207:46939/
+[rospy.internal][WARNING] 2020-11-04 00:22:30,518: Unknown error initiating TCP/IP socket to freight1207:56619 (http://freight1207:46939/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:22:30,518: topic[/sound_play/goal] removing connection to http://freight1207:46939/
+[rospy.internal][WARNING] 2020-11-04 00:22:30,518: Unknown error initiating TCP/IP socket to freight1207:56619 (http://freight1207:46939/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:22:30,518: topic[/robotsound] removing connection to http://freight1207:46939/
+[rospy.internal][INFO] 2020-11-04 00:22:41,646: topic[/sound_play/feedback] adding connection to [/play_13680_1604478161503], count 5
+[rospy.internal][INFO] 2020-11-04 00:22:41,646: topic[/sound_play/result] adding connection to [/play_13680_1604478161503], count 5
+[rospy.internal][INFO] 2020-11-04 00:22:41,646: topic[/sound_play/status] adding connection to [/play_13680_1604478161503], count 0
+[rospy.internal][INFO] 2020-11-04 00:22:41,769: topic[/sound_play/cancel] adding connection to [http://freight1207:48993/], count 0
+[rospy.internal][INFO] 2020-11-04 00:22:41,770: topic[/robotsound] adding connection to [http://freight1207:48993/], count 0
+[rospy.internal][INFO] 2020-11-04 00:22:41,770: topic[/sound_play/goal] adding connection to [http://freight1207:48993/], count 0
+[rospy.internal][ERROR] 2020-11-04 00:22:43,662: Unable to initiate TCP/IP socket to freight1207:46829 (http://freight1207:48993/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:22:43,662: Unable to initiate TCP/IP socket to freight1207:46829 (http://freight1207:48993/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:22:43,663: Unable to initiate TCP/IP socket to freight1207:46829 (http://freight1207:48993/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-04 00:22:43,911: topic[/sound_play/status] removing connection to /play_13680_1604478161503
+[rospy.internal][WARNING] 2020-11-04 00:22:44,663: Unknown error initiating TCP/IP socket to freight1207:46829 (http://freight1207:48993/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:22:44,664: topic[/sound_play/cancel] removing connection to http://freight1207:48993/
+[rospy.internal][WARNING] 2020-11-04 00:22:44,664: Unknown error initiating TCP/IP socket to freight1207:46829 (http://freight1207:48993/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:22:44,664: topic[/robotsound] removing connection to http://freight1207:48993/
+[rospy.internal][WARNING] 2020-11-04 00:22:44,664: Unknown error initiating TCP/IP socket to freight1207:46829 (http://freight1207:48993/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:22:44,665: topic[/sound_play/goal] removing connection to http://freight1207:48993/
+[rospy.internal][INFO] 2020-11-04 00:22:54,186: topic[/sound_play/result] adding connection to [/play_13777_1604478174044], count 6
+[rospy.internal][INFO] 2020-11-04 00:22:54,187: topic[/sound_play/feedback] adding connection to [/play_13777_1604478174044], count 6
+[rospy.internal][INFO] 2020-11-04 00:22:54,187: topic[/sound_play/status] adding connection to [/play_13777_1604478174044], count 0
+[rospy.internal][INFO] 2020-11-04 00:22:54,273: topic[/robotsound] adding connection to [http://freight1207:46783/], count 0
+[rospy.internal][INFO] 2020-11-04 00:22:54,273: topic[/sound_play/cancel] adding connection to [http://freight1207:46783/], count 0
+[rospy.internal][INFO] 2020-11-04 00:22:54,274: topic[/sound_play/goal] adding connection to [http://freight1207:46783/], count 0
+[rospy.internal][ERROR] 2020-11-04 00:22:56,206: Unable to initiate TCP/IP socket to freight1207:54543 (http://freight1207:46783/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:22:56,206: Unable to initiate TCP/IP socket to freight1207:54543 (http://freight1207:46783/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:22:56,208: Unable to initiate TCP/IP socket to freight1207:54543 (http://freight1207:46783/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-04 00:22:56,511: topic[/sound_play/status] removing connection to /play_13777_1604478174044
+[rosout][WARNING] 2020-11-04 00:22:56,832: Inbound TCP/IP connection failed: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+[rospy.internal][ERROR] 2020-11-04 00:22:56,833: Inbound TCP/IP connection failed:
+Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 321, in _tcp_server_callback
+    header = read_ros_handshake_header(sock, StringIO(), buff_size)
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rosgraph/network.py", line 365, in read_ros_handshake_header
+    raise ROSHandshakeException("connection from sender terminated before handshake header received. %s bytes were received. Please check sender for additional details."%b.tell())
+ROSHandshakeException: connection from sender terminated before handshake header received. 0 bytes were received. Please check sender for additional details.
+
+[rospy.internal][WARNING] 2020-11-04 00:22:57,207: Unknown error initiating TCP/IP socket to freight1207:54543 (http://freight1207:46783/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:22:57,208: topic[/sound_play/cancel] removing connection to http://freight1207:46783/
+[rospy.internal][WARNING] 2020-11-04 00:22:57,208: Unknown error initiating TCP/IP socket to freight1207:54543 (http://freight1207:46783/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:22:57,208: topic[/sound_play/goal] removing connection to http://freight1207:46783/
+[rospy.internal][WARNING] 2020-11-04 00:22:57,208: Unknown error initiating TCP/IP socket to freight1207:54543 (http://freight1207:46783/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:22:57,209: topic[/robotsound] removing connection to http://freight1207:46783/
+[rospy.internal][INFO] 2020-11-04 00:25:07,446: topic[/sound_play/feedback] adding connection to [/play_13881_1604478307304], count 7
+[rospy.internal][INFO] 2020-11-04 00:25:07,447: topic[/sound_play/status] adding connection to [/play_13881_1604478307304], count 0
+[rospy.internal][INFO] 2020-11-04 00:25:07,447: topic[/sound_play/result] adding connection to [/play_13881_1604478307304], count 7
+[rospy.internal][INFO] 2020-11-04 00:25:07,567: topic[/robotsound] adding connection to [http://freight1207:44487/], count 0
+[rospy.internal][INFO] 2020-11-04 00:25:07,567: topic[/sound_play/cancel] adding connection to [http://freight1207:44487/], count 0
+[rospy.internal][INFO] 2020-11-04 00:25:07,568: topic[/sound_play/goal] adding connection to [http://freight1207:44487/], count 0
+[rospy.internal][ERROR] 2020-11-04 00:25:09,460: Unable to initiate TCP/IP socket to freight1207:38609 (http://freight1207:44487/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:25:09,460: Unable to initiate TCP/IP socket to freight1207:38609 (http://freight1207:44487/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:25:09,461: Unable to initiate TCP/IP socket to freight1207:38609 (http://freight1207:44487/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-04 00:25:09,711: topic[/sound_play/status] removing connection to /play_13881_1604478307304
+[rospy.internal][WARNING] 2020-11-04 00:25:10,462: Unknown error initiating TCP/IP socket to freight1207:38609 (http://freight1207:44487/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][WARNING] 2020-11-04 00:25:10,462: Unknown error initiating TCP/IP socket to freight1207:38609 (http://freight1207:44487/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:25:10,462: topic[/robotsound] removing connection to http://freight1207:44487/
+[rospy.internal][INFO] 2020-11-04 00:25:10,462: topic[/sound_play/goal] removing connection to http://freight1207:44487/
+[rospy.internal][WARNING] 2020-11-04 00:25:10,462: Unknown error initiating TCP/IP socket to freight1207:38609 (http://freight1207:44487/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:25:10,462: topic[/sound_play/cancel] removing connection to http://freight1207:44487/
+[rospy.internal][INFO] 2020-11-04 00:25:21,497: topic[/sound_play/result] adding connection to [/play_13983_1604478321355], count 8
+[rospy.internal][INFO] 2020-11-04 00:25:21,498: topic[/sound_play/feedback] adding connection to [/play_13983_1604478321355], count 8
+[rospy.internal][INFO] 2020-11-04 00:25:21,498: topic[/sound_play/status] adding connection to [/play_13983_1604478321355], count 0
+[rospy.internal][INFO] 2020-11-04 00:25:21,570: topic[/sound_play/cancel] adding connection to [http://freight1207:42790/], count 0
+[rospy.internal][INFO] 2020-11-04 00:25:21,571: topic[/robotsound] adding connection to [http://freight1207:42790/], count 0
+[rospy.internal][INFO] 2020-11-04 00:25:21,571: topic[/sound_play/goal] adding connection to [http://freight1207:42790/], count 0
+[rospy.internal][ERROR] 2020-11-04 00:25:23,511: Unable to initiate TCP/IP socket to freight1207:49542 (http://freight1207:42790/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:25:23,511: Unable to initiate TCP/IP socket to freight1207:49542 (http://freight1207:42790/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][ERROR] 2020-11-04 00:25:23,512: Unable to initiate TCP/IP socket to freight1207:49542 (http://freight1207:42790/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 557, in connect
+    self.read_header()
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 619, in read_header
+    self._validate_header(read_ros_handshake_header(sock, self.read_buff, self.protocol.buff_size))
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 580, in _validate_header
+    raise TransportInitError("remote error reported: %s"%header['error'])
+TransportInitError: remote error reported: node shutting down
+
+[rospy.internal][INFO] 2020-11-04 00:25:23,911: topic[/sound_play/status] removing connection to /play_13983_1604478321355
+[rospy.internal][WARNING] 2020-11-04 00:25:24,512: Unknown error initiating TCP/IP socket to freight1207:49542 (http://freight1207:42790/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:25:24,512: topic[/sound_play/cancel] removing connection to http://freight1207:42790/
+[rospy.internal][WARNING] 2020-11-04 00:25:24,512: Unknown error initiating TCP/IP socket to freight1207:49542 (http://freight1207:42790/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:25:24,512: topic[/sound_play/goal] removing connection to http://freight1207:42790/
+[rospy.internal][WARNING] 2020-11-04 00:25:24,512: Unknown error initiating TCP/IP socket to freight1207:49542 (http://freight1207:42790/): Traceback (most recent call last):
+  File "/opt/ros/indigo/lib/python2.7/dist-packages/rospy/impl/tcpros_base.py", line 555, in connect
+    self.socket.connect((dest_addr, dest_port))
+  File "/usr/lib/python2.7/socket.py", line 224, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 111] Connection refused
+
+[rospy.internal][INFO] 2020-11-04 00:25:24,513: topic[/robotsound] removing connection to http://freight1207:42790/
+[rospy.core][INFO] 2020-11-04 00:28:38,515: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-11-04 00:28:38,518: topic[/diagnostics] removing connection to /diagnostic_aggregator
+[rospy.internal][INFO] 2020-11-04 00:28:38,518: topic[/rosout] removing connection to /rosout
+[rospy.internal][INFO] 2020-11-04 00:28:38,518: topic[/sound_play/feedback] removing connection to /say_8534_1604477311874
+[rospy.internal][INFO] 2020-11-04 00:28:38,518: topic[/sound_play/feedback] removing connection to /play_8674_1604477358016
+[rospy.internal][INFO] 2020-11-04 00:28:38,518: topic[/sound_play/feedback] removing connection to /play_8775_1604477363401
+[rospy.internal][INFO] 2020-11-04 00:28:38,519: topic[/sound_play/feedback] removing connection to /play_8902_1604477729854
+[rospy.internal][INFO] 2020-11-04 00:28:38,519: topic[/sound_play/feedback] removing connection to /play_13579_1604478147359
+[rospy.internal][INFO] 2020-11-04 00:28:38,519: topic[/sound_play/feedback] removing connection to /play_13680_1604478161503
+[rospy.internal][INFO] 2020-11-04 00:28:38,519: topic[/sound_play/feedback] removing connection to /play_13777_1604478174044
+[rospy.internal][INFO] 2020-11-04 00:28:38,519: topic[/sound_play/feedback] removing connection to /play_13881_1604478307304
+[rospy.internal][INFO] 2020-11-04 00:28:38,519: topic[/sound_play/feedback] removing connection to /play_13983_1604478321355
+[rospy.internal][INFO] 2020-11-04 00:28:38,519: topic[/sound_play/result] removing connection to /say_8534_1604477311874
+[rospy.internal][INFO] 2020-11-04 00:28:38,519: topic[/sound_play/result] removing connection to /play_8674_1604477358016
+[rospy.internal][INFO] 2020-11-04 00:28:38,520: topic[/sound_play/result] removing connection to /play_8775_1604477363401
+[rospy.internal][INFO] 2020-11-04 00:28:38,520: topic[/sound_play/result] removing connection to /play_8902_1604477729854
+[rospy.internal][INFO] 2020-11-04 00:28:38,520: topic[/sound_play/result] removing connection to /play_13579_1604478147359
+[rospy.internal][INFO] 2020-11-04 00:28:38,520: topic[/sound_play/result] removing connection to /play_13680_1604478161503
+[rospy.internal][INFO] 2020-11-04 00:28:38,520: topic[/sound_play/result] removing connection to /play_13777_1604478174044
+[rospy.internal][INFO] 2020-11-04 00:28:38,520: topic[/sound_play/result] removing connection to /play_13881_1604478307304
+[rospy.internal][INFO] 2020-11-04 00:28:38,520: topic[/sound_play/result] removing connection to /play_13983_1604478321355
+[rospy.impl.masterslave][INFO] 2020-11-04 00:28:38,520: signal-2
+[rospy.core][INFO] 2020-11-04 00:28:38,711: signal_shutdown [atexit]

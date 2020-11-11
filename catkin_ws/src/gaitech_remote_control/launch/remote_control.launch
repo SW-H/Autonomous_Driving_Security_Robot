@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+    <node name="remote_control" pkg="gaitech_remote_control" type="remote_control_node" output="screen">
+	<param name="move_meter" value="0.2"/>
+        <param name="move_rad" value="0.314"/>
+    </node>
+</launch>

@@ -1,0 +1,73 @@
+[rospy.client][INFO] 2020-10-28 22:31:45,128: init_node, name[/rosbridge_websocket], pid[4173]
+[xmlrpc][INFO] 2020-10-28 22:31:45,128: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-28 22:31:45,128: Started XML-RPC server [http://freight1207:45867/]
+[rospy.init][INFO] 2020-10-28 22:31:45,128: ROS Slave URI: [http://freight1207:45867/]
+[rospy.impl.masterslave][INFO] 2020-10-28 22:31:45,128: _ready: http://freight1207:45867/
+[xmlrpc][INFO] 2020-10-28 22:31:45,129: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-28 22:31:45,129: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-10-28 22:31:45,228: registered with master
+[rospy.rosout][INFO] 2020-10-28 22:31:45,229: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-28 22:31:45,230: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-28 22:31:45,231: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2020-10-28 22:31:45,242: Rosbridge WebSocket server started on port 9090
+[rospy.internal][INFO] 2020-10-28 22:31:45,604: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-10-28 22:34:19,708: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-10-28 22:34:19,712: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2020-10-28 22:34:19,712: signal-2
+[rospy.core][INFO] 2020-10-28 22:34:19,844: signal_shutdown [atexit]
+[rospy.client][INFO] 2020-10-29 01:56:20,695: init_node, name[/rosbridge_websocket], pid[15666]
+[xmlrpc][INFO] 2020-10-29 01:56:20,696: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-29 01:56:20,696: Started XML-RPC server [http://freight1207:54787/]
+[rospy.init][INFO] 2020-10-29 01:56:20,696: ROS Slave URI: [http://freight1207:54787/]
+[rospy.impl.masterslave][INFO] 2020-10-29 01:56:20,696: _ready: http://freight1207:54787/
+[rospy.registration][INFO] 2020-10-29 01:56:20,697: Registering with master node http://localhost:11311
+[xmlrpc][INFO] 2020-10-29 01:56:20,697: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2020-10-29 01:56:20,796: registered with master
+[rospy.rosout][INFO] 2020-10-29 01:56:20,797: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-29 01:56:20,798: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-29 01:56:20,799: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][INFO] 2020-10-29 01:56:20,811: Rosbridge WebSocket server started on port 9090
+[rospy.internal][INFO] 2020-10-29 01:56:21,087: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.client][INFO] 2020-10-29 01:58:02,361: init_node, name[/rosbridge_websocket], pid[16643]
+[xmlrpc][INFO] 2020-10-29 01:58:02,361: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-29 01:58:02,361: Started XML-RPC server [http://freight1207:49725/]
+[rospy.init][INFO] 2020-10-29 01:58:02,361: ROS Slave URI: [http://freight1207:49725/]
+[rospy.impl.masterslave][INFO] 2020-10-29 01:58:02,361: _ready: http://freight1207:49725/
+[xmlrpc][INFO] 2020-10-29 01:58:02,362: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-29 01:58:02,362: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-10-29 01:58:02,462: registered with master
+[rospy.rosout][INFO] 2020-10-29 01:58:02,462: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-29 01:58:02,464: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-29 01:58:02,464: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-10-29 01:58:02,475: Unable to start server: [Errno 98] Address already in use Retrying in 5s.
+[rospy.impl.masterslave][INFO] 2020-10-29 01:58:02,531: external shutdown request from [/master]: new node registered with same name
+[rospy.core][INFO] 2020-10-29 01:58:02,531: signal_shutdown [external shutdown request from [/master]: [new node registered with same name]]
+[rospy.internal][INFO] 2020-10-29 01:58:02,533: topic[/rosout] removing connection to /rosout
+[rospy.core][INFO] 2020-10-29 01:58:02,637: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-29 01:58:02,733: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-10-29 01:58:07,480: Rosbridge WebSocket server started on port 9090
+[rospy.client][INFO] 2020-10-29 01:58:07,825: init_node, name[/rosbridge_websocket], pid[16741]
+[xmlrpc][INFO] 2020-10-29 01:58:07,825: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-10-29 01:58:07,825: Started XML-RPC server [http://freight1207:40313/]
+[rospy.init][INFO] 2020-10-29 01:58:07,825: ROS Slave URI: [http://freight1207:40313/]
+[rospy.impl.masterslave][INFO] 2020-10-29 01:58:07,826: _ready: http://freight1207:40313/
+[xmlrpc][INFO] 2020-10-29 01:58:07,826: xml rpc node: starting XML-RPC server
+[rospy.registration][INFO] 2020-10-29 01:58:07,826: Registering with master node http://localhost:11311
+[rospy.init][INFO] 2020-10-29 01:58:07,926: registered with master
+[rospy.rosout][INFO] 2020-10-29 01:58:07,926: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-10-29 01:58:07,928: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-10-29 01:58:07,929: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rosout][WARNING] 2020-10-29 01:58:07,940: Unable to start server: [Errno 98] Address already in use Retrying in 5s.
+[rospy.impl.masterslave][INFO] 2020-10-29 01:58:07,941: external shutdown request from [/master]: new node registered with same name
+[rospy.core][INFO] 2020-10-29 01:58:07,941: signal_shutdown [external shutdown request from [/master]: [new node registered with same name]]
+[rospy.internal][INFO] 2020-10-29 01:58:07,942: topic[/rosout] removing connection to /rosout
+[rospy.core][INFO] 2020-10-29 01:58:08,106: signal_shutdown [atexit]
+[rospy.internal][INFO] 2020-10-29 01:58:08,146: topic[/rosout] adding connection to [/rosout], count 0
+[rosout][INFO] 2020-10-29 01:58:12,942: Rosbridge WebSocket server started on port 9090
+[tornado.access][WARNING] 2020-10-29 01:58:50,735: 400 GET / (172.22.77.105) 0.29ms
+[tornado.access][WARNING] 2020-10-29 01:58:50,803: 404 GET /favicon.ico (172.22.77.105) 0.27ms
+[tornado.access][WARNING] 2020-10-29 02:09:38,569: 400 GET / (172.22.77.105) 0.34ms
+[rospy.core][INFO] 2020-10-29 02:14:43,847: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-10-29 02:14:43,849: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2020-10-29 02:14:43,849: signal-2
+[rospy.core][INFO] 2020-10-29 02:14:44,013: signal_shutdown [atexit]
