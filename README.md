@@ -39,7 +39,45 @@
 > 3. 시간의 제약을 받지 않으므로 필요 경비 인력 감소
 > 4. 수집된 데이터를 바탕으로 여러 방면으로 활용 가능
 
+----------------------------------------------------------------------------------------------------
 
+### 개발환경
+
+[파이썬 스펙]
+Python==3.6.7
+Cython
+dlib==19.8.1
+face-recognition==1.3.0
+numpy==1.15.0
+torch==1.7.0+cu101
+torchvision==0.8.1+cu101
+tensorflow==1.13.1
+tensorflow-gpu==1.13.1
+tqdm
+Keras==2.3.1
+opencv-python
+scikit-learn==0.21.2
+scipy==1.4.1
+Pillow
+visdom
+Nibabel
+-GTTS
+
+[노트북 스펙]
+GPU : GTX 1650 ti
+CPU : i7-10750H
+RAM : 16GB
+CUDA 10.0
+Cudnn : 7.5
+Nvidia driver
+Visual Studio 14 (2015)
+[ROS 환경]
+Ubuntu 14.04.5
+ROS-indigo 
+[서버 환경 & 네트워크 & DB]
+Flask
+Python socket(UDP, TCP)
+SQLite
 
 
 
