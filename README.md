@@ -300,7 +300,7 @@ if state == 1:
  ↳ 팀 소개
   
  + #### Controller Dashboard
- ![website_team_introduction](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_team_introduction.png)
+ ![website_team_introduction](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_dashboard.png)
  ↳ 실시간으로 로봇을 통한 Detection 결과를 영상으로 출력하고 로봇과의 연결상태 확인 및 컨트롤 가능한 page
      
         
