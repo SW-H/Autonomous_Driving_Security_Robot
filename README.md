@@ -170,7 +170,7 @@
    관련 패키지에는 지도 작성을 위한 노드와 자율 주행을 위한 amcl, move_base 노드가 포함되어 있다.  amcl을 이용해 로봇의 위치를 지도 상에서 인식하고 원격으로 로봇을 조종한다. 이 때는 자동으로 장애물을 인식하여 피할 수 있도록 한다.
 >>> +  Patrolling   
    지정해준 범위내에서 반복적으로 순찰(patrolling)하고 도중에 나타나는 장애물은 2D Laser Sensor로 감지한다. 자율 주행 중에 마스크 미착용자 확인 등 여러 기능을 수행한다. 
-
+ ↳ patrolling 에 필요한 소스 코드 실행 화면   <img src="https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/patrolling.PNG" width="70%" height="70%" title="patrolling" alt="patrolling">    
 
 
    
