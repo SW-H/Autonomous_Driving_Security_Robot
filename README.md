@@ -164,8 +164,7 @@
 로봇과 연동하여 로봇의 위치를 지도 상에서 시각화하고 로봇의 센서 정보, 이동 경로, 레이저 데이터 등을 표시한다. 다양한 기능 구현 및 작업 과정에서의 시각화를 위해 해당 도구를 사용한다.   ![rviz](/README_img/fetch_navigation%20rviz.PNG) ↳ 매핑된 지도를 불러와 Rviz상에 띄운 실행화면 
 >>>  
 >>> + 맵핑 ( mapping )    
-로봇이 주행할 공간에 대한 지도를 만들기 위한 과정이다. 내부에서 사용될 맵의 정보를 담고 있는 yaml 파일과 이미지 파일인 pgm 파일로 저장된다. 
-<img src="https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/build_map.PNG" title="build_map" alt="build_map">    
+로봇이 주행할 공간에 대한 지도를 만들기 위한 과정이다. 내부에서 사용될 맵의 정보를 담고 있는 yaml 파일과 이미지 파일인 pgm 파일로 저장된다.   <img src="https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/build_map.PNG" title="build_map" alt="build_map">    
 ↳ fetch_navigation 라이브러리 활용한 지도 매핑 과정 캡처 화면   <img src="https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/map_and_costmap.PNG" width="70%" height="70%" title="map_and_costmap" alt="map_and_costmap">  
 >>> +  ROS Navigation   
    관련 패키지에는 지도 작성을 위한 노드와 자율 주행을 위한 amcl, move_base 노드가 포함되어 있다.  amcl을 이용해 로봇의 위치를 지도 상에서 인식하고 원격으로 로봇을 조종한다. 이 때는 자동으로 장애물을 인식하여 피할 수 있도록 한다.
