@@ -159,10 +159,7 @@ namesfile = 'data/obj.names'
 namesfile2 = 'data/obj2.names'
 ```
  ↳ YOLO v4(object detection)에 적용할 각각의 weights, config, names.list파일 불러오기   
- 
- 
- 
- 
+
 ```python
 model_filename = 'data/market1501.pb'
 encoder = gdet.create_box_encoder(model_filename,batch_size=1)
@@ -170,9 +167,7 @@ metric = nn_matching.NearestNeighborDistanceMetric("cosine", max_cosine_distance
 tracker = Tracker(metric)
 ```
  ↳ Deep_SORT(object tracking)에 적용할 모델 불러오기   
- 
- 
- 
+
  ```python
  while True:
     square=(348,194,1493,660)
@@ -187,10 +182,7 @@ tracker = Tracker(metric)
     person_boxes = do_detect(m2, img_model_input2, 0.6, 0.6, True)
  ```
  ↳ Real-time으로 파노라마 카메라 촬영 이미지 가져오기   
-    
-    
-    
-    
+ 
   ```python
          tracker.predict()
     tracker.update(detections)
@@ -217,18 +209,13 @@ tracker = Tracker(metric)
             cv2.line(img_showed,(pts[track.track_id][j-1]), (pts[track.track_id][j]),(255,0,0),thickness)
    ``` 
    ↳ Detection결과에 대한 tracking   
-
-
-
-
-
    
    ```python
         print('Predicted in %f seconds.' % (finish - start))
-result_img = plot_boxes_cv2(img_showed, boxes[0], savename=None, class_names=class_names)
-result_img = plot_boxes_cv2(result_img, person_draw_boxes_show, savename=None, class_names=class_names2,color=(0,255,255))
-cv2.imshow('PHITITNAS panorama camera', result_img)
-frame_num += 1
+        result_img = plot_boxes_cv2(img_showed, boxes[0], savename=None, class_names=class_names)
+        result_img = plot_boxes_cv2(result_img, person_draw_boxes_show, savename=None, class_names=class_names2,color=(0,255,255))
+        cv2.imshow('PHITITNAS panorama camera', result_img)
+        frame_num += 1
    ```     
    ↳ 원본이미지에 bounding box 이미지를 덮어 출력   
 
