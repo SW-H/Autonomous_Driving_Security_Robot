@@ -293,7 +293,7 @@ if state == 1:
  ![website_home](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_home.png)
  ↳ about, team에 대한 페이지 전환과 controller, login, join 페이지로의 이동이 가능한 Main page이다.   
     
- ![website_about](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/gwebsite_about.PNG)
+ ![website_about](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_about.PNG)
  ↳ 로봇의 주기능 및 사용된 알고리즘에 대한 설명
     
  ![website_team_introduction](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_team_introduction.PNG)
