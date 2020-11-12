@@ -158,6 +158,10 @@
 >>>>		- map_server : 3D모델의 2D평면도를 RVIZ에 출력하여 로봇의 이동 경로 등을 확인할 수 있다.
 >>>>		- Move_base :경로 계획, 장애물 회피, 로봇 주행 제어 등을 위한 노드를 추가한다.
 >>>>		- PCL(Point Cloud Library) : 다차원 포인트들을 나타내는데 사용되는 데이터 구조로 일반적으로 3차원 데이터를 나타내는데에 사용된다.
+>>>
+>>>
+>>> +  ROS 3D 시각화 툴 ( Rviz )    
+로봇과 연동하여 로봇의 위치를 지도 상에서 시각화하고 로봇의 센서 정보, 이동 경로, 레이저 데이터 등을 표시한다. 다양한 기능 구현 및 작업 과정에서의 시각화를 위해 해당 도구를 사용한다.   [rviz screenshot](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/fetch_navigation_rviz.md)
 
 
 
