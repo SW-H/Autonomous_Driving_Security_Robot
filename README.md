@@ -141,6 +141,7 @@
 >>>
 >>>
 >>> + [PC1 Model Code](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/PC1model_code.md)
+>>> ++ [모델](https://github.com/SW-H/Autonomous_Driving_Security_Robot/tree/main/pc1_model)
 > ---------------------------------------------------------------------------------------------------------------------
 > 3. ROS
 >>>
