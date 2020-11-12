@@ -106,95 +106,95 @@
 ---------------------------------------------------------------------------------------------------------------------
 
 ## 파트 별 설명    
-> 1. [Panorama Camera](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/PanoramaCamera.md)
-> ---------------------------------------------------------------------------------------------------------------------
-> 2. AI model 
->> 로봇에 장착된 카메라를 통해 수집된 이미지에서 목표한 기획에 맞게끔 자율주행 로봇의 움직임을 결정할 데이터를 도출하기 위해 다음과 같은 인공지능 모델들을 사용하였다.    
->>  
->>> + Mask Detection (YOLO v4) – Custom Data      
+ 1. [Panorama Camera](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/PanoramaCamera.md)
+ ---------------------------------------------------------------------------------------------------------------------
+ 2. AI model 
+> 로봇에 장착된 카메라를 통해 수집된 이미지에서 목표한 기획에 맞게끔 자율주행 로봇의 움직임을 결정할 데이터를 도출하기 위해 다음과 같은 인공지능 모델들을 사용하였다.    
+>  
+>> + Mask Detection (YOLO v4) – Custom Data      
    파노라마 카메라로 수집한 이미지에서 마스크를 쓴 사람과 안 쓴 사람, 잘못 쓴 사람의 얼굴을 detection해내기 위한 CNN모델이다.   Kaggle에서 제공하는 VOC format의 Mask Detection Dataset을 convert2Yolo 툴을 이용해  YOLO에 맞는 데이터 형식으로 변환 후, Google Colab Pro 환경에서 직접 모델을 train시켜 weights값을 생성하였다.   이미지에서 마스크를 쓴 얼굴(with_mask), 마스크를 쓰지 않은 얼굴( without_mask), 마스크를 제대로 쓰지 않은 얼굴(mask_weared_incorrect)을 찾아낸다.               
    ![model_training](/README_img/model_training.PNG "model_training")    ↳ Colab Pro에서 진행한 model training이 완료된 화면과 이에 사용한 parameter   
    ![코드 실행 시 마스크 착용 여부에 따라 구분된 모습](/README_img/detecting_mask_nomask.PNG "코드 실행 시 마스크 착용 여부에 따라 구분된 모습")   ↳코드 실행 시 마스크 착용 여부에 따라 구분된 모습
->>>
->>>
->>>
->>>
->>> + Person Detection (YOLO v4) – Coco Dataset   
+>>
+>>
+>>
+>>
+>> + Person Detection (YOLO v4) – Coco Dataset   
     Mask detection model만으로는 사람의 뒷모습을 잡아내지 못하여 한번 포착한 마스크 미착용자를 지속적으로 tracking할수가 없다. 따라서 사진 촬영 각도에 상관없이 이미지에서 사람을 detection 해낼 필요가 있었다.   
 	 Detection 성능의 향상을 위해 Mask detection과 별개의 모델을 사용하였으며, coco dataset으로 훈련된 모델에서 ‘person’  label만을 사용하였다. ![detection_result](/README_img/detection_result.PNG "Coco dataset을 이용해 train한 모델의 detection 결과 예시
 ")    ↳Coco dataset을 이용해 train한 모델의 detection 결과 예시
->>>
->>>
->>>
->>>
->>> + Object Tracking (Deep-SORT) – Pretrained Model   
+>>
+>>
+>>
+>>
+>> + Object Tracking (Deep-SORT) – Pretrained Model   
    앞에서 detection한 person의  bounding box를 tracking하는 모델이다. 수집된 이미지에서 person마다 각각의  label(track id)을 붙이고 tracking하기 위해 사용한다.![ObjectTracking](/README_img/ObjectTracking.PNG "Real-time으로 person detection & tracking 하는 모델 출력 예시")   ↳ Real-time으로 person detection & tracking 하는 모델 출력 예시
    사용하는 자율주행 로봇 및 카메라의 특성을 고려하여, 연속적으로 촬영한 이미지에서의 원활한 tracking을 위해 model의 hyper parameter들을 조정하였다.   (max_iou_distance = 0.7, max_cos_distance = 0.2)
->>>
->>>
->>>
->>>
->>> + Face Recognition (dlib + face_recognition)   
+>>
+>>
+>>
+>>
+>> + Face Recognition (dlib + face_recognition)   
    촬영된 이미지에서 Detection된 face를 database에 저장된 face들과 비교해서 개개인을 식별하고 등록되지 않은 face(unknown)를 색출하기 위해 사용한다. 계속해서 업데이트 되고있는 face_recognition api를 사용하며, 이는 전세계 사람들의 얼굴 데이터인 Labeled Faces in the Wild를 기준으로 99.38%의 정확도를 기록하였다.   ![dlib_and_face_recognition](/README_img/dlib_and_face_recognition.PNG "Face Recognition model 사용 예시")   ↳ Face Recognition model 사용 예시
->>>
->>>
->>>
->>>
->>> + [PC1 Model Code](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/PC1model_code.md)
->>> 		+ [모델](https://github.com/SW-H/Autonomous_Driving_Security_Robot/tree/main/pc1_model)
-> ---------------------------------------------------------------------------------------------------------------------
-> 3. ROS
->>>
->>> + 초기 세팅     
+>>
+>>
+>>
+>>
+>> + [PC1 Model Code](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/PC1model_code.md)
+>> 		+ [모델](https://github.com/SW-H/Autonomous_Driving_Security_Robot/tree/main/pc1_model)
+ ---------------------------------------------------------------------------------------------------------------------
+ 3. ROS
+>>
+>> + 초기 세팅     
 원격 제어를 위해 로봇과 같은 작업 환경 세팅을 위해 Ubuntu 14.04.5 와 ROS-indigo 설치 후 무선 인터넷을 이용하여 연결한다.   로봇내에 기존에는 OS ( ROS )만 설치되어 있었기에 프로젝트 내의 기능 구현을 위해 추가적으로 다양한 패키지 및 라이브러리가 필요했다. 그 목록은 다음과 같다.
->>>> 		- actionlib, actionlib_msgs : 로봇의 순찰(patrolling) 기능 구현을 위해 필요하다. 정해진 범위 내에서 반복적으로 이동하고 이벤트 발생 시 제어(스케쥴링)와 운용에 필요한 메시지를 주고 받기 위해 필요한 패키지이다.   
->>>>		- rosbridge  : ROS와 non-ROS간의 통신을 위한 패키지이다. 
->>>>		- rospy : ROS는 C++로 이루어진 OS로, 이를 파이썬으로 활용하기 위한 패키지이다.
->>>>		- sound_play : String을 입력해서 TTS를 실행시키기 위한 패키지이다.
->>>>		- AMCL(Adaptive Monte Calro Localization) : 확률 기반으로 로봇 위치 파악을 위한 패키지이다.
->>>>		- Base_local_planner : 평면상에서 로봇의 이동 궤적을 결정하고 구동하는 컨트롤러 패키지 이다. 
->>>>		- rostopic : 현재 로봇에서 발행되는 데이터 (실시간 위치인 odometry데이터 등 ) 을 확인하기 위해 사용한다. 
->>>>		- costmap_2d : 매핑 및 cost map 생성에 사용한다.
->>>>		- fetch_navigation : rostopic으로 주행 거리 및 목표 지점 등을 가져와 주행명령을 출력한다.
->>>>		- map_server : 3D모델의 2D평면도를 RVIZ에 출력하여 로봇의 이동 경로 등을 확인할 수 있다.
->>>>		- Move_base :경로 계획, 장애물 회피, 로봇 주행 제어 등을 위한 노드를 추가한다.
->>>>		- PCL(Point Cloud Library) : 다차원 포인트들을 나타내는데 사용되는 데이터 구조로 일반적으로 3차원 데이터를 나타내는데에 사용된다.
->>>
->>>
->>> +  ROS 3D 시각화 툴 ( Rviz )    
+>>> 		- actionlib, actionlib_msgs : 로봇의 순찰(patrolling) 기능 구현을 위해 필요하다. 정해진 범위 내에서 반복적으로 이동하고 이벤트 발생 시 제어(스케쥴링)와 운용에 필요한 메시지를 주고 받기 위해 필요한 패키지이다.   
+>>>		- rosbridge  : ROS와 non-ROS간의 통신을 위한 패키지이다. 
+>>>		- rospy : ROS는 C++로 이루어진 OS로, 이를 파이썬으로 활용하기 위한 패키지이다.
+>>>		- sound_play : String을 입력해서 TTS를 실행시키기 위한 패키지이다.
+>>>		- AMCL(Adaptive Monte Calro Localization) : 확률 기반으로 로봇 위치 파악을 위한 패키지이다.
+>>>		- Base_local_planner : 평면상에서 로봇의 이동 궤적을 결정하고 구동하는 컨트롤러 패키지 이다. 
+>>>		- rostopic : 현재 로봇에서 발행되는 데이터 (실시간 위치인 odometry데이터 등 ) 을 확인하기 위해 사용한다. 
+>>>		- costmap_2d : 매핑 및 cost map 생성에 사용한다.
+>>>		- fetch_navigation : rostopic으로 주행 거리 및 목표 지점 등을 가져와 주행명령을 출력한다.
+>>>		- map_server : 3D모델의 2D평면도를 RVIZ에 출력하여 로봇의 이동 경로 등을 확인할 수 있다.
+>>>		- Move_base :경로 계획, 장애물 회피, 로봇 주행 제어 등을 위한 노드를 추가한다.
+>>>		- PCL(Point Cloud Library) : 다차원 포인트들을 나타내는데 사용되는 데이터 구조로 일반적으로 3차원 데이터를 나타내는데에 사용된다.
+>>
+>>
+>> +  ROS 3D 시각화 툴 ( Rviz )    
 로봇과 연동하여 로봇의 위치를 지도 상에서 시각화하고 로봇의 센서 정보, 이동 경로, 레이저 데이터 등을 표시한다. 다양한 기능 구현 및 작업 과정에서의 시각화를 위해 해당 도구를 사용한다.   ![rviz](/README_img/fetch_navigation%20rviz.PNG) ↳ 매핑된 지도를 불러와 Rviz상에 띄운 실행화면 
->>>  
->>> + 맵핑 ( mapping )    
+>>  
+>> + 맵핑 ( mapping )    
 로봇이 주행할 공간에 대한 지도를 만들기 위한 과정이다. 내부에서 사용될 맵의 정보를 담고 있는 yaml 파일과 이미지 파일인 pgm 파일로 저장된다.   <img src="https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/build_map.PNG" title="build_map" alt="build_map">    
 ↳ fetch_navigation 라이브러리 활용한 지도 매핑 과정 캡처 화면  ![map_and_costmap](/README_img/map_and_costmap.PNG)
->>> +  ROS Navigation   
+>> +  ROS Navigation   
    관련 패키지에는 지도 작성을 위한 노드와 자율 주행을 위한 amcl, move_base 노드가 포함되어 있다.  amcl을 이용해 로봇의 위치를 지도 상에서 인식하고 원격으로 로봇을 조종한다. 이 때는 자동으로 장애물을 인식하여 피할 수 있도록 한다.
->>> +  Patrolling   지정해준 범위내에서 반복적으로 순찰(patrolling)하고 도중에 나타나는 장애물은 2D Laser Sensor로 감지한다. 자율 주행 중에 마스크 미착용자 확인 등 여러 기능을 수행한다.   <img src="https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/patrolling.PNG" width="70%" height="70%" title="patrolling" alt="patrolling">  
->>> ↳ patrolling 에 필요한 소스 코드 실행 화면      <img src="https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/patrolling_plan.PNG" width="70%" height="70%" title="patrolling_plan" alt="patrolling_plan">   
->>>     ↳ 로봇의 patrolling과정을 맵에 띄운 화면. 이동 경로 계획 등이 포함된다. 
->>> + [patrolling 소스코드 설명](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/ROS_code.md)
-> ---------------------------------------------------------------------------------------------------------------------
->
->
-> 4. 네트워크 & 서버 & DB
->>> + Network : PC와 PC사이, PC와 Robot사이 데이터 전송은 websocket(UDP&TCP)을 사용한다.
->>>>	- PC1에서 Main Server로 AI모델의 detection 및 tracking 결과를 TCP로 전송
->>>>	- Robot(Freifgt100)에서 Main Server로 로봇의 실시간 위치를 TCP로 전송
->>>>	- Main Server에서 Robot(Freight100)으로 로봇이 움직일 위치를 UDP로 전송
->>>>	- Main Server에서 Robot(Freight100)으로 로봇이 음성으로 출력할 문구를 TCP로 전송
->>> + Server
->>>>  	- Main Server는 PC2의 host PC 환경에 Flask를 이용해 구축한다.
->>>> 	- Flask에서 Main Server와 별도로 모델의 결과, 로봇 이동 명령, 로봇 위치 수신, 메시지 전송을 위한 별도의 서버를 운영한다.
->>> + Database
->>>>	- SQLite을 이용해 직원정보와 발생한 이슈에 대한 테이블을 생성한다.
->>>>	- Known people의 사진과 알고리즘에서 전송된 사진은 Directory에 저장한다.
-> ---------------------------------------------------------------------------------------------------------------------
-> 5. TTS
->>>  경고메시지와 관리자의 메시지를 출력하기 위한 TTS API로 ROS sound_play 패키지를 사용하였다.
-> ---------------------------------------------------------------------------------------------------------------------
->
->
-> [ 6. 알고리즘 코드 ](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/algorithm_code.md)
+>> +  Patrolling   지정해준 범위내에서 반복적으로 순찰(patrolling)하고 도중에 나타나는 장애물은 2D Laser Sensor로 감지한다. 자율 주행 중에 마스크 미착용자 확인 등 여러 기능을 수행한다.   <img src="https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/patrolling.PNG" width="70%" height="70%" title="patrolling" alt="patrolling">  
+>> ↳ patrolling 에 필요한 소스 코드 실행 화면      <img src="https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/patrolling_plan.PNG" width="70%" height="70%" title="patrolling_plan" alt="patrolling_plan">   
+>>     ↳ 로봇의 patrolling과정을 맵에 띄운 화면. 이동 경로 계획 등이 포함된다. 
+>> + [patrolling 소스코드 설명](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/ROS_code.md)
+ ---------------------------------------------------------------------------------------------------------------------
+
+
+ 4. 네트워크 & 서버 & DB
+>> + Network : PC와 PC사이, PC와 Robot사이 데이터 전송은 websocket(UDP&TCP)을 사용한다.
+>>>	- PC1에서 Main Server로 AI모델의 detection 및 tracking 결과를 TCP로 전송
+>>>	- Robot(Freifgt100)에서 Main Server로 로봇의 실시간 위치를 TCP로 전송
+>>>	- Main Server에서 Robot(Freight100)으로 로봇이 움직일 위치를 UDP로 전송
+>>>	- Main Server에서 Robot(Freight100)으로 로봇이 음성으로 출력할 문구를 TCP로 전송
+>> + Server
+>>>  	- Main Server는 PC2의 host PC 환경에 Flask를 이용해 구축한다.
+>>> 	- Flask에서 Main Server와 별도로 모델의 결과, 로봇 이동 명령, 로봇 위치 수신, 메시지 전송을 위한 별도의 서버를 운영한다.
+>> + Database
+>>>	- SQLite을 이용해 직원정보와 발생한 이슈에 대한 테이블을 생성한다.
+>>>	- Known people의 사진과 알고리즘에서 전송된 사진은 Directory에 저장한다.
+ ---------------------------------------------------------------------------------------------------------------------
+ 5. TTS
+>>  경고메시지와 관리자의 메시지를 출력하기 위한 TTS API로 ROS sound_play 패키지를 사용하였다.
+ ---------------------------------------------------------------------------------------------------------------------
+
+
+ 6. [알고리즘 코드 ](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/algorithm_code.md)
 
 
 
