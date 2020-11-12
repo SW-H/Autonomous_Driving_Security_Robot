@@ -143,6 +143,23 @@
 >>> + [PC1 Model Code](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/PC1model_code.md)
 > ---------------------------------------------------------------------------------------------------------------------
 > 3. ROS
+>>>
+>>> +  초기 세팅
+>>>> 원격 제어를 위해 로봇과 같은 작업 환경 세팅을 위해 Ubuntu 14.04.5 와 ROS-indigo 설치 후 무선 인터넷을 이용하여 연결한다.   
+ 로봇내에 기존에는 OS ( ROS )만 설치되어 있었기에 프로젝트 내의 기능 구현을 위해 추가적으로 다양한 패키지 및 라이브러리가 필요했다. 그 목록은 다음과 같다.
+	+ actionlib, actionlib_msgs : 로봇의 순찰(patrolling) 기능 구현을 위해 필요하다. 정해진 범위 내에서 반복적으로 이동하고 이벤트 발생 시 제어(스케쥴링)와 운용에 필요한 메시지를 주고 받기 위해 필요한 패키지이다. 
+	+ rosbridge  : ROS와 non-ROS간의 통신을 위한 패키지이다. 
+	+ rospy : ROS는 C++로 이루어진 OS로, 이를 파이썬으로 활용하기 위한 패키지이다.
+	+ sound_play : String을 입력해서 TTS를 실행시키기 위한 패키지이다.
+	+ AMCL(Adaptive Monte Calro Localization) : 확률 기반으로 로봇 위치 파악을 위한 패키지이다.
+	+ Base_local_planner : 평면상에서 로봇의 이동 궤적을 결정하고 구동하는 컨트롤러 패키지 이다. 
+	+ rostopic : 현재 로봇에서 발행되는 데이터 (실시간 위치인 odometry데이터 등 ) 을 확인하기 위해 사용한다. 
+	+ costmap_2d : 매핑 및 cost map 생성에 사용한다.
+	+ fetch_navigation : rostopic으로 주행 거리 및 목표 지점 등을 가져와 주행명령을 출력한다.
+	+ map_server : 3D모델의 2D평면도를 RVIZ에 출력하여 로봇의 이동 경로 등을 확인할 수 있다.
+	+ Move_base :경로 계획, 장애물 회피, 로봇 주행 제어 등을 위한 노드를 추가한다.
+	+ PCL(Point Cloud Library) : 다차원 포인트들을 나타내는데 사용되는 데이터 구조로 일반적으로 3차원 데이터를 나타내는데에 사용된다.
+
 
 
 
