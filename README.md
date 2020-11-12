@@ -147,7 +147,7 @@
 >>
 >> + 초기 세팅     
 원격 제어를 위해 로봇과 같은 작업 환경 세팅을 위해 Ubuntu 14.04.5 와 ROS-indigo 설치 후 무선 인터넷을 이용하여 연결한다.   로봇내에 기존에는 OS ( ROS )만 설치되어 있었기에 프로젝트 내의 기능 구현을 위해 추가적으로 다양한 패키지 및 라이브러리가 필요했다. 그 목록은 다음과 같다.
->>> 		- actionlib, actionlib_msgs : 로봇의 순찰(patrolling) 기능 구현을 위해 필요하다. 정해진 범위 내에서 반복적으로 이동하고 이벤트 발생 시 제어(스케쥴링)와 운용에 필요한 메시지를 주고 받기 위해 필요한 패키지이다.   
+>>>     	- actionlib, actionlib_msgs : 로봇의 순찰(patrolling) 기능 구현을 위해 필요하다. 정해진 범위 내에서 반복적으로 이동하고 이벤트 발생 시 제어(스케쥴링)와 운용에 필요한 메시지를 주고 받기 위해 필요한 패키지이다.   
 >>>		- rosbridge  : ROS와 non-ROS간의 통신을 위한 패키지이다. 
 >>>		- rospy : ROS는 C++로 이루어진 OS로, 이를 파이썬으로 활용하기 위한 패키지이다.
 >>>		- sound_play : String을 입력해서 TTS를 실행시키기 위한 패키지이다.
@@ -296,11 +296,11 @@ if state == 1:
  ![website_about](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_about.png)
  ↳ 로봇의 주기능 및 사용된 알고리즘에 대한 설명
     
- ![website_team_introduction](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_team_introduction.PNG)
+ ![website_team_introduction](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_team_introduction.png.jpg)
  ↳ 팀 소개
   
  + #### Controller Dashboard
- ![website_team_introduction](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_dashboard.PNG)
+ ![website_team_introduction](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_dashboard.png)
  ↳ 실시간으로 로봇을 통한 Detection 결과를 영상으로 출력하고 로봇과의 연결상태 확인 및 컨트롤 가능한 page
      
         
