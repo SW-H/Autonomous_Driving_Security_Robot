@@ -218,18 +218,12 @@ tracker = Tracker(metric)
         frame_num += 1
    ```     
    ↳ 원본이미지에 bounding box 이미지를 덮어 출력   
-
-
-
-
-
-   ```
+   
+   ```python
 def face_rocog(image_to_check):
     tolerance=0.35
     known_names, known_face_encodings = scan_known_people('known_people_folder')
     test_image(image_to_check, known_names, known_face_encodings, tolerance)
-
-    
    ```
    ↳ target image를 사전에 저장된 사진들에 대해 face_recognition model을 실행시키는 부분
 
