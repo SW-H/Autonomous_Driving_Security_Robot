@@ -107,7 +107,7 @@
 
 ## 파트 별 설명    
 > 1. [Panorama Camera](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/PanoramaCamera.md)
-================================================================================================================================
+> ---------------------------------------------------------------------------------------------------------------------
 > 2. AI model 
 >> 로봇에 장착된 카메라를 통해 수집된 이미지에서 목표한 기획에 맞게끔 자율주행 로봇의 움직임을 결정할 데이터를 도출하기 위해 다음과 같은 인공지능 모델들을 사용하였다.    
 >>  
@@ -128,9 +128,16 @@
 >>>
 >>>
 >>> + Object Tracking (Deep-SORT) – Pretrained Model   
-   앞에서 detection한 person의  bounding box를 tracking하는 모델이다. 수집된 이미지에서 person마다 각각의  label(track id)을 붙이고 tracking하기 위해 사용한다.![ObjectTracking](/README_img/ObjectTracking.PNG "↳ Real-time으로 person detection & tracking 하는 모델 출력 예시")     ↳ Real-time으로 person detection & tracking 하는 모델 출력 예시
-   사용하는 자율주행 로봇 및 카메라의 특성을 고려하여, 연속적으로 촬영한 이미지에서의 원활한 tracking을 위해 model의 hyper parameter들을 조정하였다.                 (max_iou_distance = 0.7, max_cos_distance = 0.2)
+   앞에서 detection한 person의  bounding box를 tracking하는 모델이다. 수집된 이미지에서 person마다 각각의  label(track id)을 붙이고 tracking하기 위해 사용한다.![ObjectTracking](/README_img/ObjectTracking.PNG "Real-time으로 person detection & tracking 하는 모델 출력 예시")   ↳ Real-time으로 person detection & tracking 하는 모델 출력 예시
+   사용하는 자율주행 로봇 및 카메라의 특성을 고려하여, 연속적으로 촬영한 이미지에서의 원활한 tracking을 위해 model의 hyper parameter들을 조정하였다.   (max_iou_distance = 0.7, max_cos_distance = 0.2)
+>>>
+>>>
+>>>
+>>>
+>>> + Face Recognition (dlib + face_recognition)
+   촬영된 이미지에서 Detection된 face를 database에 저장된 face들과 비교해서 개개인을 식별하고 등록되지 않은 face(unknown)를 색출하기 위해 사용한다. 계속해서 업데이트 되고있는 face_recognition api를 사용하며, 이는 전세계 사람들의 얼굴 데이터인 Labeled Faces in the Wild를 기준으로 99.38%의 정확도를 기록하였다.   ![dlib_and_face_recognition](/README_img/dlib_and_face_recognition.PNG "Face Recognition model 사용 예시")   ↳ Face Recognition model 사용 예시
 
+   
 
 
 
