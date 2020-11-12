@@ -1,7 +1,7 @@
 # 다중이용시설 마스크 착용 감시 자율 주행 로봇
 
 -------------------------------------------------------------------------------------------------------------------------
-	참여자: kjw10701@likelion.org, wjdwlsdn1216@naver.com, babywalnut, kimny2234@naver.com
+	참여자: kjw10701@likelion.org, wjdwlsdn1216@naver.com, anfuza@naver.com, kimny2234@naver.com, hsw08@naver.com
 
 ## 개요
 > ### 자율주행 로봇의 필요성
