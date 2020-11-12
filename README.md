@@ -140,7 +140,7 @@
 >>>
 >>>
 >>>
->>> + PC1 Model Code 
+## + PC1 Model Code 
 ``` python
 m = Darknet('./cfg/yolov4.cfg')
 m.print_network()
