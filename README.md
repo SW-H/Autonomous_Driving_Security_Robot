@@ -166,7 +166,7 @@
 >>>    
 >>> + 맵핑 ( mapping )   
 로봇이 주행할 공간에 대한 지도를 만들기 위한 과정이다. 내부에서 사용될 맵의 정보를 담고 있는 yaml 파일과 이미지 파일인 pgm 파일로 저장된다.   [mapping](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/build_map.md)    ↳ fetch_navigation 라이브러리 활용한 지도 매핑 과정 캡처 화면   
-<img src="/README_img/map.PNG" width="50%" height="50%" title="map" alt="map"></img><img src="/README_img/cost_map.PNG" width="50%" height="50%" title="cost_map" alt="cost_map"></img>      ↳매핑 완료된 맵의 pgm파일					  ↳ 로봇의 활동 가능 지역을 보여주는 cost map 
+<img src="/README_img/map.PNG" width="50%" height="50%" title="map" alt="map">   </img><img src="/README_img/cost_map.PNG" width="50%" height="50%" title="cost_map" alt="cost_map"></img>      ↳매핑 완료된 맵의 pgm파일			        ↳ 로봇의 활동 가능 지역을 보여주는 cost map 
 
    
 
