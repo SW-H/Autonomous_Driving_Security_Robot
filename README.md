@@ -225,10 +225,10 @@ tracker = Tracker(metric)
    
    ```python
         print('Predicted in %f seconds.' % (finish - start))
-	result_img = plot_boxes_cv2(img_showed, boxes[0], savename=None, class_names=class_names)
-	result_img = plot_boxes_cv2(result_img, person_draw_boxes_show, savename=None, class_names=class_names2,color=(0,255,255))
-	cv2.imshow('PHITITNAS panorama camera', result_img)
-	frame_num += 1
+result_img = plot_boxes_cv2(img_showed, boxes[0], savename=None, class_names=class_names)
+result_img = plot_boxes_cv2(result_img, person_draw_boxes_show, savename=None, class_names=class_names2,color=(0,255,255))
+cv2.imshow('PHITITNAS panorama camera', result_img)
+frame_num += 1
    ```     
    ↳ 원본이미지에 bounding box 이미지를 덮어 출력   
 
@@ -237,10 +237,11 @@ tracker = Tracker(metric)
 
 
    ```
-   def face_rocog(image_to_check):
+def face_rocog(image_to_check):
     tolerance=0.35
     known_names, known_face_encodings = scan_known_people('known_people_folder')
     test_image(image_to_check, known_names, known_face_encodings, tolerance)
+
     
    ```
    ↳ target image를 사전에 저장된 사진들에 대해 face_recognition model을 실행시키는 부분
