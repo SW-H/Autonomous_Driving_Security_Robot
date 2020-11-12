@@ -140,7 +140,7 @@
 >>>
 >>>
 >>>
-## + PC1 Model Code 
++ ## PC1 Model Code 
 ``` python
 m = Darknet('./cfg/yolov4.cfg')
 m.print_network()
@@ -157,8 +157,7 @@ m2.cuda()
 namesfile = 'data/obj.names'
 namesfile2 = 'data/obj2.names'
 ``` 
->>>
->>> ↳ YOLO v4(object detection)에 적용할 각각의 weights, config, names.list파일 불러오기
+↳ YOLO v4(object detection)에 적용할 각각의 weights, config, names.list파일 불러오기
 
 
 
