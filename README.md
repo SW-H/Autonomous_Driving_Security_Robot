@@ -117,9 +117,19 @@
    ![코드 실행 시 마스크 착용 여부에 따라 구분된 모습](/README_img/detecting_mask_nomask.PNG "코드 실행 시 마스크 착용 여부에 따라 구분된 모습")   ↳코드 실행 시 마스크 착용 여부에 따라 구분된 모습
 >>>
 >>>
->>> + Person Detection (YOLO v4) – Coco Dataset
-    Mask detection model만으로는 사람의 뒷모습을 잡아내지 못하여 한번 포착한 마스크 미착용자를 지속적으로 tracking할수가 없다. 따라서 사진 촬영 각도에 상관없이 이미지에서 사람을 detection 해낼 필요가 있었다.
-	 Detection 성능의 향상을 위해 Mask detection과 별개의 모델을 사용하였으며, coco dataset으로 훈련된 모델에서 ‘person’  label만을 사용하였다.
+>>>
+>>>
+>>> + Person Detection (YOLO v4) – Coco Dataset   
+    Mask detection model만으로는 사람의 뒷모습을 잡아내지 못하여 한번 포착한 마스크 미착용자를 지속적으로 tracking할수가 없다. 따라서 사진 촬영 각도에 상관없이 이미지에서 사람을 detection 해낼 필요가 있었다.   
+	 Detection 성능의 향상을 위해 Mask detection과 별개의 모델을 사용하였으며, coco dataset으로 훈련된 모델에서 ‘person’  label만을 사용하였다. ![detection_result](/README_img/coco_result.PNG "Coco dataset을 이용해 train한 모델의 detection 결과 예시
+")    ↳Coco dataset을 이용해 train한 모델의 detection 결과 예시
+>>>
+>>>
+>>>
+>>>
+>>> + Object Tracking (Deep-SORT) – Pretrained Model   
+   앞에서 detection한 person의  bounding box를 tracking하는 모델이다. 수집된 이미지에서 person마다 각각의  label(track id)을 붙이고 tracking하기 위해 사용한다.![ObjectTracking](/README_img/ObjectTracking.PNG "↳ Real-time으로 person detection & tracking 하는 모델 출력 예시")     ↳ Real-time으로 person detection & tracking 하는 모델 출력 예시
+   사용하는 자율주행 로봇 및 카메라의 특성을 고려하여, 연속적으로 촬영한 이미지에서의 원활한 tracking을 위해 model의 hyper parameter들을 조정하였다.                 (max_iou_distance = 0.7, max_cos_distance = 0.2)
 
 
 
