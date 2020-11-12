@@ -72,25 +72,7 @@
 				<button :disabled="loading" class="btn btn-danger" @click="disconnect" v-if="connected">Disconnect!</button>
 				<button :disabled="loading" class="btn btn-success" @click="connect" v-else>Connect!</button>
 			</div>
-			<!-- <div class="col-md-6" style="max-height:150px; overflow:auto;">
-				<h3>Log messages</h3> -->
-				<!-- {% with messages = get_flashed_messages() %}
-					{% if messages %}
-						{% for msg in messages %}
-							<p>{{msg}}</p>
-						{% endfor %}
-					{% endif %}
-				{% endwith %} -->
-				<!-- {% with messages = get_flashed_messages(with_categories=true) %}
-				{% if messages %}
-					<ul class=flashes>
-					{% for category, message in messages %}
-					<li class="{{ category }}">{{ message }}</li>
-					{% endfor %}
-					</ul>
-				{% endif %}
-				{% endwith %}
-			</div> -->
+			
 			<div class="col-md-6" style="max-height:200px; overflow:auto;">
 				<h3>Log messages</h3>
 				<div>

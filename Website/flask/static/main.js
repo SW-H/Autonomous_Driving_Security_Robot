@@ -20,7 +20,7 @@ var app = new Vue({
             })
             this.ros.on('connection', () => {
                 console.log(' - Connected!')
-	    document.getElementById("log").innerHTML = (new Date()).toTimeString() + ' - Connected!'
+	            document.getElementById("log").innerHTML = (new Date()).toTimeString() + ' - Connected!'
                 this.logs.unshift((new Date()).toTimeString() + ' - Connected!')
                 this.connected = true
                 this.loading = false
@@ -31,7 +31,7 @@ var app = new Vue({
                 this.logs.unshift((new Date()).toTimeString() + ` - Error: ${error}`)
             })
             this.ros.on('close', () => {
-	    document.getElementById("log").innerHTML = (new Date()).toTimeString() + ' - Disconnected!'
+	            document.getElementById("log").innerHTML = (new Date()).toTimeString() + ' - Disconnected!'
                 console.log(' - Disconnected!')
                 this.logs.unshift((new Date()).toTimeString() + ' - Disconnected!')
                 this.connected = false
