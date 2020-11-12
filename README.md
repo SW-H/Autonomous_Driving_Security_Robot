@@ -293,14 +293,14 @@ if state == 1:
  ![website_home](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_home.png)
  ↳ about, team에 대한 페이지 전환과 controller, login, join 페이지로의 이동이 가능한 Main page이다.   
     
- ![website_about](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_home.png)
+ ![website_about](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_about.png)
  ↳ 로봇의 주기능 및 사용된 알고리즘에 대한 설명
     
- ![website_team_introduction](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_home.png)
+ ![website_team_introduction](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_team_introduction.png)
  ↳ 팀 소개
   
  + #### Controller Dashboard
- ![website_team_introduction](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_home.png)
+ ![website_team_introduction](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_team_introduction.png)
  ↳ 실시간으로 로봇을 통한 Detection 결과를 영상으로 출력하고 로봇과의 연결상태 확인 및 컨트롤 가능한 page
      
         
