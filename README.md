@@ -171,7 +171,7 @@
 >>> +  Patrolling   
    지정해준 범위내에서 반복적으로 순찰(patrolling)하고 도중에 나타나는 장애물은 2D Laser Sensor로 감지한다. 자율 주행 중에 마스크 미착용자 확인 등 여러 기능을 수행한다. 
    <img src="https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/patrolling.PNG" width="70%" height="70%" title="patrolling" alt="patrolling">     ↳ patrolling 에 필요한 소스 코드 실행 화면
->>> + [ROS_code](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/ROS_code.md)
+>>> + [소스코드 설명](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/ROS_code.md)
    
 
 
