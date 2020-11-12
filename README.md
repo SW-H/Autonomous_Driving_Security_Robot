@@ -134,11 +134,30 @@
 >>>
 >>>
 >>>
->>> + Face Recognition (dlib + face_recognition)
+>>> + Face Recognition (dlib + face_recognition)   
    촬영된 이미지에서 Detection된 face를 database에 저장된 face들과 비교해서 개개인을 식별하고 등록되지 않은 face(unknown)를 색출하기 위해 사용한다. 계속해서 업데이트 되고있는 face_recognition api를 사용하며, 이는 전세계 사람들의 얼굴 데이터인 Labeled Faces in the Wild를 기준으로 99.38%의 정확도를 기록하였다.   ![dlib_and_face_recognition](/README_img/dlib_and_face_recognition.PNG "Face Recognition model 사용 예시")   ↳ Face Recognition model 사용 예시
-
-   
-
+>>>
+>>>
+>>>
+>>>
+>>> + PC1 Model Code   
+``` python
+m = Darknet('./cfg/yolov4.cfg')
+m.print_network()
+m.load_weights('./yolov4.weights')
+print('Loading weights from %s... Done!' % ('./yolov4.weights'))
+m.cuda()
+ 
+m2 = Darknet('./cfg/person_yolov4.cfg')
+m2.print_network()
+m2.load_weights('./person_yolov4.weights')
+print('Loading weights from %s... Done!' % ('./person_yolov4.weights'))
+m2.cuda()
+ 
+namesfile = 'data/obj.names'
+namesfile2 = 'data/obj2.names'
+```   
+↳ YOLO v4(object detection)에 적용할 각각의 weights, config, names.list파일 불러오기
 
 
 
