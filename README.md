@@ -286,10 +286,261 @@ if state == 1:
  ---------------------------------------------------------------------------------------------------------------------
  
  ## 웹 & 서비스
- ### Flask web frame work로 제작한  ROS 기반 로봇 컨트롤 및 관리 Web page
-	 다른페이지는 클릭할 시 접속이 가능하지만 유일하게 컨트롤 대시보드를 이용하기 위한 관리자 전용 로그인 기능하다.
+   Flask web frame work로 제작한  ROS 기반 로봇 컨트롤 및 관리 Web page
+   다른페이지는 클릭할 시 접속이 가능하지만 유일하게 컨트롤 대시보드를 이용하기 위한 관리자 전용 로그인 기능하다.
 
-#### + Home & About us
+ + #### Home & About us
+ ![website_home](/README_img/website_home.PNG)
+ ↳ about, team에 대한 페이지 전환과 controller, login, join 페이지로의 이동이 가능한 Main page이다.   
+    
+ ![website_about](/README_img/website_about.PNG)
+ ↳ 로봇의 주기능 및 사용된 알고리즘에 대한 설명
+    
+ ![website_team_introduction](/README_img/website_team_introduction.PNG)
+ ↳ 팀 소개
+  
+ + #### Controller Dashboard
+ ![website_team_introduction](/README_img/website_dashboard.PNG)
+ ↳ 실시간으로 로봇을 통한 Detection 결과를 영상으로 출력하고 로봇과의 연결상태 확인 및 컨트롤 가능한 page
+     
+        
+	  
+ ```python
+var app = new Vue({
+    el: '#app',
+    // storing the state of the page
+    data: {
+        connected: false,
+        ros: null,
+        ws_address: 'ws://172.22.77.172:9090',
+        logs: [],
+        loading: false,
+        topic: null,
+        message: null,
+    },
+    
+    // helper methods to connect to ROS
+    methods: {
+        connect: function() {
+            this.loading = true
+            this.ros = new ROSLIB.Ros({
+                url: this.ws_address
+            })
+            this.ros.on('connection', () => {
+                console.log(' - Connected!')
+                this.logs.unshift((new Date()).toTimeString() + ' - Connected!')
+                this.connected = true
+                this.loading = false
+            })
+            this.ros.on('error', (error) => {
+                console.log(` - Error: ${error}`)
+                this.logs.unshift((new Date()).toTimeString() + ` - Error: ${error}`)
+            })
+            this.ros.on('close', () => {
+                console.log(' - Disconnected!')
+                this.logs.unshift((new Date()).toTimeString() + ' - Disconnected!')
+                this.connected = false
+                this.loading = false
+            })
+        },
+        disconnect: function() {
+            this.ros.close()
+        },
+```
+↳ 웹소켓을 이용하여 js와 ROS를 직접 연결한다.
 
+```python
+setTopic: function() {
+    this.topic = new ROSLIB.Topic({
+        ros: this.ros,
+        name: '/cmd_vel',
+        messageType: 'geometry_msgs/Twist'
+    })
+},
+forward: function() {
+    this.message = new ROSLIB.Message({
+        linear: { x: 1, y: 0, z: 0, },
+        angular: { x: 0, y: 0, z: 0, },
+    })
+    this.setTopic()
+    this.topic.publish(this.message)
+},
+stop: function() {
+    this.message = new ROSLIB.Message({
+        linear: { x: 0, y: 0, z: 0, },
+        angular: { x: 0, y: 0, z: 0, },
+    })
+    this.setTopic()
+    this.topic.publish(this.message)
+},
+backward: function() {
+    this.message = new ROSLIB.Message({
+        linear: { x: -1, y: 0, z: 0, },
+        angular: { x: 0, y: 0, z: 0, },
+   })
+    this.setTopic()
+    this.topic.publish(this.message)
+},
+turnLeft: function() {
+    this.message = new ROSLIB.Message({
+       linear: { x: 0, y: 0, z: 0, },
+       angular: { x: 0, y: 0, z: 0.5, },
+    })
+    this.setTopic()
+    this.topic.publish(this.message)
+},
+turnRight: function() {
+    this.message = new ROSLIB.Message({
+        linear: { x: 0, y: 0, z: 0, },
+        angular: { x: 0, y: 0, z: -0.5, },
+    })
+    this.setTopic()
+    this.topic.publish(this.message)
+},
+```
+↳ 웹페이지상에서 관리자가 로봇을 수동으로 조종할 수 있도록 컨트롤 명령을 js를 통하여 ros에 직접 전달한다.
+     
+      
+      
++ ####  Member Management & Authentication administrator
+   
+```python
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    if current_user.is_authenticated:
+        return redirect(url_for('home'))
+    form = RegistrationForm()
+    if form.validate_on_submit():
+        hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
+        user = User(username=form.username.data, email=form.email.data, password=hashed_password)
+        db.session.add(user)
+        db.session.commit()
+        flash('Your account has been created! You are now able to log in ', 'success')
+        return redirect(url_for('login'))
+    return render_template('register.html', title='Register', form=form)
+ 
+)
+ 
+def save_picture(form_picture):
+    random_hex=secrets.token_hex(8)
+    _, f_ext = os.path.splitext(form_picture.filename)
+    picture_fn = random_hex + f_ext
+    picture_path = os.path.join(app.root_path, 'static/profile_pics', picture_fn)
+    form_picture.save(picture_path)
+ 
+    return picture_fn
+ 
+@app.route("/account", methods=['GET','POST'])
+@login_required
+def account():
+    form =UpdateAccountForm()
+    if form.validate_on_submit():
+        if form.picture.data:
+            picture_file = save_picture(form.picture.data)
+            current_user.image_file = picture_file
+        current_user.username = form.username.data
+        current_user.email = form.email.data
+        db.session.commit()
+        flash('Your account has been updated!', 'success')
+        return redirect(url_for('account'))
+    elif request.method=='GET':
+        form.username.data=current_user.username
+        form.email.data=current_user.email
+    image_file = url_for('static', filename='profile_pics/' + current_user.image_file)
+    return render_template('account.html', title='Account', image_file=image_file, form = form)
+ ```
+ ↳ 로봇을 운용하는 기관 직원 및 웹페이지 회원의 정보(사진, 인적사항)을 웹페이지에서 수정하여 바로 Database에 반영한다.
+ 
+```python
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
+ 
+class User(db.Model, UserMixin):
+    id = db.Column(db.Integer, primary_key = True)
+    username = db.Column(db.String(20), unique=True, nullable=False)
+    email = db.Column(db.String(120), unique=True, nullable=False)
+    image_file = db.Column(db.String(20), nullable=False, default= 'default.jpg')
+    password = db.Column(db.String(60), nullable=False)
+    posts = db.relationship('Post', backref='author', lazy=True)
+ 
+    def __repr__(self):
+        return f"User('{self.username}','{self.email}','{self.image_file}')"
+ 
+ 
+class Post(db.Model):
+    id = db.Column(db.Integer, primary_key = True)
+    title = db.Column(db.String(100), nullable=False)
+    date_history = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    content = db.Column(db.Text, nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable= False)
+ 
+    def __repr__(self):
+        return f"Post('{self.title}','{self.date_history}')"
+```
+ ↳ 신분 확인을 위한 로봇을 운용하는 기관의 직원정보와 로봇이 탐지한 이슈를 database에 저장한다. 
+ 
+```python
+@app.route('/model_result')
+def model_result():
+    global detection_result
+    serverSocket = socket(AF_INET, SOCK_STREAM)
+    serverSocket.bind((TCP_IP,TCP_PORT))
+    serverSocket.listen(0)
+    connectionSocket, _ = serverSocket.accept()
+    while True:
+        data = connectionSocket.recv(8192)
+        detection_result = data.decode()
+        connectionSocket.send('success'.encode())
+        serverSocket.close()
+    return "model_result"
+	↳ AI Model로부터 detection 및 tracking 결과를 websocket으로 받아오는 model_result 페이지
+ 
+@app.route('/ordering')
+def ordering():
+```
+↳ AI model의 결과 데이터를 기반으로  로봇의 다음 움직임을 알고리즘으로 판단하여  로봇에 websocket으로 전달하는 ordering 페이지, 코드 내용은 위의 알고리즘 코드와 같다.
+ 
+```python
+@app.route('/robot_location')
+def robot_location():
+    global rob_loc
+    serverSocket = socket(AF_INET, SOCK_STREAM)
+    serverSocket.bind((TCP_IP_LOC,TCP_PORT_LOC))
+    serverSocket.listen(0)
+    connectionSocket, _ = serverSocket.accept()
+   
+    while True:
+        data = connectionSocket.recv(8192)
+        rob_loc = eval(data.decode())
+        print(rob_loc)
+        connectionSocket.send('success'.encode())
+        serverSocket.close()
+    return "rob_loc"
+```
+↳ 저장된 Map 위에서 로봇의 현재 절대좌표를 websocket으로 실시간으로 받아오는 robot_location 페이지
+ 
+```python
+@app.route('/video_feed')
+def video_feed():
+    redirect(url_for('ordering'))
+    square = (348,194,1493,660)
+    return Response(gen_bboxed_frames(square),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
+```
+↳ 파노라마 카메라로 촬영한 이미지를 전용 소프트웨어를 거쳐 real-time video형식으로 flask로 가져오는 video_feed 페이지
 
+ ---------------------------------------------------------------------------------------------------------------------
+ 
+ ## 프로젝트 결과
+
+ ![res](/README_img/res.PNG)
+
+------------------------------------------------------------------------------------------------------------------------
+
+## 향후 발전가능성 
+### + 공사현장, 의료시설, 실험실, 롤러장 등에서의 안전장비 착용여부 점검(실외라면 오토바이나 자전거)
+### + pose estimation을 사용했으므로 위험행동 감지를 통해 경비 기능이 가능
+### + 포스트 코로나 시대에도 unknown에 대한 방범 기능으로서 사용 가능
+### + 현재 프로세스를 드론에 적용시킨다면 농업 등 다른 산업 분야에 적용 가능
 
