@@ -115,6 +115,8 @@
    파노라마 카메라로 수집한 이미지에서 마스크를 쓴 사람과 안 쓴 사람, 잘못 쓴 사람의 얼굴을 detection해내기 위한 CNN모델이다.   Kaggle에서 제공하는 VOC format의 Mask Detection Dataset을 convert2Yolo 툴을 이용해  YOLO에 맞는 데이터 형식으로 변환 후, Google Colab Pro 환경에서 직접 모델을 train시켜 weights값을 생성하였다.   이미지에서 마스크를 쓴 얼굴(with_mask), 마스크를 쓰지 않은 얼굴( without_mask), 마스크를 제대로 쓰지 않은 얼굴(mask_weared_incorrect)을 찾아낸다.               
    ![model_training](/README_img/model_training.PNG "model_training")    ↳ Colab Pro에서 진행한 model training이 완료된 화면과 이에 사용한 parameter   
    ![코드 실행 시 마스크 착용 여부에 따라 구분된 모습](/README_img/detecting_mask_nomask.PNG "코드 실행 시 마스크 착용 여부에 따라 구분된 모습")   ↳코드 실행 시 마스크 착용 여부에 따라 구분된 모습
+>>>
+>>>
 >>> + Person Detection (YOLO v4) – Coco Dataset
     Mask detection model만으로는 사람의 뒷모습을 잡아내지 못하여 한번 포착한 마스크 미착용자를 지속적으로 tracking할수가 없다. 따라서 사진 촬영 각도에 상관없이 이미지에서 사람을 detection 해낼 필요가 있었다.
 	 Detection 성능의 향상을 위해 Mask detection과 별개의 모델을 사용하였으며, coco dataset으로 훈련된 모델에서 ‘person’  label만을 사용하였다.
