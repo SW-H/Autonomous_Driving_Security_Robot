@@ -140,24 +140,25 @@
 >>>
 >>>
 >>>
-+ ## PC1 Model Code 
-``` python
-m = Darknet('./cfg/yolov4.cfg')
-m.print_network()
-m.load_weights('./yolov4.weights')
-print('Loading weights from %s... Done!' % ('./yolov4.weights'))
-m.cuda()
- 
-m2 = Darknet('./cfg/person_yolov4.cfg')
-m2.print_network()
-m2.load_weights('./person_yolov4.weights')
-print('Loading weights from %s... Done!' % ('./person_yolov4.weights'))
-m2.cuda()
- 
-namesfile = 'data/obj.names'
-namesfile2 = 'data/obj2.names'
-``` 
-↳ YOLO v4(object detection)에 적용할 각각의 weights, config, names.list파일 불러오기
+>>> + PC1 Model Code 
+>>>
+	m = Darknet('./cfg/yolov4.cfg')
+	m.print_network()
+	m.load_weights('./yolov4.weights')
+	print('Loading weights from %s... Done!' % ('./yolov4.weights'))
+	m.cuda()
+
+	m2 = Darknet('./cfg/person_yolov4.cfg')
+	m2.print_network()
+	m2.load_weights('./person_yolov4.weights')
+	print('Loading weights from %s... Done!' % ('./person_yolov4.weights'))
+	m2.cuda()
+
+	namesfile = 'data/obj.names'
+	namesfile2 = 'data/obj2.names'
+>>>
+>>>
+>>> ↳ YOLO v4(object detection)에 적용할 각각의 weights, config, names.list파일 불러오기
 
 
 
