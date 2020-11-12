@@ -1,3 +1,5 @@
+## 알고리즘 코드
+
 ```python
 #target selection
 if state == 0:
