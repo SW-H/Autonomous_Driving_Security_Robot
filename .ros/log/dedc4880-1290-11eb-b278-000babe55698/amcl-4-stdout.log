@@ -1,6 +1,0 @@
-[0m[ INFO] [1603169899.229505928]: Requesting the map...[0m
-[0m[ INFO] [1603169899.230539445]: Received a 204 X 299 map @ 0.050 m/pix
-[0m
-[0m[ INFO] [1603169899.234989405]: Initializing likelihood field model; this can take some time on large maps...[0m
-[0m[ INFO] [1603169899.247256634]: Done initializing likelihood field model.[0m
-[33m[ WARN] [1603169914.296458593]: No laser scan received (and thus no pose updates have been published) for 1603169914.296385 seconds.  Verify that data is being published on the /base_scan topic.[0m

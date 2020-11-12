@@ -1,3 +1,0 @@
-[0m[ INFO] [1604645417.350181777]: Reconfigure request : -0.829000 0.829000 1 1 1 /etc/ros/sensors/tilt_hokuyo 1 laser_tilt_link 0.000000 0[0m
-[0m[ INFO] [1604645417.350229783]: Reconfigure to : -0.829000 0.829000 1 1 1 /etc/ros/sensors/tilt_hokuyo 1 laser_tilt_link 0.000000 0[0m
-[0m[ INFO] [1604645417.477482918]: Starting to spin...[0m

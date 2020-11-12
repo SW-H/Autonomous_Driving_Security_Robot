@@ -1,6 +1,0 @@
-
-(process:1590): GLib-GObject-CRITICAL **: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
-
-** (process:1586): CRITICAL **: volume_control_set_volume_internal: assertion '_tmp1_ == PA_CONTEXT_READY' failed
-
-** (process:1586): CRITICAL **: file /build/buildd/indicator-sound-12.10.2+14.04.20140401/obj-x86_64-linux-gnu/src/volume-control.c: line 1775: uncaught error: GDBus.Error:org.freedesktop.DBus.Error.InvalidArgs: No such interface (g-dbus-error-quark, 16)

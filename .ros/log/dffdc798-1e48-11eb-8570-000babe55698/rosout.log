@@ -1,6 +1,0 @@
-
-
-1604458391.240515931  Node Startup
-1604458391.822154998 WARN [server.py:566(servermain) [topics: /rosout] rostful_server: Delaying the start 1 seconds
-1604458392.839791059 INFO [server.py:581(servermain) [topics: /rosout] rostful_server: Started server on port 8080
-1604458565.598112106 INFO [server.py:587(servermain) [topics: /rosout] rostful_server: Shutting down the server

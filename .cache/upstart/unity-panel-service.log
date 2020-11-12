@@ -1,5 +1,0 @@
-
-(unity-panel-service:1509): Gdk-WARNING **: unity-panel-service: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
-
-
-(unity-panel-service:1504): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'wm != NULL' failed

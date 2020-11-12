@@ -1,1 +1,0 @@
-[33m[ WARN] [1604645417.103339244]: Analyzer specification should now include the package name. You are using a deprecated API. Please switch from GenericAnalyzer to diagnostic_aggregator/GenericAnalyzer in your Analyzer specification.[0m

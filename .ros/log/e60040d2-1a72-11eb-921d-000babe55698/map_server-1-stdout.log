@@ -1,5 +1,0 @@
-[0m[ INFO] [1604037828.002870340]: Loading map from image "/home/fetch/wifitestmap.pgm"[0m
-[0m[ INFO] [1604037828.006583378]: Read a 446 X 607 map @ 0.050 m/cell[0m
-[0m[ INFO] [1604037828.075069262]: Sending map[0m
-[33m[ WARN] [1604038985.148283010]: Shutdown request received.[0m
-[33m[ WARN] [1604038985.148301829]: Reason given for shutdown: [new node registered with same name][0m

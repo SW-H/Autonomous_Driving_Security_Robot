@@ -1,7 +1,0 @@
-image: uok_2nd_f_map.pgm
-resolution: 0.050000
-origin: [-0.000477, -7.342774, 0.000000]
-negate: 0
-occupied_thresh: 0.65
-free_thresh: 0.196
-

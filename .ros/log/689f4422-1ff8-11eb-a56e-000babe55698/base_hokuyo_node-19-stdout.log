@@ -1,3 +1,0 @@
-[0m[ INFO] [1604645417.324040883]: Reconfigure request : -2.268900 2.268900 0 1 1 /etc/ros/sensors/base_hokuyo 1 base_laser_link 0.000000 0[0m
-[0m[ INFO] [1604645417.324085011]: Reconfigure to : -2.268900 2.268900 0 1 1 /etc/ros/sensors/base_hokuyo 1 base_laser_link 0.000000 0[0m
-[0m[ INFO] [1604645417.455290314]: Starting to spin...[0m
