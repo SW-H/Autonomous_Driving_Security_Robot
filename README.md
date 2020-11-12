@@ -176,16 +176,16 @@
 > ---------------------------------------------------------------------------------------------------------------------
 > 4. 네트워크 & 서버 & DB
 >>> + Network : PC와 PC사이, PC와 Robot사이 데이터 전송은 websocket(UDP&TCP)을 사용한다.
-	- PC1에서 Main Server로 AI모델의 detection 및 tracking 결과를 TCP로 전송
-	- Robot(Freifgt100)에서 Main Server로 로봇의 실시간 위치를 TCP로 전송
-	- Main Server에서 Robot(Freight100)으로 로봇이 움직일 위치를 UDP로 전송
-	- Main Server에서 Robot(Freight100)으로 로봇이 음성으로 출력할 문구를 TCP로 전송
+>>>>	- PC1에서 Main Server로 AI모델의 detection 및 tracking 결과를 TCP로 전송
+>>>>	- Robot(Freifgt100)에서 Main Server로 로봇의 실시간 위치를 TCP로 전송
+>>>>	- Main Server에서 Robot(Freight100)으로 로봇이 움직일 위치를 UDP로 전송
+>>>>	- Main Server에서 Robot(Freight100)으로 로봇이 음성으로 출력할 문구를 TCP로 전송
 >>> + Server
-  	- Main Server는 PC2의 host PC 환경에 Flask를 이용해 구축한다.
- 	- Flask에서 Main Server와 별도로 모델의 결과, 로봇 이동 명령, 로봇 위치 수신, 메시지 전송을 위한 별도의 서버를 운영한다.
+>>>>  	- Main Server는 PC2의 host PC 환경에 Flask를 이용해 구축한다.
+>>>> 	- Flask에서 Main Server와 별도로 모델의 결과, 로봇 이동 명령, 로봇 위치 수신, 메시지 전송을 위한 별도의 서버를 운영한다.
 >>> + Database
-	- SQLite을 이용해 직원정보와 발생한 이슈에 대한 테이블을 생성한다.
-	- Known people의 사진과 알고리즘에서 전송된 사진은 Directory에 저장한다.
+>>>>	- SQLite을 이용해 직원정보와 발생한 이슈에 대한 테이블을 생성한다.
+>>>>	- Known people의 사진과 알고리즘에서 전송된 사진은 Directory에 저장한다.
 
 
 
