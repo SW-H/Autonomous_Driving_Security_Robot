@@ -195,7 +195,31 @@
 
 
  6. [알고리즘 코드 ](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/algorithm_code.md)
+```python
+rospy.init_node('say', anonymous=True)
+soundhandle = SoundClient()
+rospy.sleep(1)
 
+voice = 'voice_kal_diphone'
+volume = 1.0
+
+if len(sys.argv) == 1:
+    s = sys.stdin.read()
+    else:
+	s = sys.argv[1]
+
+	if len(sys.argv) > 2:
+	    voice = sys.argv[2]
+	if len(sys.argv) > 3:
+	    volume = float(sys.argv[3])
+
+    rospy.loginfo('Saying: %s' % s)
+    rospy.loginfo('Voice: %s' % voice)
+    rospy.loginfo('Volume: %s' % volume)
+
+    soundhandle.say(s, voice, volume)
+```
+↳ ROS에서 sound_play를 실행시키는 say.py 코드의 실행부분
 
 
 
