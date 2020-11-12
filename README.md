@@ -545,3 +545,37 @@ def video_feed():
  + 포스트 코로나 시대에도 unknown에 대한 방범 기능으로서 사용 가능
  + 현재 프로세스를 드론에 적용시킨다면 농업 등 다른 산업 분야에 적용 가능
 
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+## 참고문헌
+[ROS]
+ROS wiki : http://wiki.ros.org/
+ROSject : http://www.rosject.io/l/97543ce/
+ROS Development Studio :  http://rosds.online
+The Construct: http://www.theconstructsim.com
+Fetch & Freight Research Edition : https://docs.fetchrobotics.com/introduction.html
+
+[GitHub]
+Convert2yolo : https://github.com/ssaru/convert2Yolo
+Yolo v4 training : https://github.com/theAIGuysCode/YOLOv4-Cloud-Tutorial
+Deep SORT: https://github.com/nwojke/deep_sort
+Object Detection and Tracking : https://github.com/yehengchen/Object-Detection-and-Tracking/tree/master/OneStage/yolo/deep_sort_yolov4
+AlphaPose : https://github.com/MVIG-SJTU/AlphaPose
+Face recognition : https://github.com/ageitgey/face_recognition
+Roslibjs : https://github.com/RobotWebTools/roslibjs
+ROS로 배우는 로봇 프로그래밍 : https://github.com/Jpub/ROS
+Flask flash massae : https://github.com/pratik55/Python-Flask-dynamic-update-
+
+[논문]
+Zhihua He, “intelligent patrol robot based on ROS architecture”, 2017
+S. Witwicki, “Autonomous Surveillance Robots A Decision-Making Framework for Networked Muiltiagent Systems”, 2017
+Alexey Bochkovskiy, YOLOv4: Optimal Speed and Accuracy of Object Detection, 2020
+Nicolai Wojke, Simple Online and Realtime Tracking with a Deep Association Metric, 2017
+Hao-Shu Fang, RMPE: Regional Multi-person Pose Estimation, 2016
+S. Sharma, FAREC - CNN based efficient face recognition technique using Dlib, 2016
+
+[dataset]
+Mask detection dataset : https://www.kaggle.com/andrewmvd/face-mask-detection/tasks?taskId=949
