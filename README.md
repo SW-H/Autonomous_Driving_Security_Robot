@@ -208,8 +208,7 @@ tracker = Tracker(metric)
                continue
             thickness = int(np.sqrt(64 / float(j + 1)) * 2)
             cv2.line(img_showed,(pts[track.track_id][j-1]), (pts[track.track_id][j]),(255,0,0),thickness)
-   ```   
-   ↳ Detection결과에 대한 tracking
+   ``` ↳ Detection결과에 대한 tracking
 
    
 
