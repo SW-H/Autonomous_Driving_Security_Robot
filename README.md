@@ -142,7 +142,7 @@
 >>
 >>
 >>
->> + [PC1 Model Code](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/PC1model_code.md)
+>> + [AI Model Code](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/PC1model_code.md)
 >> 		+ [모델](https://github.com/SW-H/Autonomous_Driving_Security_Robot/tree/main/pc1_model)
  ---------------------------------------------------------------------------------------------------------------------
  3. ROS
@@ -150,18 +150,19 @@
 >> + 초기 세팅     
 원격 제어를 위해 로봇과 같은 작업 환경 세팅을 위해 Ubuntu 14.04.5 와 ROS-indigo 설치 후 무선 인터넷을 이용하여 연결한다.   로봇내에 기존에는 OS ( ROS )만 설치되어 있었기에 프로젝트 내의 기능 구현을 위해 추가적으로 다양한 패키지 및 라이브러리가 필요했다. 
 >> 그 목록은 다음과 같다.   
->>>     	- actionlib, actionlib_msgs : 로봇의 순찰(patrolling) 기능 구현을 위해 필요하다. 정해진 범위 내에서 반복적으로 이동하고 이벤트 발생 시 제어(스케쥴링)와 운용에 필요한 메시지를 주고 받기 위해 필요한 패키지이다.   
->>>		- rosbridge  : ROS와 non-ROS간의 통신을 위한 패키지이다. 
->>>		- rospy : ROS는 C++로 이루어진 OS로, 이를 파이썬으로 활용하기 위한 패키지이다.
->>>		- sound_play : String을 입력해서 TTS를 실행시키기 위한 패키지이다.
->>>		- AMCL(Adaptive Monte Calro Localization) : 확률 기반으로 로봇 위치 파악을 위한 패키지이다.
->>>		- Base_local_planner : 평면상에서 로봇의 이동 궤적을 결정하고 구동하는 컨트롤러 패키지 이다. 
->>>		- rostopic : 현재 로봇에서 발행되는 데이터 (실시간 위치인 odometry데이터 등 ) 을 확인하기 위해 사용한다. 
->>>		- costmap_2d : 매핑 및 cost map 생성에 사용한다.
->>>		- fetch_navigation : rostopic으로 주행 거리 및 목표 지점 등을 가져와 주행명령을 출력한다.
->>>		- map_server : 3D모델의 2D평면도를 RVIZ에 출력하여 로봇의 이동 경로 등을 확인할 수 있다.
+>>>		- actionlib, actionlib_msgs : 로봇의 순찰(patrolling) 기능 구현을 위해 필요하다. 정해진 범위 내에서 반복적으로 이동하고 이벤트 발생 시 제어(스케쥴링)와 운용에 필요한 메시지를 주고 받는다.   
+>>>		- rosbridge  : ROS와 non-ROS 간의 통신을 수행한다. 
+>>>		- rospy : C++로 이루어진 ROS를 파이썬과 호환시켜준다.
+>>>		- sound_play : String을 입력하면 TTS를 실행한다.
+>>>		- AMCL(Adaptive Monte Calro Localization) : 확률 기반으로  Map 상에서의 로봇 위치를 파악한다.
+>>>		- Base_local_planner : 평면 상에서 로봇의 이동 궤적을 결정하고 로봇을 구동하는 컨트롤러이다.
+>>>		- rostopic : 현재 로봇의 데이터 (실시간 위치인 odometry 데이터 등)를 확인할 수 있다.
+>>>		- costmap_2d : 맵핑 및 cost map 생성에 사용한다.
+>>>		- fetch_navigation : rostopic으로 주행 거리 및 목표 지점 등을 가져와 주행 명령을 출력한다.
+>>>		- map_server : 3D모델의 2D평면도를 RViz에 출력하여 로봇의 이동 경로 등을 시각화한다.
 >>>		- Move_base :경로 계획, 장애물 회피, 로봇 주행 제어 등을 위한 노드를 추가한다.
->>>		- PCL(Point Cloud Library) : 다차원 포인트들을 나타내는데 사용되는 데이터 구조로 일반적으로 3차원 데이터를 나타내는데에 사용된다.
+>>>		- PCL(Point Cloud Library) : 다차원 포인트들을 나타내는 데 사용되는 데이터 구조이다.
+>>>		- SixPair : 로봇을 조이스틱으로 작동하기 위한 블루투스 모듈이다.
 >>
 >>
 >> +  ROS 3D 시각화 툴 ( Rviz )    
@@ -171,16 +172,16 @@
 로봇이 주행할 공간에 대한 지도를 만들기 위한 과정이다. 내부에서 사용될 맵의 정보를 담고 있는 yaml 파일과 이미지 파일인 pgm 파일로 저장된다.   <img src="https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/build_map.PNG" title="build_map" alt="build_map">    
 ↳ fetch_navigation 라이브러리 활용한 지도 매핑 과정 캡처 화면  ![map_and_costmap](/README_img/map_and_costmap.PNG)
 >> +  ROS Navigation   
-   관련 패키지에는 지도 작성을 위한 노드와 자율 주행을 위한 amcl, move_base 노드가 포함되어 있다.  amcl을 이용해 로봇의 위치를 지도 상에서 인식하고 원격으로 로봇을 조종한다. 이 때는 자동으로 장애물을 인식하여 피할 수 있도록 한다.
+   관련 패키지에는 지도 작성을 위한 노드와 자율 주행을 위한 AMCL, move_base 노드가 포함되어 있다.  AMCL을 이용해 로봇의 위치를 지도 상에서 인식하고 원격으로 로봇을 조종한다. 이 때는 자동으로 장애물을 인식하여 피할 수 있도록 한다.
 >> +  Patrolling   지정해준 범위내에서 반복적으로 순찰(patrolling)하고 도중에 나타나는 장애물은 2D Laser Sensor로 감지한다. 자율 주행 중에 마스크 미착용자 확인 등 여러 기능을 수행한다.   <img src="https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/patrolling.PNG" width="70%" height="70%" title="patrolling" alt="patrolling">  
 >> ↳ patrolling 에 필요한 소스 코드 실행 화면      <img src="https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/patrolling_plan.PNG" width="70%" height="70%" title="patrolling_plan" alt="patrolling_plan">   
->>     ↳ 로봇의 patrolling과정을 맵에 띄운 화면. 이동 경로 계획 등이 포함된다. 
+>>     ↳ 로봇의 patrolling 과정을 Rviz의 map에 나타낸 모습 
 >> + [patrolling 소스코드 설명](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_hyperlink/ROS_code.md)
  ---------------------------------------------------------------------------------------------------------------------
 
 
  4. 네트워크 & 서버 & DB
->> + Network : PC와 PC사이, PC와 Robot사이 데이터 전송은 websocket(UDP&TCP)을 사용한다.
+>> + Network : PC와 PC 사이, PC와 Robot 사이 데이터 전송은 websocket(UDP&TCP)을 사용한다.
 >>>	- PC1에서 Main Server로 AI모델의 detection 및 tracking 결과를 TCP로 전송
 >>>	- Robot(Freifgt100)에서 Main Server로 로봇의 실시간 위치를 TCP로 전송
 >>>	- Main Server에서 Robot(Freight100)으로 로봇이 움직일 위치를 UDP로 전송
@@ -218,7 +219,7 @@ if len(sys.argv) == 1:
 
     soundhandle.say(s, voice, volume)
 ```
-↳ ROS에서 sound_play를 실행시키는 say.py 코드의 실행부분
+↳ ROS에서 sound_play를 시키는 say.py 코드의 실행부분
 
  ---------------------------------------------------------------------------------------------------------------------
 
@@ -248,7 +249,7 @@ if state == 0:
                 img1_cvt = cv2.cvtColor(img1_grab, cv2.COLOR_BGR2RGB)
                 break
 ```
-↳ 주행중 마스크를 쓰지 않거나 부정확하게 쓴 인물을 발견하면 타겟으로 설정하고 촬영 사진을 저장한 후 인물을 트래킹하기 시작한다.
+↳ 주행 중 마스크를 쓰지 않거나 부정확하게 쓴 인물을 발견하면 타겟으로 설정하고 촬영 사진을 저장한 후 인물을 트래킹하기 시작한다.
 ```python
 if state == 1:
     found = False
@@ -284,13 +285,13 @@ if state == 1:
                     cv2.imwrite('./criminal/'+img_name+'.jpg',img2_cvt)
                     face_recognition('./criminal/'+img_name+'.jpg')
 ```
-↳ 경고후 일정 시간 내에 마스크를 착용하면 감시를 멈추고, 마스크를 착용하지 않으면 사진 촬영 후 관리자에게 전송한다.
+↳ 경고 후 일정 시간 내에 마스크를 착용하면 감시를 멈추고, 마스크를 착용하지 않으면 사진 촬영 후 관리자에게 전송한다.
 
  ---------------------------------------------------------------------------------------------------------------------
  
  ## 웹 & 서비스
    Flask web frame work로 제작한  ROS 기반 로봇 컨트롤 및 관리 Web page
-   다른페이지는 클릭할 시 접속이 가능하지만 유일하게 컨트롤 대시보드를 이용하기 위한 관리자 전용 로그인 기능하다.
+   다른페이지는 클릭만으로 접속이 가능하지만 컨트롤 대시보드를 이용하기 위한 관리자 페이지는 전용 로그인을 필요로 한다.
 
  + #### Home & About us
  ![website_home](https://github.com/SW-H/Autonomous_Driving_Security_Robot/blob/main/README_img/website_home.png)
@@ -350,7 +351,7 @@ var app = new Vue({
             this.ros.close()
         },
 ```
-↳ 웹소켓을 이용하여 js와 ROS를 직접 연결한다.
+↳ 웹소켓을 이용하여 JS와 ROS를 직접 연결한다.
 
 ```python
 setTopic: function() {
@@ -401,7 +402,7 @@ turnRight: function() {
     this.topic.publish(this.message)
 },
 ```
-↳ 웹페이지상에서 관리자가 로봇을 수동으로 조종할 수 있도록 컨트롤 명령을 js를 통하여 ros에 직접 전달한다.
+↳ 웹페이지상에서 관리자가 로봇을 수동으로 조종할 수 있도록 JS를 통하여 ROS에 컨트롤 명령을 직접 전달한다.
      
       
       
@@ -481,7 +482,7 @@ class Post(db.Model):
     def __repr__(self):
         return f"Post('{self.title}','{self.date_history}')"
 ```
- ↳ 신분 확인을 위한 로봇을 운용하는 기관의 직원정보와 로봇이 탐지한 이슈를 database에 저장한다. 
+ ↳ \로봇을 운용하는 기관의 직원정보와 서버가 탐지한 이슈를 DB에 저장한다. 
  
 ```python
 @app.route('/model_result')
@@ -543,9 +544,12 @@ def video_feed():
 
 ## 향후 발전가능성 
  + 공사현장, 의료시설, 실험실, 롤러장 등에서의 안전장비 착용여부 점검(실외라면 오토바이나 자전거)
- + pose estimation을 사용했으므로 위험행동 감지를 통해 경비 기능이 가능
- + 포스트 코로나 시대에도 unknown에 대한 방범 기능으로서 사용 가능
- + 현재 프로세스를 드론에 적용시킨다면 농업 등 다른 산업 분야에 적용 가능
+ + pose estimation을 이용해 위험행동 감지하는 경비 로봇
+ + 포스트 코로나 시대에도 침입자를 찾는 방범 로봇으로 활용
+ + 전체 프로세스를 드론에 적용하여 다른 산업 분야에 활용
+ + TIC 카메라 장착 후 체온 감지
+ + Depth 카메라 장착 후 3D object detection 기술을 활용한 효과적인 자율주행 및 detection
+ + 여러 개의 로봇을 연동하여 넓은 공간에서의 효과적인 서비스 제공
 
 -------------------------------------------------------------------------------------------------------------------------
 
