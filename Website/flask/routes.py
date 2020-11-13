@@ -265,20 +265,19 @@ def ordering():
                             state = 0
                             img_name = frame_num
                             img_output = img2_cvt
+                            img_output_body = img2_body
                             cv2.imwrite('./face_tutorial/criminal/'+img_name+'.jpg',img_output)
-                            msg = face_recog('./face_tutorial/criminal/'+img_name+'.jpg')
+                            cv2.imwrite('./face_tutorial/criminal/'+img_name+'body.jpg',img_output_body)
+                            msg = face_recog('./face_tutorial/criminal/'+img_name+'body.jpg')
                     found = True
             if found == False: #missed target kl,.l;;
                 state = 0
                 img_name = frame_num
                 img_output = img1_cvt
-                cv2.imwrite('./face_tutorial/criminal/'+img_name+'.jpg',img1_cvt)
-                msg = face_recog('./face_tutorial/criminal/'+img_name+'.jpg')
-    while True:
-        global img_output
-        img_cri = np.array(ImageGrab.grab(square))
-        img_output = cv2.cvtColor(img_cri, cv2.COLOR_BGR2RGB)
-        time.sleep(5)
+                img_output_body = img1_body
+                cv2.imwrite('./face_tutorial/criminal/'+img_name+'.jpg',img_output)
+                cv2.imwrite('./face_tutorial/criminal/'+img_name+'body.jpg',img_output_body)
+                msg = face_recog('./face_tutorial/criminal/'+img_name+'body.jpg')
 
     return 'ordering'
 
