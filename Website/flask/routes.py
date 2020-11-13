@@ -245,6 +245,8 @@ def ordering():
                             global masks
                             global persons
                             data2 = eval(detection_result)
+                            start = data2[0]
+                            frame_num = data2[1]
                             mask_prob = data2[2]
                             mask_bbox = data2[3]
                             person_bbox = data2[5]
@@ -263,7 +265,7 @@ def ordering():
                                 break
                         if unmasked: #unmasked until the end
                             state = 0
-                            img_name = frame_num
+                            img_name = time.strftime('%Y-%m-%d', time.localtime(start))
                             img_output = img2_cvt
                             img_output_body = img2_body
                             cv2.imwrite('./face_tutorial/criminal/'+img_name+'.jpg',img_output)
@@ -272,7 +274,7 @@ def ordering():
                     found = True
             if found == False: #missed target kl,.l;;
                 state = 0
-                img_name = frame_num
+                img_name = time.strftime('%Y-%m-%d', time.localtime(start))
                 img_output = img1_cvt
                 img_output_body = img1_body
                 cv2.imwrite('./face_tutorial/criminal/'+img_name+'.jpg',img_output)
