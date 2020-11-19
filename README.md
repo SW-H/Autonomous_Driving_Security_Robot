@@ -1,10 +1,9 @@
 # 다중이용시설 마스크 착용 감시 자율 주행 로봇
 
 -------------------------------------------------------------------------------------------------------------------------
-참여자: kjw10701@likelion.org, wjdwlsdn1216@naver.com, anfuza@naver.com, kimny2234@naver.com, hsw08@naver.com
-
 ``` 
 광주 인공지능 사관학교 기업 연계 프로젝트 (UOK)
+참여자: kjw10701@likelion.org, wjdwlsdn1216@naver.com, anfuza@naver.com, kimny2234@naver.com, hsw08@naver.com
 ```
 
 ## 개요
