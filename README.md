@@ -7,7 +7,7 @@
 
 참여자: kjw10701@likelion.org, wjdwlsdn1216@naver.com, anfuza@naver.com, kimny2234@naver.com, hsw08@naver.com
 
-## 프로젝트 기간 : 2020.10.12 ~ 2020.11.13    
+#### 프로젝트 기간 : 2020.10.12 ~ 2020.11.13    
 
 ## 개요
 > ### 자율주행 로봇의 필요성
