@@ -163,125 +163,125 @@ def model_result():
         serverSocket.close()
     return "model_result"
 
-# @app.route('/ordering')
-# def ordering():
-#     sock = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
-#     global img_output
-#     global msg
-#     state = 0
-#     square=(348,194,1493,660)
-#     distance = 1
-#     while True:
-#         global detection_result
-#         global masks
-#         global persons
-#         data = eval(detection_result)
-#         start = data[0]
-#         frame_num = data[1]
-#         mask_prob = data[2]
-#         mask_bbox = data[3]
-#         person_prob = data[4]
-#         person_bbox = data[5]
-#         track_id = data[6]
-#         masks, persons = [], []
-#         targets = []
+@app.route('/ordering')
+def ordering():
+    sock = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+    global img_output
+    global msg
+    state = 0
+    square=(348,194,1493,660)
+    distance = 1
+    while True:
+        global detection_result
+        global masks
+        global persons
+        data = eval(detection_result)
+        start = data[0]
+        frame_num = data[1]
+        mask_prob = data[2]
+        mask_bbox = data[3]
+        person_prob = data[4]
+        person_bbox = data[5]
+        track_id = data[6]
+        masks, persons = [], []
+        targets = []
 
-#         #prob+bbox
-#         for idx in range(len(mask_prob)):
-#             masks.append(mask_bbox[idx] + mask_prob[idx]) #[x1,y1,x2,y2,prob,label]
+        #prob+bbox
+        for idx in range(len(mask_prob)):
+            masks.append(mask_bbox[idx] + mask_prob[idx]) #[x1,y1,x2,y2,prob,label]
 
-#         for idx in range(len(person_prob)):
-#             persons.append(person_bbox[idx] + person_prob[idx])
-#             persons[idx].append(track_id[idx]) #[x1,y1,x2,y2,prob,label,id]
+        for idx in range(len(person_prob)):
+            persons.append(person_bbox[idx] + person_prob[idx])
+            persons[idx].append(track_id[idx]) #[x1,y1,x2,y2,prob,label,id]
             
-#         #target selection
-#         if state == 0:
-#             #nearest unmasked
-#             nearest_unmasked = []
-#             max_area = 0
-#             for mask in masks:
-#                 if (mask[2] - mask[0]) * (mask[3] - mask[1]) >= max_area and mask[5]!=0:
-#                     nearest_unmasked = mask
-#                     max_area = (mask[2] - mask[0]) * (mask[3] - mask[1])
-#             #person match
-#             target = []
-#             target_id = -1
-#             if nearest_unmasked != [] and persons != []:
-#                 for person in persons:
-#                     if person[0] <= nearest_unmasked[0] and person[1] <= nearest_unmasked[1] and person[2] >= nearest_unmasked[2] and person[3] >= nearest_unmasked[3] and person[6] not in targets:
-#                         target = person
-#                         target_id = person[6]
-#                         targets.append(target_id)
-#                         state = 1
-#                         img1_grab = np.array(ImageGrab.grab(square))
-#                         img1_cvt = cv2.cvtColor(img1_grab, cv2.COLOR_BGR2RGB)
-#                         break
+        #target selection
+        if state == 0:
+            #nearest unmasked
+            nearest_unmasked = []
+            max_area = 0
+            for mask in masks:
+                if (mask[2] - mask[0]) * (mask[3] - mask[1]) >= max_area and mask[5]!=0:
+                    nearest_unmasked = mask
+                    max_area = (mask[2] - mask[0]) * (mask[3] - mask[1])
+            #person match
+            target = []
+            target_id = -1
+            if nearest_unmasked != [] and persons != []:
+                for person in persons:
+                    if person[0] <= nearest_unmasked[0] and person[1] <= nearest_unmasked[1] and person[2] >= nearest_unmasked[2] and person[3] >= nearest_unmasked[3] and person[6] not in targets:
+                        target = person
+                        target_id = person[6]
+                        targets.append(target_id)
+                        state = 1
+                        img1_grab = np.array(ImageGrab.grab(square))
+                        img1_cvt = cv2.cvtColor(img1_grab, cv2.COLOR_BGR2RGB)
+                        break
 
-#         #person tracking
-#         if state == 1:
-#             found = False
-#             unmasked = True
-#             for person in persons:
-#                 if person[6] == target_id: #find correct target_id
-#                     theta = ((person[2]+person[0])/2) / (square[2]-square[0]) * math.pi / 180 - math.pi
-#                     if person[3] <= (square[3]-square[1]) * 0.9: #not close enough
-#                         global rob_loc
-#                         rob_loc = [0,0,0]
-#                         z = theta+rob_loc[2]
-#                         x = rob_loc[0] + math.cos(z) * distance
-#                         y = rob_loc[1] + math.cos(z) * distance
-#                         sock.send(str([x,y,z]).encode(),(UDP_IP,UDP_PORT)) #robot location send
-#                     else: #close enough
-#                         sock.send(str([5]).encode()) #TTS(마스크를 써주세요)
-#                         img2_grab = np.array(ImageGrab.grab(square))
-#                         img2_cvt = cv2.cvtColor(img2_grab, cv2.COLOR_BGR2RGB)
-#                         TTS_time = time.time()
-#                         delay_time = 0
-#                         while delay_time < 10: #wait for 10seconds
-#                             delay_time = time.time() - TTS_time
+        #person tracking
+        if state == 1:
+            found = False
+            unmasked = True
+            for person in persons:
+                if person[6] == target_id: #find correct target_id
+                    theta = ((person[2]+person[0])/2) / (square[2]-square[0]) * math.pi / 180 - math.pi
+                    if person[3] <= (square[3]-square[1]) * 0.9: #not close enough
+                        global rob_loc
+                        rob_loc = [0,0,0]
+                        z = theta+rob_loc[2]
+                        x = rob_loc[0] + math.cos(z) * distance
+                        y = rob_loc[1] + math.cos(z) * distance
+                        sock.send(str([x,y,z]).encode(),(UDP_IP,UDP_PORT)) #robot location send
+                    else: #close enough
+                        sock.send(str([5]).encode()) #TTS(마스크를 써주세요)
+                        img2_grab = np.array(ImageGrab.grab(square))
+                        img2_cvt = cv2.cvtColor(img2_grab, cv2.COLOR_BGR2RGB)
+                        TTS_time = time.time()
+                        delay_time = 0
+                        while delay_time < 10: #wait for 10seconds
+                            delay_time = time.time() - TTS_time
                             
-#                             #current data load
-#                             global detection_result
-#                             global masks
-#                             global persons
-#                             data2 = eval(detection_result)
-#                             start = data2[0]
-#                             frame_num = data2[1]
-#                             mask_prob = data2[2]
-#                             mask_bbox = data2[3]
-#                             person_bbox = data2[5]
-#                             track_id = data2[6]
-#                             masks = []
-#                             for idx in range(len(mask_prob)):
-#                                 masks.append(mask_bbox[idx] + mask_prob[idx]) #[x1,y1,x2,y2,prob,label]
-#                             for idx in range(len(person_bbox)):
-#                                 if track_id[idx] == target_id:
-#                                     check = person_bbox[idx] #person to check
+                            #current data load
+                            global detection_result
+                            global masks
+                            global persons
+                            data2 = eval(detection_result)
+                            start = data2[0]
+                            frame_num = data2[1]
+                            mask_prob = data2[2]
+                            mask_bbox = data2[3]
+                            person_bbox = data2[5]
+                            track_id = data2[6]
+                            masks = []
+                            for idx in range(len(mask_prob)):
+                                masks.append(mask_bbox[idx] + mask_prob[idx]) #[x1,y1,x2,y2,prob,label]
+                            for idx in range(len(person_bbox)):
+                                if track_id[idx] == target_id:
+                                    check = person_bbox[idx] #person to check
 
-#                             if masked(masks,check): #check if masked or not
-#                                 state = 0
-#                                 unmasked = False
-#                                 sock.sendto(str([6]).encode(),(UDP_IP,UDP_PORT)) #TTS(감사합니다)
-#                                 break
-#                         if unmasked: #unmasked until the end
-#                             state = 0
-#                             img_name = time.strftime('%Y-%m-%d', time.localtime(start))
-#                             img_output = img2_cvt
-#                             img_output_body = img2_body
-#                             cv2.imwrite('./face_tutorial/criminal/'+img_name+'.jpg',img_output)
-#                             cv2.imwrite('./face_tutorial/criminal/'+img_name+'body.jpg',img_output_body)
-#                             msg = face_recog('./face_tutorial/criminal/'+img_name+'body.jpg')
-#                     found = True
-#             if found == False: #missed target kl,.l;;
-#                 state = 0
-#                 img_name = time.strftime('%Y-%m-%d', time.localtime(start))
-#                 img_output = img1_cvt
-#                 img_output_body = img1_body
-#                 cv2.imwrite('./face_tutorial/criminal/'+img_name+'.jpg',img_output)
-#                 cv2.imwrite('./face_tutorial/criminal/'+img_name+'body.jpg',img_output_body)
-#                 msg = face_recog('./face_tutorial/criminal/'+img_name+'body.jpg')
+                            if masked(masks,check): #check if masked or not
+                                state = 0
+                                unmasked = False
+                                sock.sendto(str([6]).encode(),(UDP_IP,UDP_PORT)) #TTS(감사합니다)
+                                break
+                        if unmasked: #unmasked until the end
+                            state = 0
+                            img_name = time.strftime('%Y-%m-%d', time.localtime(start))
+                            img_output = img2_cvt
+                            img_output_body = img2_body
+                            cv2.imwrite('./face_tutorial/criminal/'+img_name+'.jpg',img_output)
+                            cv2.imwrite('./face_tutorial/criminal/'+img_name+'body.jpg',img_output_body)
+                            msg = face_recog('./face_tutorial/criminal/'+img_name+'body.jpg')
+                    found = True
+            if found == False: #missed target kl,.l;;
+                state = 0
+                img_name = time.strftime('%Y-%m-%d', time.localtime(start))
+                img_output = img1_cvt
+                img_output_body = img1_body
+                cv2.imwrite('./face_tutorial/criminal/'+img_name+'.jpg',img_output)
+                cv2.imwrite('./face_tutorial/criminal/'+img_name+'body.jpg',img_output_body)
+                msg = face_recog('./face_tutorial/criminal/'+img_name+'body.jpg')
 
-#     return 'ordering'
+    return 'ordering'
 
 @app.route('/_stuff', methods = ['GET'])
 def stuff():
