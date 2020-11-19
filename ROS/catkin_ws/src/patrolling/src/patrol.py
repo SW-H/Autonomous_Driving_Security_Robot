@@ -5,7 +5,6 @@ import actionlib
 import tf
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 import requests
-#########################################
 from sound_play.msg import SoundRequest
 from sound_play.libsoundplay import SoundClient
 import rospy
@@ -13,14 +12,9 @@ import socket
 # the list of points to patrol
 
 def sound_play_func(ment):
-#       rospy.init_node('say')
         soundhandle = SoundClient()
         rospy.sleep(1)
-
         voice = 'voice_kal_diphone'
-
-
-
         soundhandle.say(ment, voice)
         rospy.sleep(1)
 
@@ -62,48 +56,27 @@ class Patrol:
 if __name__ == '__main__':
     rospy.init_node('')#patrolling
     server_socket=socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    server_socket.bind(('172.22.77.52',7010))
-  ##  server_socket.listen(0)
-  ##  client_socket,addr = server_socket.accept()
+    server_socket.bind(('172.22.77.52',7010)) # PC2 windows
 
     try:
         p = Patrol()
         while not rospy.is_shutdown():
-       #     url = 'http://172.22.77.172:8000/local_control/goto'
- #           if request.method == 'POST':
-  #              print ('ya')
-   #         else:
             for i, w in enumerate(waypoints):
-	 ##   	data=client_socket.recv(65535)
 		data,addr = server_socket.recvfrom(200)	
 	    	if data.decode()=="":
-		#	print('no')
-	
 			rospy.loginfo("Sending waypoint %d - %s", i, w[0])
 			rospy.init_node('')
-#		sound_play_func()
        	        	p.set_goal_to_point(w[1])
-	#	if waypoints[2][0]==-10.6175562333:
-#			sound_play_func()
-                 #	p.set_goal_to_point(w[1])
-		# if w == 1:
-		#	rospy.init_node('')
-		#	sound_play_func()
-                #  p.set_goal_to_point(w[1])
 		else:
 		   #sound_play_func()
  		   print "received data:", data.decode()
 		   rospy.loginfo("Sending waypoint %d - %s", i, w[0])
 		   rospy.init_node('')
-		   
-       	        #   p.set_goal_to_point(w[1])
-		 #  edited_goal=(float(w[0][0])-0.1,float(w[0][1])-0.1,float(w[0][2]))
        	           if eval(data[0])<4:
 			data=eval(data)
 		   	edited_goal=(data[0],data[1],data[2])
 
 		   	p.set_goal_to_point(edited_goal)
-		  # w[1][2]=w[0][2]
 		   	print(edited_goal)
 		   elif eval(data[0])<6:
 			sound_play_func("mask reul saw")
@@ -111,12 +84,8 @@ if __name__ == '__main__':
 		   else:
 			sound_play_func("thank you")
        	        	p.set_goal_to_point(w[1])
-		    
-    ##		   server_socket.close()		
+		
     except rospy.ROSInterruptException:
         rospy.logerr("Something went wrong when sending the waypoints")
-#	server_socket.close()		
-
-#rospy.init_node(''`)
-#sound_play_func()
+	
 
