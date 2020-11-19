@@ -34,7 +34,7 @@
 			<nav class="navbar navbar-expand-lg navbar-custom fixed-top navbar-shrink" id="mainNav1">
 
 				<div class="container">
-				  	<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="../static/logo.jpg" alt="" /></a>
+				  	<a class="navbar-brand js-scroll-trigger" href="/home"><img src="../static/logo.jpg" alt="" /></a>
 				  	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 						Menu
 						<i class="fas fa-bars ml-1"></i>
@@ -72,10 +72,20 @@
 				<button :disabled="loading" class="btn btn-danger" @click="disconnect" v-if="connected">Disconnect!</button>
 				<button :disabled="loading" class="btn btn-success" @click="connect" v-else>Connect!</button>
 			</div>
-			
+			<!-- <div class="col-md-6" style="max-height:150px; overflow:auto;">
+				<h3>Log messages</h3>
+				{% with messages = get_flashed_messages() %}
+					{% if messages %}
+						{% for msg in messages %}
+							<p>{{msg}}</p>
+						{% endfor %}
+					{% endif %}
+				{% endwith %}
+			</div> -->
 			<div class="col-md-6" style="max-height:200px; overflow:auto;">
 				<h3>Log messages</h3>
 				<div>
+					<!-- <p v-for="log of logs">{{ log }}</p> -->
 					<p id="log"></p>
 				</div>
 			</div>
@@ -96,18 +106,16 @@
 		<div class=container>
 			<div>
 				음성 입력 : <input type="text" id="sound_play" style=""></input>
-			 </div>
+			</div>
 			<a href="{{ url_for('model_result') }}">모델 결과 받아오기</a>
 			<a href="{{ url_for('ordering')}}">로봇에 명령 내리기</a>
 			<img id="my_image" style='height: 80%; width: 80%; object-fit: contain; border: 5px double #5f788a;' src="{{ url_for('video_feed') }}">
-
-
+			
 
 			<hr>
 		</div>
 		<hr>
-
-			
+		
 		<div class="row" style="display: flex;">
 			<div class="col-md-12 text-center">
 				<h5>Commands</h5>
@@ -136,33 +144,7 @@
 				<button @click="backward" :disabled="loading || !connected" class="btn btn-primary">Go backward</button>
 			</div>
 		</div>
-		{% extends "dy0.html" %}
-		{% block body %}
-		<script type="text/javascript">
-		var intervalID = setInterval(update_values,1000);
-		function update_values() {
-				$.getJSON($SCRIPT_ROOT + '/_stuff',
-			function(data) {
-				$('#result').text(data.result);
-				console.log(data)
-			});
-			};
-			function stopTextColor() {
-			clearInterval(intervalID);
-			}
-		</script>
-		<body onload="update_values();">
-		<p>
-			<span id="result">?</span>
-		</p>
-		<script>
-		document.getElementById("result").innerHTML;
-		</script>
-			</body>
-		{% endblock %}
 	</div>
-	</div>
-
 	<!-- <script type="text/javascript" src="main.js"> -->
 	<script src="{{ url_for('static', filename='main.js') }}"></script>
 

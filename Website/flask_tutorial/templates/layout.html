@@ -8,7 +8,11 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
         <!-- Font Awesome icons (free version)-->
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue">
+      
+    </script>
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
@@ -26,39 +30,38 @@
         <title>I'm OK</title>
     {% endif %}
 </head>
-<body>
+<body id ="page-top">
+  <div id="app" class="container">
     <header class="site-header">
-        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top navbar-shrink" id="mainNav1">
           <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="/">Freight-Robot Controller</a>
+				  	<a class="navbar-brand js-scroll-trigger" href="/home"><img src="../static/logo.jpg" alt="" /></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               Menu
               <i class="fas fa-bars ml-1"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav text-uppercase mr-auto">
-                
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/">Main</a></li>
-                
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/controller">Controller</a></li>
-                
-                
-              </div>
-              <!-- Navbar Right Side -->
-              <div class="navbar-nav text-uppercase ml-auto">
+						  <ul class="navbar-nav text-uppercase mr-auto">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ url_for('home') }}">Main</a></li>
+                              
+              </ul>
+
+
+              <ul class="navbar-nav text-uppercase ml-auto">
                 {% if current_user.is_authenticated %}
-                  <a class="nav-item nav-link" href="/account">Account</a>
-                  <a class="nav-item nav-link" href="/logout">Logout</a>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/account">Account</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/logout">Logout</a></li>
                 {% else %}
-                  <a class="nav-item nav-link" href="/login">Login</a>
-                  <a class="nav-item nav-link" href="/register">Register</a>
-                {% endif %}
-              </div>
+                    <li class="nav-item"><a class=" nav-link js-scroll-trigger" href="/login">Login</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/register">Register</a></li>
+						  	{% endif %}
+						  </ul>
             </div>
           </div>
         </nav>
       </header>
-      <main role="main" class="container">
+  </div>      
+  <main role="main" class="container">
         <div class="row" style="display: flex;">
           <div class="col-md-8">
             {% with messages = get_flashed_messages(with_categories=true) %}
