@@ -5,7 +5,7 @@
 광주 인공지능 사관학교 기업 연계 프로젝트 (UOK)
 ```
 
-참여자: kjw10701@likelion.org, wjdwlsdn1216@naver.com, anfuza@naver.com, kimny2234@naver.com, hsw08@naver.com
+참여자이메일 : kjw10701@likelion.org, wjdwlsdn1216@naver.com, anfuza@naver.com, kimny2234@naver.com, hsw08@naver.com
 
 #### 프로젝트 기간 : 2020.10.12 ~ 2020.11.13    
 
